@@ -1,0 +1,144 @@
+{
+  "id": "SX-J040-01",
+  "skill_id": "J040",
+  "skill_ids": [
+    "J040",
+    "P027",
+    "P014"
+  ],
+  "school_level": "5e",
+  "title": "La balade à vélo",
+  "contexte": "Un dimanche, la famille Benali fait une balade à vélo sur une voie verte, le long d'un canal de 80 km. Elle part à 9 h 40, et s'arrête une seule fois, pour pique-niquer.\n\nLa location des quatre vélos coûte 46 € pour la journée. Chacun porte un casque, et les enfants ont emporté de l'eau et des fruits.\n\nLe graphique ci-dessous donne la distance parcourue par la famille, en km, en fonction de la durée écoulée depuis le départ, en heures. La balade se termine au dernier point de la ligne.",
+  "image": "figures/SX-J040-01",
+  "duree_estimee_min": 14,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "J040",
+      "statement": "Quelle distance la famille a-t-elle parcourue en tout ?",
+      "type": "numerique",
+      "answer": {
+        "value": 52.5,
+        "unit": "km"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Sur l'axe vertical, les nombres vont de 10 en 10 : un intervalle vaut 5 km.",
+        "Le dernier point de la ligne est 10,5 intervalles au-dessus de l'axe horizontal : 10,5 × 5 = 52,5. La famille a parcouru **52,5 km**."
+      ],
+      "hint": "Lis l'ordonnée du dernier point de la ligne, en tenant compte de ce que vaut un intervalle."
+    },
+    {
+      "key": "q2",
+      "skill_id": "P027",
+      "statement": "Combien de minutes la pause du pique-nique a-t-elle duré ?",
+      "type": "numerique",
+      "answer": {
+        "value": 90,
+        "unit": "min"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Pendant la pause, la distance ne change pas : c'est le morceau horizontal de la ligne.",
+        "Sur l'axe horizontal, un intervalle vaut 0,5 h. Le palier va de 1,75 h à 3,25 h : il dure 3,25 − 1,75 = 1,5 h.",
+        "1,5 h, c'est 1 h et une demi-heure : 60 + 30 = 90. La pause a duré **90 min**."
+      ],
+      "hint": "Repère le morceau horizontal de la ligne, puis lis sa durée sur l'axe horizontal."
+    },
+    {
+      "key": "q3",
+      "skill_id": "P014",
+      "statement": "La balade dure 5,25 h en tout, pause comprise. À quelle heure la famille arrive-t-elle ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "14 h 55",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "15 h 05",
+          "misconception": "L'élève lit 5,25 h comme 5 h 25 min. Or 0,25 h est un quart d'heure, 15 min."
+        },
+        {
+          "key": "c",
+          "text": "14 h 40",
+          "misconception": "L'élève oublie le quart d'heure : 5,25 h, c'est 5 h 15 min."
+        },
+        {
+          "key": "d",
+          "text": "15 h 15",
+          "misconception": "L'élève part de 10 h au lieu de 9 h 40."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 2,
+      "solution_steps": [
+        "5,25 h, c'est 5 h et un quart d'heure : 5 h 15 min.",
+        "9 h 40 + 5 h = 14 h 40, puis 14 h 40 + 15 min = 14 h 55.",
+        "La famille arrive à **14 h 55**."
+      ],
+      "hint": "Convertis d'abord 5,25 h en heures et minutes."
+    },
+    {
+      "key": "q4",
+      "skill_id": "J040",
+      "statement": "Au bout de combien de minutes de balade la famille s'est-elle arrêtée pour pique-niquer ?",
+      "type": "numerique",
+      "answer": {
+        "value": 105,
+        "unit": "min"
+      },
+      "points": 2,
+      "solution_steps": [
+        "La pause commence au début du morceau horizontal de la ligne.",
+        "Sur l'axe horizontal, un intervalle vaut une demi-heure. Ce point est au milieu entre 1,5 h et 2 h : son abscisse est 1,75 h.",
+        "1,75 h, c'est 1 h et trois quarts d'heure : 60 + 45 = 105. La famille s'est arrêtée au bout de **105 min**."
+      ],
+      "hint": "Repère où commence le morceau horizontal, puis lis son abscisse."
+    },
+    {
+      "key": "q5",
+      "skill_id": "J040",
+      "statement": "D'après le graphique, quelle phrase est juste ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Entre 1,75 h et 3,25 h, la famille roule sur une partie plate de la voie verte.",
+          "misconception": "Le graphique n'est pas un dessin du trajet : un palier veut dire que la distance ne change pas, la famille est arrêtée."
+        },
+        {
+          "key": "b",
+          "text": "La famille s'est arrêtée pendant 3,25 h.",
+          "misconception": "3,25 h est le moment où la pause se termine, pas sa durée : elle a commencé à 1,75 h."
+        },
+        {
+          "key": "c",
+          "text": "Après la pause, la famille a encore parcouru 30 km.",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "Avant la pause, la famille a parcouru plus de kilomètres qu'après la pause.",
+          "misconception": "Avant la pause, elle a parcouru 22,5 km ; après, 52,5 − 22,5 = 30 km, c'est plus."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Pendant la pause, la distance reste à 22,5 km : le palier est 4,5 intervalles au-dessus de l'axe horizontal, 4,5 × 5 = 22,5.",
+        "À l'arrivée, la distance est de 52,5 km : après la pause, la famille a parcouru 52,5 − 22,5 = 30 km.",
+        "Le palier montre un arrêt, et la famille a roulé plus après la pause qu'avant : la phrase juste est **« Après la pause, la famille a encore parcouru 30 km. »**"
+      ],
+      "hint": "Lis la distance au moment de la pause et à l'arrivée."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Lire et interpréter un graphique cartésien donné par une courbe ou un nuage de points. »"
+}

@@ -1,0 +1,126 @@
+{
+  "id": "SX-J038-01",
+  "skill_id": "J038",
+  "skill_ids": [
+    "J038",
+    "E030",
+    "D024"
+  ],
+  "school_level": "5e",
+  "title": "La carte de la piscine",
+  "contexte": "La piscine municipale propose deux façons de payer les entrées.\n\n**Sans carte** : chaque entrée coûte 3,20 €.\n\n**Avec la carte annuelle** : on achète la carte 18 €, une fois pour l'année, puis chaque entrée coûte 2,30 €.\n\nLe grand bassin mesure 25 m de long, et l'entrée est gratuite pour les enfants de moins de 3 ans.\n\nLucie va nager toute l'année avec son club. Ses parents notent $n$ le nombre d'entrées de Lucie dans l'année, et $p$ le prix payé pour ces entrées, en euros, carte comprise s'il y en a une.",
+  "image": null,
+  "duree_estimee_min": 13,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "J038",
+      "statement": "Sans carte, quelle formule donne le prix $p$ en fonction du nombre $n$ d'entrées ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "$p = 3{,}2 + n$",
+          "misconception": "L'élève ajoute au lieu de multiplier : $n$ entrées à 3,20 € coûtent $n$ fois 3,20 €."
+        },
+        {
+          "key": "b",
+          "text": "$p = 3{,}2 \\times 25$",
+          "misconception": "25 m est la longueur du bassin, et ce calcul ne vaut que pour un seul cas : une formule contient la lettre $n$."
+        },
+        {
+          "key": "c",
+          "text": "$p = n \\div 3{,}2$",
+          "misconception": "L'élève divise au lieu de multiplier : le prix doit grandir de 3,20 € à chaque entrée."
+        },
+        {
+          "key": "d",
+          "text": "$p = 3{,}2 \\times n$",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Une entrée coûte 3,20 €, deux entrées $3{,}2 \\times 2$, trois entrées $3{,}2 \\times 3$ : le calcul qui se répète est « 3,2 fois le nombre d'entrées ».",
+        "On remplace le nombre d'entrées par la lettre $n$ : **$p = 3{,}2 \\times n$**."
+      ],
+      "hint": "Calcule le prix pour 2 entrées, puis pour 3 entrées, et repère ce qui change."
+    },
+    {
+      "key": "q2",
+      "skill_id": "E030",
+      "statement": "Avec quelle façon de payer le prix est-il proportionnel au nombre d'entrées ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Avec la carte annuelle.",
+          "misconception": "Avec la carte, on paie 18 € même pour très peu d'entrées : 2 entrées ne coûtent pas le double d'une entrée."
+        },
+        {
+          "key": "b",
+          "text": "Sans carte.",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Avec les deux, car le prix augmente avec le nombre d'entrées.",
+          "misconception": "Deux grandeurs qui augmentent ensemble ne sont pas forcément proportionnelles : avec la carte, les 18 € s'ajoutent une seule fois."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Sans carte, le prix est un produit, 3,20 € par entrée, sans nombre ajouté : quand le nombre d'entrées double, le prix double. C'est une situation de proportionnalité.",
+        "Avec la carte, il faut ajouter les 18 € une fois : 1 entrée coûte 18 + 2,30 = 20,30 €, 2 entrées coûtent 18 + 4,60 = 22,60 €, ce n'est pas le double.",
+        "Le prix est proportionnel au nombre d'entrées **sans carte** seulement."
+      ],
+      "hint": "Pour chaque façon de payer, compare le prix de 1 entrée et celui de 2 entrées."
+    },
+    {
+      "key": "q3",
+      "skill_id": "D024",
+      "statement": "L'an dernier, Lucie a fait 50 entrées, sans carte. Combien ses parents auraient-ils économisé avec la carte ?",
+      "type": "numerique",
+      "answer": {
+        "value": 27,
+        "unit": "€"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Sans carte : $3{,}2 \\times 50 = 160$, soit 160 €.",
+        "Avec la carte : $2{,}3 \\times 50 = 115$, puis $18 + 115 = 133$, soit 133 €.",
+        "L'économie est la différence : $160 - 133 = 27$. Ils auraient économisé **27 €**."
+      ],
+      "hint": "Calcule le prix payé de chacune des deux façons, puis compare."
+    },
+    {
+      "key": "q4",
+      "skill_id": "J038",
+      "statement": "Avec la carte annuelle, écris la formule qui donne le prix $p$ en fonction du nombre $n$ d'entrées.",
+      "type": "texte",
+      "answer": {
+        "value": "18 + 2,3n",
+        "forme": "expression",
+        "variables": [
+          "n"
+        ],
+        "unit": "€"
+      },
+      "points": 4,
+      "solution_steps": [
+        "Pour 10 entrées, on paie la carte, puis 10 entrées à 2,30 € : $18 + 2{,}3 \\times 10$. Pour 20 entrées : $18 + 2{,}3 \\times 20$.",
+        "La carte de 18 € se paie une seule fois ; ce qui change, c'est le nombre d'entrées, qu'on remplace par $n$.",
+        "**$p = 18 + 2{,}3 \\times n$**, qu'on écrit aussi $p = 18 + 2{,}3n$. Contrôle : pour 10 entrées, $18 + 23 = 41$ €."
+      ],
+      "hint": "Écris le calcul du prix pour 10 entrées, puis remplace le nombre d'entrées par la lettre."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Produire une formule simple représentant la dépendance de deux grandeurs. »"
+}

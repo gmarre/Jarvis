@@ -1,0 +1,119 @@
+{
+  "id": "SX-J042-01",
+  "skill_id": "J042",
+  "skill_ids": [
+    "J042",
+    "F002",
+    "J037",
+    "J040"
+  ],
+  "school_level": "4e",
+  "title": "Les deux vitriers",
+  "contexte": "M. Petit veut faire découper des plaques de verre carrées pour des cadres. On note $c$ la longueur du côté d'une plaque, en dm, et $P$ son prix, en euros.\n\nChez **Vitralu**, $P = 0{,}75 \\times c^2 + 5$ : le verre coûte 0,75 € le dm², et la découpe 5 €.\n\nChez **Clairvue**, $P = 3{,}75 \\times c + 5$.\n\nLes deux vitriers livrent en 3 jours, et M. Petit a besoin de 12 plaques.\n\nDans le repère ci-dessous, pour $c$ de 0 à 6 dm, un des trois tracés T1, T2 et T3 représente le prix chez Vitralu en fonction de $c$, et un autre le prix chez Clairvue.",
+  "image": "figures/SX-J042-01",
+  "duree_estimee_min": 14,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "F002",
+      "statement": "Chez Vitralu, combien coûte une plaque de 3 dm de côté ?",
+      "type": "numerique",
+      "answer": {
+        "value": 11.75,
+        "unit": "€"
+      },
+      "points": 1,
+      "solution_steps": [
+        "On remplace $c$ par 3 : $P = 0{,}75 \\times 3^2 + 5$.",
+        "Le carré d'abord : $3^2 = 9$ ; puis $0{,}75 \\times 9 = 6{,}75$ ; enfin $6{,}75 + 5 = 11{,}75$.",
+        "La plaque coûte **11,75 €** chez Vitralu."
+      ],
+      "hint": "Remplace $c$ par 3, et calcule le carré en premier."
+    },
+    {
+      "key": "q2",
+      "skill_id": "J037",
+      "statement": "Noé remplit un tableau de valeurs du prix chez Vitralu. Quelle valeur doit-il écrire pour $c = 6$ ?",
+      "type": "numerique",
+      "answer": {
+        "value": 32,
+        "unit": "€"
+      },
+      "points": 2,
+      "solution_steps": [
+        "On remplace $c$ par 6 : $P = 0{,}75 \\times 6^2 + 5$.",
+        "Le carré d'abord : $6^2 = 36$ ; puis $0{,}75 \\times 36 = 27$ ; enfin $27 + 5 = 32$.",
+        "Noé écrit **32 €**."
+      ],
+      "hint": "Remplace la lettre par 6 dans la formule de Vitralu, et calcule le carré en premier."
+    },
+    {
+      "key": "q3",
+      "skill_id": "J042",
+      "statement": "Par le calcul, sans lire le graphique : le point (1 ; 5,75) est-il sur la représentation graphique du prix chez Vitralu ?",
+      "type": "vrai_faux",
+      "answer": {
+        "value": true
+      },
+      "points": 2,
+      "solution_steps": [
+        "On remplace $c$ par l'abscisse du point, 1, dans la formule de Vitralu.",
+        "$0{,}75 \\times 1^2 + 5 = 0{,}75 \\times 1 + 5 = 0{,}75 + 5 = 5{,}75$.",
+        "La formule donne 5,75, l'ordonnée du point : le point **est** sur la représentation."
+      ],
+      "hint": "Remplace la lettre par l'abscisse du point, puis compare le résultat à son ordonnée."
+    },
+    {
+      "key": "q4",
+      "skill_id": "J040",
+      "statement": "Les tracés T1 et T2 se coupent en deux points ; l'un est sur l'axe vertical. Quelle est l'abscisse de l'autre point ?",
+      "type": "numerique",
+      "answer": {
+        "value": 5,
+        "unit": "dm"
+      },
+      "points": 2,
+      "solution_steps": [
+        "On repère le second point où les tracés T1 et T2 se rencontrent, puis on descend jusqu'à l'axe horizontal.",
+        "Sur cet axe, les nombres vont de 1 en 1 et un intervalle vaut 0,5 dm : on arrive sur le trait du nombre 5. L'abscisse est **5**.",
+        "Contrôle : pour $c = 5$, $0{,}75 \\times 25 + 5 = 23{,}75$ et $3{,}75 \\times 5 + 5 = 23{,}75$ : pour 5 dm, les deux vitriers demandent le même prix, 23,75 €."
+      ],
+      "hint": "Descends verticalement du point de rencontre jusqu'à l'axe horizontal."
+    },
+    {
+      "key": "q5",
+      "skill_id": "J042",
+      "statement": "Quel tracé représente le prix chez Vitralu en fonction de $c$ ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Le tracé T1",
+          "misconception": "T1 passe bien par (0 ; 5) et (5 ; 23,75), comme le prix chez Vitralu, mais pas par (2 ; 8) : deux points ne suffisent pas. T1 est une droite, celle du prix chez Clairvue."
+        },
+        {
+          "key": "b",
+          "text": "Le tracé T2",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Le tracé T3",
+          "misconception": "T3 passe par l'origine : il oublie les 5 € de la découpe. Pour une plaque toute petite, Vitralu demande déjà 5 €."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 3,
+      "solution_steps": [
+        "On calcule trois points de la formule de Vitralu, dont un entre les deux autres : pour $c = 0$, $P = 5$ ; pour $c = 2$, $P = 0{,}75 \\times 4 + 5 = 8$ ; pour $c = 5$, $P = 23{,}75$.",
+        "T3 ne passe pas par (0 ; 5) : il part de l'origine. T1 passe par (0 ; 5) et (5 ; 23,75), mais pas par (2 ; 8) : pour 2 dm, il donne 12,5.",
+        "Seul **le tracé T2** passe par les trois points : il représente le prix chez Vitralu. Avec un carré, les points ne sont pas alignés : on obtient une courbe, pas une droite."
+      ],
+      "hint": "Calcule le prix chez Vitralu pour trois valeurs de $c$, dont une entre les deux autres, et cherche le tracé qui passe par les trois points."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Représenter l'expression d'une grandeur en fonction d'une autre par un graphique. »"
+}

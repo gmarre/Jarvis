@@ -1,0 +1,166 @@
+{
+  "id": "SX-J036-01",
+  "skill_id": "J036",
+  "skill_ids": [
+    "J036",
+    "A023",
+    "D004"
+  ],
+  "school_level": "5e",
+  "title": "La sortie raquettes au col",
+  "contexte": "La classe de 5e B, soit 28 élèves, part en sortie raquettes jusqu'au refuge du col, à 2 350 m d'altitude. Les accompagnateurs ont vérifié la météo de la journée.\n\nLa veille, le guide a relevé la température, en °C, en fonction de l'altitude, à la même heure, en six points du sentier :\n\n$$\\begin{array}{|c|c|} \\hline \\text{Altitude (m)} & \\text{Température} \\\\ \\hline 1\\,150 & 7{,}5 \\\\ \\hline 1\\,450 & 5 \\\\ \\hline 1\\,750 & 3 \\\\ \\hline 2\\,050 & 0{,}5 \\\\ \\hline 2\\,350 & -2 \\\\ \\hline 2\\,650 & -3{,}5 \\\\ \\hline \\end{array}$$\n\nLes élèves qui n'ont pas leurs propres raquettes les louent au magasin de sport du village, au pied de la piste. Le loueur affiche le prix de location d'une paire en fonction de la durée :\n\n$$\\begin{array}{|c|c|} \\hline \\text{Durée (jours)} & \\text{Prix (euros)} \\\\ \\hline 1 & 11{,}50 \\\\ \\hline 2 & 23 \\\\ \\hline 3 & 34{,}50 \\\\ \\hline 5 & 52 \\\\ \\hline \\end{array}$$",
+  "image": null,
+  "duree_estimee_min": 12,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "J036",
+      "statement": "D'après le relevé du guide, quelle température faisait-il à 1 750 m d'altitude ?",
+      "type": "numerique",
+      "answer": {
+        "value": 3,
+        "unit": "°C"
+      },
+      "points": 1,
+      "solution_steps": [
+        "On cherche 1 750 parmi les altitudes, dans la colonne de gauche.",
+        "On lit la case en face, dans la colonne des températures : il faisait **3 °C**."
+      ],
+      "hint": "Cherche d'abord l'altitude dans sa colonne, puis lis la case en face."
+    },
+    {
+      "key": "q2",
+      "skill_id": "A023",
+      "statement": "Quelle est la plus basse des températures relevées par le guide ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "−2 °C",
+          "misconception": "L'élève compare −2 et −3,5 comme 2 et 3,5. Entre deux nombres négatifs, le plus petit est le plus loin de zéro : −3,5 < −2."
+        },
+        {
+          "key": "b",
+          "text": "0,5 °C",
+          "misconception": "L'élève prend la température la plus proche de zéro. Or −2 °C et −3,5 °C sont sous zéro, donc plus basses que 0,5 °C."
+        },
+        {
+          "key": "c",
+          "text": "−3,5 °C",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "7,5 °C",
+          "misconception": "7,5 °C est la température de l'altitude la plus basse, 1 150 m. C'est la plus haute température du relevé."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Les températures sous zéro, −2 °C et −3,5 °C, sont plus basses que toutes les autres.",
+        "Entre deux nombres négatifs, le plus petit est celui qui est le plus loin de zéro : 3,5 est plus grand que 2, donc −3,5 < −2.",
+        "La plus basse température est **−3,5 °C**, relevée à 2 650 m."
+      ],
+      "hint": "Repère d'abord les températures sous zéro, puis compare-les entre elles."
+    },
+    {
+      "key": "q3",
+      "skill_id": "D004",
+      "statement": "Entre 1 150 m et 1 750 m d'altitude, de combien de degrés la température baisse-t-elle ?",
+      "type": "numerique",
+      "answer": {
+        "value": 4.5,
+        "unit": "°C"
+      },
+      "points": 2,
+      "solution_steps": [
+        "À 1 150 m, il fait 7,5 °C ; à 1 750 m, il fait 3 °C.",
+        "La baisse est l'écart entre ces deux températures : 7,5 − 3 = 4,5.",
+        "La température baisse de **4,5 °C**."
+      ],
+      "hint": "Lis les deux températures, puis calcule l'écart entre elles."
+    },
+    {
+      "key": "q4",
+      "skill_id": "J036",
+      "statement": "D'après le relevé du guide, quelle phrase est juste ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Quand l'altitude augmente, la température diminue.",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "Quand l'altitude augmente, la température augmente aussi.",
+          "misconception": "L'élève lit le tableau à l'envers. En montant de 1 150 m à 2 650 m, la température passe de 7,5 °C à −3,5 °C : elle diminue."
+        },
+        {
+          "key": "c",
+          "text": "La température augmente, puis elle diminue.",
+          "misconception": "D'une ligne à la suivante, la température baisse toujours : elle n'augmente jamais."
+        },
+        {
+          "key": "d",
+          "text": "La température baisse de 2,5 °C tous les 300 m.",
+          "misconception": "C'est vrai de 1 150 m à 1 450 m (7,5 − 5 = 2,5), mais pas de 1 450 m à 1 750 m, où elle baisse de 5 − 3 = 2 °C."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 2,
+      "solution_steps": [
+        "On lit le tableau de haut en bas : l'altitude augmente de 1 150 m à 2 650 m.",
+        "Pendant ce temps, la température passe de 7,5 °C à 5 °C, 3 °C, 0,5 °C, puis −2 °C et −3,5 °C : elle diminue à chaque ligne.",
+        "Donc **quand l'altitude augmente, la température diminue**."
+      ],
+      "hint": "Suis le tableau ligne par ligne et regarde comment change chaque grandeur."
+    },
+    {
+      "key": "q5",
+      "skill_id": "J036",
+      "statement": "Le prix de la location est-il proportionnel à sa durée ? Quelle phrase est juste ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Oui, car le prix augmente quand la durée augmente.",
+          "misconception": "Deux grandeurs qui augmentent ensemble ne sont pas forcément proportionnelles : il faut que chaque durée coûte autant de fois 11,50 € qu'elle compte de jours."
+        },
+        {
+          "key": "b",
+          "text": "Oui, car 2 jours coûtent 2 fois le prix d'un jour.",
+          "misconception": "L'élève ne vérifie qu'une paire. Il faut que toutes suivent, et 5 jours ne coûtent pas 5 fois 11,50 €."
+        },
+        {
+          "key": "c",
+          "text": "On ne peut pas le savoir sans le prix de 4 jours.",
+          "misconception": "Une seule paire qui ne suit pas suffit pour dire non : celle de 5 jours."
+        },
+        {
+          "key": "d",
+          "text": "Non, car 5 jours coûtent 52 €, et non 5 × 11,50 = 57,50 €.",
+          "misconception": null
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "points": 3,
+      "solution_steps": [
+        "S'il y avait proportionnalité, chaque durée coûterait autant de fois 11,50 € qu'elle compte de jours.",
+        "2 jours : 2 × 11,50 = 23 € et 3 jours : 3 × 11,50 = 34,50 € : ces deux paires suivent.",
+        "5 jours : 5 × 11,50 = 57,50 €, mais le loueur affiche 52 €.",
+        "Une seule paire qui ne suit pas suffit : le prix **n'est pas proportionnel** à la durée."
+      ],
+      "hint": "Calcule le prix de chaque durée si chaque jour coûtait le prix d'un seul jour."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Lire et interpréter un tableau de valeurs. »"
+}

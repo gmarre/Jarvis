@@ -1,0 +1,149 @@
+{
+  "id": "SX-J041-01",
+  "skill_id": "J041",
+  "skill_ids": [
+    "J041",
+    "J038",
+    "D024",
+    "E030"
+  ],
+  "school_level": "4e",
+  "title": "Le traiteur du tournoi",
+  "contexte": "Le club de handball du collège organise un tournoi dans le gymnase de la ville, qui compte 3 terrains. Il commande les repas des joueurs chez un traiteur, dont voici le tarif.\n\nPour les 40 premiers repas, chaque repas coûte 8,50 €.\nAu-delà de 40 repas, chaque repas en plus coûte 7 €.\nLa livraison coûte 25 €, payés une seule fois.\n\nLes spectateurs paient 2 € l'entrée du tournoi ; cet argent n'est pas versé au traiteur.\n\nOn note $n$ le nombre de repas commandés, et $p$ le prix total payé au traiteur, livraison comprise, en euros.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "J038",
+      "statement": "Pour une commande de 40 repas ou moins, quelle formule donne $p$ en fonction de $n$ ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "$p = 8{,}5n$",
+          "misconception": "L'élève oublie la livraison, 25 €, qui se paie aussi."
+        },
+        {
+          "key": "b",
+          "text": "$p = 25n + 8{,}5$",
+          "misconception": "L'élève inverse les rôles : c'est 8,50 € qui se paie à chaque repas, et 25 € une seule fois."
+        },
+        {
+          "key": "c",
+          "text": "$p = 8{,}5n + 25$",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "$p = 33{,}5n$",
+          "misconception": "L'élève compte la livraison à chaque repas : 8,5 + 25 = 33,5. Or elle ne se paie qu'une fois."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 1,
+      "solution_steps": [
+        "Jusqu'à 40 repas, chaque repas coûte 8,50 € : $n$ repas coûtent $8{,}5 \\times n$ euros.",
+        "On ajoute une seule fois les 25 € de livraison : **$p = 8{,}5n + 25$**."
+      ],
+      "hint": "Sépare ce qui se paie à chaque repas et ce qui se paie une seule fois."
+    },
+    {
+      "key": "q2",
+      "skill_id": "D024",
+      "statement": "Combien le club paie-t-il au traiteur, livraison comprise, pour 24 repas ?",
+      "type": "numerique",
+      "answer": {
+        "value": 229,
+        "unit": "€"
+      },
+      "points": 2,
+      "solution_steps": [
+        "24 repas, c'est moins de 40 : chaque repas coûte 8,50 €.",
+        "$8{,}5 \\times 24 = 204$, puis on ajoute la livraison : $204 + 25 = 229$.",
+        "Le club paie **229 €**."
+      ],
+      "hint": "Calcule le prix des repas, puis n'oublie pas la livraison."
+    },
+    {
+      "key": "q3",
+      "skill_id": "J041",
+      "statement": "Pour 60 repas, Inès calcule $8{,}5 \\times 60 + 25 = 535$ €. A-t-elle raison ?",
+      "type": "vrai_faux",
+      "answer": {
+        "value": false
+      },
+      "points": 2,
+      "solution_steps": [
+        "Inès compte les 60 repas à 8,50 €. Or seuls les 40 premiers coûtent 8,50 € ; les 20 suivants coûtent 7 €.",
+        "Le bon prix est $8{,}5 \\times 40 + 7 \\times 20 + 25 = 340 + 140 + 25 = 505$ €.",
+        "Inès a **tort**."
+      ],
+      "hint": "Combien de repas coûtent 8,50 €, et combien coûtent 7 € ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "E030",
+      "statement": "Pour plus de 40 repas, le prix $p$ est-il proportionnel au nombre $n$ de repas ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Oui, car chaque repas en plus coûte toujours 7 €.",
+          "misconception": "Chaque repas en plus coûte bien 7 €, mais la livraison et les 40 premiers repas s'ajoutent : 90 repas ne coûtent pas le double de 45 repas."
+        },
+        {
+          "key": "b",
+          "text": "Non, car 90 repas ne coûtent pas le double de 45 repas.",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "Oui, car le prix augmente quand le nombre de repas augmente.",
+          "misconception": "Deux grandeurs qui augmentent ensemble ne sont pas forcément proportionnelles : il faut que le prix double quand le nombre de repas double."
+        },
+        {
+          "key": "d",
+          "text": "On ne peut pas le savoir sans connaître la formule.",
+          "misconception": "Un seul cas où le prix ne double pas avec le nombre de repas suffit pour dire non, sans formule."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 2,
+      "solution_steps": [
+        "45 repas coûtent $8{,}5 \\times 40 + 7 \\times 5 + 25 = 340 + 35 + 25 = 400$ €.",
+        "90 repas coûtent $8{,}5 \\times 40 + 7 \\times 50 + 25 = 340 + 350 + 25 = 715$ €, et non $2 \\times 400 = 800$ €.",
+        "Le nombre de repas double, pas le prix : il **n'est pas proportionnel** au nombre de repas."
+      ],
+      "hint": "Compare le prix de 45 repas et celui de 90 repas."
+    },
+    {
+      "key": "q5",
+      "skill_id": "J041",
+      "statement": "Pour $n$ plus grand que 40, écris $p$ en fonction de $n$, sous forme réduite.",
+      "type": "texte",
+      "answer": {
+        "value": "7n + 85",
+        "forme": "reduite",
+        "variables": [
+          "n"
+        ],
+        "unit": "€"
+      },
+      "points": 4,
+      "solution_steps": [
+        "Les 40 premiers repas coûtent $8{,}5 \\times 40 = 340$ €, et la livraison 25 € : $340 + 25 = 365$.",
+        "Au-delà de 40, il y a $n - 40$ repas à 7 € : ils coûtent $7 \\times (n - 40)$ euros.",
+        "Donc $p = 365 + 7 \\times (n - 40) = 365 + 7n - 280$.",
+        "On réduit : **$p = 7n + 85$**. Contrôle pour 60 repas : $7 \\times 60 + 85 = 505$ €, le prix trouvé plus haut."
+      ],
+      "hint": "Écris le calcul pour 50 repas, en séparant les premiers repas et ceux d'après, puis remplace 50 par la lettre."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Produire une formule littérale représentant la dépendance d'une grandeur en fonction d'une autre. »"
+}

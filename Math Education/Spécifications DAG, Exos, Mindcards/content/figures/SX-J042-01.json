@@ -1,0 +1,42 @@
+{
+  "type": "repere",
+  "params": {
+    "xmin": 0,
+    "xmax": 12,
+    "ymin": 0,
+    "ymax": 13,
+    "pas_x": 0.5,
+    "pas_y": 2.5,
+    "etiquettes": "une_sur_deux",
+    "nom_x": "côté c (dm)",
+    "nom_y": "prix (€)",
+    "courbes": [
+      {
+        "sorte": "affine",
+        "a": 3.75,
+        "b": 5,
+        "nom": "T1",
+        "position_nom": 0.45,
+        "cote_nom": "dessus"
+      },
+      {
+        "sorte": "carre",
+        "a": 0.75,
+        "b": 5,
+        "nom": "T2",
+        "position_nom": 0.97,
+        "cote_nom": "dessous"
+      },
+      {
+        "sorte": "carre",
+        "a": 0.75,
+        "b": 0,
+        "nom": "T3",
+        "position_nom": 0.85,
+        "cote_nom": "dessous"
+      }
+    ],
+    "intersection_libre": true
+  },
+  "alt": "Repère ; en abscisse : côté c (dm), en ordonnée : prix (€), avec trois tracés nommés T1, T2 et T3"
+}

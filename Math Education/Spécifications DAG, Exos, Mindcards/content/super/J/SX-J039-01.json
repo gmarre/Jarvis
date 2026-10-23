@@ -1,0 +1,160 @@
+{
+  "id": "SX-J039-01",
+  "skill_id": "J039",
+  "skill_ids": [
+    "J039",
+    "J036",
+    "A020",
+    "E030",
+    "D007"
+  ],
+  "school_level": "5e",
+  "title": "Le bambou de la serre",
+  "contexte": "Dans la serre du jardin botanique, une pousse de bambou grandit très vite. Hugo, élève de 5e, a mesuré la hauteur du bambou certains jours, et a noté ses mesures dans un tableau de valeurs :\n\n$$\\begin{array}{|c|c|} \\hline \\text{Temps (jours)} & \\text{Hauteur (cm)} \\\\ \\hline 3 & 65 \\\\ \\hline 6 & 85 \\\\ \\hline 8 & 110 \\\\ \\hline 11 & 130 \\\\ \\hline 13 & 145 \\\\ \\hline \\end{array}$$\n\nIl a ensuite placé un point par ligne du tableau, dans l'ordre : A, B, C, D et E. Plus tard, il a mesuré le bambou une dernière fois, mais il a seulement placé le point F, sans écrire la mesure dans le tableau.\n\nLa serre est chauffée à 24 °C, et le bambou est arrosé deux fois par jour.",
+  "image": "figures/SX-J039-01",
+  "duree_estimee_min": 13,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "J036",
+      "statement": "D'après le tableau, quelle hauteur le bambou mesurait-il le jour 8 ?",
+      "type": "numerique",
+      "answer": {
+        "value": 110,
+        "unit": "cm"
+      },
+      "points": 1,
+      "solution_steps": [
+        "On cherche 8 parmi les jours, dans la colonne de gauche du tableau.",
+        "On lit la case en face : le bambou mesurait **110 cm** le jour 8."
+      ],
+      "hint": "Cherche le jour dans sa colonne, puis lis la case en face."
+    },
+    {
+      "key": "q2",
+      "skill_id": "A020",
+      "statement": "Quelles sont les coordonnées du point F ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "(155 ; 15)",
+          "misconception": "L'élève inverse les coordonnées : on écrit d'abord l'abscisse, le temps, puis l'ordonnée, la hauteur."
+        },
+        {
+          "key": "b",
+          "text": "(15 ; 155)",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "(15 ; 15,5)",
+          "misconception": "L'élève compte un intervalle pour 1 cm, alors qu'un intervalle vaut 10 cm sur l'axe vertical."
+        },
+        {
+          "key": "d",
+          "text": "(16 ; 155)",
+          "misconception": "L'élève compte les traits de l'axe horizontal en partant de celui de l'origine : il trouve un jour de trop. On compte les intervalles."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Sur l'axe horizontal, les nombres sont écrits de 2 en 2 : un intervalle vaut 1 jour. Sur l'axe vertical, ils vont de 20 en 20 : un intervalle vaut 10 cm.",
+        "F est sur la ligne verticale du jour 15 : son abscisse est 15. En hauteur, il est au milieu entre la ligne de 150 cm et celle de 160 cm : son ordonnée est 155.",
+        "Les coordonnées de F sont **(15 ; 155)** : le jour 15, le bambou mesurait 155 cm."
+      ],
+      "hint": "Lis d'abord ce que vaut un intervalle sur chaque axe."
+    },
+    {
+      "key": "q3",
+      "skill_id": "E030",
+      "statement": "Lou affirme : « La hauteur du bambou n'est pas proportionnelle au nombre de jours. » A-t-elle raison ?",
+      "type": "vrai_faux",
+      "answer": {
+        "value": true
+      },
+      "points": 2,
+      "solution_steps": [
+        "S'il y avait proportionnalité, quand le nombre de jours double, la hauteur doublerait aussi.",
+        "Le jour 3, le bambou mesure 65 cm ; le jour 6, deux fois plus tard, il devrait mesurer 2 × 65 = 130 cm. Or il mesure 85 cm.",
+        "La hauteur **n'est pas proportionnelle** au nombre de jours : Lou a raison."
+      ],
+      "hint": "Compare le jour 3 et le jour 6 : que devient la hauteur quand le nombre de jours double ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "D007",
+      "statement": "Entre le jour 6 et le jour 8, le bambou a grandi de la même longueur chaque jour. De combien de centimètres par jour ?",
+      "type": "numerique",
+      "answer": {
+        "value": 12.5,
+        "unit": "cm",
+        "accepted": [
+          "12,5 cm par jour",
+          "12,5 cm/jour",
+          "12,5 cm/j",
+          "12,5 cm par j",
+          "12,5 centimètres par jour",
+          "12,5 cm chaque jour",
+          "12,50 cm par jour"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "En 2 jours, du jour 6 au jour 8, il passe de 85 cm à 110 cm : il grandit de 110 − 85 = 25 cm.",
+        "On partage ces 25 cm entre les 2 jours : 25 ÷ 2 = 12,5.",
+        "Le bambou a grandi de **12,5 cm** par jour."
+      ],
+      "hint": "Calcule de combien il a grandi en tout, puis partage entre les jours."
+    },
+    {
+      "key": "q5",
+      "skill_id": "J039",
+      "statement": "Un des points A, B, C, D et E n'est pas à sa place. Lequel ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Le point A",
+          "misconception": "A est bien placé : 3 intervalles vers la droite (3 jours), puis 6,5 intervalles vers le haut (65 cm)."
+        },
+        {
+          "key": "b",
+          "text": "Le point B",
+          "misconception": "B est bien placé : 6 intervalles vers la droite (6 jours), puis 8,5 intervalles vers le haut (85 cm)."
+        },
+        {
+          "key": "c",
+          "text": "Le point C",
+          "misconception": "C est bien placé : 8 intervalles vers la droite (8 jours), puis 11 intervalles vers le haut (110 cm)."
+        },
+        {
+          "key": "d",
+          "text": "Le point D",
+          "misconception": null
+        },
+        {
+          "key": "e",
+          "text": "Le point E",
+          "misconception": "E est bien placé : 13 intervalles vers la droite (13 jours), puis 14,5 intervalles vers le haut (145 cm)."
+        }
+      ],
+      "answer": {
+        "value": "d"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Un intervalle vaut 1 jour sur l'axe horizontal et 10 cm sur l'axe vertical.",
+        "A, B, C et E sont placés comme les lignes du tableau : A (3 ; 65), B (6 ; 85), C (8 ; 110), E (13 ; 145).",
+        "D doit représenter la ligne « 11 jours ; 130 cm » : 11 intervalles vers la droite et 13 vers le haut. Or D n'est qu'à 10 intervalles vers la droite : il représente le jour 10.",
+        "C'est **le point D** qui n'est pas à sa place."
+      ],
+      "hint": "Pour chaque point, compte les intervalles vers la droite et vers le haut, puis compare avec la ligne du tableau."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Placer dans un repère orthogonal donné des points correspondant à un tableau de valeurs. »"
+}

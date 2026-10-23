@@ -2,7 +2,7 @@
   "metadata": {
     "version": "1.0",
     "scope": "Super exercices, CP a 3e",
-    "total_super": 279
+    "total_super": 286
   },
   "super": [
     {
@@ -30386,6 +30386,1015 @@
       ],
       "review_status": "relu_agent",
       "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Représenter la fonction carré. »"
+    },
+    {
+      "id": "SX-J036-01",
+      "skill_id": "J036",
+      "skill_ids": [
+        "J036",
+        "A023",
+        "D004"
+      ],
+      "school_level": "5e",
+      "title": "La sortie raquettes au col",
+      "contexte": "La classe de 5e B, soit 28 élèves, part en sortie raquettes jusqu'au refuge du col, à 2 350 m d'altitude. Les accompagnateurs ont vérifié la météo de la journée.\n\nLa veille, le guide a relevé la température, en °C, en fonction de l'altitude, à la même heure, en six points du sentier :\n\n$$\\begin{array}{|c|c|} \\hline \\text{Altitude (m)} & \\text{Température} \\\\ \\hline 1\\,150 & 7{,}5 \\\\ \\hline 1\\,450 & 5 \\\\ \\hline 1\\,750 & 3 \\\\ \\hline 2\\,050 & 0{,}5 \\\\ \\hline 2\\,350 & -2 \\\\ \\hline 2\\,650 & -3{,}5 \\\\ \\hline \\end{array}$$\n\nLes élèves qui n'ont pas leurs propres raquettes les louent au magasin de sport du village, au pied de la piste. Le loueur affiche le prix de location d'une paire en fonction de la durée :\n\n$$\\begin{array}{|c|c|} \\hline \\text{Durée (jours)} & \\text{Prix (euros)} \\\\ \\hline 1 & 11{,}50 \\\\ \\hline 2 & 23 \\\\ \\hline 3 & 34{,}50 \\\\ \\hline 5 & 52 \\\\ \\hline \\end{array}$$",
+      "image": null,
+      "duree_estimee_min": 12,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "J036",
+          "statement": "D'après le relevé du guide, quelle température faisait-il à 1 750 m d'altitude ?",
+          "type": "numerique",
+          "answer": {
+            "value": 3,
+            "unit": "°C"
+          },
+          "points": 1,
+          "solution_steps": [
+            "On cherche 1 750 parmi les altitudes, dans la colonne de gauche.",
+            "On lit la case en face, dans la colonne des températures : il faisait **3 °C**."
+          ],
+          "hint": "Cherche d'abord l'altitude dans sa colonne, puis lis la case en face."
+        },
+        {
+          "key": "q2",
+          "skill_id": "A023",
+          "statement": "Quelle est la plus basse des températures relevées par le guide ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "−2 °C",
+              "misconception": "L'élève compare −2 et −3,5 comme 2 et 3,5. Entre deux nombres négatifs, le plus petit est le plus loin de zéro : −3,5 < −2."
+            },
+            {
+              "key": "b",
+              "text": "0,5 °C",
+              "misconception": "L'élève prend la température la plus proche de zéro. Or −2 °C et −3,5 °C sont sous zéro, donc plus basses que 0,5 °C."
+            },
+            {
+              "key": "c",
+              "text": "−3,5 °C",
+              "misconception": null
+            },
+            {
+              "key": "d",
+              "text": "7,5 °C",
+              "misconception": "7,5 °C est la température de l'altitude la plus basse, 1 150 m. C'est la plus haute température du relevé."
+            }
+          ],
+          "answer": {
+            "value": "c"
+          },
+          "points": 2,
+          "solution_steps": [
+            "Les températures sous zéro, −2 °C et −3,5 °C, sont plus basses que toutes les autres.",
+            "Entre deux nombres négatifs, le plus petit est celui qui est le plus loin de zéro : 3,5 est plus grand que 2, donc −3,5 < −2.",
+            "La plus basse température est **−3,5 °C**, relevée à 2 650 m."
+          ],
+          "hint": "Repère d'abord les températures sous zéro, puis compare-les entre elles."
+        },
+        {
+          "key": "q3",
+          "skill_id": "D004",
+          "statement": "Entre 1 150 m et 1 750 m d'altitude, de combien de degrés la température baisse-t-elle ?",
+          "type": "numerique",
+          "answer": {
+            "value": 4.5,
+            "unit": "°C"
+          },
+          "points": 2,
+          "solution_steps": [
+            "À 1 150 m, il fait 7,5 °C ; à 1 750 m, il fait 3 °C.",
+            "La baisse est l'écart entre ces deux températures : 7,5 − 3 = 4,5.",
+            "La température baisse de **4,5 °C**."
+          ],
+          "hint": "Lis les deux températures, puis calcule l'écart entre elles."
+        },
+        {
+          "key": "q4",
+          "skill_id": "J036",
+          "statement": "D'après le relevé du guide, quelle phrase est juste ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "Quand l'altitude augmente, la température diminue.",
+              "misconception": null
+            },
+            {
+              "key": "b",
+              "text": "Quand l'altitude augmente, la température augmente aussi.",
+              "misconception": "L'élève lit le tableau à l'envers. En montant de 1 150 m à 2 650 m, la température passe de 7,5 °C à −3,5 °C : elle diminue."
+            },
+            {
+              "key": "c",
+              "text": "La température augmente, puis elle diminue.",
+              "misconception": "D'une ligne à la suivante, la température baisse toujours : elle n'augmente jamais."
+            },
+            {
+              "key": "d",
+              "text": "La température baisse de 2,5 °C tous les 300 m.",
+              "misconception": "C'est vrai de 1 150 m à 1 450 m (7,5 − 5 = 2,5), mais pas de 1 450 m à 1 750 m, où elle baisse de 5 − 3 = 2 °C."
+            }
+          ],
+          "answer": {
+            "value": "a"
+          },
+          "points": 2,
+          "solution_steps": [
+            "On lit le tableau de haut en bas : l'altitude augmente de 1 150 m à 2 650 m.",
+            "Pendant ce temps, la température passe de 7,5 °C à 5 °C, 3 °C, 0,5 °C, puis −2 °C et −3,5 °C : elle diminue à chaque ligne.",
+            "Donc **quand l'altitude augmente, la température diminue**."
+          ],
+          "hint": "Suis le tableau ligne par ligne et regarde comment change chaque grandeur."
+        },
+        {
+          "key": "q5",
+          "skill_id": "J036",
+          "statement": "Le prix de la location est-il proportionnel à sa durée ? Quelle phrase est juste ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "Oui, car le prix augmente quand la durée augmente.",
+              "misconception": "Deux grandeurs qui augmentent ensemble ne sont pas forcément proportionnelles : il faut que chaque durée coûte autant de fois 11,50 € qu'elle compte de jours."
+            },
+            {
+              "key": "b",
+              "text": "Oui, car 2 jours coûtent 2 fois le prix d'un jour.",
+              "misconception": "L'élève ne vérifie qu'une paire. Il faut que toutes suivent, et 5 jours ne coûtent pas 5 fois 11,50 €."
+            },
+            {
+              "key": "c",
+              "text": "On ne peut pas le savoir sans le prix de 4 jours.",
+              "misconception": "Une seule paire qui ne suit pas suffit pour dire non : celle de 5 jours."
+            },
+            {
+              "key": "d",
+              "text": "Non, car 5 jours coûtent 52 €, et non 5 × 11,50 = 57,50 €.",
+              "misconception": null
+            }
+          ],
+          "answer": {
+            "value": "d"
+          },
+          "points": 3,
+          "solution_steps": [
+            "S'il y avait proportionnalité, chaque durée coûterait autant de fois 11,50 € qu'elle compte de jours.",
+            "2 jours : 2 × 11,50 = 23 € et 3 jours : 3 × 11,50 = 34,50 € : ces deux paires suivent.",
+            "5 jours : 5 × 11,50 = 57,50 €, mais le loueur affiche 52 €.",
+            "Une seule paire qui ne suit pas suffit : le prix **n'est pas proportionnel** à la durée."
+          ],
+          "hint": "Calcule le prix de chaque durée si chaque jour coûtait le prix d'un seul jour."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Lire et interpréter un tableau de valeurs. »"
+    },
+    {
+      "id": "SX-J037-01",
+      "skill_id": "J037",
+      "skill_ids": [
+        "J037",
+        "F003",
+        "F002",
+        "B011"
+      ],
+      "school_level": "5e",
+      "title": "Les paddles du lac",
+      "contexte": "Cet été, le club nautique du lac loue des paddles. Le prix $P$ d'une location, en euros, dépend de sa durée $h$, en heures :\n\n$$P = 8{,}5 \\times h + 3$$\n\nLes 3 € paient le gilet de sauvetage, demandé une seule fois par location. Le club possède 24 paddles, et le lac mesure 3,2 km de long. Les enfants de moins de 12 ans doivent toujours être accompagnés par un adulte sur l'eau.\n\nNoa, le moniteur, a commencé un tableau de valeurs à afficher à l'accueil. Il a écrit le prix de 4 h sans le vérifier.\n\n$$\\begin{array}{|c|c|} \\hline \\text{Durée } h \\text{ (h)} & \\text{Prix } P \\text{ (euros)} \\\\ \\hline 1 & 11{,}50 \\\\ \\hline 2{,}5 & \\ldots \\\\ \\hline 4 & 59{,}50 \\\\ \\hline \\ldots & 71 \\\\ \\hline \\end{array}$$",
+      "image": null,
+      "duree_estimee_min": 14,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "F003",
+          "statement": "Dans la formule, que représente le nombre 8,5 ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "La durée de la location, en heures.",
+              "misconception": "La durée est la lettre $h$, qui change d'une location à l'autre ; 8,5 ne change pas."
+            },
+            {
+              "key": "b",
+              "text": "Le prix du gilet, en euros.",
+              "misconception": "Le gilet coûte 3 €, le nombre ajouté une seule fois à la fin de la formule."
+            },
+            {
+              "key": "c",
+              "text": "Le prix d'une heure de location, en euros, sans le gilet.",
+              "misconception": null
+            },
+            {
+              "key": "d",
+              "text": "Le prix total d'une location d'une heure, gilet compris, en euros.",
+              "misconception": "Pour une heure, on paie 8,5 + 3 = 11,50 €, gilet compris : 8,5 € est le prix de l'heure seule."
+            }
+          ],
+          "answer": {
+            "value": "c"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Dans $8{,}5 \\times h$, le nombre 8,5 est multiplié par le nombre d'heures : c'est ce qu'on paie pour chaque heure.",
+            "Les 3 € du gilet sont ajoutés une seule fois. Donc 8,5 est **le prix d'une heure, sans le gilet**, soit 8,50 €."
+          ],
+          "hint": "Regarde par quoi le nombre 8,5 est multiplié dans la formule."
+        },
+        {
+          "key": "q2",
+          "skill_id": "F002",
+          "statement": "Quel prix Noa doit-il écrire pour une durée de 2,5 h ?",
+          "type": "numerique",
+          "answer": {
+            "value": 24.25,
+            "unit": "€"
+          },
+          "points": 2,
+          "solution_steps": [
+            "On remplace $h$ par 2,5 : $P = 8{,}5 \\times 2{,}5 + 3$.",
+            "La multiplication d'abord : $8{,}5 \\times 2{,}5 = 21{,}25$.",
+            "Puis l'addition : $21{,}25 + 3 = 24{,}25$. Noa écrit **24,25 €**."
+          ],
+          "hint": "Remplace la lettre par la durée, puis respecte les priorités."
+        },
+        {
+          "key": "q3",
+          "skill_id": "B011",
+          "statement": "Pour 4 h, Noa a écrit 59,50 €. A-t-il raison ?",
+          "type": "vrai_faux",
+          "answer": {
+            "value": false
+          },
+          "points": 2,
+          "solution_steps": [
+            "Noa a d'abord additionné : $4 + 3 = 7$, puis calculé $8{,}5 \\times 7 = 59{,}5$.",
+            "Mais la multiplication passe avant l'addition : $8{,}5 \\times 4 + 3 = 34 + 3 = 37$.",
+            "Le bon prix est 37 € : Noa a **tort**."
+          ],
+          "hint": "Refais le calcul en respectant l'ordre des opérations."
+        },
+        {
+          "key": "q4",
+          "skill_id": "J037",
+          "statement": "Pour quelle durée paie-t-on 71 € ? Complète la dernière ligne du tableau.",
+          "type": "numerique",
+          "answer": {
+            "value": 8,
+            "unit": "h"
+          },
+          "points": 3,
+          "solution_steps": [
+            "On essaie des durées, et on calcule le prix de chacune avec la formule.",
+            "Pour $h = 7$ : $8{,}5 \\times 7 + 3 = 59{,}5 + 3 = 62{,}5$, c'est moins que 71 €.",
+            "Pour $h = 8$ : $8{,}5 \\times 8 + 3 = 68 + 3 = 71$ : c'est le prix cherché.",
+            "On paie 71 € pour **8 h** de location."
+          ],
+          "hint": "Essaie des durées en heures entières, et calcule le prix de chacune avec la formule."
+        },
+        {
+          "key": "q5",
+          "skill_id": "J037",
+          "statement": "Noa veut ajouter les durées 3 h ; 5 h ; 7 h. Quels prix doit-il écrire, dans cet ordre ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "34,50 € ; 57,50 € ; 80,50 €",
+              "misconception": "L'élève multiplie le prix d'une heure gilet compris, 11,50 €, par la durée. Or le gilet ne se paie qu'une fois."
+            },
+            {
+              "key": "b",
+              "text": "28,50 € ; 45,50 € ; 62,50 €",
+              "misconception": null
+            },
+            {
+              "key": "c",
+              "text": "25,50 € ; 42,50 € ; 59,50 €",
+              "misconception": "L'élève oublie d'ajouter les 3 € du gilet."
+            },
+            {
+              "key": "d",
+              "text": "51 € ; 68 € ; 85 €",
+              "misconception": "L'élève additionne avant de multiplier : il calcule $8{,}5 \\times (3 + 3)$ au lieu de $8{,}5 \\times 3 + 3$."
+            }
+          ],
+          "answer": {
+            "value": "b"
+          },
+          "points": 3,
+          "solution_steps": [
+            "Pour chaque durée, on remplace $h$, on fait la multiplication d'abord, puis on ajoute 3.",
+            "$8{,}5 \\times 3 + 3 = 25{,}5 + 3 = 28{,}5$ ; $8{,}5 \\times 5 + 3 = 42{,}5 + 3 = 45{,}5$ ; $8{,}5 \\times 7 + 3 = 59{,}5 + 3 = 62{,}5$.",
+            "Noa écrit **28,50 € ; 45,50 € ; 62,50 €**."
+          ],
+          "hint": "Calcule chaque prix avec la formule, sans oublier le gilet."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Traduire la relation de dépendance entre deux grandeurs par un tableau de valeurs à partir d'une formule. »"
+    },
+    {
+      "id": "SX-J038-01",
+      "skill_id": "J038",
+      "skill_ids": [
+        "J038",
+        "E030",
+        "D024"
+      ],
+      "school_level": "5e",
+      "title": "La carte de la piscine",
+      "contexte": "La piscine municipale propose deux façons de payer les entrées.\n\n**Sans carte** : chaque entrée coûte 3,20 €.\n\n**Avec la carte annuelle** : on achète la carte 18 €, une fois pour l'année, puis chaque entrée coûte 2,30 €.\n\nLe grand bassin mesure 25 m de long, et l'entrée est gratuite pour les enfants de moins de 3 ans.\n\nLucie va nager toute l'année avec son club. Ses parents notent $n$ le nombre d'entrées de Lucie dans l'année, et $p$ le prix payé pour ces entrées, en euros, carte comprise s'il y en a une.",
+      "image": null,
+      "duree_estimee_min": 13,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "J038",
+          "statement": "Sans carte, quelle formule donne le prix $p$ en fonction du nombre $n$ d'entrées ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "$p = 3{,}2 + n$",
+              "misconception": "L'élève ajoute au lieu de multiplier : $n$ entrées à 3,20 € coûtent $n$ fois 3,20 €."
+            },
+            {
+              "key": "b",
+              "text": "$p = 3{,}2 \\times 25$",
+              "misconception": "25 m est la longueur du bassin, et ce calcul ne vaut que pour un seul cas : une formule contient la lettre $n$."
+            },
+            {
+              "key": "c",
+              "text": "$p = n \\div 3{,}2$",
+              "misconception": "L'élève divise au lieu de multiplier : le prix doit grandir de 3,20 € à chaque entrée."
+            },
+            {
+              "key": "d",
+              "text": "$p = 3{,}2 \\times n$",
+              "misconception": null
+            }
+          ],
+          "answer": {
+            "value": "d"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Une entrée coûte 3,20 €, deux entrées $3{,}2 \\times 2$, trois entrées $3{,}2 \\times 3$ : le calcul qui se répète est « 3,2 fois le nombre d'entrées ».",
+            "On remplace le nombre d'entrées par la lettre $n$ : **$p = 3{,}2 \\times n$**."
+          ],
+          "hint": "Calcule le prix pour 2 entrées, puis pour 3 entrées, et repère ce qui change."
+        },
+        {
+          "key": "q2",
+          "skill_id": "E030",
+          "statement": "Avec quelle façon de payer le prix est-il proportionnel au nombre d'entrées ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "Avec la carte annuelle.",
+              "misconception": "Avec la carte, on paie 18 € même pour très peu d'entrées : 2 entrées ne coûtent pas le double d'une entrée."
+            },
+            {
+              "key": "b",
+              "text": "Sans carte.",
+              "misconception": null
+            },
+            {
+              "key": "c",
+              "text": "Avec les deux, car le prix augmente avec le nombre d'entrées.",
+              "misconception": "Deux grandeurs qui augmentent ensemble ne sont pas forcément proportionnelles : avec la carte, les 18 € s'ajoutent une seule fois."
+            }
+          ],
+          "answer": {
+            "value": "b"
+          },
+          "points": 2,
+          "solution_steps": [
+            "Sans carte, le prix est un produit, 3,20 € par entrée, sans nombre ajouté : quand le nombre d'entrées double, le prix double. C'est une situation de proportionnalité.",
+            "Avec la carte, il faut ajouter les 18 € une fois : 1 entrée coûte 18 + 2,30 = 20,30 €, 2 entrées coûtent 18 + 4,60 = 22,60 €, ce n'est pas le double.",
+            "Le prix est proportionnel au nombre d'entrées **sans carte** seulement."
+          ],
+          "hint": "Pour chaque façon de payer, compare le prix de 1 entrée et celui de 2 entrées."
+        },
+        {
+          "key": "q3",
+          "skill_id": "D024",
+          "statement": "L'an dernier, Lucie a fait 50 entrées, sans carte. Combien ses parents auraient-ils économisé avec la carte ?",
+          "type": "numerique",
+          "answer": {
+            "value": 27,
+            "unit": "€"
+          },
+          "points": 2,
+          "solution_steps": [
+            "Sans carte : $3{,}2 \\times 50 = 160$, soit 160 €.",
+            "Avec la carte : $2{,}3 \\times 50 = 115$, puis $18 + 115 = 133$, soit 133 €.",
+            "L'économie est la différence : $160 - 133 = 27$. Ils auraient économisé **27 €**."
+          ],
+          "hint": "Calcule le prix payé de chacune des deux façons, puis compare."
+        },
+        {
+          "key": "q4",
+          "skill_id": "J038",
+          "statement": "Avec la carte annuelle, écris la formule qui donne le prix $p$ en fonction du nombre $n$ d'entrées.",
+          "type": "texte",
+          "answer": {
+            "value": "18 + 2,3n",
+            "forme": "expression",
+            "variables": [
+              "n"
+            ],
+            "unit": "€"
+          },
+          "points": 4,
+          "solution_steps": [
+            "Pour 10 entrées, on paie la carte, puis 10 entrées à 2,30 € : $18 + 2{,}3 \\times 10$. Pour 20 entrées : $18 + 2{,}3 \\times 20$.",
+            "La carte de 18 € se paie une seule fois ; ce qui change, c'est le nombre d'entrées, qu'on remplace par $n$.",
+            "**$p = 18 + 2{,}3 \\times n$**, qu'on écrit aussi $p = 18 + 2{,}3n$. Contrôle : pour 10 entrées, $18 + 23 = 41$ €."
+          ],
+          "hint": "Écris le calcul du prix pour 10 entrées, puis remplace le nombre d'entrées par la lettre."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Produire une formule simple représentant la dépendance de deux grandeurs. »"
+    },
+    {
+      "id": "SX-J039-01",
+      "skill_id": "J039",
+      "skill_ids": [
+        "J039",
+        "J036",
+        "A020",
+        "E030",
+        "D007"
+      ],
+      "school_level": "5e",
+      "title": "Le bambou de la serre",
+      "contexte": "Dans la serre du jardin botanique, une pousse de bambou grandit très vite. Hugo, élève de 5e, a mesuré la hauteur du bambou certains jours, et a noté ses mesures dans un tableau de valeurs :\n\n$$\\begin{array}{|c|c|} \\hline \\text{Temps (jours)} & \\text{Hauteur (cm)} \\\\ \\hline 3 & 65 \\\\ \\hline 6 & 85 \\\\ \\hline 8 & 110 \\\\ \\hline 11 & 130 \\\\ \\hline 13 & 145 \\\\ \\hline \\end{array}$$\n\nIl a ensuite placé un point par ligne du tableau, dans l'ordre : A, B, C, D et E. Plus tard, il a mesuré le bambou une dernière fois, mais il a seulement placé le point F, sans écrire la mesure dans le tableau.\n\nLa serre est chauffée à 24 °C, et le bambou est arrosé deux fois par jour.",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 368 368\" width=\"368\" height=\"368\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Repère ; en abscisse : temps (jours), en ordonnée : hauteur (cm), avec six points nommés A, B, C, D, E et F</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><line x1=\"34.0\" y1=\"334.0\" x2=\"34.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"52.8\" y1=\"334.0\" x2=\"52.8\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"71.5\" y1=\"334.0\" x2=\"71.5\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"90.2\" y1=\"334.0\" x2=\"90.2\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"109.0\" y1=\"334.0\" x2=\"109.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"127.8\" y1=\"334.0\" x2=\"127.8\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"146.5\" y1=\"334.0\" x2=\"146.5\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"165.2\" y1=\"334.0\" x2=\"165.2\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"184.0\" y1=\"334.0\" x2=\"184.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"202.8\" y1=\"334.0\" x2=\"202.8\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"221.5\" y1=\"334.0\" x2=\"221.5\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"240.2\" y1=\"334.0\" x2=\"240.2\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"259.0\" y1=\"334.0\" x2=\"259.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"277.8\" y1=\"334.0\" x2=\"277.8\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"296.5\" y1=\"334.0\" x2=\"296.5\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"315.2\" y1=\"334.0\" x2=\"315.2\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"334.0\" y1=\"334.0\" x2=\"334.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"334.0\" x2=\"334.0\" y2=\"334.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"315.2\" x2=\"334.0\" y2=\"315.2\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"296.5\" x2=\"334.0\" y2=\"296.5\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"277.8\" x2=\"334.0\" y2=\"277.8\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"259.0\" x2=\"334.0\" y2=\"259.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"240.2\" x2=\"334.0\" y2=\"240.2\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"221.5\" x2=\"334.0\" y2=\"221.5\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"202.8\" x2=\"334.0\" y2=\"202.8\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"184.0\" x2=\"334.0\" y2=\"184.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"165.2\" x2=\"334.0\" y2=\"165.2\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"146.5\" x2=\"334.0\" y2=\"146.5\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"127.8\" x2=\"334.0\" y2=\"127.8\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"109.0\" x2=\"334.0\" y2=\"109.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"90.2\" x2=\"334.0\" y2=\"90.2\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"71.5\" x2=\"334.0\" y2=\"71.5\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"52.8\" x2=\"334.0\" y2=\"52.8\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"34.0\" x2=\"334.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"24.6\" y1=\"334.0\" x2=\"343.4\" y2=\"334.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M349.4,334.0 l-10,-5 v10 z\" fill=\"#334155\"/><line x1=\"34.0\" y1=\"343.4\" x2=\"34.0\" y2=\"24.6\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M34.0,18.6 l-5,10 h10 z\" fill=\"#334155\"/><line x1=\"34.0\" y1=\"330.0\" x2=\"34.0\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"52.8\" y1=\"330.0\" x2=\"52.8\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"71.5\" y1=\"330.0\" x2=\"71.5\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"71.5\" y=\"351.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">2</text><line x1=\"90.2\" y1=\"330.0\" x2=\"90.2\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"109.0\" y1=\"330.0\" x2=\"109.0\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"109.0\" y=\"351.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">4</text><line x1=\"127.8\" y1=\"330.0\" x2=\"127.8\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"146.5\" y1=\"330.0\" x2=\"146.5\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"146.5\" y=\"351.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">6</text><line x1=\"165.2\" y1=\"330.0\" x2=\"165.2\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"184.0\" y1=\"330.0\" x2=\"184.0\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"184.0\" y=\"351.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">8</text><line x1=\"202.8\" y1=\"330.0\" x2=\"202.8\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"221.5\" y1=\"330.0\" x2=\"221.5\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"221.5\" y=\"351.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">10</text><line x1=\"240.2\" y1=\"330.0\" x2=\"240.2\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"259.0\" y1=\"330.0\" x2=\"259.0\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"259.0\" y=\"351.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">12</text><line x1=\"277.8\" y1=\"330.0\" x2=\"277.8\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"296.5\" y1=\"330.0\" x2=\"296.5\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"296.5\" y=\"351.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">14</text><line x1=\"315.2\" y1=\"330.0\" x2=\"315.2\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"334.0\" y1=\"330.0\" x2=\"334.0\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"334.0\" y=\"351.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">16</text><line x1=\"30.0\" y1=\"334.0\" x2=\"38.0\" y2=\"334.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"315.2\" x2=\"38.0\" y2=\"315.2\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"296.5\" x2=\"38.0\" y2=\"296.5\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"300.5\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">20</text><line x1=\"30.0\" y1=\"277.8\" x2=\"38.0\" y2=\"277.8\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"259.0\" x2=\"38.0\" y2=\"259.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"263.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">40</text><line x1=\"30.0\" y1=\"240.2\" x2=\"38.0\" y2=\"240.2\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"221.5\" x2=\"38.0\" y2=\"221.5\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"225.5\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">60</text><line x1=\"30.0\" y1=\"202.8\" x2=\"38.0\" y2=\"202.8\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"184.0\" x2=\"38.0\" y2=\"184.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"188.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">80</text><line x1=\"30.0\" y1=\"165.2\" x2=\"38.0\" y2=\"165.2\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"146.5\" x2=\"38.0\" y2=\"146.5\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"150.5\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">100</text><line x1=\"30.0\" y1=\"127.8\" x2=\"38.0\" y2=\"127.8\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"109.0\" x2=\"38.0\" y2=\"109.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"113.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">120</text><line x1=\"30.0\" y1=\"90.2\" x2=\"38.0\" y2=\"90.2\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"71.5\" x2=\"38.0\" y2=\"71.5\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"75.5\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">140</text><line x1=\"30.0\" y1=\"52.8\" x2=\"38.0\" y2=\"52.8\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"34.0\" x2=\"38.0\" y2=\"34.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"38.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">160</text><text stroke=\"#ffffff\" stroke-width=\"3.5\" paint-order=\"stroke\" x=\"349.4\" y=\"365.0\" font-size=\"12\" text-anchor=\"end\" fill=\"#334155\">temps (jours)</text><text stroke=\"#ffffff\" stroke-width=\"3.5\" paint-order=\"stroke\" x=\"43.0\" y=\"22.6\" font-size=\"12\" text-anchor=\"start\" fill=\"#334155\">hauteur (cm)</text><text x=\"28.0\" y=\"328.0\" font-size=\"12\" text-anchor=\"end\" fill=\"#334155\" font-weight=\"600\">O</text><line x1=\"85.2\" y1=\"207.1\" x2=\"95.2\" y2=\"217.1\" stroke=\"#2563eb\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"85.2\" y1=\"217.1\" x2=\"95.2\" y2=\"207.1\" stroke=\"#2563eb\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"82.2\" y=\"204.1\" font-size=\"14\" text-anchor=\"end\" fill=\"#2563eb\" font-weight=\"600\">A</text><line x1=\"141.5\" y1=\"169.6\" x2=\"151.5\" y2=\"179.6\" stroke=\"#2563eb\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"141.5\" y1=\"179.6\" x2=\"151.5\" y2=\"169.6\" stroke=\"#2563eb\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"154.5\" y=\"192.6\" font-size=\"14\" text-anchor=\"start\" fill=\"#2563eb\" font-weight=\"600\">B</text><line x1=\"179.0\" y1=\"122.8\" x2=\"189.0\" y2=\"132.8\" stroke=\"#2563eb\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"179.0\" y1=\"132.8\" x2=\"189.0\" y2=\"122.8\" stroke=\"#2563eb\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"176.0\" y=\"119.8\" font-size=\"14\" text-anchor=\"end\" fill=\"#2563eb\" font-weight=\"600\">C</text><line x1=\"216.5\" y1=\"85.2\" x2=\"226.5\" y2=\"95.2\" stroke=\"#2563eb\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"216.5\" y1=\"95.2\" x2=\"226.5\" y2=\"85.2\" stroke=\"#2563eb\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"213.5\" y=\"82.2\" font-size=\"14\" text-anchor=\"end\" fill=\"#2563eb\" font-weight=\"600\">D</text><line x1=\"272.8\" y1=\"57.1\" x2=\"282.8\" y2=\"67.1\" stroke=\"#2563eb\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"272.8\" y1=\"67.1\" x2=\"282.8\" y2=\"57.1\" stroke=\"#2563eb\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"269.8\" y=\"54.1\" font-size=\"14\" text-anchor=\"end\" fill=\"#2563eb\" font-weight=\"600\">E</text><line x1=\"310.2\" y1=\"38.4\" x2=\"320.2\" y2=\"48.4\" stroke=\"#2563eb\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"310.2\" y1=\"48.4\" x2=\"320.2\" y2=\"38.4\" stroke=\"#2563eb\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"323.2\" y=\"61.4\" font-size=\"14\" text-anchor=\"start\" fill=\"#2563eb\" font-weight=\"600\">F</text></svg>",
+      "duree_estimee_min": 13,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "J036",
+          "statement": "D'après le tableau, quelle hauteur le bambou mesurait-il le jour 8 ?",
+          "type": "numerique",
+          "answer": {
+            "value": 110,
+            "unit": "cm"
+          },
+          "points": 1,
+          "solution_steps": [
+            "On cherche 8 parmi les jours, dans la colonne de gauche du tableau.",
+            "On lit la case en face : le bambou mesurait **110 cm** le jour 8."
+          ],
+          "hint": "Cherche le jour dans sa colonne, puis lis la case en face."
+        },
+        {
+          "key": "q2",
+          "skill_id": "A020",
+          "statement": "Quelles sont les coordonnées du point F ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "(155 ; 15)",
+              "misconception": "L'élève inverse les coordonnées : on écrit d'abord l'abscisse, le temps, puis l'ordonnée, la hauteur."
+            },
+            {
+              "key": "b",
+              "text": "(15 ; 155)",
+              "misconception": null
+            },
+            {
+              "key": "c",
+              "text": "(15 ; 15,5)",
+              "misconception": "L'élève compte un intervalle pour 1 cm, alors qu'un intervalle vaut 10 cm sur l'axe vertical."
+            },
+            {
+              "key": "d",
+              "text": "(16 ; 155)",
+              "misconception": "L'élève compte les traits de l'axe horizontal en partant de celui de l'origine : il trouve un jour de trop. On compte les intervalles."
+            }
+          ],
+          "answer": {
+            "value": "b"
+          },
+          "points": 2,
+          "solution_steps": [
+            "Sur l'axe horizontal, les nombres sont écrits de 2 en 2 : un intervalle vaut 1 jour. Sur l'axe vertical, ils vont de 20 en 20 : un intervalle vaut 10 cm.",
+            "F est sur la ligne verticale du jour 15 : son abscisse est 15. En hauteur, il est au milieu entre la ligne de 150 cm et celle de 160 cm : son ordonnée est 155.",
+            "Les coordonnées de F sont **(15 ; 155)** : le jour 15, le bambou mesurait 155 cm."
+          ],
+          "hint": "Lis d'abord ce que vaut un intervalle sur chaque axe."
+        },
+        {
+          "key": "q3",
+          "skill_id": "E030",
+          "statement": "Lou affirme : « La hauteur du bambou n'est pas proportionnelle au nombre de jours. » A-t-elle raison ?",
+          "type": "vrai_faux",
+          "answer": {
+            "value": true
+          },
+          "points": 2,
+          "solution_steps": [
+            "S'il y avait proportionnalité, quand le nombre de jours double, la hauteur doublerait aussi.",
+            "Le jour 3, le bambou mesure 65 cm ; le jour 6, deux fois plus tard, il devrait mesurer 2 × 65 = 130 cm. Or il mesure 85 cm.",
+            "La hauteur **n'est pas proportionnelle** au nombre de jours : Lou a raison."
+          ],
+          "hint": "Compare le jour 3 et le jour 6 : que devient la hauteur quand le nombre de jours double ?"
+        },
+        {
+          "key": "q4",
+          "skill_id": "D007",
+          "statement": "Entre le jour 6 et le jour 8, le bambou a grandi de la même longueur chaque jour. De combien de centimètres par jour ?",
+          "type": "numerique",
+          "answer": {
+            "value": 12.5,
+            "unit": "cm",
+            "accepted": [
+              "12,5 cm par jour",
+              "12,5 cm/jour",
+              "12,5 cm/j",
+              "12,5 cm par j",
+              "12,5 centimètres par jour",
+              "12,5 cm chaque jour",
+              "12,50 cm par jour"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "En 2 jours, du jour 6 au jour 8, il passe de 85 cm à 110 cm : il grandit de 110 − 85 = 25 cm.",
+            "On partage ces 25 cm entre les 2 jours : 25 ÷ 2 = 12,5.",
+            "Le bambou a grandi de **12,5 cm** par jour."
+          ],
+          "hint": "Calcule de combien il a grandi en tout, puis partage entre les jours."
+        },
+        {
+          "key": "q5",
+          "skill_id": "J039",
+          "statement": "Un des points A, B, C, D et E n'est pas à sa place. Lequel ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "Le point A",
+              "misconception": "A est bien placé : 3 intervalles vers la droite (3 jours), puis 6,5 intervalles vers le haut (65 cm)."
+            },
+            {
+              "key": "b",
+              "text": "Le point B",
+              "misconception": "B est bien placé : 6 intervalles vers la droite (6 jours), puis 8,5 intervalles vers le haut (85 cm)."
+            },
+            {
+              "key": "c",
+              "text": "Le point C",
+              "misconception": "C est bien placé : 8 intervalles vers la droite (8 jours), puis 11 intervalles vers le haut (110 cm)."
+            },
+            {
+              "key": "d",
+              "text": "Le point D",
+              "misconception": null
+            },
+            {
+              "key": "e",
+              "text": "Le point E",
+              "misconception": "E est bien placé : 13 intervalles vers la droite (13 jours), puis 14,5 intervalles vers le haut (145 cm)."
+            }
+          ],
+          "answer": {
+            "value": "d"
+          },
+          "points": 3,
+          "solution_steps": [
+            "Un intervalle vaut 1 jour sur l'axe horizontal et 10 cm sur l'axe vertical.",
+            "A, B, C et E sont placés comme les lignes du tableau : A (3 ; 65), B (6 ; 85), C (8 ; 110), E (13 ; 145).",
+            "D doit représenter la ligne « 11 jours ; 130 cm » : 11 intervalles vers la droite et 13 vers le haut. Or D n'est qu'à 10 intervalles vers la droite : il représente le jour 10.",
+            "C'est **le point D** qui n'est pas à sa place."
+          ],
+          "hint": "Pour chaque point, compte les intervalles vers la droite et vers le haut, puis compare avec la ligne du tableau."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Placer dans un repère orthogonal donné des points correspondant à un tableau de valeurs. »"
+    },
+    {
+      "id": "SX-J040-01",
+      "skill_id": "J040",
+      "skill_ids": [
+        "J040",
+        "P027",
+        "P014"
+      ],
+      "school_level": "5e",
+      "title": "La balade à vélo",
+      "contexte": "Un dimanche, la famille Benali fait une balade à vélo sur une voie verte, le long d'un canal de 80 km. Elle part à 9 h 40, et s'arrête une seule fois, pour pique-niquer.\n\nLa location des quatre vélos coûte 46 € pour la journée. Chacun porte un casque, et les enfants ont emporté de l'eau et des fruits.\n\nLe graphique ci-dessous donne la distance parcourue par la famille, en km, en fonction de la durée écoulée depuis le départ, en heures. La balade se termine au dernier point de la ligne.",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 354 354\" width=\"354\" height=\"354\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Repère ; en abscisse : durée (h), en ordonnée : distance (km), avec une ligne brisée aux sommets marqués</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><line x1=\"34.0\" y1=\"320.0\" x2=\"34.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"320.0\" x2=\"60.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"86.0\" y1=\"320.0\" x2=\"86.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"112.0\" y1=\"320.0\" x2=\"112.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"138.0\" y1=\"320.0\" x2=\"138.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"164.0\" y1=\"320.0\" x2=\"164.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"190.0\" y1=\"320.0\" x2=\"190.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"216.0\" y1=\"320.0\" x2=\"216.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"242.0\" y1=\"320.0\" x2=\"242.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"268.0\" y1=\"320.0\" x2=\"268.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"294.0\" y1=\"320.0\" x2=\"294.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"320.0\" y1=\"320.0\" x2=\"320.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"320.0\" x2=\"320.0\" y2=\"320.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"294.0\" x2=\"320.0\" y2=\"294.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"268.0\" x2=\"320.0\" y2=\"268.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"242.0\" x2=\"320.0\" y2=\"242.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"216.0\" x2=\"320.0\" y2=\"216.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"190.0\" x2=\"320.0\" y2=\"190.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"164.0\" x2=\"320.0\" y2=\"164.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"138.0\" x2=\"320.0\" y2=\"138.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"112.0\" x2=\"320.0\" y2=\"112.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"86.0\" x2=\"320.0\" y2=\"86.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"60.0\" x2=\"320.0\" y2=\"60.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"34.0\" x2=\"320.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"21.0\" y1=\"320.0\" x2=\"333.0\" y2=\"320.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M339.0,320.0 l-10,-5 v10 z\" fill=\"#334155\"/><line x1=\"34.0\" y1=\"333.0\" x2=\"34.0\" y2=\"21.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M34.0,15.0 l-5,10 h10 z\" fill=\"#334155\"/><line x1=\"34.0\" y1=\"316.0\" x2=\"34.0\" y2=\"324.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"316.0\" x2=\"60.0\" y2=\"324.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"86.0\" y1=\"316.0\" x2=\"86.0\" y2=\"324.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"86.0\" y=\"337.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">1</text><line x1=\"112.0\" y1=\"316.0\" x2=\"112.0\" y2=\"324.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"138.0\" y1=\"316.0\" x2=\"138.0\" y2=\"324.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"138.0\" y=\"337.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">2</text><line x1=\"164.0\" y1=\"316.0\" x2=\"164.0\" y2=\"324.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"190.0\" y1=\"316.0\" x2=\"190.0\" y2=\"324.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"190.0\" y=\"337.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">3</text><line x1=\"216.0\" y1=\"316.0\" x2=\"216.0\" y2=\"324.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"242.0\" y1=\"316.0\" x2=\"242.0\" y2=\"324.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"242.0\" y=\"337.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">4</text><line x1=\"268.0\" y1=\"316.0\" x2=\"268.0\" y2=\"324.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"294.0\" y1=\"316.0\" x2=\"294.0\" y2=\"324.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"294.0\" y=\"337.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">5</text><line x1=\"320.0\" y1=\"316.0\" x2=\"320.0\" y2=\"324.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"320.0\" x2=\"38.0\" y2=\"320.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"294.0\" x2=\"38.0\" y2=\"294.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"268.0\" x2=\"38.0\" y2=\"268.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"272.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">10</text><line x1=\"30.0\" y1=\"242.0\" x2=\"38.0\" y2=\"242.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"216.0\" x2=\"38.0\" y2=\"216.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"220.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">20</text><line x1=\"30.0\" y1=\"190.0\" x2=\"38.0\" y2=\"190.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"164.0\" x2=\"38.0\" y2=\"164.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"168.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">30</text><line x1=\"30.0\" y1=\"138.0\" x2=\"38.0\" y2=\"138.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"112.0\" x2=\"38.0\" y2=\"112.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"116.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">40</text><line x1=\"30.0\" y1=\"86.0\" x2=\"38.0\" y2=\"86.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"60.0\" x2=\"38.0\" y2=\"60.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"64.0\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">50</text><line x1=\"30.0\" y1=\"34.0\" x2=\"38.0\" y2=\"34.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text stroke=\"#ffffff\" stroke-width=\"3.5\" paint-order=\"stroke\" x=\"339.0\" y=\"351.0\" font-size=\"12\" text-anchor=\"end\" fill=\"#334155\">durée (h)</text><text stroke=\"#ffffff\" stroke-width=\"3.5\" paint-order=\"stroke\" x=\"43.0\" y=\"19.0\" font-size=\"12\" text-anchor=\"start\" fill=\"#334155\">distance (km)</text><path d=\"M34.0,320.0 L125.0,203.0 L203.0,203.0 L268.0,112.0 L307.0,47.0\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"316.0\" x2=\"38.0\" y2=\"324.0\" stroke=\"#2563eb\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"324.0\" x2=\"38.0\" y2=\"316.0\" stroke=\"#2563eb\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"121.0\" y1=\"199.0\" x2=\"129.0\" y2=\"207.0\" stroke=\"#2563eb\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"121.0\" y1=\"207.0\" x2=\"129.0\" y2=\"199.0\" stroke=\"#2563eb\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"199.0\" y1=\"199.0\" x2=\"207.0\" y2=\"207.0\" stroke=\"#2563eb\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"199.0\" y1=\"207.0\" x2=\"207.0\" y2=\"199.0\" stroke=\"#2563eb\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"264.0\" y1=\"108.0\" x2=\"272.0\" y2=\"116.0\" stroke=\"#2563eb\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"264.0\" y1=\"116.0\" x2=\"272.0\" y2=\"108.0\" stroke=\"#2563eb\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"303.0\" y1=\"43.0\" x2=\"311.0\" y2=\"51.0\" stroke=\"#2563eb\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><line x1=\"303.0\" y1=\"51.0\" x2=\"311.0\" y2=\"43.0\" stroke=\"#2563eb\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><text x=\"28.0\" y=\"314.0\" font-size=\"12\" text-anchor=\"end\" fill=\"#334155\" font-weight=\"600\">O</text></svg>",
+      "duree_estimee_min": 14,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "J040",
+          "statement": "Quelle distance la famille a-t-elle parcourue en tout ?",
+          "type": "numerique",
+          "answer": {
+            "value": 52.5,
+            "unit": "km"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Sur l'axe vertical, les nombres vont de 10 en 10 : un intervalle vaut 5 km.",
+            "Le dernier point de la ligne est 10,5 intervalles au-dessus de l'axe horizontal : 10,5 × 5 = 52,5. La famille a parcouru **52,5 km**."
+          ],
+          "hint": "Lis l'ordonnée du dernier point de la ligne, en tenant compte de ce que vaut un intervalle."
+        },
+        {
+          "key": "q2",
+          "skill_id": "P027",
+          "statement": "Combien de minutes la pause du pique-nique a-t-elle duré ?",
+          "type": "numerique",
+          "answer": {
+            "value": 90,
+            "unit": "min"
+          },
+          "points": 2,
+          "solution_steps": [
+            "Pendant la pause, la distance ne change pas : c'est le morceau horizontal de la ligne.",
+            "Sur l'axe horizontal, un intervalle vaut 0,5 h. Le palier va de 1,75 h à 3,25 h : il dure 3,25 − 1,75 = 1,5 h.",
+            "1,5 h, c'est 1 h et une demi-heure : 60 + 30 = 90. La pause a duré **90 min**."
+          ],
+          "hint": "Repère le morceau horizontal de la ligne, puis lis sa durée sur l'axe horizontal."
+        },
+        {
+          "key": "q3",
+          "skill_id": "P014",
+          "statement": "La balade dure 5,25 h en tout, pause comprise. À quelle heure la famille arrive-t-elle ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "14 h 55",
+              "misconception": null
+            },
+            {
+              "key": "b",
+              "text": "15 h 05",
+              "misconception": "L'élève lit 5,25 h comme 5 h 25 min. Or 0,25 h est un quart d'heure, 15 min."
+            },
+            {
+              "key": "c",
+              "text": "14 h 40",
+              "misconception": "L'élève oublie le quart d'heure : 5,25 h, c'est 5 h 15 min."
+            },
+            {
+              "key": "d",
+              "text": "15 h 15",
+              "misconception": "L'élève part de 10 h au lieu de 9 h 40."
+            }
+          ],
+          "answer": {
+            "value": "a"
+          },
+          "points": 2,
+          "solution_steps": [
+            "5,25 h, c'est 5 h et un quart d'heure : 5 h 15 min.",
+            "9 h 40 + 5 h = 14 h 40, puis 14 h 40 + 15 min = 14 h 55.",
+            "La famille arrive à **14 h 55**."
+          ],
+          "hint": "Convertis d'abord 5,25 h en heures et minutes."
+        },
+        {
+          "key": "q4",
+          "skill_id": "J040",
+          "statement": "Au bout de combien de minutes de balade la famille s'est-elle arrêtée pour pique-niquer ?",
+          "type": "numerique",
+          "answer": {
+            "value": 105,
+            "unit": "min"
+          },
+          "points": 2,
+          "solution_steps": [
+            "La pause commence au début du morceau horizontal de la ligne.",
+            "Sur l'axe horizontal, un intervalle vaut une demi-heure. Ce point est au milieu entre 1,5 h et 2 h : son abscisse est 1,75 h.",
+            "1,75 h, c'est 1 h et trois quarts d'heure : 60 + 45 = 105. La famille s'est arrêtée au bout de **105 min**."
+          ],
+          "hint": "Repère où commence le morceau horizontal, puis lis son abscisse."
+        },
+        {
+          "key": "q5",
+          "skill_id": "J040",
+          "statement": "D'après le graphique, quelle phrase est juste ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "Entre 1,75 h et 3,25 h, la famille roule sur une partie plate de la voie verte.",
+              "misconception": "Le graphique n'est pas un dessin du trajet : un palier veut dire que la distance ne change pas, la famille est arrêtée."
+            },
+            {
+              "key": "b",
+              "text": "La famille s'est arrêtée pendant 3,25 h.",
+              "misconception": "3,25 h est le moment où la pause se termine, pas sa durée : elle a commencé à 1,75 h."
+            },
+            {
+              "key": "c",
+              "text": "Après la pause, la famille a encore parcouru 30 km.",
+              "misconception": null
+            },
+            {
+              "key": "d",
+              "text": "Avant la pause, la famille a parcouru plus de kilomètres qu'après la pause.",
+              "misconception": "Avant la pause, elle a parcouru 22,5 km ; après, 52,5 − 22,5 = 30 km, c'est plus."
+            }
+          ],
+          "answer": {
+            "value": "c"
+          },
+          "points": 3,
+          "solution_steps": [
+            "Pendant la pause, la distance reste à 22,5 km : le palier est 4,5 intervalles au-dessus de l'axe horizontal, 4,5 × 5 = 22,5.",
+            "À l'arrivée, la distance est de 52,5 km : après la pause, la famille a parcouru 52,5 − 22,5 = 30 km.",
+            "Le palier montre un arrêt, et la famille a roulé plus après la pause qu'avant : la phrase juste est **« Après la pause, la famille a encore parcouru 30 km. »**"
+          ],
+          "hint": "Lis la distance au moment de la pause et à l'arrivée."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Lire et interpréter un graphique cartésien donné par une courbe ou un nuage de points. »"
+    },
+    {
+      "id": "SX-J041-01",
+      "skill_id": "J041",
+      "skill_ids": [
+        "J041",
+        "J038",
+        "D024",
+        "E030"
+      ],
+      "school_level": "4e",
+      "title": "Le traiteur du tournoi",
+      "contexte": "Le club de handball du collège organise un tournoi dans le gymnase de la ville, qui compte 3 terrains. Il commande les repas des joueurs chez un traiteur, dont voici le tarif.\n\nPour les 40 premiers repas, chaque repas coûte 8,50 €.\nAu-delà de 40 repas, chaque repas en plus coûte 7 €.\nLa livraison coûte 25 €, payés une seule fois.\n\nLes spectateurs paient 2 € l'entrée du tournoi ; cet argent n'est pas versé au traiteur.\n\nOn note $n$ le nombre de repas commandés, et $p$ le prix total payé au traiteur, livraison comprise, en euros.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "J038",
+          "statement": "Pour une commande de 40 repas ou moins, quelle formule donne $p$ en fonction de $n$ ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "$p = 8{,}5n$",
+              "misconception": "L'élève oublie la livraison, 25 €, qui se paie aussi."
+            },
+            {
+              "key": "b",
+              "text": "$p = 25n + 8{,}5$",
+              "misconception": "L'élève inverse les rôles : c'est 8,50 € qui se paie à chaque repas, et 25 € une seule fois."
+            },
+            {
+              "key": "c",
+              "text": "$p = 8{,}5n + 25$",
+              "misconception": null
+            },
+            {
+              "key": "d",
+              "text": "$p = 33{,}5n$",
+              "misconception": "L'élève compte la livraison à chaque repas : 8,5 + 25 = 33,5. Or elle ne se paie qu'une fois."
+            }
+          ],
+          "answer": {
+            "value": "c"
+          },
+          "points": 1,
+          "solution_steps": [
+            "Jusqu'à 40 repas, chaque repas coûte 8,50 € : $n$ repas coûtent $8{,}5 \\times n$ euros.",
+            "On ajoute une seule fois les 25 € de livraison : **$p = 8{,}5n + 25$**."
+          ],
+          "hint": "Sépare ce qui se paie à chaque repas et ce qui se paie une seule fois."
+        },
+        {
+          "key": "q2",
+          "skill_id": "D024",
+          "statement": "Combien le club paie-t-il au traiteur, livraison comprise, pour 24 repas ?",
+          "type": "numerique",
+          "answer": {
+            "value": 229,
+            "unit": "€"
+          },
+          "points": 2,
+          "solution_steps": [
+            "24 repas, c'est moins de 40 : chaque repas coûte 8,50 €.",
+            "$8{,}5 \\times 24 = 204$, puis on ajoute la livraison : $204 + 25 = 229$.",
+            "Le club paie **229 €**."
+          ],
+          "hint": "Calcule le prix des repas, puis n'oublie pas la livraison."
+        },
+        {
+          "key": "q3",
+          "skill_id": "J041",
+          "statement": "Pour 60 repas, Inès calcule $8{,}5 \\times 60 + 25 = 535$ €. A-t-elle raison ?",
+          "type": "vrai_faux",
+          "answer": {
+            "value": false
+          },
+          "points": 2,
+          "solution_steps": [
+            "Inès compte les 60 repas à 8,50 €. Or seuls les 40 premiers coûtent 8,50 € ; les 20 suivants coûtent 7 €.",
+            "Le bon prix est $8{,}5 \\times 40 + 7 \\times 20 + 25 = 340 + 140 + 25 = 505$ €.",
+            "Inès a **tort**."
+          ],
+          "hint": "Combien de repas coûtent 8,50 €, et combien coûtent 7 € ?"
+        },
+        {
+          "key": "q4",
+          "skill_id": "E030",
+          "statement": "Pour plus de 40 repas, le prix $p$ est-il proportionnel au nombre $n$ de repas ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "Oui, car chaque repas en plus coûte toujours 7 €.",
+              "misconception": "Chaque repas en plus coûte bien 7 €, mais la livraison et les 40 premiers repas s'ajoutent : 90 repas ne coûtent pas le double de 45 repas."
+            },
+            {
+              "key": "b",
+              "text": "Non, car 90 repas ne coûtent pas le double de 45 repas.",
+              "misconception": null
+            },
+            {
+              "key": "c",
+              "text": "Oui, car le prix augmente quand le nombre de repas augmente.",
+              "misconception": "Deux grandeurs qui augmentent ensemble ne sont pas forcément proportionnelles : il faut que le prix double quand le nombre de repas double."
+            },
+            {
+              "key": "d",
+              "text": "On ne peut pas le savoir sans connaître la formule.",
+              "misconception": "Un seul cas où le prix ne double pas avec le nombre de repas suffit pour dire non, sans formule."
+            }
+          ],
+          "answer": {
+            "value": "b"
+          },
+          "points": 2,
+          "solution_steps": [
+            "45 repas coûtent $8{,}5 \\times 40 + 7 \\times 5 + 25 = 340 + 35 + 25 = 400$ €.",
+            "90 repas coûtent $8{,}5 \\times 40 + 7 \\times 50 + 25 = 340 + 350 + 25 = 715$ €, et non $2 \\times 400 = 800$ €.",
+            "Le nombre de repas double, pas le prix : il **n'est pas proportionnel** au nombre de repas."
+          ],
+          "hint": "Compare le prix de 45 repas et celui de 90 repas."
+        },
+        {
+          "key": "q5",
+          "skill_id": "J041",
+          "statement": "Pour $n$ plus grand que 40, écris $p$ en fonction de $n$, sous forme réduite.",
+          "type": "texte",
+          "answer": {
+            "value": "7n + 85",
+            "forme": "reduite",
+            "variables": [
+              "n"
+            ],
+            "unit": "€"
+          },
+          "points": 4,
+          "solution_steps": [
+            "Les 40 premiers repas coûtent $8{,}5 \\times 40 = 340$ €, et la livraison 25 € : $340 + 25 = 365$.",
+            "Au-delà de 40, il y a $n - 40$ repas à 7 € : ils coûtent $7 \\times (n - 40)$ euros.",
+            "Donc $p = 365 + 7 \\times (n - 40) = 365 + 7n - 280$.",
+            "On réduit : **$p = 7n + 85$**. Contrôle pour 60 repas : $7 \\times 60 + 85 = 505$ €, le prix trouvé plus haut."
+          ],
+          "hint": "Écris le calcul pour 50 repas, en séparant les premiers repas et ceux d'après, puis remplace 50 par la lettre."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Produire une formule littérale représentant la dépendance d'une grandeur en fonction d'une autre. »"
+    },
+    {
+      "id": "SX-J042-01",
+      "skill_id": "J042",
+      "skill_ids": [
+        "J042",
+        "F002",
+        "J037",
+        "J040"
+      ],
+      "school_level": "4e",
+      "title": "Les deux vitriers",
+      "contexte": "M. Petit veut faire découper des plaques de verre carrées pour des cadres. On note $c$ la longueur du côté d'une plaque, en dm, et $P$ son prix, en euros.\n\nChez **Vitralu**, $P = 0{,}75 \\times c^2 + 5$ : le verre coûte 0,75 € le dm², et la découpe 5 €.\n\nChez **Clairvue**, $P = 3{,}75 \\times c + 5$.\n\nLes deux vitriers livrent en 3 jours, et M. Petit a besoin de 12 plaques.\n\nDans le repère ci-dessous, pour $c$ de 0 à 6 dm, un des trois tracés T1, T2 et T3 représente le prix chez Vitralu en fonction de $c$, et un autre le prix chez Clairvue.",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 344.923 368\" width=\"344.923\" height=\"368\" font-family=\"system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif\" role=\"img\"><title>Repère ; en abscisse : côté c (dm), en ordonnée : prix (€), avec trois tracés nommés T1, T2 et T3</title><rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"/><line x1=\"34.0\" y1=\"334.0\" x2=\"34.0\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"57.1\" y1=\"334.0\" x2=\"57.1\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"80.2\" y1=\"334.0\" x2=\"80.2\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"103.2\" y1=\"334.0\" x2=\"103.2\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"126.3\" y1=\"334.0\" x2=\"126.3\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"149.4\" y1=\"334.0\" x2=\"149.4\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"172.5\" y1=\"334.0\" x2=\"172.5\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"195.5\" y1=\"334.0\" x2=\"195.5\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"218.6\" y1=\"334.0\" x2=\"218.6\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"241.7\" y1=\"334.0\" x2=\"241.7\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"264.8\" y1=\"334.0\" x2=\"264.8\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"287.8\" y1=\"334.0\" x2=\"287.8\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"310.9\" y1=\"334.0\" x2=\"310.9\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"334.0\" x2=\"310.9\" y2=\"334.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"310.9\" x2=\"310.9\" y2=\"310.9\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"287.8\" x2=\"310.9\" y2=\"287.8\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"264.8\" x2=\"310.9\" y2=\"264.8\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"241.7\" x2=\"310.9\" y2=\"241.7\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"218.6\" x2=\"310.9\" y2=\"218.6\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"195.5\" x2=\"310.9\" y2=\"195.5\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"172.5\" x2=\"310.9\" y2=\"172.5\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"149.4\" x2=\"310.9\" y2=\"149.4\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"126.3\" x2=\"310.9\" y2=\"126.3\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"103.2\" x2=\"310.9\" y2=\"103.2\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"80.2\" x2=\"310.9\" y2=\"80.2\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"57.1\" x2=\"310.9\" y2=\"57.1\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"34.0\" x2=\"310.9\" y2=\"34.0\" stroke=\"#e2e8f0\" stroke-width=\"1\" stroke-linecap=\"round\"/><line x1=\"22.5\" y1=\"334.0\" x2=\"322.5\" y2=\"334.0\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M328.5,334.0 l-10,-5 v10 z\" fill=\"#334155\"/><line x1=\"34.0\" y1=\"345.5\" x2=\"34.0\" y2=\"22.5\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><path d=\"M34.0,16.5 l-5,10 h10 z\" fill=\"#334155\"/><line x1=\"34.0\" y1=\"330.0\" x2=\"34.0\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"57.1\" y1=\"330.0\" x2=\"57.1\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"80.2\" y1=\"330.0\" x2=\"80.2\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"80.2\" y=\"351.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">1</text><line x1=\"103.2\" y1=\"330.0\" x2=\"103.2\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"126.3\" y1=\"330.0\" x2=\"126.3\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"126.3\" y=\"351.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">2</text><line x1=\"149.4\" y1=\"330.0\" x2=\"149.4\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"172.5\" y1=\"330.0\" x2=\"172.5\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"172.5\" y=\"351.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">3</text><line x1=\"195.5\" y1=\"330.0\" x2=\"195.5\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"218.6\" y1=\"330.0\" x2=\"218.6\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"218.6\" y=\"351.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">4</text><line x1=\"241.7\" y1=\"330.0\" x2=\"241.7\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"264.8\" y1=\"330.0\" x2=\"264.8\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"264.8\" y=\"351.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">5</text><line x1=\"287.8\" y1=\"330.0\" x2=\"287.8\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"310.9\" y1=\"330.0\" x2=\"310.9\" y2=\"338.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"310.9\" y=\"351.0\" font-size=\"11\" text-anchor=\"middle\" fill=\"#334155\">6</text><line x1=\"30.0\" y1=\"334.0\" x2=\"38.0\" y2=\"334.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"310.9\" x2=\"38.0\" y2=\"310.9\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"287.8\" x2=\"38.0\" y2=\"287.8\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"291.8\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">5</text><line x1=\"30.0\" y1=\"264.8\" x2=\"38.0\" y2=\"264.8\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"241.7\" x2=\"38.0\" y2=\"241.7\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"245.7\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">10</text><line x1=\"30.0\" y1=\"218.6\" x2=\"38.0\" y2=\"218.6\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"195.5\" x2=\"38.0\" y2=\"195.5\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"199.5\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">15</text><line x1=\"30.0\" y1=\"172.5\" x2=\"38.0\" y2=\"172.5\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"149.4\" x2=\"38.0\" y2=\"149.4\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"153.4\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">20</text><line x1=\"30.0\" y1=\"126.3\" x2=\"38.0\" y2=\"126.3\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"103.2\" x2=\"38.0\" y2=\"103.2\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"107.2\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">25</text><line x1=\"30.0\" y1=\"80.2\" x2=\"38.0\" y2=\"80.2\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"30.0\" y1=\"57.1\" x2=\"38.0\" y2=\"57.1\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text x=\"27.0\" y=\"61.1\" font-size=\"11\" text-anchor=\"end\" fill=\"#334155\">30</text><line x1=\"30.0\" y1=\"34.0\" x2=\"38.0\" y2=\"34.0\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><text stroke=\"#ffffff\" stroke-width=\"3.5\" paint-order=\"stroke\" x=\"328.5\" y=\"365.0\" font-size=\"12\" text-anchor=\"end\" fill=\"#334155\">côté c (dm)</text><text stroke=\"#ffffff\" stroke-width=\"3.5\" paint-order=\"stroke\" x=\"43.0\" y=\"20.5\" font-size=\"12\" text-anchor=\"start\" fill=\"#334155\">prix (€)</text><path d=\"M34.0,287.8 L310.9,80.2\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><text stroke=\"#ffffff\" stroke-width=\"3.5\" paint-order=\"stroke\" x=\"150.2\" y=\"188.2\" font-size=\"14\" text-anchor=\"middle\" fill=\"#2563eb\" font-weight=\"600\">T1</text><path d=\"M34.0,287.8 L35.2,287.8 L36.3,287.8 L37.5,287.8 L38.6,287.8 L39.8,287.7 L40.9,287.7 L42.1,287.6 L43.2,287.6 L44.4,287.5 L45.5,287.4 L46.7,287.3 L47.8,287.2 L49.0,287.1 L50.2,287.0 L51.3,286.9 L52.5,286.7 L53.6,286.6 L54.8,286.4 L55.9,286.3 L57.1,286.1 L58.2,285.9 L59.4,285.8 L60.5,285.6 L61.7,285.4 L62.8,285.1 L64.0,284.9 L65.2,284.7 L66.3,284.5 L67.5,284.2 L68.6,284.0 L69.8,283.7 L70.9,283.4 L72.1,283.1 L73.2,282.8 L74.4,282.5 L75.5,282.2 L76.7,281.9 L77.8,281.6 L79.0,281.3 L80.2,280.9 L81.3,280.6 L82.5,280.2 L83.6,279.8 L84.8,279.5 L85.9,279.1 L87.1,278.7 L88.2,278.3 L89.4,277.9 L90.5,277.5 L91.7,277.0 L92.8,276.6 L94.0,276.1 L95.2,275.7 L96.3,275.2 L97.5,274.8 L98.6,274.3 L99.8,273.8 L100.9,273.3 L102.1,272.8 L103.2,272.3 L104.4,271.7 L105.5,271.2 L106.7,270.7 L107.8,270.1 L109.0,269.6 L110.2,269.0 L111.3,268.4 L112.5,267.8 L113.6,267.2 L114.8,266.6 L115.9,266.0 L117.1,265.4 L118.2,264.8 L119.4,264.2 L120.5,263.5 L121.7,262.9 L122.8,262.2 L124.0,261.5 L125.2,260.8 L126.3,260.2 L127.5,259.5 L128.6,258.8 L129.8,258.0 L130.9,257.3 L132.1,256.6 L133.2,255.8 L134.4,255.1 L135.5,254.3 L136.7,253.6 L137.8,252.8 L139.0,252.0 L140.2,251.2 L141.3,250.4 L142.5,249.6 L143.6,248.8 L144.8,248.0 L145.9,247.1 L147.1,246.3 L148.2,245.4 L149.4,244.6 L150.5,243.7 L151.7,242.8 L152.8,241.9 L154.0,241.0 L155.2,240.1 L156.3,239.2 L157.5,238.3 L158.6,237.4 L159.8,236.4 L160.9,235.5 L162.1,234.5 L163.2,233.6 L164.4,232.6 L165.5,231.6 L166.7,230.6 L167.8,229.6 L169.0,228.6 L170.2,227.6 L171.3,226.6 L172.5,225.5 L173.6,224.5 L174.8,223.4 L175.9,222.4 L177.1,221.3 L178.2,220.2 L179.4,219.2 L180.5,218.1 L181.7,217.0 L182.8,215.8 L184.0,214.7 L185.2,213.6 L186.3,212.5 L187.5,211.3 L188.6,210.2 L189.8,209.0 L190.9,207.8 L192.1,206.6 L193.2,205.4 L194.4,204.2 L195.5,203.0 L196.7,201.8 L197.8,200.6 L199.0,199.4 L200.2,198.1 L201.3,196.9 L202.5,195.6 L203.6,194.3 L204.8,193.1 L205.9,191.8 L207.1,190.5 L208.2,189.2 L209.4,187.9 L210.5,186.6 L211.7,185.2 L212.8,183.9 L214.0,182.5 L215.2,181.2 L216.3,179.8 L217.5,178.5 L218.6,177.1 L219.8,175.7 L220.9,174.3 L222.1,172.9 L223.2,171.5 L224.4,170.0 L225.5,168.6 L226.7,167.2 L227.8,165.7 L229.0,164.3 L230.2,162.8 L231.3,161.3 L232.5,159.8 L233.6,158.3 L234.8,156.8 L235.9,155.3 L237.1,153.8 L238.2,152.3 L239.4,150.8 L240.5,149.2 L241.7,147.7 L242.8,146.1 L244.0,144.5 L245.2,142.9 L246.3,141.4 L247.5,139.8 L248.6,138.2 L249.8,136.5 L250.9,134.9 L252.1,133.3 L253.2,131.6 L254.4,130.0 L255.5,128.3 L256.7,126.7 L257.8,125.0 L259.0,123.3 L260.2,121.6 L261.3,119.9 L262.5,118.2 L263.6,116.5 L264.8,114.8 L265.9,113.0 L267.1,111.3 L268.2,109.5 L269.4,107.8 L270.5,106.0 L271.7,104.2 L272.8,102.4 L274.0,100.6 L275.2,98.8 L276.3,97.0 L277.5,95.2 L278.6,93.4 L279.8,91.5 L280.9,89.7 L282.1,87.8 L283.2,86.0 L284.4,84.1 L285.5,82.2 L286.7,80.3 L287.8,78.4 L289.0,76.5 L290.2,74.6 L291.3,72.7 L292.5,70.7 L293.6,68.8 L294.8,66.8 L295.9,64.9 L297.1,62.9 L298.2,60.9 L299.4,59.0 L300.5,57.0 L301.7,55.0 L302.8,52.9 L304.0,50.9 L305.2,48.9 L306.3,46.9 L307.5,44.8 L308.6,42.8 L309.8,40.7 L310.9,38.6\" fill=\"none\" stroke=\"#c2410c\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><text stroke=\"#ffffff\" stroke-width=\"3.5\" paint-order=\"stroke\" x=\"317.4\" y=\"60.7\" font-size=\"14\" text-anchor=\"middle\" fill=\"#c2410c\" font-weight=\"600\">T2</text><path d=\"M34.0,334.0 L35.2,334.0 L36.3,334.0 L37.5,334.0 L38.6,333.9 L39.8,333.9 L40.9,333.8 L42.1,333.8 L43.2,333.7 L44.4,333.6 L45.5,333.6 L46.7,333.5 L47.8,333.4 L49.0,333.3 L50.2,333.2 L51.3,333.0 L52.5,332.9 L53.6,332.7 L54.8,332.6 L55.9,332.4 L57.1,332.3 L58.2,332.1 L59.4,331.9 L60.5,331.7 L61.7,331.5 L62.8,331.3 L64.0,331.1 L65.2,330.8 L66.3,330.6 L67.5,330.4 L68.6,330.1 L69.8,329.8 L70.9,329.6 L72.1,329.3 L73.2,329.0 L74.4,328.7 L75.5,328.4 L76.7,328.1 L77.8,327.8 L79.0,327.4 L80.2,327.1 L81.3,326.7 L82.5,326.4 L83.6,326.0 L84.8,325.6 L85.9,325.2 L87.1,324.8 L88.2,324.4 L89.4,324.0 L90.5,323.6 L91.7,323.2 L92.8,322.7 L94.0,322.3 L95.2,321.8 L96.3,321.4 L97.5,320.9 L98.6,320.4 L99.8,319.9 L100.9,319.4 L102.1,318.9 L103.2,318.4 L104.4,317.9 L105.5,317.4 L106.7,316.8 L107.8,316.3 L109.0,315.7 L110.2,315.2 L111.3,314.6 L112.5,314.0 L113.6,313.4 L114.8,312.8 L115.9,312.2 L117.1,311.6 L118.2,310.9 L119.4,310.3 L120.5,309.7 L121.7,309.0 L122.8,308.3 L124.0,307.7 L125.2,307.0 L126.3,306.3 L127.5,305.6 L128.6,304.9 L129.8,304.2 L130.9,303.5 L132.1,302.7 L133.2,302.0 L134.4,301.2 L135.5,300.5 L136.7,299.7 L137.8,299.0 L139.0,298.2 L140.2,297.4 L141.3,296.6 L142.5,295.8 L143.6,294.9 L144.8,294.1 L145.9,293.3 L147.1,292.4 L148.2,291.6 L149.4,290.7 L150.5,289.9 L151.7,289.0 L152.8,288.1 L154.0,287.2 L155.2,286.3 L156.3,285.4 L157.5,284.5 L158.6,283.5 L159.8,282.6 L160.9,281.6 L162.1,280.7 L163.2,279.7 L164.4,278.7 L165.5,277.8 L166.7,276.8 L167.8,275.8 L169.0,274.8 L170.2,273.8 L171.3,272.7 L172.5,271.7 L173.6,270.6 L174.8,269.6 L175.9,268.5 L177.1,267.5 L178.2,266.4 L179.4,265.3 L180.5,264.2 L181.7,263.1 L182.8,262.0 L184.0,260.9 L185.2,259.7 L186.3,258.6 L187.5,257.5 L188.6,256.3 L189.8,255.1 L190.9,254.0 L192.1,252.8 L193.2,251.6 L194.4,250.4 L195.5,249.2 L196.7,248.0 L197.8,246.8 L199.0,245.5 L200.2,244.3 L201.3,243.0 L202.5,241.8 L203.6,240.5 L204.8,239.2 L205.9,237.9 L207.1,236.6 L208.2,235.3 L209.4,234.0 L210.5,232.7 L211.7,231.4 L212.8,230.0 L214.0,228.7 L215.2,227.3 L216.3,226.0 L217.5,224.6 L218.6,223.2 L219.8,221.8 L220.9,220.4 L222.1,219.0 L223.2,217.6 L224.4,216.2 L225.5,214.8 L226.7,213.3 L227.8,211.9 L229.0,210.4 L230.2,209.0 L231.3,207.5 L232.5,206.0 L233.6,204.5 L234.8,203.0 L235.9,201.5 L237.1,200.0 L238.2,198.4 L239.4,196.9 L240.5,195.4 L241.7,193.8 L242.8,192.2 L244.0,190.7 L245.2,189.1 L246.3,187.5 L247.5,185.9 L248.6,184.3 L249.8,182.7 L250.9,181.1 L252.1,179.4 L253.2,177.8 L254.4,176.1 L255.5,174.5 L256.7,172.8 L257.8,171.2 L259.0,169.5 L260.2,167.8 L261.3,166.1 L262.5,164.4 L263.6,162.6 L264.8,160.9 L265.9,159.2 L267.1,157.4 L268.2,155.7 L269.4,153.9 L270.5,152.2 L271.7,150.4 L272.8,148.6 L274.0,146.8 L275.2,145.0 L276.3,143.2 L277.5,141.4 L278.6,139.5 L279.8,137.7 L280.9,135.8 L282.1,134.0 L283.2,132.1 L284.4,130.2 L285.5,128.4 L286.7,126.5 L287.8,124.6 L289.0,122.7 L290.2,120.8 L291.3,118.8 L292.5,116.9 L293.6,114.9 L294.8,113.0 L295.9,111.0 L297.1,109.1 L298.2,107.1 L299.4,105.1 L300.5,103.1 L301.7,101.1 L302.8,99.1 L304.0,97.1 L305.2,95.0 L306.3,93.0 L307.5,91.0 L308.6,88.9 L309.8,86.8 L310.9,84.8\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><text stroke=\"#ffffff\" stroke-width=\"3.5\" paint-order=\"stroke\" x=\"293.3\" y=\"147.5\" font-size=\"14\" text-anchor=\"middle\" fill=\"#334155\" font-weight=\"600\">T3</text><text x=\"28.0\" y=\"328.0\" font-size=\"12\" text-anchor=\"end\" fill=\"#334155\" font-weight=\"600\">O</text></svg>",
+      "duree_estimee_min": 14,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "F002",
+          "statement": "Chez Vitralu, combien coûte une plaque de 3 dm de côté ?",
+          "type": "numerique",
+          "answer": {
+            "value": 11.75,
+            "unit": "€"
+          },
+          "points": 1,
+          "solution_steps": [
+            "On remplace $c$ par 3 : $P = 0{,}75 \\times 3^2 + 5$.",
+            "Le carré d'abord : $3^2 = 9$ ; puis $0{,}75 \\times 9 = 6{,}75$ ; enfin $6{,}75 + 5 = 11{,}75$.",
+            "La plaque coûte **11,75 €** chez Vitralu."
+          ],
+          "hint": "Remplace $c$ par 3, et calcule le carré en premier."
+        },
+        {
+          "key": "q2",
+          "skill_id": "J037",
+          "statement": "Noé remplit un tableau de valeurs du prix chez Vitralu. Quelle valeur doit-il écrire pour $c = 6$ ?",
+          "type": "numerique",
+          "answer": {
+            "value": 32,
+            "unit": "€"
+          },
+          "points": 2,
+          "solution_steps": [
+            "On remplace $c$ par 6 : $P = 0{,}75 \\times 6^2 + 5$.",
+            "Le carré d'abord : $6^2 = 36$ ; puis $0{,}75 \\times 36 = 27$ ; enfin $27 + 5 = 32$.",
+            "Noé écrit **32 €**."
+          ],
+          "hint": "Remplace la lettre par 6 dans la formule de Vitralu, et calcule le carré en premier."
+        },
+        {
+          "key": "q3",
+          "skill_id": "J042",
+          "statement": "Par le calcul, sans lire le graphique : le point (1 ; 5,75) est-il sur la représentation graphique du prix chez Vitralu ?",
+          "type": "vrai_faux",
+          "answer": {
+            "value": true
+          },
+          "points": 2,
+          "solution_steps": [
+            "On remplace $c$ par l'abscisse du point, 1, dans la formule de Vitralu.",
+            "$0{,}75 \\times 1^2 + 5 = 0{,}75 \\times 1 + 5 = 0{,}75 + 5 = 5{,}75$.",
+            "La formule donne 5,75, l'ordonnée du point : le point **est** sur la représentation."
+          ],
+          "hint": "Remplace la lettre par l'abscisse du point, puis compare le résultat à son ordonnée."
+        },
+        {
+          "key": "q4",
+          "skill_id": "J040",
+          "statement": "Les tracés T1 et T2 se coupent en deux points ; l'un est sur l'axe vertical. Quelle est l'abscisse de l'autre point ?",
+          "type": "numerique",
+          "answer": {
+            "value": 5,
+            "unit": "dm"
+          },
+          "points": 2,
+          "solution_steps": [
+            "On repère le second point où les tracés T1 et T2 se rencontrent, puis on descend jusqu'à l'axe horizontal.",
+            "Sur cet axe, les nombres vont de 1 en 1 et un intervalle vaut 0,5 dm : on arrive sur le trait du nombre 5. L'abscisse est **5**.",
+            "Contrôle : pour $c = 5$, $0{,}75 \\times 25 + 5 = 23{,}75$ et $3{,}75 \\times 5 + 5 = 23{,}75$ : pour 5 dm, les deux vitriers demandent le même prix, 23,75 €."
+          ],
+          "hint": "Descends verticalement du point de rencontre jusqu'à l'axe horizontal."
+        },
+        {
+          "key": "q5",
+          "skill_id": "J042",
+          "statement": "Quel tracé représente le prix chez Vitralu en fonction de $c$ ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "Le tracé T1",
+              "misconception": "T1 passe bien par (0 ; 5) et (5 ; 23,75), comme le prix chez Vitralu, mais pas par (2 ; 8) : deux points ne suffisent pas. T1 est une droite, celle du prix chez Clairvue."
+            },
+            {
+              "key": "b",
+              "text": "Le tracé T2",
+              "misconception": null
+            },
+            {
+              "key": "c",
+              "text": "Le tracé T3",
+              "misconception": "T3 passe par l'origine : il oublie les 5 € de la découpe. Pour une plaque toute petite, Vitralu demande déjà 5 €."
+            }
+          ],
+          "answer": {
+            "value": "b"
+          },
+          "points": 3,
+          "solution_steps": [
+            "On calcule trois points de la formule de Vitralu, dont un entre les deux autres : pour $c = 0$, $P = 5$ ; pour $c = 2$, $P = 0{,}75 \\times 4 + 5 = 8$ ; pour $c = 5$, $P = 23{,}75$.",
+            "T3 ne passe pas par (0 ; 5) : il part de l'origine. T1 passe par (0 ; 5) et (5 ; 23,75), mais pas par (2 ; 8) : pour 2 dm, il donne 12,5.",
+            "Seul **le tracé T2** passe par les trois points : il représente le prix chez Vitralu. Avec un carré, les points ne sont pas alignés : on obtient une courbe, pas une droite."
+          ],
+          "hint": "Calcule le prix chez Vitralu pour trois valeurs de $c$, dont une entre les deux autres, et cherche le tracé qui passe par les trois points."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Représenter l'expression d'une grandeur en fonction d'une autre par un graphique. »"
     },
     {
       "id": "SX-J043-01",
