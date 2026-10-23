@@ -97,7 +97,6 @@ Repris plus tard (décision du 19 octobre 2026) : refus du consentement par le p
 
 ## En parallèle, côté Gauthier (sans code)
 
-- Coller 0023 (seule) et 0024 ; vérifier les deux professeurs en base.
 - Valider les 8 hypothèses du business plan (`Management de Projet/Business_plan.md`, §9).
 - Une seule séance pour les tests manuels (`TESTS_MANUELS.md`).
 - Recette du contenu par Marius dans `/recette`, au fil des publications.

@@ -2,7 +2,7 @@
 
 > Gardés pour une seule séance commune (demande du 20 octobre 2026). Toute livraison qui demande un test manuel ajoute une ligne ici. Rayer un test une fois passé, avec la date.
 
-**Prérequis :** 0023 recollée et 0024 collée, professeurs vérifiés, contenu de l'étape 8 publié, Cron posé pour le test 10.
+**Prérequis :** Cron posé pour le test 10 ; pour le test 13, un professeur vérifié (Jean-Marc l'est, pas `+prof1`). Migrations 0023 et 0024 et étape 8 : en ligne depuis le 23 octobre 2026.
 
 1. Consentement parental de bout en bout : création d'un compte de moins de 15 ans, email Resend reçu sur l'adresse de Gauthier, accord puis refus, modification de date de naissance soumise à accord.
 2. Correction en ligne (`corriger`) sur un vrai compte : « 7,7° » pour une température en °C, « n = 13 », « 1,496 fois 10^8 », « 225 cm^2 », « 6/(-10) » acceptés ; « -3/-7 » refusé pour 3/7 ; espaces de milliers dans le corrigé.

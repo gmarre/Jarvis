@@ -54,10 +54,8 @@ React 18, Vite, TypeScript, Tailwind ; Supabase (Postgres, Auth Google et email,
 
 ## 3. Base en ligne (projet Supabase `crazwnfjyzaxirbmwnkn`)
 
-**Migrations :** 0001 à 0022 appliquées (0022 le 21 octobre 2026, contenu republié).
-- **0023 à recoller seule** : constaté le 22 octobre, `enregistrer_positionnement` en ligne est encore la version de 0021 (0021 a sans doute été rejouée après 0023). Tant qu'elle manque, un élève peut faire valider une compétence au test après avoir vu sa correction en exercice.
-- **0024 à coller** (23 octobre 2026) : depuis 0020, aucun professeur ne pouvait ouvrir de créneau (la politique de lecture relisait la table pendant l'upsert ... RETURNING, insertion annulée). Corrigé par 0024 et le TEST 199 ; l'écran attend la réponse du serveur.
-- **Professeurs :** les deux en base ne sont pas vérifiés (`verifie_le` nul), leurs créneaux restent cachés des élèves. Requête : `update teachers set verifie_le = now() where id = (select id from profiles where email = '...');`
+**Migrations :** 0001 à 0024 appliquées (0023 recollée et 0024 le 23 octobre 2026, vérifiées en base).
+- **Professeurs :** Jean-Marc vérifié (23 octobre 2026) ; le compte de test `+prof1` de Gauthier ne l'est pas, ses créneaux restent cachés des élèves. Requête : `update teachers set verifie_le = now() where id = (select id from profiles where email = '...');`
 - **Cron :** `supabase/cron/rappels.sql` pas appliqué (`pg_cron` absent ; secret `CRON_SECRET` à créer, mode d'emploi en tête du fichier).
 
 **Edge Functions déployées :**

@@ -104,5 +104,6 @@
   1. F012 : la maîtrise (factoriser) est bien plus exigeante que la découverte (développer) ; seule la durée de EX-F012-M-01 était sous-estimée, passée de 90 à 120 s.
   2. Modèles de consignes des étapes 5 et 6 archivés ; ceux de l'étape 4b restent, pour les règles de figures.
   3. Pas de migration pour J, K, L : `[A-P]` les couvre déjà (base, schémas, `corriger`).
+- 23/10/2026 : étape 9, délégation reconduite pour tous les arbitrages (Gauthier).
 
 Le détail des sprints 1 à 6 (ce qui a été codé, quand, et pourquoi) est dans `archive/CLAUDE_avant_decoupage_2026-10-23.md`, §6.
