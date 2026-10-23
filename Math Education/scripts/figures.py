@@ -2908,6 +2908,11 @@ def _repere(p: dict) -> tuple[str, str]:
                               corrige seulement) : {"courbe": "d", "x": 3}
                               (image) ou {"courbe": "d", "y": 4} (antecedents) ;
                               chaque valeur lue tombe sur la demi-graduation
+      segments                [{"de": [0, 0], "a": [4, 0], "tirets": false,
+                              "couleur": "trait"}] : segments libres, verticaux
+                              compris, extremites sur la demi-graduation (les
+                              triangles emboites d'un graphique de
+                              proportionnalite, J045) ; couleur "trait" ou "accent"
       intersection_libre      true : accepte deux courbes qui se coupent hors de
                               la demi-graduation (sinon refus : une resolution
                               graphique y lirait une valeur fausse)
@@ -2989,6 +2994,17 @@ def _repere(p: dict) -> tuple[str, str]:
         corps.append(_texte_detoure(X(0) + 9, Y(bornes["ymax"]) - c / 2 - 2, titres[1], 12, ancre="start"))
 
     courbes = _courbes_repere(p, bornes, pas_x, pas_y)
+    # Points nommes et leur etiquette (au nord-est par defaut) : le nom d'une
+    # courbe ne s'y pose pas (« d » collait a N dans un essai de J045).
+    obstacles = []
+    for pt in p.get("points", []) if courbes else []:
+        try:
+            qx = X(float(_nombre(pt.get("x"), "points.x") / pas_x))
+            qy = Y(float(_nombre(pt.get("y"), "points.y") / pas_y))
+        except FigureInvalide:
+            continue                     # refuse plus bas, avec son message
+        pos = pt.get("position", "ne")
+        obstacles += [(qx, qy), (qx + (12 if pos[-1:] == "e" else -12), qy + (-12 if pos[:1] == "n" else 14))]
     for k, cb in enumerate(courbes):
         couleur = COULEURS_COURBES[k]
         tirets = ' stroke-dasharray="7 4"' if cb["tirets"] else ""
@@ -3013,10 +3029,35 @@ def _repere(p: dict) -> tuple[str, str]:
                     nx_, ny_ = -nx_, -ny_
                 ex, ey = X(gx) + 14 * nx_, Y(gy) - 14 * ny_
                 if (abs(ex - X(0)) >= 18 and abs(ey - Y(0)) >= 16
+                        and all(math.dist((ex, ey), q) >= 22 for q in obstacles)
                         and X(bornes["xmin"]) + 8 <= ex <= X(bornes["xmax"]) - 8
                         and Y(bornes["ymax"]) + 8 <= ey <= Y(bornes["ymin"]) - 4):
                     break
             corps.append(_texte_detoure(ex, ey + 5, cb["nom"], 14, couleur=couleur, gras=True))
+    segs = p.get("segments", [])
+    if not isinstance(segs, list):
+        raise FigureInvalide("segments : liste attendue")
+    for k, sg in enumerate(segs):
+        bouts = []
+        for cle in ("de", "a"):
+            q = sg.get(cle) if isinstance(sg, dict) else None
+            if not isinstance(q, list) or len(q) != 2:
+                raise FigureInvalide(f"segment {k + 1} : \"{cle}\" s'écrit [x, y]")
+            gx, gy = _nombre(q[0], "segments.x") / pas_x, _nombre(q[1], "segments.y") / pas_y
+            if (2 * gx).denominator != 1 or (2 * gy).denominator != 1:
+                raise FigureInvalide(f"segment {k + 1} : ({_coord(gx * pas_x)} ; {_coord(gy * pas_y)}) hors de la demi-graduation")
+            if not (bornes["xmin"] <= gx <= bornes["xmax"] and bornes["ymin"] <= gy <= bornes["ymax"]):
+                raise FigureInvalide(f"segment {k + 1} : ({_coord(gx * pas_x)} ; {_coord(gy * pas_y)}) hors du repère")
+            bouts.append((float(gx), float(gy)))
+        if bouts[0] == bouts[1]:
+            raise FigureInvalide(f"segment {k + 1} : extrémités confondues")
+        couleur = {"trait": TRAIT, "accent": ACCENT}.get(sg.get("couleur", "trait"))
+        if couleur is None:
+            raise FigureInvalide(f"segment {k + 1} : couleur \"trait\" ou \"accent\"")
+        tirets = ' stroke-dasharray="5 4"' if sg.get("tirets") else ""
+        (x1, y1), (x2, y2) = bouts
+        corps.append(f'<line x1="{X(x1):.1f}" y1="{Y(y1):.1f}" x2="{X(x2):.1f}" y2="{Y(y2):.1f}" '
+                     f'stroke="{couleur}" stroke-width="2" stroke-linecap="round"{tirets}/>')
     for (gx, gy) in _lectures_repere(p, courbes, bornes, pas_x, pas_y):
         px, py = X(gx), Y(gy)
         corps.append(f'<path d="M{px:.1f},{Y(0):.1f} V{py:.1f} H{X(0):.1f}" fill="none" '
