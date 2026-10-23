@@ -137,4 +137,20 @@ select 'TEST 171 seuls les messages autorises existent, le signalement est garde
         and (select signale_le from messages_suivi where texte = 'Bienvenue') is not null
         and (select count(*) from bookings where slot_id = 'f0000000-0000-0000-0000-000000000001') = 1) as ok;
 
+-- --- Ouverture avec RETURNING, comme l'application (migration 0024) ----------------------------
+-- Avant 0024, la politique de lecture relisait la table : la ligne neuve n'y
+-- etait pas encore et toute l'insertion etait refusee.
+
+set role authenticated;
+set request.jwt.claim.sub = 'e0000000-0000-0000-0000-000000000001';
+insert into availability_slots (prof_id, start_at)
+values ('e0000000-0000-0000-0000-000000000001', now() + interval '9 days')
+on conflict (prof_id, start_at) do nothing
+returning 'TEST 199 le professeur ouvre un creneau avec RETURNING' as test, true as ok;
+insert into availability_slots (prof_id, start_at, reserve_suivi)
+values ('e0000000-0000-0000-0000-000000000001', now() + interval '10 days', true)
+on conflict (prof_id, start_at) do nothing
+returning 'TEST 199a idem pour un creneau reserve aux suivis' as test, true as ok;
+reset role;
+
 select 'TEST FIN 14 le fichier est alle jusqu au bout' as test, true as ok;

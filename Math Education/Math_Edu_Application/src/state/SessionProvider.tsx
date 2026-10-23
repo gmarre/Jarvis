@@ -401,9 +401,9 @@ export function SessionProvider({ children }: { children: ReactNode }) {
   )
 
   const openSlots = useCallback<SessionValue['openSlots']>(
-    (dayIso, starts, domaines, offre, reserve) => {
+    async (dayIso, starts, domaines, offre, reserve) => {
       const profId = session?.profile.id
-      if (!profId) return
+      if (!profId) return 0
 
       const nouveaux = starts.map((minutes) => {
         return {
@@ -418,12 +418,16 @@ export function SessionProvider({ children }: { children: ReactNode }) {
         }
       })
 
-      void repository
-        .createSlots(nouveaux)
-        .then(async () => setCatalog(await repository.getCatalog()))
-        .catch((cause: unknown) => {
-          setSyncError(echec("L'ouverture des créneaux a échoué.", cause))
-        })
+      // L'ecran n'annonce la publication qu'apres la reponse du serveur :
+      // le 22 octobre 2026, il affichait « publie » alors que la base refusait.
+      try {
+        const crees = await repository.createSlots(nouveaux)
+        setCatalog(await repository.getCatalog())
+        return crees.length
+      } catch (cause) {
+        setSyncError(echec("L'ouverture des créneaux a échoué.", cause))
+        return 0
+      }
     },
     [session],
   )

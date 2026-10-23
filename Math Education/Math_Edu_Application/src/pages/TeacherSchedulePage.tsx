@@ -52,6 +52,7 @@ export default function TeacherSchedulePage() {
   const [draftStart, setDraftStart] = useState<number | null>(null)
   const [selectedDomains, setSelectedDomains] = useState<string[]>(['C', 'A'])
   const [published, setPublished] = useState<number | null>(null)
+  const [publishing, setPublishing] = useState(false)
   /** Offre choisie pour les creneaux a publier ; vide : cours libre de 1 h 30. */
   const [offreId, setOffreId] = useState('')
   /** Creneaux reserves aux eleves suivis (sprint 5, migration 0020). */
@@ -111,10 +112,15 @@ export default function TeacherSchedulePage() {
       current.includes(id) ? current.filter((d) => d !== id) : [...current, id],
     )
 
-  const publish = () => {
-    if (startsToPublish.length === 0) return
-    openSlots(day.toISOString(), startsToPublish, selectedDomains, offre, reserve)
-    setPublished(startsToPublish.length)
+  const publish = async () => {
+    if (startsToPublish.length === 0 || publishing) return
+    setPublishing(true)
+    const crees = await openSlots(day.toISOString(), startsToPublish, selectedDomains, offre, reserve)
+    setPublishing(false)
+    // Echec : le bandeau d'erreur le dit, et les horaires restent choisis
+    // pour reessayer.
+    if (crees === 0) return
+    setPublished(crees)
     setSelectedStarts([])
     window.setTimeout(() => setPublished(null), 4000)
   }
@@ -272,10 +278,12 @@ export default function TeacherSchedulePage() {
               variant="dark"
               fullWidth
               size="lg"
-              onClick={publish}
-              disabled={startsToPublish.length === 0}
+              onClick={() => void publish()}
+              disabled={startsToPublish.length === 0 || publishing}
             >
-              {startsToPublish.length === 0
+              {publishing
+                ? 'Publication…'
+                : startsToPublish.length === 0
                 ? 'Ajoute au moins un horaire'
                 : `Publier ${startsToPublish.length} créneau${startsToPublish.length > 1 ? 'x' : ''}`}
             </Button>
