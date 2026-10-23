@@ -1,20 +1,21 @@
 r"""
-Construit la fiche de relecture du contenu MATH EDUCATION.
+Controle la coordination du contenu MATH EDUCATION (difficulte qui baisse le
+long d'un prerequis, enonces trop longs pour le niveau, maitrise pas plus
+exigeante que la decouverte, niveau non source) et l'affiche dans la console.
 
-Deux sorties :
-  RELECTURE.md         synthese, lecture en une dizaine de minutes. Objectif :
-                       juger le FOND et la COORDINATION, pas relire chaque
-                       exercice. Parcours ordonne, chapitres, une ligne par
-                       exercice.
-  RELECTURE_DETAIL.md  tout le contenu, enonces complets, corriges, distracteurs.
-                       Pour creuser une competence precise.
+Les fiches RELECTURE.md et RELECTURE_DETAIL.md ne sont plus ecrites par
+defaut (23 octobre 2026) : la recette de Marius passe par /recette dans
+l'application, et ces fiches (1,6 Mo) ne servaient plus qu'a encombrer le
+depot. Pour les regenerer a la demande, dans un dossier hors du depot :
+    python .\scripts\build_review_sheet.py --fiches <dossier>
 
 Usage :
-    python .\scripts\build_review_sheet.py            (les deux fichiers)
+    python .\scripts\build_review_sheet.py            (controle seul)
 """
 
 from __future__ import annotations
 
+import argparse
 import json
 import re
 import statistics as st
@@ -79,6 +80,11 @@ def reponse(e: dict) -> str:
 
 # --------------------------------------------------------------------------
 def main() -> int:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--fiches", type=Path,
+                    help="dossier où écrire RELECTURE.md et RELECTURE_DETAIL.md")
+    args = ap.parse_args()
+
     dag, exos, cartes = contenu.charger(CONTENT)
 
     S = {s["id"]: s for s in dag["skills"]}
@@ -124,6 +130,14 @@ def main() -> int:
                 note(sid, "maîtrise pas plus exigeante que découverte")
         if not s.get("programme_ref"):
             note(sid, "niveau non sourcé (aucune citation de programme)")
+
+    print(f"{len(avec)} compétences avec exercices, "
+          f"{len(anomalies)} anomalie(s) de coordination")
+    for sid, lst in sorted(anomalies.items(), key=lambda kv: parcours.index(kv[0])):
+        print(f"  {sid} ({S[sid]['school_level']}) : {' ; '.join(lst)}")
+    if not args.fiches:
+        return 0
+    args.fiches.mkdir(parents=True, exist_ok=True)
 
     # ================= FICHE SYNTHESE =================
     L = []
@@ -210,7 +224,7 @@ def main() -> int:
             A(f"| {CODE[e['level']]} | {e['type'][:4]} | {court(e['statement'], 92)} | {reponse(e)} |")
         A("")
 
-    (SPEC / "RELECTURE.md").write_text("\n".join(L), encoding="utf-8")
+    (args.fiches / "RELECTURE.md").write_text("\n".join(L), encoding="utf-8")
 
     # ================= FICHE DETAIL =================
     D = []
@@ -250,11 +264,9 @@ def main() -> int:
                 B("")
         B("---")
         B("")
-    (SPEC / "RELECTURE_DETAIL.md").write_text("\n".join(D), encoding="utf-8")
+    (args.fiches / "RELECTURE_DETAIL.md").write_text("\n".join(D), encoding="utf-8")
 
-    print(f"RELECTURE.md        {len(avec)} compétences, {total} exercices, "
-          f"{len(anomalies)} anomalie(s) de coordination")
-    print(f"RELECTURE_DETAIL.md {len('\n'.join(D)) // 1000} ko")
+    print(f"Fiches écrites dans {args.fiches} ({total} exercices)")
     return 0
 
 

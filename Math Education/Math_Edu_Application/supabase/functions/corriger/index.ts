@@ -28,7 +28,7 @@
 // chevaucher (lecture puis ecriture) : l'ecran d'exercice attend la
 // correction avant d'en permettre une autre.
 //
-// Deploiement : voir CLAUDE.md §10 (Edge Functions). SUPABASE_URL et
+// Deploiement : skill `deployer-fonction` (.claude/skills). SUPABASE_URL et
 // SUPABASE_SERVICE_ROLE_KEY sont fournies par Supabase a l'execution.
 
 import { createClient } from 'npm:@supabase/supabase-js@2'

@@ -55,16 +55,14 @@ domaines à moitié faits.
    python scripts/merge_dag.py --mindmaps _travail/etapeN_mm_X.json --apply
    python scripts/set_review_status.py --status relu_agent --skill <id>   (chaque compétence relue)
    python scripts/set_review_status.py --status relu_agent --cartes <MM-...>
-   python scripts/build_review_sheet.py
+   python scripts/build_review_sheet.py   (contrôle de coordination, sans fichier)
    ```
-   Les consignes de l'étape 3, les plus complètes (cartographe, rédacteurs,
-   relecteurs : `modeles_agents/consigne_*_etape3.md`), servent de modèle aux
-   suivantes ; pour un domaine à figures, prendre celles de l'étape 4b
-   (`modeles_agents/consigne_*_etape4b.md`), qui portent les règles des figures
-   tirées des relectures. Celles de l'étape 1 restent disponibles :
-   `modeles_agents/consigne_redacteurs_etape1.md` et
-   `modeles_agents/consigne_relecteurs_etape1.md` (à recopier dans `_travail/`
-   et adapter au domaine).
+   Le circuit pas à pas fait foi dans le skill `etape-contenu`
+   (`.claude/skills/etape-contenu/SKILL.md`). Les consignes de la dernière
+   étape close (`modeles_agents/consigne_*_etape<N>.md`) servent de modèle aux
+   suivantes ; pour un domaine à figures, prendre aussi celles de l'étape 4b,
+   qui portent les règles des figures tirées des relectures. Les plus
+   anciennes sont dans `modeles_agents/archive/`.
    **Garder les mêmes agents** d'un bout à l'autre d'une étape : le rapport de
    relecture repart chez le rédacteur d'origine, et la contre-relecture chez le
    relecteur d'origine. Chacun garde ainsi le contexte de son lot.
@@ -88,11 +86,11 @@ domaines à moitié faits.
    Aucun script ne lit ces fichiers à la main : tous passent par
    `scripts/contenu.py`. Les fusions acceptent un tableau JSON tel que les agents
    le produisent.
-6. **Suivi** : bilan dans `QUALITY.md`, état dans ce fichier, commit.
+6. **Suivi** : bilan dans `qualite/<étape>.md` (index `QUALITY.md`), état dans ce fichier, commit.
 
 Tout reste en `review_status: "brouillon"` ou `"relu_agent"` jusqu'à la **recette
 de Marius dans l'application** (outil en place depuis le 4 octobre 2026) : il juge
 chaque exercice et chaque carte, au fil des étapes publiées, et
 `scripts/recette.py` reporte les verdicts. Accepté devient `valide` ; invalidé
 redevient `brouillon` et part dans `RECETTE.md` avec le commentaire, à reprendre
-par les agents. Procédure : `CLAUDE.md` §10.6.
+par les agents. Procédure : `.claude/rules/contenu.md`, « Recette du contenu ».

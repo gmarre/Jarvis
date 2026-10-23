@@ -2,9 +2,10 @@
 
 > Manuel de travail sur le code. Destiné à Gauthier et Marius.
 >
-> **Où en est le projet et ce qui reste à faire : `ROADMAP.md`.** C'est lui qui
-> fait foi sur l'avancement, et il porte aussi les décisions déjà tranchées et
-> les pièges rencontrés. Contexte produit : `../CLAUDE.md`.
+> **Où en est le projet et ce qui reste à faire : `../pilotage/`** (`ETAT.md`,
+> `SPRINT.md`, `FEUILLE_DE_ROUTE.md`, `DECISIONS.md`). Règles et pièges de
+> l'application : `../.claude/rules/app.md`. Contexte produit : `../CLAUDE.md`.
+> Les paragraphes d'état de ce guide datent du début d'octobre 2026.
 >
 > Ce guide-ci répond à une seule question : comment travailler sur ce code.
 
@@ -19,7 +20,7 @@ L'application web MATH EDUCATION, nom de produit **Racine**. C'est une
 vrai contenu de Marius, le moteur est couvert par 176 tests, et Supabase est
 entièrement branché (authentification Google et email, base Postgres, politiques
 RLS). Manquent les emails, le contenu en base, le déploiement et l'espace parent.
-Détail dans `ROADMAP.md`.
+État à jour : `../pilotage/ETAT.md`.
 
 **Les briques en place :**
 
@@ -47,7 +48,7 @@ Détail dans `ROADMAP.md`.
   **Attention :** `supabase-js` exige un WebSocket natif, donc Node 22 minimum,
   pour tout script Node. Le script `supabase/tests/integration.mjs` a été écrit
   en `fetch` pur pour contourner, mais le script de seed du sprint 3 butera
-  dessus. Montée en Node 24 prévue, marche à suivre dans `ROADMAP.md` §7.
+  dessus. Montée en Node 24 prévue, marche à suivre dans `../pilotage/archive/ROADMAP.md` §7.
 - **Docker** si vous voulez lancer `npm run test:sql`. Inutile sinon.
 
 ### Première fois
@@ -157,7 +158,7 @@ a testé quelque chose qu'on n'a pas testé.
    Nécessite `SUPABASE_SERVICE_ROLE_KEY`.
 
 **Aucun des quatre ne teste l'interface.** Les parcours navigateur restent à
-dérouler à la main, la liste est dans `ROADMAP.md` §1.
+dérouler à la main, la liste est dans `../pilotage/TESTS_MANUELS.md` (Playwright couvre 8 parcours depuis le 21 octobre 2026).
 
 ---
 
@@ -418,15 +419,15 @@ marque (`text-ink`, `bg-accent`, `border-line`...), définis dans
   propriétaire ne teste rien. Deux bugs sont passés par cet angle mort.
 - **Le contenu pédagogique reste du JSON versionné.** Cette app le consomme, elle
   ne le modifie pas. Git reste la source de vérité, même après le seed en base.
-- **Fin de sprint : mettre `ROADMAP.md` à jour.** C'est ce qui permet de reprendre
+- **Fin de sprint : skill `cloture-sprint`** (met `../pilotage/` à jour). C'est ce qui permet de reprendre
   après une interruption.
 
 ---
 
 ## 8. Prochaines étapes
 
-Le détail, avec les prérequis dans le bon ordre et les pièges, est dans
-**`ROADMAP.md`**. En résumé :
+**Historique (début octobre 2026), ne plus suivre** : la suite à jour est dans
+**`../pilotage/FEUILLE_DE_ROUTE.md`**. Résumé d'époque :
 
 1. **Sprint 2b** : Node 24, domaine, Resend, consentement parental enfin
    obtenable. C'est le blocage réglementaire n°1.

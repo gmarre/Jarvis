@@ -3,11 +3,11 @@
 Application web d'apprentissage adaptatif des mathématiques (CP à Terminale
 spécialité), pilotée par un DAG de compétences. Nom de produit : **Racine**.
 
-> **Pour reprendre le projet, lire `ROADMAP.md` en premier.** Il dit l'état réel
-> du code, les décisions déjà tranchées et ce qui reste sprint par sprint. C'est
-> lui qui fait foi sur l'avancement.
+> **Pour reprendre le projet, lire `../CLAUDE.md` puis `../pilotage/`** (état,
+> sprint en cours, feuille de route, décisions). C'est lui qui fait foi sur
+> l'avancement ; `ROADMAP.md` est archivé dans `../pilotage/archive/`.
 >
-> - `ROADMAP.md` — où on en est, ce qui vient, et pourquoi.
+> - `../pilotage/` : où on en est, ce qui vient, et pourquoi.
 > - `GUIDE.md` — comment travailler sur le code : commandes, structure, recettes.
 > - `../CLAUDE.md` — contexte produit (DAG, modèle économique, rôles).
 >
@@ -25,7 +25,7 @@ spécialité), pilotée par un DAG de compétences. Nom de produit : **Racine**.
 
 - Node **>= 18.18** aujourd'hui (`.nvmrc`), mais **Node 22 minimum bientôt requis** :
   `supabase-js` exige un WebSocket natif pour ses scripts Node. Montée en Node 24
-  prévue au sprint 2b, marche à suivre dans `ROADMAP.md` §7.
+  prévue au sprint 2b, marche à suivre dans `../pilotage/archive/ROADMAP.md` §7.
 - **Docker** pour `npm run test:sql` uniquement.
 
 ## Démarrage
@@ -156,7 +156,7 @@ Le moteur ne propose jamais une lacune sans exercice, sous peine d'annoncer
 
 ## Ce qui manque encore
 
-Par ordre de valeur, détail dans `ROADMAP.md` :
+Historique (début octobre 2026) ; la liste à jour est dans `../pilotage/FEUILLE_DE_ROUTE.md` :
 
 1. **Les emails**, donc le consentement parental est impossible à obtenir.
 2. **Le contenu en base et la correction côté serveur** : les réponses des

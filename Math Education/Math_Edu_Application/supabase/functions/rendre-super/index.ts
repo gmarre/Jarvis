@@ -16,7 +16,7 @@
 //           super_attempts, progression: { ligne, vientDEtreAcquise } | null }
 //           (null quand le niveau de la porteuse ne change pas).
 //
-// Deploiement : voir CLAUDE.md §10 (Edge Functions).
+// Deploiement : skill `deployer-fonction` (.claude/skills).
 
 import { createClient } from 'npm:@supabase/supabase-js@2'
 
