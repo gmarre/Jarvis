@@ -1,0 +1,116 @@
+{
+  "id": "SX-E005-01",
+  "skill_id": "E005",
+  "skill_ids": [
+    "E005",
+    "E027",
+    "D024",
+    "F023",
+    "D026"
+  ],
+  "school_level": "4e",
+  "title": "Au moulin à huile",
+  "contexte": "En novembre, la famille de Lou récolte 78 kg d'olives, grâce à un printemps pluvieux, et les apporte au moulin du village, construit en 1880.\n\nAu moulin, le volume d'huile obtenu est proportionnel à la masse d'olives pressées. La semaine dernière, leur voisin Marcel a fait presser 45 kg d'olives et il a obtenu 8,1 L d'huile.\n\nLe moulin facture le pressage 0,35 € par kilogramme d'olives. Il vend aussi de petites bouteilles vides de 0,25 L. Il est ouvert de 8 h à 18 h.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "E027",
+      "statement": "Quel volume d'huile Marcel aurait-il obtenu avec 90 kg d'olives ?",
+      "type": "numerique",
+      "answer": {
+        "value": 16.2,
+        "unit": "L"
+      },
+      "points": 1,
+      "solution_steps": [
+        "90 kg, c'est 2 fois 45 kg.",
+        "Le volume d'huile est proportionnel à la masse d'olives : il est lui aussi 2 fois plus grand, 2 × 8,1 = 16,2. Marcel aurait obtenu **16,2 L** d'huile."
+      ],
+      "hint": "Compare 90 kg et 45 kg."
+    },
+    {
+      "key": "q2",
+      "skill_id": "D024",
+      "statement": "Combien Lou paiera-t-elle le pressage de ses olives ?",
+      "type": "numerique",
+      "answer": {
+        "value": 27.3,
+        "unit": "€",
+        "accepted": [
+          "27 € 30",
+          "27 euros 30"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le pressage coûte 0,35 € par kilogramme et Lou apporte 78 kg : on calcule 78 × 0,35.",
+        "On pose 78 × 35 = 2 730, puis on place la virgule : 0,35 a deux chiffres après la virgule, donc 78 × 0,35 = 27,30.",
+        "Lou paiera **27,30 €**. Ordre de grandeur : 80 × 0,35 = 28, c'est cohérent."
+      ],
+      "hint": "Le prix dépend de la masse d'olives de Lou."
+    },
+    {
+      "key": "q3",
+      "skill_id": "F023",
+      "statement": "Au même moulin, Maëlle a payé 22,40 € pour le pressage de ses olives. On note $x$ la masse de ses olives, en kg : elle vérifie l'équation $0{,}35x = 22{,}40$. Résous cette équation : quelle masse d'olives Maëlle a-t-elle fait presser, en kg ?",
+      "type": "numerique",
+      "answer": {
+        "value": 64,
+        "unit": "kg",
+        "accepted": [
+          "x = 64",
+          "x=64"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Dans $0{,}35x = 22{,}40$, le nombre $x$ est multiplié par 0,35 : on fait l'opération inverse, on divise par 0,35.",
+        "$x = 22{,}40 \\div 0{,}35$. On multiplie les deux nombres par 100 : $2\\,240 \\div 35 = 64$.",
+        "Contrôle : $0{,}35 \\times 64 = 22{,}40$. Maëlle a fait presser **64 kg** d'olives."
+      ],
+      "hint": "Quelle opération défait « multiplier par 0,35 » ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "D026",
+      "statement": "Combien de petites bouteilles de 0,25 L Marcel peut-il remplir entièrement avec ses 8,1 L d'huile ?",
+      "type": "numerique",
+      "answer": {
+        "value": 32,
+        "unit": "bouteilles",
+        "accepted": [
+          "32 bouteille"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "On cherche combien de fois 0,25 L entre dans 8,1 L : on calcule 8,1 ÷ 0,25.",
+        "On multiplie les deux nombres par 100 : 8,1 ÷ 0,25 = 810 ÷ 25 = 32,4.",
+        "Marcel remplit 32 bouteilles en entier ; les 0,1 L qui restent ne remplissent pas une 33e bouteille. Réponse : **32 bouteilles**."
+      ],
+      "hint": "Combien de bouteilles de 0,25 L faut-il pour faire 1 L ?"
+    },
+    {
+      "key": "q5",
+      "skill_id": "E005",
+      "statement": "Quel volume d'huile Lou obtiendra-t-elle avec ses 78 kg d'olives ?",
+      "type": "numerique",
+      "answer": {
+        "value": 14.04,
+        "unit": "L"
+      },
+      "points": 3,
+      "solution_steps": [
+        "On cherche une quatrième proportionnelle : 45 kg d'olives donnent 8,1 L, et l'on cherche le volume $x$ que donnent 78 kg.",
+        "Égalité des rapports, volume sur masse des deux côtés : $\\dfrac{x}{78} = \\dfrac{8{,}1}{45}$, donc $45x = 8{,}1 \\times 78 = 631{,}8$, et $x = 631{,}8 \\div 45 = 14{,}04$.",
+        "Autre méthode, le passage par l'unité : 8,1 ÷ 45 = 0,18 L d'huile par kilogramme, puis 0,18 × 78 = 14,04.",
+        "Lou obtiendra **14,04 L** d'huile. Attention : ajouter 33 kg d'un côté et 33 L de l'autre n'a pas de sens, la situation est multiplicative."
+      ],
+      "hint": "Écris l'égalité des rapports avec le volume et la masse dans le même ordre des deux côtés."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Déterminer une quatrième proportionnelle. »"
+}

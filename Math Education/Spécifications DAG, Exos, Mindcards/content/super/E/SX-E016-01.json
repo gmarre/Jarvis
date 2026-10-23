@@ -1,0 +1,121 @@
+{
+  "id": "SX-E016-01",
+  "skill_id": "E016",
+  "skill_ids": [
+    "E016",
+    "E037",
+    "E039",
+    "F010"
+  ],
+  "school_level": "4e",
+  "title": "Les tarifs du club d'escalade",
+  "contexte": "Le club d'escalade « Prise directe » annonce ses tarifs pour la nouvelle saison. Son mur mesure 14 m de haut.\n\nLa cotisation annuelle des adultes, qui était de 210 €, augmente de 5 %. Celle des moins de 18 ans, qui était de 140 €, baisse de 15 % pour attirer les jeunes.\n\nToutes les cartes de séances augmentent elles aussi de 5 % : la carte de 10 séances coûte désormais 92,40 €. La location de chaussons reste à 3 € la séance.\n\nLe club compte 240 adhérents, dont 66 ont moins de 18 ans.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "E037",
+      "statement": "De combien d'euros la cotisation des adultes augmente-t-elle ?",
+      "type": "numerique",
+      "answer": {
+        "value": 10.5,
+        "unit": "€",
+        "accepted": [
+          "10 € 50",
+          "10 euros 50"
+        ]
+      },
+      "points": 1,
+      "solution_steps": [
+        "5 %, c'est la moitié de 10 %.",
+        "10 % de 210 €, c'est 210 ÷ 10 = 21 € ; 5 %, c'est 21 ÷ 2 = 10,50 €.",
+        "La cotisation des adultes augmente de **10,50 €**."
+      ],
+      "hint": "Commence par calculer 10 % de 210 €."
+    },
+    {
+      "key": "q2",
+      "skill_id": "E039",
+      "statement": "Quel pourcentage des adhérents a moins de 18 ans ?",
+      "type": "numerique",
+      "answer": {
+        "value": 27.5,
+        "unit": "%",
+        "accepted": [
+          "27,5 pour cent"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "On compare la partie, 66 jeunes, au tout, 240 adhérents, ramené à 100 adhérents.",
+        "Le pourcentage $p$ vérifie l'égalité des rapports $\\dfrac{p}{100} = \\dfrac{66}{240}$, donc $240p = 6\\,600$.",
+        "$p = 6\\,600 \\div 240 = 660 \\div 24 = 27{,}5$. **27,5 %** des adhérents ont moins de 18 ans."
+      ],
+      "hint": "Combien de jeunes y aurait-il pour 100 adhérents ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "F010",
+      "statement": "Pour la saison suivante, le club envisage d'augmenter de 8 % le prix de ses stages d'été. On note $x$ le prix actuel d'un stage, en euros ; après cette hausse, il coûterait $x + 0{,}08x$. Écris cette expression sous forme réduite.",
+      "type": "texte",
+      "answer": {
+        "value": "1,08x",
+        "unit": "€",
+        "forme": "reduite",
+        "variables": [
+          "x"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "$x$, c'est $1 \\times x$ : $x + 0{,}08x = 1x + 0{,}08x$.",
+        "On réduit en ajoutant les nombres qui multiplient $x$ : 1 + 0,08 = 1,08.",
+        "Après la hausse, un stage coûterait $1{,}08x$ euros : la forme réduite est **1,08x**."
+      ],
+      "hint": "Par quel nombre la lettre x est-elle multipliée dans chaque terme ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "E016",
+      "statement": "Par quel nombre décimal multiplie-t-on l'ancienne cotisation des moins de 18 ans pour obtenir la nouvelle ?",
+      "type": "numerique",
+      "answer": {
+        "value": 0.85,
+        "accepted": [
+          "×0,85",
+          "× 0,85",
+          "x0,85",
+          "x 0,85"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Baisser de 15 %, c'est retirer 15 % de la cotisation : il en reste 100 % − 15 % = 85 %.",
+        "85 %, c'est $\\dfrac{85}{100}$, soit 0,85 : le coefficient multiplicateur est **0,85**.",
+        "Contrôle : 140 × 0,85 = 119 €, et 140 − 21 = 119, car 15 % de 140, c'est 21."
+      ],
+      "hint": "Quel pourcentage de l'ancienne cotisation reste-t-il après la baisse ?"
+    },
+    {
+      "key": "q5",
+      "skill_id": "E016",
+      "statement": "Quel était le prix de la carte de 10 séances avant la hausse ?",
+      "type": "numerique",
+      "answer": {
+        "value": 88,
+        "unit": "€"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Augmenter de 5 %, c'est multiplier par le coefficient multiplicateur 1 + 0,05 = 1,05 : ancien prix × 1,05 = 92,40.",
+        "On retrouve l'ancien prix en divisant : 92,40 ÷ 1,05. On multiplie les deux nombres par 20 : 92,40 ÷ 1,05 = 1 848 ÷ 21 = 88.",
+        "La carte coûtait **88 €**. Contrôle : 5 % de 88, c'est 4,40, et 88 + 4,40 = 92,40.",
+        "Attention : retirer 5 % de 92,40 € donne 87,78 €, faux, car les 5 % portent sur l'ancien prix."
+      ],
+      "hint": "Écris d'abord le calcul qui fait passer de l'ancien prix au nouveau."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Rendre compte d'une augmentation ou une diminution exprimée en pourcentages au moyen d'un coefficient multiplicateur »"
+}

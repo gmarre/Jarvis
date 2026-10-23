@@ -1,0 +1,120 @@
+{
+  "id": "SX-E013-01",
+  "skill_id": "E013",
+  "skill_ids": [
+    "E013",
+    "E016",
+    "E039",
+    "F010"
+  ],
+  "school_level": "3e",
+  "title": "Le bilan de la médiathèque",
+  "contexte": "La médiathèque de Saint-Aubin publie le bilan de ses trois dernières années. Elle est ouverte 34 heures par semaine.\n\nEn 2024, grâce à un nouvel espace jeunesse, le nombre de livres prêtés a augmenté de 80 % par rapport à 2023. En 2025, pendant huit mois de travaux, il a baissé de 55 % par rapport à 2024.\n\nEn 2025, la médiathèque compte 1 850 inscrits, dont 26 % ont moins de 12 ans. La mairie prévoit une baisse de 8 % du nombre d'inscrits en 2026, à cause de la fermeture d'une école.\n\nL'abonnement annuel coûte 28 € ; les étudiants paient 40 % de moins. En 2026, le budget d'achat de livres augmentera de 14 %.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "E016",
+      "statement": "Par quel nombre décimal la mairie multiplie-t-elle le nombre d'inscrits de 2025 pour prévoir celui de 2026 ?",
+      "type": "numerique",
+      "answer": {
+        "value": 0.92,
+        "accepted": [
+          "×0,92",
+          "× 0,92",
+          "x0,92",
+          "x 0,92"
+        ]
+      },
+      "points": 1,
+      "solution_steps": [
+        "Une baisse de 8 % laisse 100 % − 8 % = 92 % du nombre d'inscrits.",
+        "92 %, c'est 0,92 : le coefficient multiplicateur est **0,92**."
+      ],
+      "hint": "Quel pourcentage des inscrits restera-t-il ?"
+    },
+    {
+      "key": "q2",
+      "skill_id": "E039",
+      "statement": "Combien d'inscrits de 2025 ont moins de 12 ans ?",
+      "type": "numerique",
+      "answer": {
+        "value": 481,
+        "unit": "inscrits"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Prendre 26 % d'un nombre, c'est le multiplier par 0,26.",
+        "1 850 × 0,26 : on pose 1 850 × 26 = 48 100, puis on divise par 100, ce qui donne 481.",
+        "**481 inscrits** ont moins de 12 ans."
+      ],
+      "hint": "Prendre 26 % d'un nombre, c'est le multiplier par quel nombre ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "E016",
+      "statement": "Combien un étudiant paie-t-il l'abonnement annuel ?",
+      "type": "numerique",
+      "answer": {
+        "value": 16.8,
+        "unit": "€",
+        "accepted": [
+          "16 € 80",
+          "16 euros 80"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Payer 40 % de moins, c'est subir une baisse de 40 % : le coefficient multiplicateur est 1 − 0,40 = 0,6.",
+        "28 × 0,6 = 16,8. Un étudiant paie **16,80 €**.",
+        "Contrôle : 40 % de 28 €, c'est 11,20 €, et 28 − 11,20 = 16,80."
+      ],
+      "hint": "Par quel nombre multiplie-t-on un prix qui baisse de 40 % ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "F010",
+      "statement": "On note $b$ le budget d'achat de livres de 2025, en euros. En 2026, il vaudra $b + 0{,}14b$. Écris cette expression sous forme réduite.",
+      "type": "texte",
+      "answer": {
+        "value": "1,14b",
+        "unit": "€",
+        "forme": "reduite",
+        "variables": [
+          "b"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "$b$, c'est $1 \\times b$ : $b + 0{,}14b = 1b + 0{,}14b$.",
+        "On réduit en ajoutant les nombres qui multiplient $b$ : 1 + 0,14 = 1,14.",
+        "Le budget de 2026 vaudra $1{,}14b$ euros : la forme réduite est **1,14b**."
+      ],
+      "hint": "Par quel nombre la lettre b est-elle multipliée dans chaque terme ?"
+    },
+    {
+      "key": "q5",
+      "skill_id": "E013",
+      "statement": "De quel pourcentage le nombre de livres prêtés a-t-il baissé entre 2023 et 2025 ?",
+      "type": "numerique",
+      "answer": {
+        "value": 19,
+        "unit": "%",
+        "accepted": [
+          "19 pour cent"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Une hausse de 80 % multiplie le nombre de prêts par 1 + 0,80 = 1,8 ; une baisse de 55 % le multiplie par 1 − 0,55 = 0,45.",
+        "De 2023 à 2025, le nombre de prêts est donc multiplié par 1,8 × 0,45 = 0,81.",
+        "Le coefficient 0,81 est plus petit que 1 : c'est une baisse, et 0,81 = 1 − 0,19, soit une baisse de **19 %**.",
+        "Attention : on n'ajoute pas les pourcentages. 80 % − 55 % = 25 % ferait croire à une hausse, mais la baisse de 55 % porte sur le nombre de 2024, déjà augmenté."
+      ],
+      "hint": "Choisis un nombre de prêts pour 2023, par exemple 100, et suis-le jusqu'en 2025."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Traduire une augmentation ou une diminution en pourcentages. »"
+}

@@ -1,0 +1,173 @@
+{
+  "id": "SX-E001-01",
+  "skill_id": "E001",
+  "skill_ids": [
+    "E001",
+    "C007",
+    "E036",
+    "C010"
+  ],
+  "school_level": "4e",
+  "title": "Les boissons de la buvette",
+  "contexte": "Pour la fête du collège, les élèves de 4e tiennent la buvette. Ils préparent deux boissons à l'ananas, servies dans des gobelets de 25 cL.\n\n**Soleil** : 8 verres de jus d'ananas pour 11 verres de limonade.\n\n**Tropique** : 3,4 L de jus d'ananas pour 4,4 L d'eau gazeuse.\n\nIls vendent aussi des bouteilles de **Lagon**, une boisson du commerce dont l'étiquette annonce « 41 % de jus de fruits ».\n\nUn gobelet est vendu 1,50 €, et la buvette ouvre à 14 h 30. En fin de journée, sur les 250 gobelets vendus, 95 étaient de la boisson Tropique.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "E001",
+      "statement": "Quel est le ratio jus d'ananas : limonade de la boisson Soleil ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "11 : 8",
+          "misconception": "L'ordre des nombres suit l'ordre des mots, jus d'abord, limonade ensuite : 11 : 8 est le ratio limonade : jus."
+        },
+        {
+          "key": "b",
+          "text": "8 : 19",
+          "misconception": "8 : 19 compare le jus au mélange entier (8 + 11 = 19 verres), pas le jus à la limonade."
+        },
+        {
+          "key": "c",
+          "text": "8 : 11",
+          "misconception": null
+        },
+        {
+          "key": "d",
+          "text": "19 : 8",
+          "misconception": "19 : 8 compare le mélange entier au jus : la limonade seule n'y apparaît pas."
+        }
+      ],
+      "answer": {
+        "value": "c"
+      },
+      "points": 1,
+      "solution_steps": [
+        "La recette dit « 8 verres de jus d'ananas pour 11 verres de limonade ». Le ratio jus d'ananas : limonade s'écrit dans l'ordre des mots : 8 : 11.",
+        "8 et 11 n'ont pas d'autre diviseur commun que 1 : le ratio est déjà simplifié. La bonne réponse est c."
+      ],
+      "hint": "Dans quel ordre la question cite-t-elle les deux liquides ?"
+    },
+    {
+      "key": "q2",
+      "skill_id": "C007",
+      "statement": "Quelle fraction du mélange Tropique le jus d'ananas représente-t-il ? Écris-la sous la forme d'une fraction irréductible numérateur/dénominateur.",
+      "type": "texte",
+      "answer": {
+        "value": "17/39",
+        "accepted": [
+          "17 / 39"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Le mélange Tropique contient 3,4 + 4,4 = 7,8 L, dont 3,4 L de jus : le jus en représente $\\dfrac{3{,}4}{7{,}8}$.",
+        "On multiplie le numérateur et le dénominateur par 10 pour avoir des entiers : $\\dfrac{3{,}4}{7{,}8} = \\dfrac{34}{78}$.",
+        "34 et 78 sont tous les deux dans la table de 2 : $\\dfrac{34}{78} = \\dfrac{17}{39}$.",
+        "17 n'a que deux diviseurs, 1 et 17, et 39 n'est pas un multiple de 17 : la fraction **17/39** est irréductible."
+      ],
+      "hint": "Quel est le volume total du mélange Tropique ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "E036",
+      "statement": "Quel pourcentage des gobelets vendus étaient de la boisson Tropique ?",
+      "type": "numerique",
+      "answer": {
+        "value": 38,
+        "unit": "%",
+        "accepted": [
+          "38 pour cent"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "On divise la partie par le tout : 95 gobelets de Tropique sur 250 gobelets vendus, soit $\\dfrac{95}{250}$.",
+        "95 et 250 sont dans la table de 5 : $\\dfrac{95}{250} = \\dfrac{19}{50}$, puis, en multipliant par 2, $\\dfrac{19}{50} = \\dfrac{38}{100}$.",
+        "38 gobelets sur 100 : c'est **38 %** des gobelets vendus."
+      ],
+      "hint": "Écris d'abord la fraction « partie sur tout »."
+    },
+    {
+      "key": "q4",
+      "skill_id": "C010",
+      "statement": "Dans la boisson Soleil, le jus d'ananas représente $\\dfrac{8}{19}$ du mélange. Quelle phrase est juste ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Soleil contient une plus grande part de jus que Lagon : $\\dfrac{8}{19} = \\dfrac{800}{1\\,900}$ et $\\dfrac{41}{100} = \\dfrac{779}{1\\,900}$.",
+          "misconception": null
+        },
+        {
+          "key": "b",
+          "text": "Lagon contient une plus grande part de jus que Soleil, car 41 est plus grand que 8 et que 19.",
+          "misconception": "On ne compare pas deux fractions en regardant leurs nombres un à un : on les écrit avec le même dénominateur."
+        },
+        {
+          "key": "c",
+          "text": "Soleil contient une plus grande part de jus que Lagon, car $\\dfrac{8}{19}$ s'écrit 0,819, plus grand que 0,41.",
+          "misconception": "8/19 ne s'écrit pas 0,819 : la barre de fraction ne colle pas les deux nombres, elle divise 8 par 19, ce qui donne moins de 0,5."
+        },
+        {
+          "key": "d",
+          "text": "Les deux boissons contiennent la même part de jus, car $\\dfrac{8}{19}$ et $\\dfrac{41}{100}$ valent toutes les deux environ 0,4.",
+          "misconception": "Deux fractions proches ne sont pas égales pour autant : 800/1 900 et 779/1 900 sont différentes."
+        }
+      ],
+      "answer": {
+        "value": "a"
+      },
+      "points": 2,
+      "solution_steps": [
+        "41 % de jus, c'est $\\dfrac{41}{100}$ du mélange. Pour comparer $\\dfrac{8}{19}$ et $\\dfrac{41}{100}$, on les écrit avec le même dénominateur, $19 \\times 100 = 1\\,900$.",
+        "$\\dfrac{8}{19} = \\dfrac{800}{1\\,900}$ et $\\dfrac{41}{100} = \\dfrac{779}{1\\,900}$, car $41 \\times 19 = 779$.",
+        "800 est plus grand que 779, donc $\\dfrac{8}{19}$ est plus grand que $\\dfrac{41}{100}$ : Soleil contient une plus grande part de jus que Lagon, de très peu. La bonne réponse est a."
+      ],
+      "hint": "Écris les deux parts de jus sous forme de fractions de même dénominateur."
+    },
+    {
+      "key": "q5",
+      "skill_id": "E001",
+      "statement": "Laquelle des deux boissons, Soleil ou Tropique, a le goût d'ananas le plus fort ? Quelle phrase est juste ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Soleil, car il n'y a que 11 − 8 = 3 volumes de limonade de plus que de jus, contre 22 − 17 = 5 dans Tropique, une fois son ratio simplifié.",
+          "misconception": "On compare des différences au lieu des quotients : une différence ne dit rien de la proportion de jus."
+        },
+        {
+          "key": "b",
+          "text": "Tropique, car pour 11 volumes d'eau gazeuse il contient 8,5 volumes de jus, alors que Soleil contient 8 volumes de jus pour 11 volumes de limonade.",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "On ne peut pas comparer, car la recette Soleil est donnée en verres et la recette Tropique en litres.",
+          "misconception": "Un ratio compare deux volumes mesurés dans la même unité : il ne dépend pas de cette unité, verres et litres se comparent par leurs quotients."
+        },
+        {
+          "key": "d",
+          "text": "Soleil, car $\\dfrac{8}{11}$ est plus grand que $\\dfrac{17}{22}$ : son dénominateur est plus petit.",
+          "misconception": "Deux fractions de dénominateurs différents se comparent au même dénominateur : $\\dfrac{8}{11} = \\dfrac{16}{22}$, plus petit que $\\dfrac{17}{22}$."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Un ratio ne dépend pas de l'unité : on compare les quotients du volume de jus par le volume de l'autre liquide, $\\dfrac{8}{11}$ pour Soleil et $\\dfrac{3{,}4}{4{,}4}$ pour Tropique.",
+        "$\\dfrac{3{,}4}{4{,}4} = \\dfrac{34}{44} = \\dfrac{17}{22}$, et, en divisant par 2, $\\dfrac{17}{22} = \\dfrac{8{,}5}{11}$.",
+        "Pour 11 volumes de limonade, Soleil contient 8 volumes de jus ; pour 11 volumes d'eau gazeuse, Tropique en contient 8,5. Le ratio jus : eau gazeuse de Tropique, 17 : 22, vaut 8,5 : 11.",
+        "**Tropique** a le goût d'ananas le plus fort. La bonne réponse est b. Les différences 11 − 8 et 22 − 17 ne disent rien des proportions."
+      ],
+      "hint": "Ramène les deux recettes à une même quantité de liquide autre que le jus."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Comparer deux nombres ou deux grandeurs à l'aide de leur rapport ou ratio. »"
+}

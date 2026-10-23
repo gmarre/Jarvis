@@ -1,0 +1,109 @@
+{
+  "id": "SX-E038-01",
+  "skill_id": "E038",
+  "skill_ids": [
+    "E038",
+    "D004",
+    "D024"
+  ],
+  "school_level": "5e",
+  "title": "La sortie à vélo au lac",
+  "contexte": "Les 24 élèves de 5e B vont à vélo du collège jusqu'à la plage du lac des Saules, avec deux adultes : leur professeure et un parent d'élève. Le départ est prévu à 8 h 45.\n\nLeur professeure leur distribue une carte de randonnée à l'échelle $\\dfrac{1}{25\\,000}$. Sur cette carte, Inès mesure l'itinéraire avec un fil : 18,4 cm du collège au pont de la Dore, puis 7,8 cm du pont jusqu'à la plage. Après le pique-nique, le groupe fera à pied le tour du lac par un sentier long de 3,5 km.\n\nChacun loue un vélo pour la journée, au prix de 6,50 € le vélo. La baignade est surveillée de 13 h 30 à 18 h.\n\nSur le dépliant de la base nautique, un petit plan montre le ponton des pédalos. Ce ponton, long de 120 m en réalité, y est dessiné par un trait de 8 cm.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "D004",
+      "statement": "Quelle est la longueur de l'itinéraire complet du collège à la plage sur la carte, en cm ?",
+      "type": "numerique",
+      "answer": {
+        "value": 26.2,
+        "unit": "cm"
+      },
+      "points": 1,
+      "solution_steps": [
+        "L'itinéraire complet va du collège à la plage en passant par le pont : on additionne les deux longueurs mesurées sur la carte.",
+        "18,4 + 7,8 = 26,2. Sur la carte, l'itinéraire mesure **26,2 cm**."
+      ],
+      "hint": "Le trajet passe par le pont : quelles longueurs faut-il réunir ?"
+    },
+    {
+      "key": "q2",
+      "skill_id": "D024",
+      "statement": "Combien coûte la location des vélos pour tout le groupe ?",
+      "type": "numerique",
+      "answer": {
+        "value": 169,
+        "unit": "€"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Tout le groupe loue un vélo : 24 élèves et 2 adultes, la professeure et le parent, soit 26 vélos.",
+        "On calcule 26 × 6,50 : on pose 26 × 65 = 1 690, puis on place la virgule, un chiffre après la virgule dans 6,5 : 26 × 6,5 = 169,0.",
+        "La location coûte **169 €**. Ordre de grandeur : 26 × 6 = 156 et 26 × 7 = 182, c'est cohérent."
+      ],
+      "hint": "Compte d'abord le nombre de vélos loués."
+    },
+    {
+      "key": "q3",
+      "skill_id": "E038",
+      "statement": "On admet que l'itinéraire mesure 26,2 cm sur la carte. Quelle est sa longueur réelle, en km ?",
+      "type": "numerique",
+      "answer": {
+        "value": 6.55,
+        "unit": "km"
+      },
+      "points": 2,
+      "solution_steps": [
+        "À l'échelle $\\dfrac{1}{25\\,000}$, 1 cm sur la carte représente 25 000 cm en réalité : les deux longueurs sont dans la même unité.",
+        "26,2 cm sur la carte représentent donc 26,2 × 25 000 cm. On pose 26,2 × 25 = 655, puis 655 × 1 000 = 655 000 : l'itinéraire mesure 655 000 cm.",
+        "On convertit : 655 000 cm = 6 550 m = 6,55 km. L'itinéraire mesure **6,55 km**.",
+        "Attention : 655 000 est un nombre de centimètres, pas de kilomètres."
+      ],
+      "hint": "Que représente 1 cm de la carte en réalité ? Pense à convertir à la fin."
+    },
+    {
+      "key": "q4",
+      "skill_id": "E038",
+      "statement": "Sur la carte, quelle longueur mesure le sentier qui fait le tour du lac, en cm ?",
+      "type": "numerique",
+      "answer": {
+        "value": 14,
+        "unit": "cm"
+      },
+      "points": 2,
+      "solution_steps": [
+        "On convertit d'abord la longueur réelle en centimètres : 3,5 km = 3 500 m = 350 000 cm.",
+        "1 cm sur la carte représente 25 000 cm ; 4 cm représentent 4 × 25 000 = 100 000 cm, soit 1 km.",
+        "1 km est donc représenté par 4 cm, et 3,5 km par 3,5 × 4 = 14 cm. Le sentier mesure **14 cm** sur la carte.",
+        "Contrôle : 14 × 25 000 = 350 000 cm, soit 3,5 km."
+      ],
+      "hint": "Cherche d'abord combien de centimètres de la carte représentent 1 km."
+    },
+    {
+      "key": "q5",
+      "skill_id": "E038",
+      "statement": "Quelle est l'échelle du plan du dépliant ? Écris-la sous forme de fraction, avec 1 au numérateur.",
+      "type": "numerique",
+      "answer": {
+        "value": "1/1500",
+        "accepted": [
+          "1 / 1500",
+          "1/1 500",
+          "1 / 1 500"
+        ]
+      },
+      "points": 3,
+      "solution_steps": [
+        "Sur un plan, les longueurs se comparent dans la même unité : 120 m = 12 000 cm.",
+        "8 cm sur le plan représentent 12 000 cm en réalité, donc 1 cm représente 12 000 ÷ 8 = 1 500 cm.",
+        "L'échelle du plan est donc $\\dfrac{1}{1\\,500}$, soit **1/1 500** : 1 cm sur le plan représente 1 500 cm, soit 15 m, en réalité.",
+        "Attention : $120 \\div 8 = 15$ mélange des mètres et des centimètres ; l'échelle $\\dfrac{1}{15}$ est fausse."
+      ],
+      "hint": "Exprime d'abord les deux longueurs du ponton dans la même unité."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Utiliser un coefficient de proportionnalité dans des contextes concrets (prix unitaire, vitesse moyenne, échelle, etc.). »"
+}

@@ -1,0 +1,124 @@
+{
+  "id": "SX-E002-01",
+  "skill_id": "E002",
+  "skill_ids": [
+    "E002",
+    "P015",
+    "C007",
+    "E035"
+  ],
+  "school_level": "4e",
+  "title": "Les maquettes du voilier",
+  "contexte": "Le club de modélisme du collège expose des maquettes du voilier « Goéland ». Le vrai bateau mesure 8,5 m de long et 3 m de large ; son mât s'élève à 11 m.\n\nLes élèves ont mesuré trois maquettes.\n\nMaquette A : 68 cm de long et 24 cm de large, pour une masse de 1,6 kg.\n\nMaquette B : 85 cm de long et 30 cm de large, pour une masse de 2,3 kg.\n\nMaquette C : 58 cm de long et 20 cm de large, pour une masse de 1,1 kg.\n\nL'exposition ouvre le samedi à 10 h, et l'entrée est gratuite.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "P015",
+      "statement": "Quelle est la longueur du vrai bateau, en centimètres ?",
+      "type": "numerique",
+      "answer": {
+        "value": 850,
+        "unit": "cm"
+      },
+      "points": 1,
+      "solution_steps": [
+        "1 m = 100 cm, donc 8,5 m = 8,5 × 100 cm.",
+        "8,5 × 100 = 850 : le bateau mesure **850 cm** de long."
+      ],
+      "hint": "Combien de centimètres y a-t-il dans 1 m ?"
+    },
+    {
+      "key": "q2",
+      "skill_id": "C007",
+      "statement": "Écris le rapport de la longueur à la largeur du vrai bateau sous la forme d'une fraction irréductible numérateur/dénominateur.",
+      "type": "texte",
+      "answer": {
+        "value": "17/6",
+        "accepted": [
+          "17 / 6"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Les deux dimensions sont en mètres : le rapport de la longueur à la largeur vaut $\\dfrac{8{,}5}{3}$.",
+        "On multiplie le numérateur et le dénominateur par 10 pour avoir des entiers : $\\dfrac{8{,}5}{3} = \\dfrac{85}{30}$.",
+        "85 et 30 sont tous les deux dans la table de 5 : $\\dfrac{85}{30} = \\dfrac{17}{6}$.",
+        "17 n'a que deux diviseurs, 1 et 17, et 6 n'est pas un multiple de 17 : **17/6** est irréductible."
+      ],
+      "hint": "Commence par écrire ce rapport avec deux nombres entiers."
+    },
+    {
+      "key": "q3",
+      "skill_id": "E035",
+      "statement": "Vrai ou faux : les longueurs et les largeurs des trois maquettes forment un tableau de proportionnalité.",
+      "type": "vrai_faux",
+      "answer": {
+        "value": false
+      },
+      "points": 2,
+      "solution_steps": [
+        "On calcule, pour chaque maquette, le quotient de la longueur par la largeur.",
+        "A : $\\dfrac{68}{24} = \\dfrac{17}{6}$ ; B : $\\dfrac{85}{30} = \\dfrac{17}{6}$ : ces deux quotients sont égaux, et 17 ÷ 6 vaut environ 2,83.",
+        "C : 58 ÷ 20 = 2,9. Le quotient de la maquette C est différent de celui des deux autres.",
+        "Les trois maquettes ne forment donc pas un tableau de proportionnalité : **faux**. Deux colonnes qui conviennent ne suffisent pas."
+      ],
+      "hint": "Calcule le quotient longueur sur largeur de chaque maquette, sans en oublier."
+    },
+    {
+      "key": "q4",
+      "skill_id": "E002",
+      "statement": "Quelle égalité de rapports exprime que les dimensions des maquettes A et B sont proportionnelles ?",
+      "type": "qcm",
+      "choices": [
+        {
+          "key": "a",
+          "text": "$\\dfrac{68}{85} = \\dfrac{30}{24}$",
+          "misconception": "Le second rapport est écrit à l'envers : 68/85 compare les longueurs, 30/24 les largeurs dans l'autre sens. D'ailleurs 68/85 = 0,8 et 30/24 = 1,25."
+        },
+        {
+          "key": "b",
+          "text": "$\\dfrac{68}{24} = \\dfrac{85}{30}$",
+          "misconception": null
+        },
+        {
+          "key": "c",
+          "text": "$\\dfrac{68}{24} = \\dfrac{30}{85}$",
+          "misconception": "L'ordre change d'une colonne à l'autre : longueur sur largeur pour A, mais largeur sur longueur pour B."
+        }
+      ],
+      "answer": {
+        "value": "b"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Deux suites sont proportionnelles quand les rapports d'une colonne à l'autre sont égaux, écrits dans le même ordre : longueur sur largeur pour A, puis longueur sur largeur pour B.",
+        "$\\dfrac{68}{24} = \\dfrac{17}{6}$ (on divise par 4) et $\\dfrac{85}{30} = \\dfrac{17}{6}$ (on divise par 5) : l'égalité $\\dfrac{68}{24} = \\dfrac{85}{30}$ est vraie.",
+        "Les longueurs et les largeurs de A et de B sont donc dans le ratio 17 : 6. La bonne réponse est b."
+      ],
+      "hint": "Dans chaque rapport, écris la longueur et la largeur dans le même ordre."
+    },
+    {
+      "key": "q5",
+      "skill_id": "E002",
+      "statement": "Le club veut construire une maquette D de même forme que la maquette A : sa longueur et sa largeur doivent être dans le même ratio. Elle mesurera 153 cm de long. Quelle sera sa largeur, en cm ?",
+      "type": "numerique",
+      "answer": {
+        "value": 54,
+        "unit": "cm"
+      },
+      "points": 3,
+      "solution_steps": [
+        "La largeur cherchée complète l'égalité de rapports $\\dfrac{68}{24} = \\dfrac{153}{\\ldots}$. On simplifie d'abord : $\\dfrac{68}{24} = \\dfrac{17}{6}$.",
+        "Par combien multiplier 17 pour obtenir 153 ? $17 \\times 10 = 170$, c'est 17 de trop : $17 \\times 9 = 170 - 17 = 153$. On multiplie le numérateur par 9, donc aussi le dénominateur : $6 \\times 9 = 54$.",
+        "$\\dfrac{68}{24} = \\dfrac{17}{6} = \\dfrac{153}{54}$ : la maquette D mesurera **54 cm** de large.",
+        "Autre méthode : 153 = 68 + 85, la somme des longueurs de A et de B, qui ont la même forme ; la largeur est alors 24 + 30 = 54 cm.",
+        "Attention : retirer 44 cm comme pour la maquette A donnerait 109 cm, ce n'est pas la même forme."
+      ],
+      "hint": "Écris l'égalité des rapports longueur sur largeur pour A et pour D."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Exprimer la proportionnalité entre deux suites de nombres par des égalités de rapports ou sous forme de ratio. »"
+}

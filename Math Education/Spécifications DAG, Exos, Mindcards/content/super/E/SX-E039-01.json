@@ -1,0 +1,111 @@
+{
+  "id": "SX-E039-01",
+  "skill_id": "E039",
+  "skill_ids": [
+    "E039",
+    "B004",
+    "E010",
+    "E036",
+    "D026"
+  ],
+  "school_level": "4e",
+  "title": "La course solidaire",
+  "contexte": "Le collège Victor-Hugo organise une course solidaire au profit de la recherche médicale. 360 élèves se sont inscrits, dont 45 % d'élèves de 6e. Le jour de la course, 306 élèves prennent le départ d'une boucle de 3,2 km ; le départ est donné à 14 h.\n\nChaque coureur a cherché des parrains, qui donnent de l'argent à l'association sportive du collège. À la fin, l'association verse 2 464 € à la recherche médicale : cette somme représente 70 % des dons récoltés. Le reste des dons paie l'organisation de la course.\n\nLe collège a aussi commandé des tee-shirts pour les bénévoles qui encadrent la course, à 4,50 € pièce, et leur a consacré 540 €.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "B004",
+      "statement": "Combien d'élèves inscrits n'ont pas pris le départ ?",
+      "type": "numerique",
+      "answer": {
+        "value": 54,
+        "unit": "élèves"
+      },
+      "points": 1,
+      "solution_steps": [
+        "360 élèves se sont inscrits et 306 ont pris le départ.",
+        "360 − 306 = 54. **54 élèves** inscrits n'ont pas pris le départ."
+      ],
+      "hint": "Repère, dans l'énoncé, le nombre d'inscrits et le nombre de partants."
+    },
+    {
+      "key": "q2",
+      "skill_id": "E010",
+      "statement": "Combien d'élèves de 6e se sont inscrits ?",
+      "type": "numerique",
+      "answer": {
+        "value": 162,
+        "unit": "élèves"
+      },
+      "points": 2,
+      "solution_steps": [
+        "Les élèves de 6e représentent 45 % des 360 inscrits : on calcule 45 % de 360.",
+        "1 % de 360, c'est 360 ÷ 100 = 3,6 ; 45 % de 360, c'est 45 × 3,6 = 162.",
+        "**162 élèves** de 6e se sont inscrits. Contrôle : 10 % de 360, c'est 36, et 45 % est un peu moins que la moitié, 180."
+      ],
+      "hint": "Calcule d'abord 1 % ou 10 % du nombre d'inscrits."
+    },
+    {
+      "key": "q3",
+      "skill_id": "E036",
+      "statement": "Quel pourcentage des inscrits a pris le départ ?",
+      "type": "numerique",
+      "answer": {
+        "value": 85,
+        "unit": "%",
+        "accepted": [
+          "85 pour cent"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "On divise la partie, 306 partants, par le tout, 360 inscrits : $\\dfrac{306}{360}$.",
+        "On simplifie par 2 : $\\dfrac{306}{360} = \\dfrac{153}{180}$, puis par 9, car la somme des chiffres de 153 et celle de 180 valent 9 : $\\dfrac{153}{180} = \\dfrac{17}{20}$.",
+        "En multipliant par 5 : $\\dfrac{17}{20} = \\dfrac{85}{100}$. **85 %** des inscrits ont pris le départ."
+      ],
+      "hint": "Écris la fraction « partie sur tout », puis cherche une fraction égale de dénominateur 100."
+    },
+    {
+      "key": "q4",
+      "skill_id": "D026",
+      "statement": "Combien de tee-shirts le collège a-t-il achetés ?",
+      "type": "numerique",
+      "answer": {
+        "value": 120,
+        "unit": "tee-shirts",
+        "accepted": [
+          "120 tee-shirt"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "On cherche combien de fois 4,50 € entre dans 540 € : on calcule 540 ÷ 4,5.",
+        "On multiplie les deux nombres par 10 : 540 ÷ 4,5 = 5 400 ÷ 45 = 120.",
+        "Le collège a acheté **120 tee-shirts**. Contrôle : 120 × 4,5 = 540."
+      ],
+      "hint": "Le prix total, c'est le prix d'un tee-shirt multiplié par le nombre de tee-shirts."
+    },
+    {
+      "key": "q5",
+      "skill_id": "E039",
+      "statement": "Quel est le montant total des dons récoltés ?",
+      "type": "numerique",
+      "answer": {
+        "value": 3520,
+        "unit": "€"
+      },
+      "points": 3,
+      "solution_steps": [
+        "On connaît une part, 2 464 €, et le pourcentage qu'elle représente, 70 % : on cherche le total.",
+        "Prendre 70 % d'un nombre, c'est le multiplier par 0,7 : total × 0,7 = 2 464, donc total = 2 464 ÷ 0,7 = 24 640 ÷ 7 = 3 520.",
+        "Les dons récoltés s'élèvent à **3 520 €**. Contrôle : 10 % de 3 520, c'est 352, et 7 × 352 = 2 464.",
+        "Attention : calculer 70 % de 2 464 € donnerait une somme plus petite que la part versée, ce qui est impossible."
+      ],
+      "hint": "Les 2 464 € sont déjà un pourcentage de la somme cherchée."
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Calculer avec des pourcentages. »"
+}

@@ -2,7 +2,7 @@
   "metadata": {
     "version": "1.0",
     "scope": "Super exercices, CP a 3e",
-    "total_super": 286
+    "total_super": 294
   },
   "super": [
     {
@@ -14568,6 +14568,303 @@
       "programme_ref": "Cycle 4, classe de 5e, Nombres et calculs, Opérations, Objectifs d'apprentissage : « Diviser par un nombre décimal. »"
     },
     {
+      "id": "SX-E001-01",
+      "skill_id": "E001",
+      "skill_ids": [
+        "E001",
+        "C007",
+        "E036",
+        "C010"
+      ],
+      "school_level": "4e",
+      "title": "Les boissons de la buvette",
+      "contexte": "Pour la fête du collège, les élèves de 4e tiennent la buvette. Ils préparent deux boissons à l'ananas, servies dans des gobelets de 25 cL.\n\n**Soleil** : 8 verres de jus d'ananas pour 11 verres de limonade.\n\n**Tropique** : 3,4 L de jus d'ananas pour 4,4 L d'eau gazeuse.\n\nIls vendent aussi des bouteilles de **Lagon**, une boisson du commerce dont l'étiquette annonce « 41 % de jus de fruits ».\n\nUn gobelet est vendu 1,50 €, et la buvette ouvre à 14 h 30. En fin de journée, sur les 250 gobelets vendus, 95 étaient de la boisson Tropique.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "E001",
+          "statement": "Quel est le ratio jus d'ananas : limonade de la boisson Soleil ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "11 : 8",
+              "misconception": "L'ordre des nombres suit l'ordre des mots, jus d'abord, limonade ensuite : 11 : 8 est le ratio limonade : jus."
+            },
+            {
+              "key": "b",
+              "text": "8 : 19",
+              "misconception": "8 : 19 compare le jus au mélange entier (8 + 11 = 19 verres), pas le jus à la limonade."
+            },
+            {
+              "key": "c",
+              "text": "8 : 11",
+              "misconception": null
+            },
+            {
+              "key": "d",
+              "text": "19 : 8",
+              "misconception": "19 : 8 compare le mélange entier au jus : la limonade seule n'y apparaît pas."
+            }
+          ],
+          "answer": {
+            "value": "c"
+          },
+          "points": 1,
+          "solution_steps": [
+            "La recette dit « 8 verres de jus d'ananas pour 11 verres de limonade ». Le ratio jus d'ananas : limonade s'écrit dans l'ordre des mots : 8 : 11.",
+            "8 et 11 n'ont pas d'autre diviseur commun que 1 : le ratio est déjà simplifié. La bonne réponse est c."
+          ],
+          "hint": "Dans quel ordre la question cite-t-elle les deux liquides ?"
+        },
+        {
+          "key": "q2",
+          "skill_id": "C007",
+          "statement": "Quelle fraction du mélange Tropique le jus d'ananas représente-t-il ? Écris-la sous la forme d'une fraction irréductible numérateur/dénominateur.",
+          "type": "texte",
+          "answer": {
+            "value": "17/39",
+            "accepted": [
+              "17 / 39"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "Le mélange Tropique contient 3,4 + 4,4 = 7,8 L, dont 3,4 L de jus : le jus en représente $\\dfrac{3{,}4}{7{,}8}$.",
+            "On multiplie le numérateur et le dénominateur par 10 pour avoir des entiers : $\\dfrac{3{,}4}{7{,}8} = \\dfrac{34}{78}$.",
+            "34 et 78 sont tous les deux dans la table de 2 : $\\dfrac{34}{78} = \\dfrac{17}{39}$.",
+            "17 n'a que deux diviseurs, 1 et 17, et 39 n'est pas un multiple de 17 : la fraction **17/39** est irréductible."
+          ],
+          "hint": "Quel est le volume total du mélange Tropique ?"
+        },
+        {
+          "key": "q3",
+          "skill_id": "E036",
+          "statement": "Quel pourcentage des gobelets vendus étaient de la boisson Tropique ?",
+          "type": "numerique",
+          "answer": {
+            "value": 38,
+            "unit": "%",
+            "accepted": [
+              "38 pour cent"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "On divise la partie par le tout : 95 gobelets de Tropique sur 250 gobelets vendus, soit $\\dfrac{95}{250}$.",
+            "95 et 250 sont dans la table de 5 : $\\dfrac{95}{250} = \\dfrac{19}{50}$, puis, en multipliant par 2, $\\dfrac{19}{50} = \\dfrac{38}{100}$.",
+            "38 gobelets sur 100 : c'est **38 %** des gobelets vendus."
+          ],
+          "hint": "Écris d'abord la fraction « partie sur tout »."
+        },
+        {
+          "key": "q4",
+          "skill_id": "C010",
+          "statement": "Dans la boisson Soleil, le jus d'ananas représente $\\dfrac{8}{19}$ du mélange. Quelle phrase est juste ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "Soleil contient une plus grande part de jus que Lagon : $\\dfrac{8}{19} = \\dfrac{800}{1\\,900}$ et $\\dfrac{41}{100} = \\dfrac{779}{1\\,900}$.",
+              "misconception": null
+            },
+            {
+              "key": "b",
+              "text": "Lagon contient une plus grande part de jus que Soleil, car 41 est plus grand que 8 et que 19.",
+              "misconception": "On ne compare pas deux fractions en regardant leurs nombres un à un : on les écrit avec le même dénominateur."
+            },
+            {
+              "key": "c",
+              "text": "Soleil contient une plus grande part de jus que Lagon, car $\\dfrac{8}{19}$ s'écrit 0,819, plus grand que 0,41.",
+              "misconception": "8/19 ne s'écrit pas 0,819 : la barre de fraction ne colle pas les deux nombres, elle divise 8 par 19, ce qui donne moins de 0,5."
+            },
+            {
+              "key": "d",
+              "text": "Les deux boissons contiennent la même part de jus, car $\\dfrac{8}{19}$ et $\\dfrac{41}{100}$ valent toutes les deux environ 0,4.",
+              "misconception": "Deux fractions proches ne sont pas égales pour autant : 800/1 900 et 779/1 900 sont différentes."
+            }
+          ],
+          "answer": {
+            "value": "a"
+          },
+          "points": 2,
+          "solution_steps": [
+            "41 % de jus, c'est $\\dfrac{41}{100}$ du mélange. Pour comparer $\\dfrac{8}{19}$ et $\\dfrac{41}{100}$, on les écrit avec le même dénominateur, $19 \\times 100 = 1\\,900$.",
+            "$\\dfrac{8}{19} = \\dfrac{800}{1\\,900}$ et $\\dfrac{41}{100} = \\dfrac{779}{1\\,900}$, car $41 \\times 19 = 779$.",
+            "800 est plus grand que 779, donc $\\dfrac{8}{19}$ est plus grand que $\\dfrac{41}{100}$ : Soleil contient une plus grande part de jus que Lagon, de très peu. La bonne réponse est a."
+          ],
+          "hint": "Écris les deux parts de jus sous forme de fractions de même dénominateur."
+        },
+        {
+          "key": "q5",
+          "skill_id": "E001",
+          "statement": "Laquelle des deux boissons, Soleil ou Tropique, a le goût d'ananas le plus fort ? Quelle phrase est juste ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "Soleil, car il n'y a que 11 − 8 = 3 volumes de limonade de plus que de jus, contre 22 − 17 = 5 dans Tropique, une fois son ratio simplifié.",
+              "misconception": "On compare des différences au lieu des quotients : une différence ne dit rien de la proportion de jus."
+            },
+            {
+              "key": "b",
+              "text": "Tropique, car pour 11 volumes d'eau gazeuse il contient 8,5 volumes de jus, alors que Soleil contient 8 volumes de jus pour 11 volumes de limonade.",
+              "misconception": null
+            },
+            {
+              "key": "c",
+              "text": "On ne peut pas comparer, car la recette Soleil est donnée en verres et la recette Tropique en litres.",
+              "misconception": "Un ratio compare deux volumes mesurés dans la même unité : il ne dépend pas de cette unité, verres et litres se comparent par leurs quotients."
+            },
+            {
+              "key": "d",
+              "text": "Soleil, car $\\dfrac{8}{11}$ est plus grand que $\\dfrac{17}{22}$ : son dénominateur est plus petit.",
+              "misconception": "Deux fractions de dénominateurs différents se comparent au même dénominateur : $\\dfrac{8}{11} = \\dfrac{16}{22}$, plus petit que $\\dfrac{17}{22}$."
+            }
+          ],
+          "answer": {
+            "value": "b"
+          },
+          "points": 3,
+          "solution_steps": [
+            "Un ratio ne dépend pas de l'unité : on compare les quotients du volume de jus par le volume de l'autre liquide, $\\dfrac{8}{11}$ pour Soleil et $\\dfrac{3{,}4}{4{,}4}$ pour Tropique.",
+            "$\\dfrac{3{,}4}{4{,}4} = \\dfrac{34}{44} = \\dfrac{17}{22}$, et, en divisant par 2, $\\dfrac{17}{22} = \\dfrac{8{,}5}{11}$.",
+            "Pour 11 volumes de limonade, Soleil contient 8 volumes de jus ; pour 11 volumes d'eau gazeuse, Tropique en contient 8,5. Le ratio jus : eau gazeuse de Tropique, 17 : 22, vaut 8,5 : 11.",
+            "**Tropique** a le goût d'ananas le plus fort. La bonne réponse est b. Les différences 11 − 8 et 22 − 17 ne disent rien des proportions."
+          ],
+          "hint": "Ramène les deux recettes à une même quantité de liquide autre que le jus."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Comparer deux nombres ou deux grandeurs à l'aide de leur rapport ou ratio. »"
+    },
+    {
+      "id": "SX-E002-01",
+      "skill_id": "E002",
+      "skill_ids": [
+        "E002",
+        "P015",
+        "C007",
+        "E035"
+      ],
+      "school_level": "4e",
+      "title": "Les maquettes du voilier",
+      "contexte": "Le club de modélisme du collège expose des maquettes du voilier « Goéland ». Le vrai bateau mesure 8,5 m de long et 3 m de large ; son mât s'élève à 11 m.\n\nLes élèves ont mesuré trois maquettes.\n\nMaquette A : 68 cm de long et 24 cm de large, pour une masse de 1,6 kg.\n\nMaquette B : 85 cm de long et 30 cm de large, pour une masse de 2,3 kg.\n\nMaquette C : 58 cm de long et 20 cm de large, pour une masse de 1,1 kg.\n\nL'exposition ouvre le samedi à 10 h, et l'entrée est gratuite.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "P015",
+          "statement": "Quelle est la longueur du vrai bateau, en centimètres ?",
+          "type": "numerique",
+          "answer": {
+            "value": 850,
+            "unit": "cm"
+          },
+          "points": 1,
+          "solution_steps": [
+            "1 m = 100 cm, donc 8,5 m = 8,5 × 100 cm.",
+            "8,5 × 100 = 850 : le bateau mesure **850 cm** de long."
+          ],
+          "hint": "Combien de centimètres y a-t-il dans 1 m ?"
+        },
+        {
+          "key": "q2",
+          "skill_id": "C007",
+          "statement": "Écris le rapport de la longueur à la largeur du vrai bateau sous la forme d'une fraction irréductible numérateur/dénominateur.",
+          "type": "texte",
+          "answer": {
+            "value": "17/6",
+            "accepted": [
+              "17 / 6"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "Les deux dimensions sont en mètres : le rapport de la longueur à la largeur vaut $\\dfrac{8{,}5}{3}$.",
+            "On multiplie le numérateur et le dénominateur par 10 pour avoir des entiers : $\\dfrac{8{,}5}{3} = \\dfrac{85}{30}$.",
+            "85 et 30 sont tous les deux dans la table de 5 : $\\dfrac{85}{30} = \\dfrac{17}{6}$.",
+            "17 n'a que deux diviseurs, 1 et 17, et 6 n'est pas un multiple de 17 : **17/6** est irréductible."
+          ],
+          "hint": "Commence par écrire ce rapport avec deux nombres entiers."
+        },
+        {
+          "key": "q3",
+          "skill_id": "E035",
+          "statement": "Vrai ou faux : les longueurs et les largeurs des trois maquettes forment un tableau de proportionnalité.",
+          "type": "vrai_faux",
+          "answer": {
+            "value": false
+          },
+          "points": 2,
+          "solution_steps": [
+            "On calcule, pour chaque maquette, le quotient de la longueur par la largeur.",
+            "A : $\\dfrac{68}{24} = \\dfrac{17}{6}$ ; B : $\\dfrac{85}{30} = \\dfrac{17}{6}$ : ces deux quotients sont égaux, et 17 ÷ 6 vaut environ 2,83.",
+            "C : 58 ÷ 20 = 2,9. Le quotient de la maquette C est différent de celui des deux autres.",
+            "Les trois maquettes ne forment donc pas un tableau de proportionnalité : **faux**. Deux colonnes qui conviennent ne suffisent pas."
+          ],
+          "hint": "Calcule le quotient longueur sur largeur de chaque maquette, sans en oublier."
+        },
+        {
+          "key": "q4",
+          "skill_id": "E002",
+          "statement": "Quelle égalité de rapports exprime que les dimensions des maquettes A et B sont proportionnelles ?",
+          "type": "qcm",
+          "choices": [
+            {
+              "key": "a",
+              "text": "$\\dfrac{68}{85} = \\dfrac{30}{24}$",
+              "misconception": "Le second rapport est écrit à l'envers : 68/85 compare les longueurs, 30/24 les largeurs dans l'autre sens. D'ailleurs 68/85 = 0,8 et 30/24 = 1,25."
+            },
+            {
+              "key": "b",
+              "text": "$\\dfrac{68}{24} = \\dfrac{85}{30}$",
+              "misconception": null
+            },
+            {
+              "key": "c",
+              "text": "$\\dfrac{68}{24} = \\dfrac{30}{85}$",
+              "misconception": "L'ordre change d'une colonne à l'autre : longueur sur largeur pour A, mais largeur sur longueur pour B."
+            }
+          ],
+          "answer": {
+            "value": "b"
+          },
+          "points": 2,
+          "solution_steps": [
+            "Deux suites sont proportionnelles quand les rapports d'une colonne à l'autre sont égaux, écrits dans le même ordre : longueur sur largeur pour A, puis longueur sur largeur pour B.",
+            "$\\dfrac{68}{24} = \\dfrac{17}{6}$ (on divise par 4) et $\\dfrac{85}{30} = \\dfrac{17}{6}$ (on divise par 5) : l'égalité $\\dfrac{68}{24} = \\dfrac{85}{30}$ est vraie.",
+            "Les longueurs et les largeurs de A et de B sont donc dans le ratio 17 : 6. La bonne réponse est b."
+          ],
+          "hint": "Dans chaque rapport, écris la longueur et la largeur dans le même ordre."
+        },
+        {
+          "key": "q5",
+          "skill_id": "E002",
+          "statement": "Le club veut construire une maquette D de même forme que la maquette A : sa longueur et sa largeur doivent être dans le même ratio. Elle mesurera 153 cm de long. Quelle sera sa largeur, en cm ?",
+          "type": "numerique",
+          "answer": {
+            "value": 54,
+            "unit": "cm"
+          },
+          "points": 3,
+          "solution_steps": [
+            "La largeur cherchée complète l'égalité de rapports $\\dfrac{68}{24} = \\dfrac{153}{\\ldots}$. On simplifie d'abord : $\\dfrac{68}{24} = \\dfrac{17}{6}$.",
+            "Par combien multiplier 17 pour obtenir 153 ? $17 \\times 10 = 170$, c'est 17 de trop : $17 \\times 9 = 170 - 17 = 153$. On multiplie le numérateur par 9, donc aussi le dénominateur : $6 \\times 9 = 54$.",
+            "$\\dfrac{68}{24} = \\dfrac{17}{6} = \\dfrac{153}{54}$ : la maquette D mesurera **54 cm** de large.",
+            "Autre méthode : 153 = 68 + 85, la somme des longueurs de A et de B, qui ont la même forme ; la largeur est alors 24 + 30 = 54 cm.",
+            "Attention : retirer 44 cm comme pour la maquette A donnerait 109 cm, ce n'est pas la même forme."
+          ],
+          "hint": "Écris l'égalité des rapports longueur sur largeur pour A et pour D."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Exprimer la proportionnalité entre deux suites de nombres par des égalités de rapports ou sous forme de ratio. »"
+    },
+    {
       "id": "SX-E003-01",
       "skill_id": "E003",
       "skill_ids": [
@@ -14688,6 +14985,122 @@
       ],
       "review_status": "brouillon",
       "programme_ref": "Cycle 3, classe de 6e, La proportionnalité : « La recherche de données manquantes dans un tableau s'appuie sur le sens de la proportionnalité »"
+    },
+    {
+      "id": "SX-E005-01",
+      "skill_id": "E005",
+      "skill_ids": [
+        "E005",
+        "E027",
+        "D024",
+        "F023",
+        "D026"
+      ],
+      "school_level": "4e",
+      "title": "Au moulin à huile",
+      "contexte": "En novembre, la famille de Lou récolte 78 kg d'olives, grâce à un printemps pluvieux, et les apporte au moulin du village, construit en 1880.\n\nAu moulin, le volume d'huile obtenu est proportionnel à la masse d'olives pressées. La semaine dernière, leur voisin Marcel a fait presser 45 kg d'olives et il a obtenu 8,1 L d'huile.\n\nLe moulin facture le pressage 0,35 € par kilogramme d'olives. Il vend aussi de petites bouteilles vides de 0,25 L. Il est ouvert de 8 h à 18 h.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "E027",
+          "statement": "Quel volume d'huile Marcel aurait-il obtenu avec 90 kg d'olives ?",
+          "type": "numerique",
+          "answer": {
+            "value": 16.2,
+            "unit": "L"
+          },
+          "points": 1,
+          "solution_steps": [
+            "90 kg, c'est 2 fois 45 kg.",
+            "Le volume d'huile est proportionnel à la masse d'olives : il est lui aussi 2 fois plus grand, 2 × 8,1 = 16,2. Marcel aurait obtenu **16,2 L** d'huile."
+          ],
+          "hint": "Compare 90 kg et 45 kg."
+        },
+        {
+          "key": "q2",
+          "skill_id": "D024",
+          "statement": "Combien Lou paiera-t-elle le pressage de ses olives ?",
+          "type": "numerique",
+          "answer": {
+            "value": 27.3,
+            "unit": "€",
+            "accepted": [
+              "27 € 30",
+              "27 euros 30"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "Le pressage coûte 0,35 € par kilogramme et Lou apporte 78 kg : on calcule 78 × 0,35.",
+            "On pose 78 × 35 = 2 730, puis on place la virgule : 0,35 a deux chiffres après la virgule, donc 78 × 0,35 = 27,30.",
+            "Lou paiera **27,30 €**. Ordre de grandeur : 80 × 0,35 = 28, c'est cohérent."
+          ],
+          "hint": "Le prix dépend de la masse d'olives de Lou."
+        },
+        {
+          "key": "q3",
+          "skill_id": "F023",
+          "statement": "Au même moulin, Maëlle a payé 22,40 € pour le pressage de ses olives. On note $x$ la masse de ses olives, en kg : elle vérifie l'équation $0{,}35x = 22{,}40$. Résous cette équation : quelle masse d'olives Maëlle a-t-elle fait presser, en kg ?",
+          "type": "numerique",
+          "answer": {
+            "value": 64,
+            "unit": "kg",
+            "accepted": [
+              "x = 64",
+              "x=64"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "Dans $0{,}35x = 22{,}40$, le nombre $x$ est multiplié par 0,35 : on fait l'opération inverse, on divise par 0,35.",
+            "$x = 22{,}40 \\div 0{,}35$. On multiplie les deux nombres par 100 : $2\\,240 \\div 35 = 64$.",
+            "Contrôle : $0{,}35 \\times 64 = 22{,}40$. Maëlle a fait presser **64 kg** d'olives."
+          ],
+          "hint": "Quelle opération défait « multiplier par 0,35 » ?"
+        },
+        {
+          "key": "q4",
+          "skill_id": "D026",
+          "statement": "Combien de petites bouteilles de 0,25 L Marcel peut-il remplir entièrement avec ses 8,1 L d'huile ?",
+          "type": "numerique",
+          "answer": {
+            "value": 32,
+            "unit": "bouteilles",
+            "accepted": [
+              "32 bouteille"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "On cherche combien de fois 0,25 L entre dans 8,1 L : on calcule 8,1 ÷ 0,25.",
+            "On multiplie les deux nombres par 100 : 8,1 ÷ 0,25 = 810 ÷ 25 = 32,4.",
+            "Marcel remplit 32 bouteilles en entier ; les 0,1 L qui restent ne remplissent pas une 33e bouteille. Réponse : **32 bouteilles**."
+          ],
+          "hint": "Combien de bouteilles de 0,25 L faut-il pour faire 1 L ?"
+        },
+        {
+          "key": "q5",
+          "skill_id": "E005",
+          "statement": "Quel volume d'huile Lou obtiendra-t-elle avec ses 78 kg d'olives ?",
+          "type": "numerique",
+          "answer": {
+            "value": 14.04,
+            "unit": "L"
+          },
+          "points": 3,
+          "solution_steps": [
+            "On cherche une quatrième proportionnelle : 45 kg d'olives donnent 8,1 L, et l'on cherche le volume $x$ que donnent 78 kg.",
+            "Égalité des rapports, volume sur masse des deux côtés : $\\dfrac{x}{78} = \\dfrac{8{,}1}{45}$, donc $45x = 8{,}1 \\times 78 = 631{,}8$, et $x = 631{,}8 \\div 45 = 14{,}04$.",
+            "Autre méthode, le passage par l'unité : 8,1 ÷ 45 = 0,18 L d'huile par kilogramme, puis 0,18 × 78 = 14,04.",
+            "Lou obtiendra **14,04 L** d'huile. Attention : ajouter 33 kg d'un côté et 33 L de l'autre n'a pas de sens, la situation est multiplicative."
+          ],
+          "hint": "Écris l'égalité des rapports avec le volume et la masse dans le même ordre des deux côtés."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Déterminer une quatrième proportionnelle. »"
     },
     {
       "id": "SX-E006-01",
@@ -15059,6 +15472,247 @@
       ],
       "review_status": "brouillon",
       "programme_ref": "Cycle 3, classe de 6e, Les fractions, Pourcentages : « Appliquer un pourcentage à une grandeur ou à un nombre »"
+    },
+    {
+      "id": "SX-E013-01",
+      "skill_id": "E013",
+      "skill_ids": [
+        "E013",
+        "E016",
+        "E039",
+        "F010"
+      ],
+      "school_level": "3e",
+      "title": "Le bilan de la médiathèque",
+      "contexte": "La médiathèque de Saint-Aubin publie le bilan de ses trois dernières années. Elle est ouverte 34 heures par semaine.\n\nEn 2024, grâce à un nouvel espace jeunesse, le nombre de livres prêtés a augmenté de 80 % par rapport à 2023. En 2025, pendant huit mois de travaux, il a baissé de 55 % par rapport à 2024.\n\nEn 2025, la médiathèque compte 1 850 inscrits, dont 26 % ont moins de 12 ans. La mairie prévoit une baisse de 8 % du nombre d'inscrits en 2026, à cause de la fermeture d'une école.\n\nL'abonnement annuel coûte 28 € ; les étudiants paient 40 % de moins. En 2026, le budget d'achat de livres augmentera de 14 %.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "E016",
+          "statement": "Par quel nombre décimal la mairie multiplie-t-elle le nombre d'inscrits de 2025 pour prévoir celui de 2026 ?",
+          "type": "numerique",
+          "answer": {
+            "value": 0.92,
+            "accepted": [
+              "×0,92",
+              "× 0,92",
+              "x0,92",
+              "x 0,92"
+            ]
+          },
+          "points": 1,
+          "solution_steps": [
+            "Une baisse de 8 % laisse 100 % − 8 % = 92 % du nombre d'inscrits.",
+            "92 %, c'est 0,92 : le coefficient multiplicateur est **0,92**."
+          ],
+          "hint": "Quel pourcentage des inscrits restera-t-il ?"
+        },
+        {
+          "key": "q2",
+          "skill_id": "E039",
+          "statement": "Combien d'inscrits de 2025 ont moins de 12 ans ?",
+          "type": "numerique",
+          "answer": {
+            "value": 481,
+            "unit": "inscrits"
+          },
+          "points": 2,
+          "solution_steps": [
+            "Prendre 26 % d'un nombre, c'est le multiplier par 0,26.",
+            "1 850 × 0,26 : on pose 1 850 × 26 = 48 100, puis on divise par 100, ce qui donne 481.",
+            "**481 inscrits** ont moins de 12 ans."
+          ],
+          "hint": "Prendre 26 % d'un nombre, c'est le multiplier par quel nombre ?"
+        },
+        {
+          "key": "q3",
+          "skill_id": "E016",
+          "statement": "Combien un étudiant paie-t-il l'abonnement annuel ?",
+          "type": "numerique",
+          "answer": {
+            "value": 16.8,
+            "unit": "€",
+            "accepted": [
+              "16 € 80",
+              "16 euros 80"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "Payer 40 % de moins, c'est subir une baisse de 40 % : le coefficient multiplicateur est 1 − 0,40 = 0,6.",
+            "28 × 0,6 = 16,8. Un étudiant paie **16,80 €**.",
+            "Contrôle : 40 % de 28 €, c'est 11,20 €, et 28 − 11,20 = 16,80."
+          ],
+          "hint": "Par quel nombre multiplie-t-on un prix qui baisse de 40 % ?"
+        },
+        {
+          "key": "q4",
+          "skill_id": "F010",
+          "statement": "On note $b$ le budget d'achat de livres de 2025, en euros. En 2026, il vaudra $b + 0{,}14b$. Écris cette expression sous forme réduite.",
+          "type": "texte",
+          "answer": {
+            "value": "1,14b",
+            "unit": "€",
+            "forme": "reduite",
+            "variables": [
+              "b"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "$b$, c'est $1 \\times b$ : $b + 0{,}14b = 1b + 0{,}14b$.",
+            "On réduit en ajoutant les nombres qui multiplient $b$ : 1 + 0,14 = 1,14.",
+            "Le budget de 2026 vaudra $1{,}14b$ euros : la forme réduite est **1,14b**."
+          ],
+          "hint": "Par quel nombre la lettre b est-elle multipliée dans chaque terme ?"
+        },
+        {
+          "key": "q5",
+          "skill_id": "E013",
+          "statement": "De quel pourcentage le nombre de livres prêtés a-t-il baissé entre 2023 et 2025 ?",
+          "type": "numerique",
+          "answer": {
+            "value": 19,
+            "unit": "%",
+            "accepted": [
+              "19 pour cent"
+            ]
+          },
+          "points": 3,
+          "solution_steps": [
+            "Une hausse de 80 % multiplie le nombre de prêts par 1 + 0,80 = 1,8 ; une baisse de 55 % le multiplie par 1 − 0,55 = 0,45.",
+            "De 2023 à 2025, le nombre de prêts est donc multiplié par 1,8 × 0,45 = 0,81.",
+            "Le coefficient 0,81 est plus petit que 1 : c'est une baisse, et 0,81 = 1 − 0,19, soit une baisse de **19 %**.",
+            "Attention : on n'ajoute pas les pourcentages. 80 % − 55 % = 25 % ferait croire à une hausse, mais la baisse de 55 % porte sur le nombre de 2024, déjà augmenté."
+          ],
+          "hint": "Choisis un nombre de prêts pour 2023, par exemple 100, et suis-le jusqu'en 2025."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Traduire une augmentation ou une diminution en pourcentages. »"
+    },
+    {
+      "id": "SX-E016-01",
+      "skill_id": "E016",
+      "skill_ids": [
+        "E016",
+        "E037",
+        "E039",
+        "F010"
+      ],
+      "school_level": "4e",
+      "title": "Les tarifs du club d'escalade",
+      "contexte": "Le club d'escalade « Prise directe » annonce ses tarifs pour la nouvelle saison. Son mur mesure 14 m de haut.\n\nLa cotisation annuelle des adultes, qui était de 210 €, augmente de 5 %. Celle des moins de 18 ans, qui était de 140 €, baisse de 15 % pour attirer les jeunes.\n\nToutes les cartes de séances augmentent elles aussi de 5 % : la carte de 10 séances coûte désormais 92,40 €. La location de chaussons reste à 3 € la séance.\n\nLe club compte 240 adhérents, dont 66 ont moins de 18 ans.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "E037",
+          "statement": "De combien d'euros la cotisation des adultes augmente-t-elle ?",
+          "type": "numerique",
+          "answer": {
+            "value": 10.5,
+            "unit": "€",
+            "accepted": [
+              "10 € 50",
+              "10 euros 50"
+            ]
+          },
+          "points": 1,
+          "solution_steps": [
+            "5 %, c'est la moitié de 10 %.",
+            "10 % de 210 €, c'est 210 ÷ 10 = 21 € ; 5 %, c'est 21 ÷ 2 = 10,50 €.",
+            "La cotisation des adultes augmente de **10,50 €**."
+          ],
+          "hint": "Commence par calculer 10 % de 210 €."
+        },
+        {
+          "key": "q2",
+          "skill_id": "E039",
+          "statement": "Quel pourcentage des adhérents a moins de 18 ans ?",
+          "type": "numerique",
+          "answer": {
+            "value": 27.5,
+            "unit": "%",
+            "accepted": [
+              "27,5 pour cent"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "On compare la partie, 66 jeunes, au tout, 240 adhérents, ramené à 100 adhérents.",
+            "Le pourcentage $p$ vérifie l'égalité des rapports $\\dfrac{p}{100} = \\dfrac{66}{240}$, donc $240p = 6\\,600$.",
+            "$p = 6\\,600 \\div 240 = 660 \\div 24 = 27{,}5$. **27,5 %** des adhérents ont moins de 18 ans."
+          ],
+          "hint": "Combien de jeunes y aurait-il pour 100 adhérents ?"
+        },
+        {
+          "key": "q3",
+          "skill_id": "F010",
+          "statement": "Pour la saison suivante, le club envisage d'augmenter de 8 % le prix de ses stages d'été. On note $x$ le prix actuel d'un stage, en euros ; après cette hausse, il coûterait $x + 0{,}08x$. Écris cette expression sous forme réduite.",
+          "type": "texte",
+          "answer": {
+            "value": "1,08x",
+            "unit": "€",
+            "forme": "reduite",
+            "variables": [
+              "x"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "$x$, c'est $1 \\times x$ : $x + 0{,}08x = 1x + 0{,}08x$.",
+            "On réduit en ajoutant les nombres qui multiplient $x$ : 1 + 0,08 = 1,08.",
+            "Après la hausse, un stage coûterait $1{,}08x$ euros : la forme réduite est **1,08x**."
+          ],
+          "hint": "Par quel nombre la lettre x est-elle multipliée dans chaque terme ?"
+        },
+        {
+          "key": "q4",
+          "skill_id": "E016",
+          "statement": "Par quel nombre décimal multiplie-t-on l'ancienne cotisation des moins de 18 ans pour obtenir la nouvelle ?",
+          "type": "numerique",
+          "answer": {
+            "value": 0.85,
+            "accepted": [
+              "×0,85",
+              "× 0,85",
+              "x0,85",
+              "x 0,85"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "Baisser de 15 %, c'est retirer 15 % de la cotisation : il en reste 100 % − 15 % = 85 %.",
+            "85 %, c'est $\\dfrac{85}{100}$, soit 0,85 : le coefficient multiplicateur est **0,85**.",
+            "Contrôle : 140 × 0,85 = 119 €, et 140 − 21 = 119, car 15 % de 140, c'est 21."
+          ],
+          "hint": "Quel pourcentage de l'ancienne cotisation reste-t-il après la baisse ?"
+        },
+        {
+          "key": "q5",
+          "skill_id": "E016",
+          "statement": "Quel était le prix de la carte de 10 séances avant la hausse ?",
+          "type": "numerique",
+          "answer": {
+            "value": 88,
+            "unit": "€"
+          },
+          "points": 3,
+          "solution_steps": [
+            "Augmenter de 5 %, c'est multiplier par le coefficient multiplicateur 1 + 0,05 = 1,05 : ancien prix × 1,05 = 92,40.",
+            "On retrouve l'ancien prix en divisant : 92,40 ÷ 1,05. On multiplie les deux nombres par 20 : 92,40 ÷ 1,05 = 1 848 ÷ 21 = 88.",
+            "La carte coûtait **88 €**. Contrôle : 5 % de 88, c'est 4,40, et 88 + 4,40 = 92,40.",
+            "Attention : retirer 5 % de 92,40 € donne 87,78 €, faux, car les 5 % portent sur l'ancien prix."
+          ],
+          "hint": "Écris d'abord le calcul qui fait passer de l'ancien prix au nouveau."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Rendre compte d'une augmentation ou une diminution exprimée en pourcentages au moyen d'un coefficient multiplicateur »"
     },
     {
       "id": "SX-E023-01",
@@ -16853,6 +17507,340 @@
       ],
       "review_status": "brouillon",
       "programme_ref": "Cycle 4, classe de 5e, Nombres rationnels, Automatismes : « Prendre 1 %, 10 % ou 50 % d'un nombre, en lien avec la proportionnalité. »"
+    },
+    {
+      "id": "SX-E038-01",
+      "skill_id": "E038",
+      "skill_ids": [
+        "E038",
+        "D004",
+        "D024"
+      ],
+      "school_level": "5e",
+      "title": "La sortie à vélo au lac",
+      "contexte": "Les 24 élèves de 5e B vont à vélo du collège jusqu'à la plage du lac des Saules, avec deux adultes : leur professeure et un parent d'élève. Le départ est prévu à 8 h 45.\n\nLeur professeure leur distribue une carte de randonnée à l'échelle $\\dfrac{1}{25\\,000}$. Sur cette carte, Inès mesure l'itinéraire avec un fil : 18,4 cm du collège au pont de la Dore, puis 7,8 cm du pont jusqu'à la plage. Après le pique-nique, le groupe fera à pied le tour du lac par un sentier long de 3,5 km.\n\nChacun loue un vélo pour la journée, au prix de 6,50 € le vélo. La baignade est surveillée de 13 h 30 à 18 h.\n\nSur le dépliant de la base nautique, un petit plan montre le ponton des pédalos. Ce ponton, long de 120 m en réalité, y est dessiné par un trait de 8 cm.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "D004",
+          "statement": "Quelle est la longueur de l'itinéraire complet du collège à la plage sur la carte, en cm ?",
+          "type": "numerique",
+          "answer": {
+            "value": 26.2,
+            "unit": "cm"
+          },
+          "points": 1,
+          "solution_steps": [
+            "L'itinéraire complet va du collège à la plage en passant par le pont : on additionne les deux longueurs mesurées sur la carte.",
+            "18,4 + 7,8 = 26,2. Sur la carte, l'itinéraire mesure **26,2 cm**."
+          ],
+          "hint": "Le trajet passe par le pont : quelles longueurs faut-il réunir ?"
+        },
+        {
+          "key": "q2",
+          "skill_id": "D024",
+          "statement": "Combien coûte la location des vélos pour tout le groupe ?",
+          "type": "numerique",
+          "answer": {
+            "value": 169,
+            "unit": "€"
+          },
+          "points": 2,
+          "solution_steps": [
+            "Tout le groupe loue un vélo : 24 élèves et 2 adultes, la professeure et le parent, soit 26 vélos.",
+            "On calcule 26 × 6,50 : on pose 26 × 65 = 1 690, puis on place la virgule, un chiffre après la virgule dans 6,5 : 26 × 6,5 = 169,0.",
+            "La location coûte **169 €**. Ordre de grandeur : 26 × 6 = 156 et 26 × 7 = 182, c'est cohérent."
+          ],
+          "hint": "Compte d'abord le nombre de vélos loués."
+        },
+        {
+          "key": "q3",
+          "skill_id": "E038",
+          "statement": "On admet que l'itinéraire mesure 26,2 cm sur la carte. Quelle est sa longueur réelle, en km ?",
+          "type": "numerique",
+          "answer": {
+            "value": 6.55,
+            "unit": "km"
+          },
+          "points": 2,
+          "solution_steps": [
+            "À l'échelle $\\dfrac{1}{25\\,000}$, 1 cm sur la carte représente 25 000 cm en réalité : les deux longueurs sont dans la même unité.",
+            "26,2 cm sur la carte représentent donc 26,2 × 25 000 cm. On pose 26,2 × 25 = 655, puis 655 × 1 000 = 655 000 : l'itinéraire mesure 655 000 cm.",
+            "On convertit : 655 000 cm = 6 550 m = 6,55 km. L'itinéraire mesure **6,55 km**.",
+            "Attention : 655 000 est un nombre de centimètres, pas de kilomètres."
+          ],
+          "hint": "Que représente 1 cm de la carte en réalité ? Pense à convertir à la fin."
+        },
+        {
+          "key": "q4",
+          "skill_id": "E038",
+          "statement": "Sur la carte, quelle longueur mesure le sentier qui fait le tour du lac, en cm ?",
+          "type": "numerique",
+          "answer": {
+            "value": 14,
+            "unit": "cm"
+          },
+          "points": 2,
+          "solution_steps": [
+            "On convertit d'abord la longueur réelle en centimètres : 3,5 km = 3 500 m = 350 000 cm.",
+            "1 cm sur la carte représente 25 000 cm ; 4 cm représentent 4 × 25 000 = 100 000 cm, soit 1 km.",
+            "1 km est donc représenté par 4 cm, et 3,5 km par 3,5 × 4 = 14 cm. Le sentier mesure **14 cm** sur la carte.",
+            "Contrôle : 14 × 25 000 = 350 000 cm, soit 3,5 km."
+          ],
+          "hint": "Cherche d'abord combien de centimètres de la carte représentent 1 km."
+        },
+        {
+          "key": "q5",
+          "skill_id": "E038",
+          "statement": "Quelle est l'échelle du plan du dépliant ? Écris-la sous forme de fraction, avec 1 au numérateur.",
+          "type": "numerique",
+          "answer": {
+            "value": "1/1500",
+            "accepted": [
+              "1 / 1500",
+              "1/1 500",
+              "1 / 1 500"
+            ]
+          },
+          "points": 3,
+          "solution_steps": [
+            "Sur un plan, les longueurs se comparent dans la même unité : 120 m = 12 000 cm.",
+            "8 cm sur le plan représentent 12 000 cm en réalité, donc 1 cm représente 12 000 ÷ 8 = 1 500 cm.",
+            "L'échelle du plan est donc $\\dfrac{1}{1\\,500}$, soit **1/1 500** : 1 cm sur le plan représente 1 500 cm, soit 15 m, en réalité.",
+            "Attention : $120 \\div 8 = 15$ mélange des mètres et des centimètres ; l'échelle $\\dfrac{1}{15}$ est fausse."
+          ],
+          "hint": "Exprime d'abord les deux longueurs du ponton dans la même unité."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Utiliser un coefficient de proportionnalité dans des contextes concrets (prix unitaire, vitesse moyenne, échelle, etc.). »"
+    },
+    {
+      "id": "SX-E039-01",
+      "skill_id": "E039",
+      "skill_ids": [
+        "E039",
+        "B004",
+        "E010",
+        "E036",
+        "D026"
+      ],
+      "school_level": "4e",
+      "title": "La course solidaire",
+      "contexte": "Le collège Victor-Hugo organise une course solidaire au profit de la recherche médicale. 360 élèves se sont inscrits, dont 45 % d'élèves de 6e. Le jour de la course, 306 élèves prennent le départ d'une boucle de 3,2 km ; le départ est donné à 14 h.\n\nChaque coureur a cherché des parrains, qui donnent de l'argent à l'association sportive du collège. À la fin, l'association verse 2 464 € à la recherche médicale : cette somme représente 70 % des dons récoltés. Le reste des dons paie l'organisation de la course.\n\nLe collège a aussi commandé des tee-shirts pour les bénévoles qui encadrent la course, à 4,50 € pièce, et leur a consacré 540 €.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "B004",
+          "statement": "Combien d'élèves inscrits n'ont pas pris le départ ?",
+          "type": "numerique",
+          "answer": {
+            "value": 54,
+            "unit": "élèves"
+          },
+          "points": 1,
+          "solution_steps": [
+            "360 élèves se sont inscrits et 306 ont pris le départ.",
+            "360 − 306 = 54. **54 élèves** inscrits n'ont pas pris le départ."
+          ],
+          "hint": "Repère, dans l'énoncé, le nombre d'inscrits et le nombre de partants."
+        },
+        {
+          "key": "q2",
+          "skill_id": "E010",
+          "statement": "Combien d'élèves de 6e se sont inscrits ?",
+          "type": "numerique",
+          "answer": {
+            "value": 162,
+            "unit": "élèves"
+          },
+          "points": 2,
+          "solution_steps": [
+            "Les élèves de 6e représentent 45 % des 360 inscrits : on calcule 45 % de 360.",
+            "1 % de 360, c'est 360 ÷ 100 = 3,6 ; 45 % de 360, c'est 45 × 3,6 = 162.",
+            "**162 élèves** de 6e se sont inscrits. Contrôle : 10 % de 360, c'est 36, et 45 % est un peu moins que la moitié, 180."
+          ],
+          "hint": "Calcule d'abord 1 % ou 10 % du nombre d'inscrits."
+        },
+        {
+          "key": "q3",
+          "skill_id": "E036",
+          "statement": "Quel pourcentage des inscrits a pris le départ ?",
+          "type": "numerique",
+          "answer": {
+            "value": 85,
+            "unit": "%",
+            "accepted": [
+              "85 pour cent"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "On divise la partie, 306 partants, par le tout, 360 inscrits : $\\dfrac{306}{360}$.",
+            "On simplifie par 2 : $\\dfrac{306}{360} = \\dfrac{153}{180}$, puis par 9, car la somme des chiffres de 153 et celle de 180 valent 9 : $\\dfrac{153}{180} = \\dfrac{17}{20}$.",
+            "En multipliant par 5 : $\\dfrac{17}{20} = \\dfrac{85}{100}$. **85 %** des inscrits ont pris le départ."
+          ],
+          "hint": "Écris la fraction « partie sur tout », puis cherche une fraction égale de dénominateur 100."
+        },
+        {
+          "key": "q4",
+          "skill_id": "D026",
+          "statement": "Combien de tee-shirts le collège a-t-il achetés ?",
+          "type": "numerique",
+          "answer": {
+            "value": 120,
+            "unit": "tee-shirts",
+            "accepted": [
+              "120 tee-shirt"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "On cherche combien de fois 4,50 € entre dans 540 € : on calcule 540 ÷ 4,5.",
+            "On multiplie les deux nombres par 10 : 540 ÷ 4,5 = 5 400 ÷ 45 = 120.",
+            "Le collège a acheté **120 tee-shirts**. Contrôle : 120 × 4,5 = 540."
+          ],
+          "hint": "Le prix total, c'est le prix d'un tee-shirt multiplié par le nombre de tee-shirts."
+        },
+        {
+          "key": "q5",
+          "skill_id": "E039",
+          "statement": "Quel est le montant total des dons récoltés ?",
+          "type": "numerique",
+          "answer": {
+            "value": 3520,
+            "unit": "€"
+          },
+          "points": 3,
+          "solution_steps": [
+            "On connaît une part, 2 464 €, et le pourcentage qu'elle représente, 70 % : on cherche le total.",
+            "Prendre 70 % d'un nombre, c'est le multiplier par 0,7 : total × 0,7 = 2 464, donc total = 2 464 ÷ 0,7 = 24 640 ÷ 7 = 3 520.",
+            "Les dons récoltés s'élèvent à **3 520 €**. Contrôle : 10 % de 3 520, c'est 352, et 7 × 352 = 2 464.",
+            "Attention : calculer 70 % de 2 464 € donnerait une somme plus petite que la part versée, ce qui est impossible."
+          ],
+          "hint": "Les 2 464 € sont déjà un pourcentage de la somme cherchée."
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Calculer avec des pourcentages. »"
+    },
+    {
+      "id": "SX-E040-01",
+      "skill_id": "E040",
+      "skill_ids": [
+        "E040",
+        "P018",
+        "D007",
+        "E034"
+      ],
+      "school_level": "4e",
+      "title": "Le loyer de la colocation",
+      "contexte": "Jade, Karim et Léon sont étudiants et louent ensemble un appartement au quatrième étage, sans ascenseur. Le loyer est de 1 296 € par mois.\n\nIls ont décidé de le partager proportionnellement à la surface de leur chambre. La chambre de Jade est un rectangle de 4 m sur 3,5 m ; celle de Karim mesure 15 m² ; celle de Léon mesure 19 m². Le salon et la cuisine, qu'ils partagent, mesurent 31 m².\n\nLes autres frais sont partagés à parts égales : la box internet coûte 29,70 € par mois, et l'électricité 61,50 € par mois.",
+      "image": null,
+      "duree_estimee_min": 15,
+      "questions": [
+        {
+          "key": "q1",
+          "skill_id": "P018",
+          "statement": "Quelle est l'aire de la chambre de Jade, en m² ?",
+          "type": "numerique",
+          "answer": {
+            "value": 14,
+            "unit": "m²"
+          },
+          "points": 1,
+          "solution_steps": [
+            "La chambre de Jade est un rectangle : son aire est le produit de la longueur par la largeur.",
+            "4 × 3,5 = 14. La chambre de Jade mesure **14 m²**."
+          ],
+          "hint": "Comment calcule-t-on l'aire d'un rectangle ?"
+        },
+        {
+          "key": "q2",
+          "skill_id": "D007",
+          "statement": "Combien chacun paie-t-il par mois pour la box internet et l'électricité réunies ?",
+          "type": "numerique",
+          "answer": {
+            "value": 30.4,
+            "unit": "€",
+            "accepted": [
+              "30 € 40",
+              "30 euros 40"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "Ces frais se partagent à parts égales entre les trois colocataires, quelle que soit leur chambre.",
+            "Total des deux frais : 29,70 + 61,50 = 91,20 €.",
+            "On pose 91,20 ÷ 3 = 30,40. Chacun paie **30,40 €** par mois."
+          ],
+          "hint": "Ces frais dépendent-ils de la surface des chambres ?"
+        },
+        {
+          "key": "q3",
+          "skill_id": "E034",
+          "statement": "On admet que la chambre de Jade mesure 14 m². Le loyer de chacun est proportionnel à la surface de sa chambre : combien coûte le loyer pour 1 m² de chambre, en euros ?",
+          "type": "numerique",
+          "answer": {
+            "value": 27,
+            "unit": "€",
+            "accepted": [
+              "27 €/m²",
+              "27 € par m²",
+              "27 euros par m²"
+            ]
+          },
+          "points": 2,
+          "solution_steps": [
+            "Surface totale des trois chambres : 14 + 15 + 19 = 48 m². Le salon et la cuisine ne comptent pas dans le partage.",
+            "Le loyer de 1 296 € correspond à 48 m² de chambres : pour 1 m², on divise, 1 296 ÷ 48 = 27.",
+            "Le coefficient de proportionnalité vaut 27 : le loyer coûte **27 €** par mètre carré de chambre."
+          ],
+          "hint": "Quelle surface le loyer total sert-il à payer, dans ce partage ?"
+        },
+        {
+          "key": "q4",
+          "skill_id": "E040",
+          "statement": "On admet que les trois chambres mesurent 14 m², 15 m² et 19 m². Quelle part du loyer Léon paie-t-il ?",
+          "type": "numerique",
+          "answer": {
+            "value": 513,
+            "unit": "€"
+          },
+          "points": 2,
+          "solution_steps": [
+            "On partage 1 296 € selon le ratio 14 : 15 : 19 des surfaces, soit 14 + 15 + 19 = 48 parts égales.",
+            "Une part vaut 1 296 ÷ 48 = 27 €.",
+            "Léon a 19 parts : 19 × 27 = 513. Léon paie **513 €** de loyer.",
+            "Contrôle : Jade paie 14 × 27 = 378 €, Karim 15 × 27 = 405 €, et 378 + 405 + 513 = 1 296."
+          ],
+          "hint": "En combien de parts égales faut-il couper le loyer ?"
+        },
+        {
+          "key": "q5",
+          "skill_id": "E040",
+          "statement": "L'année suivante, le loyer augmente. Avec le même partage, Léon paie désormais 532 € par mois. On admet que les chambres mesurent toujours 14 m², 15 m² et 19 m². Quel est le nouveau loyer total ?",
+          "type": "numerique",
+          "answer": {
+            "value": 1344,
+            "unit": "€"
+          },
+          "points": 3,
+          "solution_steps": [
+            "Le partage se fait toujours selon le ratio 14 : 15 : 19, soit 48 parts, dont 19 pour Léon.",
+            "Les 532 € de Léon représentent 19 parts : une part vaut 532 ÷ 19 = 28 €.",
+            "Le loyer total vaut 48 parts : 48 × 28 = 1 344. Le nouveau loyer est de **1 344 €**.",
+            "Contrôle : Jade paie 14 × 28 = 392 €, Karim 15 × 28 = 420 €, et 392 + 420 + 532 = 1 344. Multiplier 532 € par 3 supposerait un partage à parts égales."
+          ],
+          "hint": "Combien vaut une part dans le nouveau partage ?"
+        }
+      ],
+      "review_status": "relu_agent",
+      "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Résoudre des problèmes de partage proportionnel. »"
     },
     {
       "id": "SX-F002-01",

@@ -1,0 +1,114 @@
+{
+  "id": "SX-E040-01",
+  "skill_id": "E040",
+  "skill_ids": [
+    "E040",
+    "P018",
+    "D007",
+    "E034"
+  ],
+  "school_level": "4e",
+  "title": "Le loyer de la colocation",
+  "contexte": "Jade, Karim et Léon sont étudiants et louent ensemble un appartement au quatrième étage, sans ascenseur. Le loyer est de 1 296 € par mois.\n\nIls ont décidé de le partager proportionnellement à la surface de leur chambre. La chambre de Jade est un rectangle de 4 m sur 3,5 m ; celle de Karim mesure 15 m² ; celle de Léon mesure 19 m². Le salon et la cuisine, qu'ils partagent, mesurent 31 m².\n\nLes autres frais sont partagés à parts égales : la box internet coûte 29,70 € par mois, et l'électricité 61,50 € par mois.",
+  "image": null,
+  "duree_estimee_min": 15,
+  "questions": [
+    {
+      "key": "q1",
+      "skill_id": "P018",
+      "statement": "Quelle est l'aire de la chambre de Jade, en m² ?",
+      "type": "numerique",
+      "answer": {
+        "value": 14,
+        "unit": "m²"
+      },
+      "points": 1,
+      "solution_steps": [
+        "La chambre de Jade est un rectangle : son aire est le produit de la longueur par la largeur.",
+        "4 × 3,5 = 14. La chambre de Jade mesure **14 m²**."
+      ],
+      "hint": "Comment calcule-t-on l'aire d'un rectangle ?"
+    },
+    {
+      "key": "q2",
+      "skill_id": "D007",
+      "statement": "Combien chacun paie-t-il par mois pour la box internet et l'électricité réunies ?",
+      "type": "numerique",
+      "answer": {
+        "value": 30.4,
+        "unit": "€",
+        "accepted": [
+          "30 € 40",
+          "30 euros 40"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Ces frais se partagent à parts égales entre les trois colocataires, quelle que soit leur chambre.",
+        "Total des deux frais : 29,70 + 61,50 = 91,20 €.",
+        "On pose 91,20 ÷ 3 = 30,40. Chacun paie **30,40 €** par mois."
+      ],
+      "hint": "Ces frais dépendent-ils de la surface des chambres ?"
+    },
+    {
+      "key": "q3",
+      "skill_id": "E034",
+      "statement": "On admet que la chambre de Jade mesure 14 m². Le loyer de chacun est proportionnel à la surface de sa chambre : combien coûte le loyer pour 1 m² de chambre, en euros ?",
+      "type": "numerique",
+      "answer": {
+        "value": 27,
+        "unit": "€",
+        "accepted": [
+          "27 €/m²",
+          "27 € par m²",
+          "27 euros par m²"
+        ]
+      },
+      "points": 2,
+      "solution_steps": [
+        "Surface totale des trois chambres : 14 + 15 + 19 = 48 m². Le salon et la cuisine ne comptent pas dans le partage.",
+        "Le loyer de 1 296 € correspond à 48 m² de chambres : pour 1 m², on divise, 1 296 ÷ 48 = 27.",
+        "Le coefficient de proportionnalité vaut 27 : le loyer coûte **27 €** par mètre carré de chambre."
+      ],
+      "hint": "Quelle surface le loyer total sert-il à payer, dans ce partage ?"
+    },
+    {
+      "key": "q4",
+      "skill_id": "E040",
+      "statement": "On admet que les trois chambres mesurent 14 m², 15 m² et 19 m². Quelle part du loyer Léon paie-t-il ?",
+      "type": "numerique",
+      "answer": {
+        "value": 513,
+        "unit": "€"
+      },
+      "points": 2,
+      "solution_steps": [
+        "On partage 1 296 € selon le ratio 14 : 15 : 19 des surfaces, soit 14 + 15 + 19 = 48 parts égales.",
+        "Une part vaut 1 296 ÷ 48 = 27 €.",
+        "Léon a 19 parts : 19 × 27 = 513. Léon paie **513 €** de loyer.",
+        "Contrôle : Jade paie 14 × 27 = 378 €, Karim 15 × 27 = 405 €, et 378 + 405 + 513 = 1 296."
+      ],
+      "hint": "En combien de parts égales faut-il couper le loyer ?"
+    },
+    {
+      "key": "q5",
+      "skill_id": "E040",
+      "statement": "L'année suivante, le loyer augmente. Avec le même partage, Léon paie désormais 532 € par mois. On admet que les chambres mesurent toujours 14 m², 15 m² et 19 m². Quel est le nouveau loyer total ?",
+      "type": "numerique",
+      "answer": {
+        "value": 1344,
+        "unit": "€"
+      },
+      "points": 3,
+      "solution_steps": [
+        "Le partage se fait toujours selon le ratio 14 : 15 : 19, soit 48 parts, dont 19 pour Léon.",
+        "Les 532 € de Léon représentent 19 parts : une part vaut 532 ÷ 19 = 28 €.",
+        "Le loyer total vaut 48 parts : 48 × 28 = 1 344. Le nouveau loyer est de **1 344 €**.",
+        "Contrôle : Jade paie 14 × 28 = 392 €, Karim 15 × 28 = 420 €, et 392 + 420 + 532 = 1 344. Multiplier 532 € par 3 supposerait un partage à parts égales."
+      ],
+      "hint": "Combien vaut une part dans le nouveau partage ?"
+    }
+  ],
+  "review_status": "relu_agent",
+  "programme_ref": "Cycle 4, classe de 4e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Résoudre des problèmes de partage proportionnel. »"
+}
