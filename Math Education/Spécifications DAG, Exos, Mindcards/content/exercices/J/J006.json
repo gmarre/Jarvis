@@ -1,0 +1,179 @@
+[
+  {
+    "id": "EX-J006-D-01",
+    "skill_id": "J006",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Le comté coûte 18 € le kilogramme. La fonction linéaire f associe à une masse x (en kg) son prix (en €) : $f(x) = 18x$.\n\nCalcule $f(1{,}5)$, le prix de 1,5 kg.",
+    "image": null,
+    "answer": {
+      "value": 27,
+      "unit": "€",
+      "accepted": [
+        "f(1,5) = 27",
+        "f(1,5)=27",
+        "f(1,5) = 27 €",
+        "f(1,5)=27€"
+      ]
+    },
+    "solution_steps": [
+      "f est la fonction linéaire de coefficient 18 : le prix est proportionnel à la masse, et 18 est le prix d'un kilogramme.",
+      "$f(1{,}5)$ est l'image de 1,5 : on remplace x par 1,5. Ce n'est pas « f fois 1,5 ».",
+      "$f(1{,}5) = 18 \\times 1{,}5 = 27$.",
+      "Contrôle : 1 kg coûte 18 € et 0,5 kg coûte la moitié, 9 € ; 18 + 9 = 27. Donc 1,5 kg de comté coûte 27 €."
+    ],
+    "hint": "Remplace x par 1,5 dans l'expression de f.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions : « Définir et utiliser les fonctions linéaires. »"
+  },
+  {
+    "id": "EX-J006-D-02",
+    "skill_id": "J006",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Sur le graphique, trois droites sont tracées.\n\nLaquelle représente la fonction linéaire $x \\mapsto 1{,}5x$ ?",
+    "image": "figures/EX-J006-D-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "d1",
+        "misconception": "L'élève divise l'abscisse par l'ordonnée : sur d1, le point (3 ; 2) donne 3 ÷ 2 = 1,5, alors que le coefficient de d1 est 2 ÷ 3."
+      },
+      {
+        "key": "b",
+        "text": "d2",
+        "misconception": "L'élève voit une droite qui monte aussi vite que d3, parallèle à elle, et oublie qu'une fonction linéaire est représentée par une droite qui passe par l'origine : d2 coupe l'axe des ordonnées en 2."
+      },
+      {
+        "key": "c",
+        "text": "d3",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Une fonction linéaire est représentée par une droite qui passe par l'origine O : d2 ne passe pas par O, elle est éliminée.",
+      "Pour $x \\mapsto 1{,}5x$, l'image de 2 est $1{,}5 \\times 2 = 3$ : la droite cherchée passe par le point (2 ; 3).",
+      "d3 passe par (2 ; 3). d1 passe par (3 ; 2) : elle correspond au coefficient 2 ÷ 3, pas à 1,5.",
+      "La bonne réponse est d3."
+    ],
+    "hint": "Calcule l'image de 2 par cette fonction, puis cherche le point qui lui correspond.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions : « Définir et utiliser les fonctions linéaires. »"
+  },
+  {
+    "id": "EX-J006-E-01",
+    "skill_id": "J006",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "f est une fonction linéaire telle que $f(5) = 3$.\n\nQuel est son coefficient ? Donne-le en écriture décimale.",
+    "image": null,
+    "answer": {
+      "value": 0.6,
+      "accepted": [
+        "3/5"
+      ]
+    },
+    "solution_steps": [
+      "f est linéaire : $f(x) = ax$, où a est son coefficient.",
+      "$f(5) = 3$ s'écrit $a \\times 5 = 3$.",
+      "On divise par 5 : $a = 3 \\div 5 = 0{,}6$.",
+      "Contrôle : $0{,}6 \\times 5 = 3$. Piège : calculer 5 ÷ 3 inverse le quotient ; on divise l'image par le nombre de départ, pas l'inverse."
+    ],
+    "hint": "Écris f(x) = ax, puis remplace x par 5.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions : « Définir et utiliser les fonctions linéaires. »"
+  },
+  {
+    "id": "EX-J006-E-02",
+    "skill_id": "J006",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "f est une fonction linéaire telle que $f(2) = 7$.\n\nVrai ou faux : $f(4) = 9$.",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Une fonction linéaire traduit une situation de proportionnalité : quand x est multiplié par 2, son image est multipliée par 2.",
+      "4 = 2 × 2, donc $f(4) = 2 \\times f(2) = 2 \\times 7 = 14$.",
+      "Autre calcul : le coefficient est $7 \\div 2 = 3{,}5$, et $f(4) = 3{,}5 \\times 4 = 14$.",
+      "L'affirmation est fausse. 9 vient de 7 + 2 : on a ajouté à l'image ce qu'on a ajouté à x, ce qui n'est pas de la proportionnalité."
+    ],
+    "hint": "Par combien x est-il multiplié quand on passe de 2 à 4 ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions : « Relier fonctions linéaires et proportionnalité. »"
+  },
+  {
+    "id": "EX-J006-M-01",
+    "skill_id": "J006",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "4 L de peinture coûtent 46 €. Le prix est une fonction linéaire du volume.\n\nQuel volume de peinture, en L, peut-on acheter avec 69 € ?",
+    "image": null,
+    "answer": {
+      "value": 6,
+      "unit": "L"
+    },
+    "solution_steps": [
+      "Le prix est une fonction linéaire du volume : $f(x) = ax$, où x est le volume en litres et a le prix d'un litre.",
+      "$f(4) = 46$, donc $a = 46 \\div 4 = 11{,}5$ : un litre coûte 11,50 €.",
+      "On cherche le volume x tel que $f(x) = 69$ : $11{,}5x = 69$, donc $x = 69 \\div 11{,}5 = 6$.",
+      "Contrôle : $11{,}5 \\times 6 = 69$. Avec 69 €, on achète 6 L de peinture.",
+      "Piège : calculer $f(69)$, l'image de 69. Ici 69 € est un prix, donc une image : on cherche son antécédent."
+    ],
+    "hint": "Commence par calculer le prix d'un litre.",
+    "estimated_duration_s": 100,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions : « Relier fonctions linéaires et proportionnalité. »"
+  },
+  {
+    "id": "EX-J006-M-02",
+    "skill_id": "J006",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Un magasin baisse tous ses prix de 30 %. La fonction p associe à l'ancien prix x (en €) le nouveau prix (en €).\n\nLaquelle de ces écritures définit p ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$x \\mapsto 0{,}3x$",
+        "misconception": "L'élève code la baisse de 30 % par 0,3 : $0{,}3x$ est le montant de la baisse, pas le nouveau prix."
+      },
+      {
+        "key": "b",
+        "text": "$x \\mapsto 0{,}7x$",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "$x \\mapsto x - 30$",
+        "misconception": "L'élève retire 30 € au lieu de 30 % : pour un article à 50 €, il retirerait 30 € au lieu de 15 €. Cette fonction n'est d'ailleurs pas linéaire."
+      },
+      {
+        "key": "d",
+        "text": "$x \\mapsto 1{,}3x$",
+        "misconception": "L'élève applique une hausse de 30 % au lieu d'une baisse : multiplier par 1 + 0,3 = 1,3 fait monter les prix."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Baisser un prix de 30 %, c'est lui retirer 30 % de sa valeur : il reste 100 % − 30 % = 70 % de l'ancien prix.",
+      "Prendre 70 % d'un nombre, c'est le multiplier par 0,7 : le coefficient multiplicateur d'une baisse de 30 % est 1 − 0,3 = 0,7.",
+      "Donc $p(x) = 0{,}7x$ : p est la fonction linéaire de coefficient 0,7.",
+      "Contrôle : un article à 50 € coûte $0{,}7 \\times 50 = 35$ €, et 50 − 35 = 15 € de baisse, soit bien 30 % de 50 €."
+    ],
+    "hint": "Quel pourcentage de l'ancien prix reste-t-il après la baisse ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions : « Relier fonctions linéaires et proportionnalité. »"
+  }
+]

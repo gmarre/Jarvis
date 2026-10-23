@@ -1,0 +1,161 @@
+[
+  {
+    "id": "EX-J005-D-01",
+    "skill_id": "J005",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Un plombier facture 30 € de déplacement, puis 45 € par heure de travail. Pour x heures, le prix est donné par la fonction affine $f(x) = 45x + 30$.\n\nCalcule $f(1{,}5)$.",
+    "image": null,
+    "answer": {
+      "value": 97.5,
+      "unit": "€",
+      "accepted": [
+        "f(1,5) = 97,5",
+        "f(1,5)=97,5",
+        "f(1,5) = 97,50",
+        "f(1,5) = 97,5 €",
+        "f(1,5) = 97,50 €"
+      ]
+    },
+    "solution_steps": [
+      "On remplace x par 1,5 : $f(1{,}5) = 45 \\times 1{,}5 + 30$.",
+      "On calcule d'abord le produit : $45 \\times 1{,}5 = 67{,}5$, puis $67{,}5 + 30 = 97{,}5$.",
+      "Une intervention de 1,5 heure coûte 97,50 €.",
+      "Dans $f(x) = 45x + 30$, a = 45 est le prix d'une heure et b = 30 le prix du déplacement, payé une seule fois. Piège : $(45 + 30) \\times 1{,}5$ ferait payer le déplacement une fois et demie."
+    ],
+    "hint": "Remplace x par 1,5, et effectue la multiplication avant l'addition.",
+    "estimated_duration_s": 50,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions : « Définir et utiliser les fonctions affines. »"
+  },
+  {
+    "id": "EX-J005-D-02",
+    "skill_id": "J005",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "La fonction affine g est définie par $g(x) = 9 - 4x$.\n\nQuels sont son coefficient a et son nombre b ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "a = 9 et b = −4",
+        "misconception": "L'élève prend les nombres dans l'ordre où ils sont écrits : le premier pour a, le second pour b. Or a est le nombre qui multiplie x, ici −4."
+      },
+      {
+        "key": "b",
+        "text": "a = 4 et b = 9",
+        "misconception": "L'élève oublie le signe moins devant 4x : on retire 4x, donc le nombre qui multiplie x est −4."
+      },
+      {
+        "key": "c",
+        "text": "a = −4 et b = 9",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Une fonction affine s'écrit $f(x) = ax + b$ : a est le nombre qui multiplie x, b est le nombre ajouté.",
+      "On change l'ordre des termes : $9 - 4x = -4x + 9$. Chaque terme garde son signe.",
+      "Le nombre qui multiplie x est −4 : a = −4. Le nombre ajouté est 9 : b = 9.",
+      "Contrôle : $g(0) = 9$, c'est b ; $g(1) = 9 - 4 = 5$, et $a + b = -4 + 9 = 5$. Comme b n'est pas nul, g n'est pas linéaire."
+    ],
+    "hint": "Écris d'abord g(x) sous la forme ax + b, en gardant le signe de chaque terme.",
+    "estimated_duration_s": 45,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions : « Définir et utiliser les fonctions affines. »"
+  },
+  {
+    "id": "EX-J005-E-01",
+    "skill_id": "J005",
+    "level": "entrainement",
+    "type": "texte",
+    "statement": "Une salle d'escalade demande 40 € d'inscription, puis 15 € par mois. On note f la fonction qui, au nombre x de mois, associe le coût total (en €).\n\nÉcris l'expression de f(x).",
+    "image": null,
+    "answer": {
+      "value": "15x + 40",
+      "forme": "expression",
+      "variables": [
+        "x"
+      ],
+      "unit": "€"
+    },
+    "solution_steps": [
+      "Chaque mois coûte 15 € : pour x mois, cela fait $15 \\times x = 15x$ euros.",
+      "On ajoute l'inscription, payée une seule fois : 40 €.",
+      "Donc $f(x) = 15x + 40$ : f est une fonction affine, avec a = 15, le prix d'un mois, et b = 40, l'inscription.",
+      "Contrôle avec 2 mois : 40 + 15 + 15 = 70, et $15 \\times 2 + 40 = 70$. Piège : $40x + 15$ ferait payer l'inscription chaque mois."
+    ],
+    "hint": "Quelle somme est payée chaque mois, et laquelle une seule fois ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions : « Définir et utiliser les fonctions affines. »"
+  },
+  {
+    "id": "EX-J005-E-02",
+    "skill_id": "J005",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "La fonction affine h est définie par $h(x) = 2{,}5x - 4$.\n\nQuel nombre a pour image 11 par h ?",
+    "image": null,
+    "answer": {
+      "value": 6
+    },
+    "solution_steps": [
+      "On cherche l'antécédent de 11 : le nombre x tel que $h(x) = 11$.",
+      "On résout $2{,}5x - 4 = 11$ : on ajoute 4 aux deux membres, $2{,}5x = 15$.",
+      "On divise par 2,5 : $x = 15 \\div 2{,}5 = 6$.",
+      "Contrôle : $h(6) = 2{,}5 \\times 6 - 4 = 15 - 4 = 11$. Piège : calculer $h(11) = 23{,}5$, l'image de 11, alors qu'on demande son antécédent."
+    ],
+    "hint": "Écris l'équation h(x) = 11, puis résous-la.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions : « Définir et utiliser les fonctions affines. »"
+  },
+  {
+    "id": "EX-J005-M-01",
+    "skill_id": "J005",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Une fonction affine f vérifie $f(-1) = 7$ et $f(3) = -1$.\n\nQuel est son nombre b ?",
+    "image": null,
+    "answer": {
+      "value": 5,
+      "accepted": [
+        "b = 5"
+      ]
+    },
+    "solution_steps": [
+      "f est affine : $f(x) = ax + b$. On calcule d'abord a.",
+      "Quand x passe de −1 à 3, il augmente de $3 - (-1) = 4$ ; l'image passe de 7 à −1, elle varie de $-1 - 7 = -8$.",
+      "Les variations de l'image sont proportionnelles à celles de x : $a = -8 \\div 4 = -2$.",
+      "On utilise $f(3) = -1$ : $-2 \\times 3 + b = -1$, soit $-6 + b = -1$, donc $b = 5$.",
+      "Contrôle avec l'autre donnée : $f(-1) = -2 \\times (-1) + 5 = 2 + 5 = 7$. Piège : oublier le signe de a donne a = 2 et b = −7, mais alors f(−1) vaudrait −9, pas 7."
+    ],
+    "hint": "Calcule d'abord a : de combien varie l'image quand x passe d'une valeur à l'autre ?",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions : « Définir et utiliser les fonctions affines. »"
+  },
+  {
+    "id": "EX-J005-M-02",
+    "skill_id": "J005",
+    "level": "maitrise",
+    "type": "vrai_faux",
+    "statement": "La fonction k est définie par $k(x) = 3(x - 2) + 1$.\n\nVrai ou faux : k est une fonction affine.",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "On développe : $3(x - 2) + 1 = 3x - 6 + 1 = 3x - 5$.",
+      "Donc $k(x) = 3x - 5$ : k est de la forme ax + b, avec a = 3 et b = −5. C'est une fonction affine : l'affirmation est vraie.",
+      "Piège : l'écriture avec des parenthèses cache la forme ax + b ; on développe et on réduit avant de conclure. À l'inverse, $x \\mapsto x^{2} + 1$ n'est pas affine : x y est multiplié par lui-même."
+    ],
+    "hint": "Développe et réduis l'expression de k(x).",
+    "estimated_duration_s": 70,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions : « Définir et utiliser les fonctions affines. »"
+  }
+]

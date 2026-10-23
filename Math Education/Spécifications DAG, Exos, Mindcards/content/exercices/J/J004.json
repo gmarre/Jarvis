@@ -1,0 +1,162 @@
+[
+  {
+    "id": "EX-J004-D-01",
+    "skill_id": "J004",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Sur le graphique, 𝒞f est la courbe représentative d'une fonction f. Les pointillés partent de 3 sur l'axe des abscisses.\n\nQuelle est l'image de 3 par f ?",
+    "image": "figures/EX-J004-D-01",
+    "answer": {
+      "value": 5,
+      "accepted": [
+        "f(3) = 5",
+        "f(3)=5"
+      ]
+    },
+    "solution_steps": [
+      "L'image de 3 se lit en partant de 3 sur l'axe des abscisses, l'axe horizontal.",
+      "On monte jusqu'à la courbe 𝒞f en suivant les pointillés : on arrive au point de 𝒞f d'abscisse 3.",
+      "On lit l'ordonnée de ce point sur l'axe vertical : 5. L'image de 3 par f est 5, ce qui s'écrit $f(3) = 5$.",
+      "Piège : chercher 3 sur l'axe des ordonnées, c'est chercher les antécédents de 3 (sur le dessin, 1 et 4), pas son image."
+    ],
+    "hint": "L'image se lit sur l'axe des ordonnées, au bout des pointillés horizontaux.",
+    "estimated_duration_s": 40,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions : « Utiliser les différentes représentations d’une fonction. »"
+  },
+  {
+    "id": "EX-J004-D-02",
+    "skill_id": "J004",
+    "level": "decouverte",
+    "type": "texte",
+    "statement": "Sur le graphique, 𝒞f est la courbe représentative d'une fonction f, définie pour x entre −5 et 5. Les pointillés partent de −2 sur l'axe des ordonnées.\n\nDonne tous les antécédents de −2 par f, séparés par un point-virgule.",
+    "image": "figures/EX-J004-D-02",
+    "answer": {
+      "value": "−4 ; 4",
+      "forme": "solutions"
+    },
+    "solution_steps": [
+      "Les antécédents de −2 sont les nombres dont l'image est −2. On part donc de −2 sur l'axe des ordonnées, l'axe vertical.",
+      "On suit l'horizontale à cette hauteur : elle rencontre 𝒞f en deux points.",
+      "On lit l'abscisse de chacun : −4 et 4. Donc $f(-4) = -2$ et $f(4) = -2$ : −2 a deux antécédents, −4 et 4.",
+      "Piège : s'arrêter au premier point trouvé. Il faut parcourir toute la courbe à cette hauteur."
+    ],
+    "hint": "Combien de fois la ligne horizontale des pointillés rencontre-t-elle 𝒞f ?",
+    "estimated_duration_s": 50,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions : « Définir et connaitre le vocabulaire : image, antécédents. »"
+  },
+  {
+    "id": "EX-J004-E-01",
+    "skill_id": "J004",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Sur le graphique, 𝒞f est la courbe représentative d'une fonction f.\n\nQuelle est l'image de −2 par f ?",
+    "image": "figures/EX-J004-E-01",
+    "choices": [
+      {
+        "key": "a",
+        "text": "5",
+        "misconception": null
+      },
+      {
+        "key": "b",
+        "text": "2,5",
+        "misconception": "L'élève compte les carreaux, deux et demi, sans voir qu'une graduation de l'axe des ordonnées vaut 2 : deux graduations et demie représentent 5."
+      },
+      {
+        "key": "c",
+        "text": "6",
+        "misconception": "L'élève cherche −2 sur l'axe des ordonnées et lit l'abscisse du point de 𝒞f à cette hauteur : 6 est un antécédent de −2, car $f(6) = -2$, pas l'image de −2."
+      },
+      {
+        "key": "d",
+        "text": "2",
+        "misconception": "L'élève lit l'image de 2 au lieu de celle de −2 : $f(2) = 2$."
+      }
+    ],
+    "answer": {
+      "value": "a"
+    },
+    "solution_steps": [
+      "L'image de −2 se lit en partant de −2 sur l'axe des abscisses, à gauche de O.",
+      "On monte jusqu'à 𝒞f, puis on lit l'ordonnée du point atteint sur l'axe vertical.",
+      "Attention : sur l'axe des ordonnées, une graduation vaut 2. Le point est deux graduations et demie au-dessus de l'axe des abscisses : son ordonnée est $2{,}5 \\times 2 = 5$.",
+      "Donc $f(-2) = 5$."
+    ],
+    "hint": "Combien vaut une graduation sur l'axe des ordonnées ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions : « Utiliser les différentes représentations d’une fonction. »"
+  },
+  {
+    "id": "EX-J004-E-02",
+    "skill_id": "J004",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Sur le graphique, 𝒞f est la courbe représentative d'une fonction f.\n\nVrai ou faux : l'image de 4 par f est −1.",
+    "image": "figures/EX-J004-E-02",
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "L'image de 4 se lit en partant de 4 sur l'axe des abscisses : le point de 𝒞f d'abscisse 4 a pour ordonnée 2. Donc $f(4) = 2$, et non −1.",
+      "Le point de 𝒞f d'abscisse −1 a pour ordonnée 4 : $f(-1) = 4$. C'est 4 qui est l'image de −1, et −1 est un antécédent de 4.",
+      "L'affirmation est fausse : elle échange image et antécédent."
+    ],
+    "hint": "Pars de 4 sur l'axe horizontal.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions : « Définir et connaitre le vocabulaire : image, antécédents. »"
+  },
+  {
+    "id": "EX-J004-M-01",
+    "skill_id": "J004",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Sur le graphique, 𝒞f est la courbe représentative d'une fonction f, définie pour x entre −6 et 5.\n\nCombien le nombre 1 a-t-il d'antécédents par f ?",
+    "image": "figures/EX-J004-M-01",
+    "answer": {
+      "value": 4,
+      "accepted": [
+        "4 antécédents",
+        "quatre",
+        "quatre antécédents"
+      ]
+    },
+    "solution_steps": [
+      "Les antécédents de 1 sont les abscisses des points de 𝒞f d'ordonnée 1.",
+      "On suit la ligne horizontale à la hauteur 1 sur toute la courbe, de x = −6 jusqu'à x = 5.",
+      "Elle rencontre 𝒞f en quatre points, d'abscisses −5, −3, −0,5 et 3.",
+      "Donc 1 a quatre antécédents par f : $f(-5) = f(-3) = f(-0{,}5) = f(3) = 1$.",
+      "Piège : s'arrêter après les premiers points trouvés. Un nombre peut avoir plusieurs antécédents, alors que chaque nombre n'a qu'une seule image."
+    ],
+    "hint": "Suis la hauteur 1 d'un bout à l'autre de la courbe.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions : « Définir et connaitre le vocabulaire : image, antécédents. »"
+  },
+  {
+    "id": "EX-J004-M-02",
+    "skill_id": "J004",
+    "level": "maitrise",
+    "type": "texte",
+    "statement": "Sur le graphique, 𝒞f est la courbe représentative d'une fonction f, définie pour x entre −3 et 3.\n\nTrouve tous les nombres dont l'image par f est 3. Sépare-les par un point-virgule.",
+    "image": "figures/EX-J004-M-02",
+    "answer": {
+      "value": "−2,5 ; 1",
+      "forme": "solutions"
+    },
+    "solution_steps": [
+      "Chercher les nombres dont l'image est 3, c'est chercher les antécédents de 3 : on part de 3 sur l'axe des ordonnées.",
+      "La ligne horizontale à la hauteur 3 rencontre 𝒞f en deux points.",
+      "Sur l'axe des abscisses, une graduation vaut 0,5 et seuls les nombres entiers sont écrits. Le premier point est au-dessus de la graduation située au milieu de −3 et −2 : son abscisse est −2,5. Le second est au-dessus de la graduation 1.",
+      "Donc $f(-2{,}5) = 3$ et $f(1) = 3$ : les nombres cherchés sont −2,5 et 1.",
+      "Piège : répondre 2, qui est l'image de 3 ($f(3) = 2$). La question part de l'image, pas du nombre de départ."
+    ],
+    "hint": "Les nombres cherchés sont des antécédents : à quelle hauteur faut-il regarder ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions : « Définir et connaitre le vocabulaire : image, antécédents. »"
+  }
+]
