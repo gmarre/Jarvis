@@ -10,7 +10,7 @@ Règles de fond : `.claude/rules/contenu.md`. Toutes les commandes Python : `.ve
 ## 1. Préparer
 
 - Lire la ligne de l'étape dans `pilotage/FEUILLE_DE_ROUTE.md` (bloc A) et ses arbitrages déjà pris dans `pilotage/DECISIONS.md`.
-- Nouvelle lettre de domaine ? D'abord une migration (skill `migration`) qui élargit les contraintes `A-P`, et `ID_EXERCICE` dans `corriger/index.ts` (skill `deployer-fonction`).
+- Nouvelle lettre de domaine **au-delà de P** ? (A à P, donc J, K, L, H, I, M, N, O, sont déjà acceptées partout.) D'abord une migration (skill `migration`) qui élargit les contraintes `A-P`, et `ID_EXERCICE` dans `corriger/index.ts` (skill `deployer-fonction`).
 - Nouveau type de figure ? Le coder dans `scripts/figures.py` **avant** la rédaction des nœuds qui en dépendent.
 - Partir des consignes de la dernière étape close (`modeles_agents/consigne_*_etape<N>.md`), recopiées et adaptées dans `_travail/brief_*_etape<M>.md`.
 

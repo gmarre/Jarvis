@@ -26,7 +26,7 @@ paths:
 - une lettre citée dans une proposition n'est jamais la pastille d'une autre ;
 - les étapes d'un corrigé n'utilisent que des opérations couvertes par les prérequis ;
 - dans les cartes, aucun couple de données repris d'un exercice de la même carte ;
-- leçons de l'étape 8 (détail dans le brief de l'étape 8) : position d'un objet vérifiée sur les coordonnées, QCM à justification fausse, « Aucune » jamais juste, division de fraction C017, angle droit non donné.
+- leçons de l'étape 8 (détail dans `modeles_agents/consigne_redacteurs_etape8.md`) : position d'un objet vérifiée sur les coordonnées, QCM à justification fausse, « Aucune » jamais juste, division de fraction C017, angle droit non donné.
 
 ## Outils
 

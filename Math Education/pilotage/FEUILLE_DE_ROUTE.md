@@ -1,6 +1,6 @@
 # Feuille de route, du sprint en cours jusqu'à la bêta
 
-> Mise à jour le 23 octobre 2026. Ordre validé par Gauthier : **bloc A (contenu), puis B (mobile), puis C (application), puis D (sprint final)**. Sprints courts numérotés A1, A2… ; un sprint dure environ 2 semaines à 4 h par semaine. Le sprint en cours est détaillé dans `SPRINT.md` ; ce fichier ne garde que ce qui reste à faire.
+> Mise à jour le 23 octobre 2026 (clôture de A1). Ordre validé par Gauthier : **bloc A (contenu), puis B (mobile), puis C (application), puis D (sprint final)**. Sprints courts numérotés A1, A2… ; un sprint dure environ 2 semaines à 4 h par semaine. Le sprint en cours est détaillé dans `SPRINT.md` ; ce fichier ne garde que ce qui reste à faire.
 
 ---
 
@@ -8,22 +8,16 @@
 
 Chaque étape suit le circuit du skill `etape-contenu`. Le DAG v1 (`skills_dag.json`, 414 compétences, niveaux souvent faux) ne sert que de mémoire : chaque étape repart du programme officiel (`_travail/programmes/5eme.txt`, `3eme-4eme.txt`), avec les mêmes lettres de domaine que le v1 quand elles correspondent.
 
-### A1. Clôture de l'étape 8 (en cours, voir `SPRINT.md`)
-
-Fusions faites ; restent publication, bilan, consignes en modèles.
-
-### A2. Étape 9 : proportionnalité du cycle 4 et fonctions (domaines E et J)
+### A2. Étape 9 : proportionnalité du cycle 4 et fonctions (domaines E et J) (en cours, voir `SPRINT.md`)
 
 - Contenu : proportionnalité du cycle 4 ; fonctions linéaires, affines, lecture graphique, tableaux de valeurs.
-- **Avant la rédaction :**
-  - migration qui élargit les contraintes `A-P` à la lettre **J**, et mise à jour de `ID_EXERCICE` dans `corriger/index.ts` (puis redéploiement, skill `deployer-fonction`) ;
-  - générateur de **courbes dans un repère** dans `scripts/figures.py` (étendre `repere`).
+- **Avant la rédaction :** générateur de **courbes dans un repère** dans `scripts/figures.py` (étendre `repere`) ; domaine J ajouté aux métadonnées du DAG à la fusion. Aucune migration : les contraintes `[A-P]` de la base, des schémas et de `corriger` couvrent déjà J (constat du 23 octobre 2026).
 - Probablement 2 sprints (A2a cartographe et outils, A2b rédaction).
 
 ### A3. Étape 10 : statistiques et probabilités (domaines K et L)
 
 - Contenu : moyenne, médiane, étendue, diagrammes ; probabilités.
-- Avant la rédaction : migration pour les lettres **K** et **L** (même procédure que J) ; générateurs de **diagrammes en barres et circulaires**, et d'**arbres**.
+- Avant la rédaction (aucune migration, `[A-P]` couvre K et L) : générateurs de **diagrammes en barres et circulaires**, et d'**arbres**.
 
 ### A4. Étape 11 : super exercices de fin de cycle et cartes défi transverses
 

@@ -4,7 +4,7 @@
 
 ## 1. Contenu
 
-**273 compétences, 1 654 exercices, 65 cartes mentales, 1 475 cartes défi, 270 super exercices**, tous en `relu_agent` (relus par agents), en attente de la recette de Marius. **En ligne** (publication du 21 octobre 2026) : 273 compétences, 1 426 exercices, 224 super exercices ; l'étape 8 n'est pas encore publiée (sprint A1).
+**273 compétences, 1 654 exercices, 65 cartes mentales, 1 475 cartes défi, 270 super exercices**, tous en `relu_agent` (relus par agents), en attente de la recette de Marius. **En ligne** (publication du 23 octobre 2026, commit 9c359e4) : tout ce contenu, vérifié en base.
 
 | Domaine | Compétences | Classes couvertes |
 |---|---|---|
@@ -17,7 +17,7 @@
 | G Espace et géométrie | 65 | CP à 3e (étape 8 : Pythagore, Thalès, trigonométrie, transformations, vecteurs, solides) |
 | P Grandeurs et mesures | 38 | CP à 3e (étape 8 : aires, volumes, grandeurs quotients) |
 
-**Étapes faites** (bilans dans `Spécifications DAG, Exos, Mindcards/qualite/`) : tranche pilote A et C (complétée à 6 exercices par compétence) ; 1 calcul ; 2 décimaux ; 3 proportionnalité ; 4a grandeurs et mesures ; figures ; 4b géométrie ; 5 relatifs et arithmétique ; 6 fractions du cycle 4, puissances, racine carrée, notation scientifique ; 7 et 7 bis calcul littéral et pensée algébrique du cycle 3 ; 8 géométrie et grandeurs du cycle 4 (fusionnée, à publier). **Restent** : étapes 9, 10, 11 et les restes de contenu (`FEUILLE_DE_ROUTE.md`, bloc A).
+**Étapes faites** (bilans dans `Spécifications DAG, Exos, Mindcards/qualite/`) : tranche pilote A et C (complétée à 6 exercices par compétence) ; 1 calcul ; 2 décimaux ; 3 proportionnalité ; 4a grandeurs et mesures ; figures ; 4b géométrie ; 5 relatifs et arithmétique ; 6 fractions du cycle 4, puissances, racine carrée, notation scientifique ; 7 et 7 bis calcul littéral et pensée algébrique du cycle 3 ; 8 géométrie et grandeurs du cycle 4. **Restent** : étapes 9, 10, 11 et les restes de contenu (`FEUILLE_DE_ROUTE.md`, bloc A).
 
 Évaluation partielle : C035 ; G050, G051, G052, G071, G076 ; F062, F065.
 

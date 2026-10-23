@@ -100,5 +100,9 @@
   7. π : valeur exacte en texte (« 36π ») ou en QCM ; valeur approchée avec une tolérance d'un demi-rang d'arrondi (0,05 au dixième). La correction lit « 36pi », les hectares, les ares, « km.h-1 » et « kilomètres par heure ».
   8. Cartes mentales : les quatre cartes courtes de 8a acceptées.
   9. Figures nouvelles (vecteur, transformations, extensions de `solide`) codées avant la rédaction des nœuds qui en dépendent.
+- 23/10/2026, clôture de l'étape 8. CP :
+  1. F012 : la maîtrise (factoriser) est bien plus exigeante que la découverte (développer) ; seule la durée de EX-F012-M-01 était sous-estimée, passée de 90 à 120 s.
+  2. Modèles de consignes des étapes 5 et 6 archivés ; ceux de l'étape 4b restent, pour les règles de figures.
+  3. Pas de migration pour J, K, L : `[A-P]` les couvre déjà (base, schémas, `corriger`).
 
 Le détail des sprints 1 à 6 (ce qui a été codé, quand, et pourquoi) est dans `archive/CLAUDE_avant_decoupage_2026-10-23.md`, §6.
