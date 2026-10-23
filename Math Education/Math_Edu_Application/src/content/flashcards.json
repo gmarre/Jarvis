@@ -2,7 +2,7 @@
   "metadata": {
     "version": "1.0",
     "scope": "Cartes defi, CP a 3e",
-    "total_flashcards": 1475
+    "total_flashcards": 1525
   },
   "flashcards": [
     {
@@ -8852,6 +8852,356 @@
       "recto": "Où est l'erreur : « Le rayon de la section d'une boule, c'est le rayon de la boule moins la distance du plan au centre. »",
       "verso": "**On soustrait les carrés, pas les longueurs** : le carré du rayon de la section est le carré du rayon de la boule moins le carré de la distance ; on prend ensuite la racine carrée.",
       "review_status": "brouillon"
+    },
+    {
+      "id": "FC-J001-01",
+      "skill_id": "J001",
+      "recto": "Par une fonction $f$, combien d'images un nombre a-t-il ?",
+      "verso": "**Une seule** : une fonction associe à chaque nombre un seul nombre, son image ; c'est le nombre d'antécédents qui peut varier.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-J001-02",
+      "skill_id": "J001",
+      "recto": "Une fonction se donne par une formule, un tableau de valeurs ou un graphique. De quelle quatrième façon peut-on la donner ?",
+      "verso": "**Par un programme de calcul** : ces quatre façons peuvent décrire la même fonction, et l'on passe de l'une à l'autre.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-J001-03",
+      "skill_id": "J001",
+      "recto": "Comment s'écrit avec la notation flèche la fonction définie par $g(x) = 7x - 9$ ?",
+      "verso": "**g : x ↦ 7x − 9** : on lit « g est la fonction qui, à x, associe 7x − 9 » ; les deux écritures définissent la même fonction.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-J001-04",
+      "skill_id": "J001",
+      "recto": "Dans un tableau de valeurs d'une fonction $f$, dans quelle ligne cherche-t-on les antécédents de 12 ?",
+      "verso": "**Dans la ligne des images** : on repère chaque case où figure 12, puis on lit le nombre écrit au-dessus ; il peut y en avoir plusieurs, un seul ou aucun.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-J001-05",
+      "skill_id": "J001",
+      "recto": "Vrai ou faux : par une fonction, un nombre a toujours un seul antécédent.",
+      "verso": "**Faux** : un nombre peut avoir plusieurs antécédents, un seul ou aucun ; on parcourt toute la ligne des images, ou toute la courbe.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-J002-01",
+      "skill_id": "J002",
+      "recto": "Soit $f(x) = 8x + 15$. Calcule l'image de 6 par $f$.",
+      "verso": "**63** : on remplace x par 6, puis on respecte les priorités : $8 \\times 6 + 15 = 48 + 15 = 63$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-J002-02",
+      "skill_id": "J002",
+      "recto": "Soit $f(x) = x^{2} - 7$. Calcule $f(-6)$.",
+      "verso": "**29** : on remplace x par −6 entre parenthèses, $(-6)^{2} - 7 = 36 - 7 = 29$ ; sans parenthèses, le carré ne porterait que sur 6.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-J002-03",
+      "skill_id": "J002",
+      "recto": "Soit $g(x) = 7x + 6$. Quel est l'antécédent de 62 par $g$ ?",
+      "verso": "**8** : on résout l'équation $7x + 6 = 62$, donc $7x = 56$ et $x = 56 \\div 7 = 8$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-J002-04",
+      "skill_id": "J002",
+      "recto": "On a trouvé par le calcul un antécédent de k par $f$. Comment le contrôle-t-on ?",
+      "verso": "**On calcule son image par f** : elle doit être égale à k ; sinon, l'équation a été mal résolue.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-J002-05",
+      "skill_id": "J002",
+      "recto": "Vrai ou faux : g est la fonction définie par $g(x) = 2x + 11$ ; l'antécédent de 31 par g est 73.",
+      "verso": "**Faux** : 73 est l'image de 31 ; l'antécédent de 31 vérifie $2x + 11 = 31$, donc $2x = 20$ et $x = 10$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-J002-06",
+      "skill_id": "J002",
+      "recto": "Une fonction $f$ est donnée par le programme : multiplier par 6, puis ajouter 11. Quelle est la formule de $f(x)$ ?",
+      "verso": "**f(x) = 6x + 11** : on applique le programme à x, dans l'ordre : $6 \\times x$ donne $6x$, puis on ajoute 11.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-J004-01",
+      "skill_id": "J004",
+      "recto": "Que désigne la notation 𝒞f ?",
+      "verso": "**La courbe représentative de f** : elle est formée de tous les points de coordonnées (x ; f(x)).",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-J004-02",
+      "skill_id": "J004",
+      "recto": "Sur un graphique, pour lire l'image d'un nombre a par $f$, de quel axe part-on ?",
+      "verso": "**De l'axe des abscisses** : on part de a sur l'axe horizontal, on va jusqu'à 𝒞f, puis on lit l'ordonnée du point atteint.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-J004-03",
+      "skill_id": "J004",
+      "recto": "Pour trouver les antécédents d'un nombre k sur 𝒞f, quelle coordonnée des points trouvés lit-on à la fin ?",
+      "verso": "**Leur abscisse** : on part de k sur l'axe des ordonnées, on suit l'horizontale sur toute la courbe, et on lit l'abscisse de chaque point rencontré.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-J004-04",
+      "skill_id": "J004",
+      "recto": "Le point de coordonnées (6 ; −8) est sur 𝒞f. Quelle égalité peut-on écrire avec $f$ ?",
+      "verso": "**f(6) = −8** : l'ordonnée d'un point de 𝒞f est l'image de son abscisse ; donc 6 est un antécédent de −8.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-J004-05",
+      "skill_id": "J004",
+      "recto": "Où est l'erreur : pour lire l'image de 7 sur 𝒞f, Inès part de 7 sur l'axe des ordonnées.",
+      "verso": "**Elle part du mauvais axe** : 7 est le nombre de départ, une abscisse ; on part de 7 sur l'axe des abscisses, puis on lit l'ordonnée du point de 𝒞f.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-J004-06",
+      "skill_id": "J004",
+      "recto": "Vrai ou faux : pour lire les antécédents de 4 sur 𝒞f, on s'arrête au premier point de la courbe à la hauteur 4.",
+      "verso": "**Faux** : l'horizontale à la hauteur 4 peut couper 𝒞f en plusieurs points ; on la suit sur toute la courbe, car un nombre peut avoir plusieurs antécédents.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-J005-01",
+      "skill_id": "J005",
+      "recto": "Une fonction affine $x \\mapsto ax + b$ a un nombre b égal à 0. Quel autre nom lui donne-t-on ?",
+      "verso": "**Une fonction linéaire** : elle s'écrit alors $x \\mapsto ax$, et ses images sont proportionnelles aux nombres de départ.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-J005-02",
+      "skill_id": "J005",
+      "recto": "Une fonction affine $x \\mapsto ax + b$ a un coefficient a égal à 0. Comment appelle-t-on une telle fonction ?",
+      "verso": "**Une fonction constante** : elle s'écrit $x \\mapsto b$, et tous les nombres ont la même image, b.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-J005-03",
+      "skill_id": "J005",
+      "recto": "Un club demande 25 € d'adhésion, puis 4 € par séance. Quelle fonction affine donne le prix de x séances ?",
+      "verso": "**f(x) = 4x + 25** : les 4 € se paient à chaque séance, ils multiplient x ; les 25 € ne se paient qu'une fois, c'est b.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-J005-04",
+      "skill_id": "J005",
+      "recto": "Une fonction affine $f$ vérifie $f(20) = 25$ et $f(23) = 61$. Que vaut son coefficient a ?",
+      "verso": "**12** : a est la variation des images divisée par celle des nombres de départ, $(61 - 25) \\div (23 - 20) = 36 \\div 3 = 12$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-J005-05",
+      "skill_id": "J005",
+      "recto": "Vrai ou faux : pour la fonction $x \\mapsto 8 - 5x$, le coefficient a vaut 8.",
+      "verso": "**Faux** : a est le nombre qui multiplie x, avec son signe ; $8 - 5x = -5x + 8$, donc $a = -5$ et $b = 8$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-J006-01",
+      "skill_id": "J006",
+      "recto": "$f$ est une fonction linéaire et $f(4) = 26$. Quel est son coefficient ?",
+      "verso": "**6,5** : on divise l'image par le nombre de départ, $26 \\div 4 = 6{,}5$ ; donc $f(x) = 6{,}5x$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-J006-02",
+      "skill_id": "J006",
+      "recto": "Quel est l'antécédent de 42 par la fonction linéaire $x \\mapsto 6x$ ?",
+      "verso": "**7** : on cherche x tel que $6x = 42$, donc $x = 42 \\div 6 = 7$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-J006-03",
+      "skill_id": "J006",
+      "recto": "Quelle fonction linéaire traduit une hausse de 10 % ?",
+      "verso": "**x ↦ 1,1x** : après une hausse de 10 %, on a 110 % de la valeur de départ ; 1,1 est le coefficient multiplicateur.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-J006-04",
+      "skill_id": "J006",
+      "recto": "Par quel point passe toujours la droite qui représente une fonction linéaire ?",
+      "verso": "**Par l'origine O** du repère : l'image de 0 est $a \\times 0 = 0$, donc le point de coordonnées (0 ; 0) est sur la droite.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-J006-05",
+      "skill_id": "J006",
+      "recto": "Vrai ou faux : $f$ est linéaire et $f(10) = 4$, donc son coefficient est 2,5.",
+      "verso": "**Faux** : on divise l'image par le nombre de départ, $4 \\div 10 = 0{,}4$ ; 2,5 est le quotient à l'envers, 10 divisé par 4.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-J008-01",
+      "skill_id": "J008",
+      "recto": "Comment s'écrit la fonction carré avec la notation flèche ?",
+      "verso": "**x ↦ x²** : elle associe à chaque nombre son carré, le produit de ce nombre par lui-même.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-J008-02",
+      "skill_id": "J008",
+      "recto": "$f$ est la fonction carré. Calcule $f(-12)$.",
+      "verso": "**144** : $(-12)^{2} = (-12) \\times (-12) = 144$ ; le produit de deux nombres négatifs est positif.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-J008-03",
+      "skill_id": "J008",
+      "recto": "Quels sont les antécédents de 100 par la fonction carré ?",
+      "verso": "**−10 et 10** : $10^{2} = 100$ et $(-10)^{2} = 100$ ; deux nombres opposés ont le même carré.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-J008-04",
+      "skill_id": "J008",
+      "recto": "Entre quels entiers consécutifs se trouve la solution positive de $x^{2} = 70$ ?",
+      "verso": "**Entre 8 et 9** : $8^{2} = 64$ et $9^{2} = 81$, et 70 est compris entre 64 et 81, donc $8 < \\sqrt{70} < 9$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-J008-05",
+      "skill_id": "J008",
+      "recto": "Vrai ou faux : 0,7 est le seul antécédent de 0,49 par la fonction carré.",
+      "verso": "**Faux** : −0,7 en est un aussi, car $(-0{,}7)^{2} = 0{,}49$ ; un nombre et son opposé ont le même carré.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-J008-06",
+      "skill_id": "J008",
+      "recto": "Où est l'erreur : $(-9)^{2} = -81$.",
+      "verso": "**Le signe du résultat** : $(-9)^{2} = (-9) \\times (-9) = 81$, produit de deux nombres négatifs ; c'est $-9^{2}$, l'opposé de $9^{2}$, qui vaut −81.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-J043-01",
+      "skill_id": "J043",
+      "recto": "La droite qui représente $x \\mapsto ax + b$ coupe l'axe des ordonnées à la hauteur b. Comment appelle-t-on b ?",
+      "verso": "**L'ordonnée à l'origine** : le point de la droite d'abscisse 0 a pour ordonnée $a \\times 0 + b = b$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-J043-02",
+      "skill_id": "J043",
+      "recto": "Sur la droite de $x \\mapsto ax + b$, quand x augmente de 1, l'ordonnée varie de a. Comment appelle-t-on a ?",
+      "verso": "**Le coefficient directeur** : il donne la direction de la droite, alors que b donne la hauteur où elle coupe l'axe des ordonnées.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-J043-03",
+      "skill_id": "J043",
+      "recto": "D'un point à un autre d'une droite, x augmente de 6 et l'ordonnée augmente de 21. Quel est son coefficient directeur ?",
+      "verso": "**3,5** : on divise la variation de l'ordonnée par celle de l'abscisse, $21 \\div 6 = 3{,}5$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-J043-04",
+      "skill_id": "J043",
+      "recto": "Combien de points faut-il au minimum pour tracer la droite qui représente une fonction affine ?",
+      "verso": "**Deux** : la représentation est une droite, et deux points distincts suffisent pour la tracer ; un troisième point sert de contrôle.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-J043-05",
+      "skill_id": "J043",
+      "recto": "Vrai ou faux : l'ordonnée à l'origine d'une droite se lit là où elle coupe l'axe des abscisses.",
+      "verso": "**Faux** : b se lit sur l'axe des ordonnées, au point de la droite d'abscisse 0 ; là où la droite coupe l'axe des abscisses, on lit l'antécédent de 0.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-J043-06",
+      "skill_id": "J043",
+      "recto": "Vrai ou faux : pour lire le coefficient directeur, on compte les carreaux, même si les axes n'ont pas le même pas.",
+      "verso": "**Faux** : un carreau ne vaut pas forcément la même chose sur les deux axes ; on lit les valeurs écrites sur chaque axe.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-J044-01",
+      "skill_id": "J044",
+      "recto": "Pour résoudre graphiquement $f(x) = g(x)$, quelle coordonnée des points communs aux deux droites lit-on ?",
+      "verso": "**Leur abscisse** : une solution est un nombre x qui a la même image par f et par g ; l'ordonnée est cette image commune.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-J044-02",
+      "skill_id": "J044",
+      "recto": "Où est l'erreur : les droites de f et de g se coupent au point (9 ; −2), donc $f(x) = g(x)$ a pour solution −2.",
+      "verso": "**On a donné l'ordonnée** du point commun : la solution est son abscisse, 9 ; −2 est la valeur commune de $f(9)$ et de $g(9)$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-J044-03",
+      "skill_id": "J044",
+      "recto": "Pour résoudre graphiquement $f(x) = 8$, avec quelle droite coupe-t-on celle de f ?",
+      "verso": "**La droite horizontale à la hauteur 8** : les solutions sont les abscisses des points de la droite de f situés à cette hauteur.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-J044-04",
+      "skill_id": "J044",
+      "recto": "Les droites de f et de g se coupent au point d'abscisse 6. Le nombre 6 est-il solution de $f(x) < g(x)$ ?",
+      "verso": "**Non** : $f(6) = g(6)$, et deux nombres égaux ne vérifient pas une inégalité stricte ; 6 ne serait solution que d'une inégalité large.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-J044-05",
+      "skill_id": "J044",
+      "recto": "Les droites de $x \\mapsto 9x - 8$ et de $x \\mapsto 4x + 27$ se coupent. Quelle est l'abscisse de leur point commun ?",
+      "verso": "**7** : l'abscisse du point commun est la solution de $9x - 8 = 4x + 27$ ; on obtient $5x = 35$, donc $x = 7$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-J044-06",
+      "skill_id": "J044",
+      "recto": "Vrai ou faux : pour résoudre $f(x) < g(x)$, on garde les points où la droite de f est au-dessus de celle de g.",
+      "verso": "**Faux** : le sens est inversé ; pour $f(x) < g(x)$, la droite de f doit être strictement en dessous de celle de g.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-J045-01",
+      "skill_id": "J045",
+      "recto": "Une droite passe par l'origine et par le point d'abscisse 4 et d'ordonnée 9. Quel est le coefficient de proportionnalité ?",
+      "verso": "**2,25** : c'est le quotient ordonnée ÷ abscisse d'un point de la droite autre que O, $9 \\div 4 = 2{,}25$.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-J045-02",
+      "skill_id": "J045",
+      "recto": "Une droite passe par l'origine et par le point d'abscisse 5 et d'ordonnée 7. Quelle est l'ordonnée de son point d'abscisse 15 ?",
+      "verso": "**21** : l'ordonnée est proportionnelle à l'abscisse ; l'abscisse est triplée, de 5 à 15, donc l'ordonnée aussi : trois fois 7 font 21.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-J045-03",
+      "skill_id": "J045",
+      "recto": "Les points d'abscisse 6 et d'ordonnée 5, et d'abscisse 18 et d'ordonnée 16, sont-ils alignés avec l'origine ?",
+      "verso": "**Non** : l'abscisse est triplée, de 6 à 18, mais l'ordonnée passe de 5 à 16, et non à 15 ; les quotients ordonnée ÷ abscisse des deux points sont différents.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-J045-04",
+      "skill_id": "J045",
+      "recto": "Vrai ou faux : pour trouver le coefficient, on peut diviser l'ordonnée d'un point de la droite par l'abscisse d'un autre point.",
+      "verso": "**Faux** : chaque quotient se calcule avec les deux coordonnées d'un même point ; ce quotient est le même pour tous les points de la droite autres que O.",
+      "review_status": "relu_agent"
+    },
+    {
+      "id": "FC-J045-05",
+      "skill_id": "J045",
+      "recto": "Vrai ou faux : une droite passe par l'origine et par le point d'abscisse 10 et d'ordonnée 8 ; son coefficient de proportionnalité est 1,25.",
+      "verso": "**Faux** : le coefficient est le quotient ordonnée ÷ abscisse, $8 \\div 10 = 0{,}8$ ; 1,25 est le quotient à l'envers, $10 \\div 8$.",
+      "review_status": "relu_agent"
     },
     {
       "id": "FC-P001-01",
