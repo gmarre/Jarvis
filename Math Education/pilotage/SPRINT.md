@@ -7,8 +7,8 @@
 ## Reste à faire
 
 - [x] Exercices, lots Q1 à Q7 (144 exercices fusionnés, 10 bloquants à la relecture, tous corrigés) (`_travail/brief_etape9.md`) : rédaction, relecture indépendante (`brief_relecture_etape9.md`), corrections, fusion, `relu_agent`, un commit par lot.
-- [ ] Cartes mentales : MM-E-05, MM-E-06, MM-J-01 à MM-J-04 ; E038 ajouté à MM-E-04 (arbitrage 7). Consigne depuis `modeles_agents/consigne_cartes_etape8.md`.
-- [ ] Cartes défi (4 à 6 par compétence) et super exercices (au moins un par compétence), consignes depuis `consigne_defis_etape8.md` et `consigne_super_etape8.md`.
+- [x] Cartes mentales (7 cartes fusionnées, MM-E-04 reprise en entier) : MM-E-05, MM-E-06, MM-J-01 à MM-J-04 ; E038 ajouté à MM-E-04 (arbitrage 7). Consigne depuis `modeles_agents/consigne_cartes_etape8.md`.
+- [ ] Cartes défi (fait : 138 cartes, lots D9a à D9c) et super exercices (S9a à S9c en cours) (au moins un par compétence), consignes depuis `consigne_defis_etape8.md` et `consigne_super_etape8.md`.
 - [ ] Correctifs de la correction relevés en relecture, puis **redéploiement de `corriger` et `rendre-super`** (skill `deployer-fonction`, contrôle 401) avec « f(x) = … » déjà commité ; versions dans `ETAT.md` et `CLAUDE.md` §2 ; saisies à vérifier en ligne dans `TESTS_MANUELS.md`.
 - [ ] Validateur vert, `build_review_sheet.py`, export, `npm test`, `npm run lint`, `npm run build`.
 - [ ] Commit, puis `publier.py --apply`.
