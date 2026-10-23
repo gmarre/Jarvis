@@ -114,8 +114,11 @@ const ENVIRON = car(0x2248)
  */
 // Un nom d'au plus dix signes, crochets, parentheses et primes compris :
 // « Aire = », « [AB] = », « (d) = » (releve au lot M4), « L'N' = » (lot M2).
+// Etape 9 : l'image ecrite comme au cours, « f(1,5) = 27 », « g(-2) = 4 »
+// (releve au lot Q6) ; le nombre entre parentheses n'est pas verifie.
 const PREFIXE_NOMME = new RegExp(
-  `^\\s*(?:[\\p{L}\\[\\]()'${car(0x2019)}]{1,10}\\s*[=${ENVIRON}]|${ENVIRON}|environ)\\s*`,
+  `^\\s*(?:[\\p{L}\\[\\]()'${car(0x2019)}]{1,10}\\s*[=${ENVIRON}]` +
+    `|\\p{L}\\s*\\(\\s*[-+${car(0x2212)}]?[\\d,.]+\\s*\\)\\s*=|${ENVIRON}|environ)\\s*`,
   'iu',
 )
 

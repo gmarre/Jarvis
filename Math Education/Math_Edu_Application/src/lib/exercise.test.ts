@@ -349,6 +349,15 @@ describe('checkAnswer, accents et unites en toutes lettres', () => {
     for (const saisie of ['SH = 4,2 m', 'SH + 3,8']) expect(checkAnswer(longueur, saisie).isCorrect).toBe(false)
   })
 
+  it('retire « f(1,5) = » devant une image (etape 9, lot Q6)', () => {
+    const image: Exercise = { ...byType('numerique'), answer: { value: 27 } }
+    const moins = String.fromCharCode(0x2212)
+    for (const saisie of ['f(1,5) = 27', 'f(1.5)=27', 'g(-2) = 27', `h(${moins}2) = 27`, '27']) {
+      expect(checkAnswer(image, saisie).isCorrect).toBe(true)
+    }
+    for (const saisie of ['f(1,5) = 26', 'f(27)', '1,5 = 27 = 27']) expect(checkAnswer(image, saisie).isCorrect).toBe(false)
+  })
+
   it('lit « pi » tape apres un nombre comme le symbole (etape 8)', () => {
     const base = byType('numerique')
     const pi = String.fromCharCode(0x3c0)
