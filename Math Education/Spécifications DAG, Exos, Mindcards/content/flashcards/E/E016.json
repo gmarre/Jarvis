@@ -1,0 +1,44 @@
+[
+  {
+    "id": "FC-E016-01",
+    "skill_id": "E016",
+    "recto": "Comment appelle-t-on le nombre par lequel on multiplie une valeur pour lui appliquer une hausse ou une baisse en pourcentage ?",
+    "verso": "**Le coefficient multiplicateur** : $1 + \\frac{t}{100}$ pour une hausse de t %, $1 - \\frac{t}{100}$ pour une baisse de t %.",
+    "review_status": "relu_agent"
+  },
+  {
+    "id": "FC-E016-02",
+    "skill_id": "E016",
+    "recto": "Par quel nombre multiplie-t-on un prix pour l'augmenter de 10 % ?",
+    "verso": "**1,1** : on garde 100 % du prix et on ajoute 10 %, soit $1 + 0{,}1 = 1{,}1$.",
+    "review_status": "relu_agent"
+  },
+  {
+    "id": "FC-E016-03",
+    "skill_id": "E016",
+    "recto": "Par quel nombre multiplie-t-on un prix pour le baisser de 30 % ?",
+    "verso": "**0,7** : il reste 70 % du prix, soit $1 - 0{,}3 = 0{,}7$.",
+    "review_status": "relu_agent"
+  },
+  {
+    "id": "FC-E016-04",
+    "skill_id": "E016",
+    "recto": "Un prix est multiplié par 1,3. De quel pourcentage augmente-t-il ?",
+    "verso": "**30 %** : $1{,}3 = 1 + 0{,}3$, et $0{,}3 = \\frac{30}{100}$ ; on ajoute 30 % au prix de départ.",
+    "review_status": "relu_agent"
+  },
+  {
+    "id": "FC-E016-05",
+    "skill_id": "E016",
+    "recto": "Après une hausse, comment retrouve-t-on la valeur de départ à l'aide du coefficient multiplicateur ?",
+    "verso": "**On divise la valeur d'arrivée par le coefficient** : départ × coefficient = arrivée, donc départ = arrivée ÷ coefficient.",
+    "review_status": "relu_agent"
+  },
+  {
+    "id": "FC-E016-06",
+    "skill_id": "E016",
+    "recto": "Vrai ou faux : pour augmenter un prix de 4 %, on le multiplie par 1,4.",
+    "verso": "**Faux** : 4 % = 0,04, donc le coefficient est $1 + 0{,}04 = 1{,}04$ ; multiplier par 1,4 ferait une hausse de 40 %.",
+    "review_status": "relu_agent"
+  }
+]
