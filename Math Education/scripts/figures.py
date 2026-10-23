@@ -2893,6 +2893,30 @@ def _repere(p: dict) -> tuple[str, str]:
                               demi-graduation ; « lecture » trace les pointilles
                               vers les axes (decouverte et corrige seulement) ;
                               position du nom : ne, no, se, so
+      nom_x, nom_y            titre de chaque axe, pour un graphique de grandeurs
+                              (« durée (h) », « distance (km) »)
+      courbes                 au plus 3 : {"sorte": "affine", "a": 2, "b": -1}
+                              (y = ax + b), {"sorte": "carre", "a": 1, "b": 0}
+                              (y = ax² + b) ou {"sorte": "ligne", "points":
+                              [[0, 1], [2, 3], ...]} (ligne brisee, abscisses
+                              croissantes, sommets sur la demi-graduation,
+                              "marques": true pour les dessiner) ; "nom" (« d »,
+                              « 𝒞f »), "tirets", "position_nom" (0 a 1, le long
+                              de la partie visible, defaut 0,85), "cote_nom"
+                              ("dessus" ou "dessous")
+      lectures                pointilles de lecture graphique (decouverte et
+                              corrige seulement) : {"courbe": "d", "x": 3}
+                              (image) ou {"courbe": "d", "y": 4} (antecedents) ;
+                              chaque valeur lue tombe sur la demi-graduation
+      intersection_libre      true : accepte deux courbes qui se coupent hors de
+                              la demi-graduation (sinon refus : une resolution
+                              graphique y lirait une valeur fausse)
+
+    Refus propres aux courbes : une droite doit passer par au moins deux noeuds
+    du quadrillage dans le cadre (sinon ni son coefficient ni une image ne se
+    lisent surement) ; le sommet d'une courbe de la fonction carre est sur un
+    noeud ; toute lecture demandee et toute intersection de deux courbes dans
+    le cadre tombent sur la demi-graduation.
     """
     bornes = {}
     for cle, defaut in (("xmin", -6), ("xmax", 6), ("ymin", -6), ("ymax", 6)):
@@ -2952,9 +2976,64 @@ def _repere(p: dict) -> tuple[str, str]:
         corps.append(_ligne(X(0) - 4, Y(j), X(0) + 4, Y(j), epaisseur=1.4))
         if ecrire(j):
             corps.append(_texte(X(0) - 7, Y(j) + 4, _relatif(pas_y * j), 11, ancre="end"))
+    titres = []
+    for cle in ("nom_x", "nom_y"):
+        t = p.get(cle)
+        if t is not None and (not isinstance(t, str) or not 0 < len(t) <= 30):
+            raise FigureInvalide(f"{cle} : texte de 1 à 30 caractères")
+        titres.append(t)
+    if titres[0]:
+        # Sous l'axe, au bout de la fleche : la ligne des graduations est a +17.
+        corps.append(_texte_detoure(X(bornes["xmax"]) + c / 2 + 6, Y(0) + 31, titres[0], 12, ancre="end"))
+    if titres[1]:
+        corps.append(_texte_detoure(X(0) + 9, Y(bornes["ymax"]) - c / 2 - 2, titres[1], 12, ancre="start"))
+
+    courbes = _courbes_repere(p, bornes, pas_x, pas_y)
+    for k, cb in enumerate(courbes):
+        couleur = COULEURS_COURBES[k]
+        tirets = ' stroke-dasharray="7 4"' if cb["tirets"] else ""
+        for morceau in cb["morceaux"]:
+            d = " ".join(f"{'M' if i == 0 else 'L'}{X(gx):.1f},{Y(gy):.1f}" for i, (gx, gy) in enumerate(morceau))
+            corps.append(f'<path d="{d}" fill="none" stroke="{couleur}" stroke-width="2.2" '
+                         f'stroke-linejoin="round" stroke-linecap="round"{tirets}/>')
+        for gx, gy in cb["marques"]:
+            px, py = X(gx), Y(gy)
+            corps.append(_ligne(px - 4, py - 4, px + 4, py + 4, couleur=couleur, epaisseur=1.8))
+            corps.append(_ligne(px - 4, py + 4, px + 4, py - 4, couleur=couleur, epaisseur=1.8))
+        if cb["nom"]:
+            # Position demandee, sinon la premiere qui laisse le nom loin des
+            # axes et dans le cadre (un nom pose sur l'axe cachait une graduation).
+            essais = [cb["position_nom"]] if cb["position_nom"] is not None else [
+                0.85, 0.75, 0.92, 0.65, 0.55, 0.45, 0.35, 0.25, 0.15]
+            for t_ in essais:
+                gx, gy, ux, uy = _le_long(cb["morceaux"], t_)
+                # Normale a la courbe, du cote demande, convertie a l'ecran (y vers le bas).
+                nx_, ny_ = -uy, ux
+                if cb["cote_nom"] == "dessous":
+                    nx_, ny_ = -nx_, -ny_
+                ex, ey = X(gx) + 14 * nx_, Y(gy) - 14 * ny_
+                if (abs(ex - X(0)) >= 18 and abs(ey - Y(0)) >= 16
+                        and X(bornes["xmin"]) + 8 <= ex <= X(bornes["xmax"]) - 8
+                        and Y(bornes["ymax"]) + 8 <= ey <= Y(bornes["ymin"]) - 4):
+                    break
+            corps.append(_texte_detoure(ex, ey + 5, cb["nom"], 14, couleur=couleur, gras=True))
+    for (gx, gy) in _lectures_repere(p, courbes, bornes, pas_x, pas_y):
+        px, py = X(gx), Y(gy)
+        corps.append(f'<path d="M{px:.1f},{Y(0):.1f} V{py:.1f} H{X(0):.1f}" fill="none" '
+                     f'stroke="{ACCENT}" stroke-width="1.2" stroke-dasharray="3 3"/>')
+        corps.append(f'<circle cx="{px:.1f}" cy="{py:.1f}" r="3.5" fill="{ACCENT}"/>')
     # « O » au-dessus et a gauche de l'origine : sur la ligne des etiquettes de
     # l'axe horizontal, il collait a « −1 » et se lisait « −10 » (relecture L2).
-    corps.append(_texte(X(0) - 6, Y(0) - 6, "O", 12, ancre="end", gras=True))
+    # Une courbe qui passe la (fonction carre, droite par l'origine) le
+    # recouvrirait : il prend le premier coin libre, en bas a gauche en dernier
+    # (a cote de « −1 », il se relit « −10 »).
+    trace = [(X(gx), Y(gy)) for cb in courbes for m in cb["morceaux"] for gx, gy in _points_de(m)]
+    coins = ((-6, -6, "end"), (6, -6, "start"), (6, 15, "start"), (-6, 15, "end"))
+    for dx, dy, ancre in coins:
+        centre = (X(0) + (dx - 4 if dx < 0 else dx + 4), Y(0) + dy - 4)
+        if not any(math.dist(q, centre) < 12 for q in trace):
+            break
+    corps.append(_texte(X(0) + dx, Y(0) + dy, "O", 12, ancre=ancre, gras=True))
 
     noms = []
     for pt in p.get("points", []):
@@ -2980,9 +3059,294 @@ def _repere(p: dict) -> tuple[str, str]:
         noms.append(nom)
 
     alt = "Repère du plan d'origine O"
-    if noms:
-        alt += ", avec les points " + ", ".join(noms)
+    if titres[0] or titres[1]:
+        alt += f" ; en abscisse : {titres[0] or 'sans titre'}, en ordonnée : {titres[1] or 'sans titre'}"
+    if courbes:
+        # Le nom seulement : l'expression donnerait la reponse d'une lecture.
+        alt += ", avec " + ", ".join(
+            ("la droite" if cb["sorte"] == "affine" else "la courbe") + (f" {cb['nom']}" if cb["nom"] else "")
+            for cb in courbes)
+    nommes = [n for n in noms if n]
+    if nommes:
+        alt += ", avec les points " + ", ".join(nommes)
+    if len(nommes) < len(noms):
+        alt += f", {'et ' if nommes else 'avec '}{len(noms) - len(nommes)} point(s) sans nom"
     return _svg(L, H, corps, alt), alt
+
+
+COULEURS_COURBES = (ACCENT, "#c2410c", TRAIT)
+
+
+def _coord(v: Fraction) -> str:
+    """Coordonnee d'un message de refus : exacte si simple, sinon approchee."""
+    return _relatif(v) if v.denominator <= 100 else "≈ " + f"{float(v):.2f}".replace(".", ",").replace("-", MOINS)
+
+
+def _texte_detoure(x: float, y: float, t: str, taille: int, ancre: str = "middle",
+                   couleur: str = TRAIT, gras: bool = False) -> str:
+    """Texte pose sur le quadrillage : un contour blanc le garde lisible."""
+    return _texte(x, y, t, taille, ancre, couleur, gras).replace(
+        "<text ", '<text stroke="#ffffff" stroke-width="3.5" paint-order="stroke" ', 1)
+
+
+def _courbes_repere(p: dict, bornes: dict, pas_x: Fraction, pas_y: Fraction) -> list[dict]:
+    """Courbes du repere, en graduations : morceaux visibles, controles de lecture.
+
+    Tout est calcule en fractions exactes sur les noeuds ; seul le trace de la
+    fonction carre est echantillonne."""
+    brutes = p.get("courbes", [])
+    if not isinstance(brutes, list) or len(brutes) > 3:
+        raise FigureInvalide("courbes : liste d'au plus 3 courbes")
+    x0, x1, y0, y1 = bornes["xmin"], bornes["xmax"], bornes["ymin"], bornes["ymax"]
+    res, noms = [], set()
+    for k, cb in enumerate(brutes):
+        sorte = cb.get("sorte")
+        nom = str(cb.get("nom", ""))[:4]
+        quoi = f"courbe {nom or k + 1}"
+        if nom and nom in noms:
+            raise FigureInvalide(f"{quoi} : deux courbes portent le même nom")
+        noms.add(nom)
+        pos = cb.get("position_nom")
+        if pos is not None and (not isinstance(pos, (int, float)) or isinstance(pos, bool) or not 0 <= pos <= 1):
+            raise FigureInvalide(f"{quoi} : position_nom entre 0 et 1")
+        cote = cb.get("cote_nom", "dessus")
+        if cote not in ("dessus", "dessous"):
+            raise FigureInvalide(f"{quoi} : cote_nom \"dessus\" ou \"dessous\"")
+        marques = []
+        if sorte == "affine":
+            a, b = _nombre(cb.get("a"), f"{quoi}.a"), _nombre(cb.get("b", 0), f"{quoi}.b")
+
+            def f(gx: Fraction, a=a, b=b) -> Fraction:      # en graduations
+                return (a * gx * pas_x + b) / pas_y
+            noeuds = [gx for gx in range(x0, x1 + 1) if f(Fraction(gx)).denominator == 1 and y0 <= f(Fraction(gx)) <= y1]
+            if len(noeuds) < 2:
+                raise FigureInvalide(f"{quoi} : la droite passe par moins de deux nœuds du quadrillage dans le cadre ; "
+                                     "ni son coefficient ni une image ne se lisent sûrement")
+            morceau = _segment_dans_cadre(a * pas_x / pas_y, b / pas_y, bornes)
+            morceaux = [morceau]
+            fonction = ("affine", f)
+        elif sorte == "carre":
+            a, b = _nombre(cb.get("a", 1), f"{quoi}.a"), _nombre(cb.get("b", 0), f"{quoi}.b")
+            if a == 0:
+                raise FigureInvalide(f"{quoi} : a non nul")
+            if (b / pas_y).denominator != 1 or not y0 <= b / pas_y <= y1:
+                raise FigureInvalide(f"{quoi} : le sommet (0 ; {_relatif(b)}) doit être un nœud du cadre")
+
+            def f(gx: Fraction, a=a, b=b) -> Fraction:
+                v = gx * pas_x
+                return (a * v * v + b) / pas_y
+            morceaux = _echantillonner(lambda g: float(f(Fraction(g))), bornes)
+            fonction = ("carre", f)
+        elif sorte == "ligne":
+            pts = cb.get("points")
+            if not isinstance(pts, list) or len(pts) < 2:
+                raise FigureInvalide(f"{quoi} : au moins deux points [x, y]")
+            sommets = []
+            for q in pts:
+                if not isinstance(q, list) or len(q) != 2:
+                    raise FigureInvalide(f"{quoi} : chaque point s'écrit [x, y]")
+                gx, gy = _nombre(q[0], f"{quoi}.x") / pas_x, _nombre(q[1], f"{quoi}.y") / pas_y
+                if (2 * gx).denominator != 1 or (2 * gy).denominator != 1:
+                    raise FigureInvalide(f"{quoi} : ({_coord(gx * pas_x)} ; {_coord(gy * pas_y)}) hors de la demi-graduation")
+                if not (x0 <= gx <= x1 and y0 <= gy <= y1):
+                    raise FigureInvalide(f"{quoi} : ({_coord(gx * pas_x)} ; {_coord(gy * pas_y)}) hors du repère")
+                if sommets and gx <= sommets[-1][0]:
+                    raise FigureInvalide(f"{quoi} : abscisses strictement croissantes (une courbe de fonction)")
+                sommets.append((gx, gy))
+            morceaux = [[(float(gx), float(gy)) for gx, gy in sommets]]
+            if cb.get("marques"):
+                marques = [(float(gx), float(gy)) for gx, gy in sommets]
+            fonction = ("ligne", sommets)
+        else:
+            raise FigureInvalide(f"{quoi} : sorte \"affine\", \"carre\" ou \"ligne\"")
+        res.append({"sorte": sorte, "nom": nom, "tirets": bool(cb.get("tirets")), "cote_nom": cote,
+                    "morceaux": morceaux, "marques": marques, "fonction": fonction,
+                    "position_nom": pos})
+    if not p.get("intersection_libre"):
+        for i in range(len(res)):
+            for j in range(i + 1, len(res)):
+                for gx in _intersections(res[i]["fonction"], res[j]["fonction"], bornes):
+                    gy = _valeur(res[i]["fonction"], gx)
+                    if y0 <= gy <= y1 and ((2 * gx).denominator != 1 or (2 * gy).denominator != 1):
+                        raise FigureInvalide(
+                            f"courbes {res[i]['nom'] or i + 1} et {res[j]['nom'] or j + 1} : elles se coupent en "
+                            f"({_coord(gx * pas_x)} ; {_coord(gy * pas_y)}), hors de la demi-graduation "
+                            "(intersection_libre pour l'accepter)")
+    return res
+
+
+def _segment_dans_cadre(a: Fraction, b: Fraction, bornes: dict) -> list[tuple[float, float]]:
+    """Partie visible de y = ax + b (en graduations), bornee par le cadre."""
+    x0, x1, y0, y1 = (Fraction(bornes[k]) for k in ("xmin", "xmax", "ymin", "ymax"))
+    lo, hi = x0, x1
+    if a != 0:
+        xa, xb = (y0 - b) / a, (y1 - b) / a
+        lo, hi = max(lo, min(xa, xb)), min(hi, max(xa, xb))
+    return [(float(lo), float(a * lo + b)), (float(hi), float(a * hi + b))]
+
+
+def _echantillonner(f, bornes: dict) -> list[list[tuple[float, float]]]:
+    """Trace echantillonne d'une courbe, coupe au bord du cadre."""
+    x0, x1, y0, y1 = (bornes[k] for k in ("xmin", "xmax", "ymin", "ymax"))
+    n = 240
+    morceaux, cour, prec = [], [], None
+    for i in range(n + 1):
+        gx = x0 + (x1 - x0) * i / n
+        gy = f(gx)
+        dedans = y0 <= gy <= y1
+        if prec is not None and dedans != prec[2]:
+            # Point de sortie (ou d'entree) interpole sur le bord.
+            bord = y1 if max(gy, prec[1]) > y1 else y0
+            t = (bord - prec[1]) / (gy - prec[1])
+            cour.append((prec[0] + t * (gx - prec[0]), bord))
+            if not dedans:
+                morceaux.append(cour)
+                cour = []
+        if dedans:
+            cour.append((gx, gy))
+        prec = (gx, gy, dedans)
+    if len(cour) > 1:
+        morceaux.append(cour)
+    return [m for m in morceaux if len(m) > 1]
+
+
+def _points_de(morceau):
+    """Points d'un morceau, densifies : un segment long n'a que deux sommets."""
+    for (xa, ya), (xb, yb) in zip(morceau, morceau[1:]):
+        n = max(1, int(math.dist((xa, ya), (xb, yb)) * 8))
+        for i in range(n):
+            yield xa + (xb - xa) * i / n, ya + (yb - ya) * i / n
+    yield morceau[-1]
+
+
+def _le_long(morceaux, t: float) -> tuple[float, float, float, float]:
+    """Point a la fraction t de la longueur visible, et direction unitaire."""
+    segs = [(a, b) for m in morceaux for a, b in zip(m, m[1:])]
+    long = [math.dist(a, b) for a, b in segs]
+    reste = t * sum(long)
+    for (a, b), lg in zip(segs, long):
+        if reste <= lg or (a, b) == segs[-1]:
+            u = min(reste / lg, 1.0) if lg else 0.0
+            ux, uy = ((b[0] - a[0]) / lg, (b[1] - a[1]) / lg) if lg else (1.0, 0.0)
+            return a[0] + u * (b[0] - a[0]), a[1] + u * (b[1] - a[1]), ux, uy
+        reste -= lg
+    raise FigureInvalide("courbe invisible dans le cadre")
+
+
+def _valeur(fonction, gx: Fraction) -> Fraction:
+    sorte, f = fonction
+    if sorte != "ligne":
+        return f(gx)
+    for (xa, ya), (xb, yb) in zip(f, f[1:]):
+        if xa <= gx <= xb:
+            return ya + (yb - ya) * (gx - xa) / (xb - xa)
+    raise FigureInvalide(f"abscisse {gx} hors de la ligne")
+
+
+def _morceaux_lineaires(fonction, bornes: dict) -> list[tuple[Fraction, Fraction, Fraction, Fraction]]:
+    """Fonction affine ou ligne brisee en morceaux (xa, xb, pente, ordonnee a l'origine)."""
+    sorte, f = fonction
+    if sorte == "affine":
+        a, b = f(Fraction(1)) - f(Fraction(0)), f(Fraction(0))
+        return [(Fraction(bornes["xmin"]), Fraction(bornes["xmax"]), a, b)]
+    res = []
+    for (xa, ya), (xb, yb) in zip(f, f[1:]):
+        a = (yb - ya) / (xb - xa)
+        res.append((xa, xb, a, ya - a * xa))
+    return res
+
+
+def _intersections(f1, f2, bornes: dict) -> list[Fraction]:
+    """Abscisses (en graduations) ou deux courbes se coupent dans le cadre."""
+    if f1[0] == "carre" and f2[0] == "carre":
+        a1 = f1[1](Fraction(1)) - f1[1](Fraction(0))
+        a2 = f2[1](Fraction(1)) - f2[1](Fraction(0))
+        if a1 == a2:
+            return []
+        r = (f2[1](Fraction(0)) - f1[1](Fraction(0))) / (a1 - a2)
+        return _racines_exactes_ou_non(r, bornes)
+    if f2[0] == "carre":
+        f1, f2 = f2, f1
+    if f1[0] == "carre":
+        # a x² + c = p x + q sur chaque morceau lineaire.
+        c = f1[1](Fraction(0))
+        a = f1[1](Fraction(1)) - c
+        res = []
+        for xa, xb, pe, q in _morceaux_lineaires(f2, bornes):
+            disc = pe * pe - 4 * a * (c - q)
+            if disc < 0:
+                continue
+            for s in (1, -1):
+                r = _racine(disc)
+                gx = (pe + s * r) / (2 * a) if isinstance(r, Fraction) else (float(pe) + s * r) / (2 * float(a))
+                if xa <= gx <= xb:
+                    res.append(gx if isinstance(gx, Fraction) else Fraction(gx).limit_denominator(10 ** 6) + Fraction(1, 10 ** 7))
+        return res
+    res = []
+    for xa, xb, p1, q1 in _morceaux_lineaires(f1, bornes):
+        for xc, xd, p2, q2 in _morceaux_lineaires(f2, bornes):
+            if p1 == p2:
+                continue
+            gx = (q2 - q1) / (p1 - p2)
+            if max(xa, xc) <= gx <= min(xb, xd):
+                res.append(gx)
+    return res
+
+
+def _racine(d: Fraction):
+    """Racine exacte d'une fraction si elle existe, sinon flottant."""
+    n, m = math.isqrt(d.numerator), math.isqrt(d.denominator)
+    if n * n == d.numerator and m * m == d.denominator:
+        return Fraction(n, m)
+    return math.sqrt(d)
+
+
+def _racines_exactes_ou_non(r2: Fraction, bornes: dict) -> list[Fraction]:
+    """Solutions de x² = r2 dans le cadre ; une racine irrationnelle est
+    renvoyee legerement decalee de la grille, pour etre refusee."""
+    if r2 < 0:
+        return []
+    r = _racine(r2)
+    if not isinstance(r, Fraction):
+        r = Fraction(r).limit_denominator(10 ** 6) + Fraction(1, 10 ** 7)
+    return [x for x in {r, -r} if bornes["xmin"] <= x <= bornes["xmax"]]
+
+
+def _lectures_repere(p: dict, courbes: list[dict], bornes: dict, pas_x: Fraction, pas_y: Fraction):
+    """Points lus (en graduations) ; refuse une lecture hors de la demi-graduation."""
+    lectures = p.get("lectures", [])
+    if not isinstance(lectures, list):
+        raise FigureInvalide("lectures : liste attendue")
+    par_nom = {cb["nom"]: cb for cb in courbes}
+    pts = []
+    for le in lectures:
+        cb = par_nom.get(str(le.get("courbe", "")))
+        if cb is None:
+            raise FigureInvalide(f"lecture : courbe « {le.get('courbe')} » inconnue (nommer la courbe)")
+        if ("x" in le) == ("y" in le):
+            raise FigureInvalide("lecture : donner x (image) ou y (antécédents), pas les deux")
+        if "x" in le:
+            gx = _nombre(le["x"], "lectures.x") / pas_x
+            if not bornes["xmin"] <= gx <= bornes["xmax"]:
+                raise FigureInvalide(f"lecture : x = {_relatif(gx * pas_x)} hors du repère")
+            trouves = [(gx, _valeur(cb["fonction"], gx))]
+        else:
+            gy = _nombre(le["y"], "lectures.y") / pas_y
+            if any(a == 0 and b == gy for _, _, a, b in (
+                    _morceaux_lineaires(cb["fonction"], bornes) if cb["sorte"] != "carre" else [])):
+                raise FigureInvalide(f"lecture : y = {_relatif(gy * pas_y)} a une infinité d'antécédents sur cette courbe")
+            xs = _intersections(cb["fonction"], ("affine", lambda g, gy=gy: gy), bornes)
+            if not xs:
+                raise FigureInvalide(f"lecture : y = {_relatif(gy * pas_y)} n'a pas d'antécédent visible")
+            trouves = [(gx, gy) for gx in sorted(set(xs))]
+        for gx, gy in trouves:
+            if (2 * gx).denominator != 1 or (2 * gy).denominator != 1:
+                raise FigureInvalide(f"lecture sur {cb['nom']} : ({_coord(gx * pas_x)} ; {_coord(gy * pas_y)}) "
+                                     "hors de la demi-graduation, la valeur lue serait fausse")
+            if not bornes["ymin"] <= gy <= bornes["ymax"]:
+                raise FigureInvalide(f"lecture sur {cb['nom']} : hors du repère")
+            pts.append((float(gx), float(gy)))
+    return pts
 
 
 GENERATEURS = {
