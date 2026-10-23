@@ -1,0 +1,173 @@
+[
+  {
+    "id": "EX-J045-D-01",
+    "skill_id": "J045",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "La droite d passe par O, M et N ; H et K sont sur l'axe des abscisses.\n\nPourquoi les droites (HM) et (KN) sont-elles parallèles ?",
+    "image": "figures/EX-J045-D-01",
+    "choices": [
+      {
+        "key": "a",
+        "text": "Parce que les points H et K sont tous les deux sur l'axe des abscisses.",
+        "misconception": "Deux droites qui coupent une même droite ne sont pas forcément parallèles : ici, c'est parce qu'elles la coupent toutes les deux à angle droit qu'elles le sont."
+      },
+      {
+        "key": "b",
+        "text": "Parce qu'elles sont toutes les deux perpendiculaires à l'axe des abscisses.",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "Parce que les points O, M et N sont alignés.",
+        "misconception": "L'alignement de O, M et N concerne la droite d : il ne dit rien de la direction des droites (HM) et (KN)."
+      },
+      {
+        "key": "d",
+        "text": "Parce que les triangles OHM et OKN ont le même sommet O.",
+        "misconception": "Un sommet commun ne donne aucun parallélisme : c'est la configuration où l'on appliquera le théorème de Thalès, pas une justification."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Sur la figure, [HM] et [KN] sont verticaux : M et H ont la même abscisse, 4 ; N et K ont la même abscisse, 10.",
+      "Le repère est orthogonal : un segment vertical est perpendiculaire à l'axe des abscisses. Les droites (HM) et (KN) sont donc toutes les deux perpendiculaires à l'axe des abscisses.",
+      "Deux droites perpendiculaires à une même droite sont parallèles : (HM) et (KN) sont parallèles. Bonne réponse : b.",
+      "Avec O, H, K alignés et O, M, N alignés, on reconnaît les triangles emboîtés du théorème de Thalès : $\\frac{OH}{OK} = \\frac{HM}{KN}$."
+    ],
+    "hint": "Regarde l'angle que font les droites (HM) et (KN) avec l'axe des abscisses.",
+    "estimated_duration_s": 50,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Relier la représentation graphique d'une situation de proportionnalité avec le théorème de Thalès. »"
+  },
+  {
+    "id": "EX-J045-D-02",
+    "skill_id": "J045",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Le théorème de Thalès dans les triangles OHM et OKN donne $\\frac{OH}{OK} = \\frac{HM}{KN}$.\n\nLis les coordonnées de M, puis calcule le quotient $\\frac{HM}{OH}$.",
+    "image": "figures/EX-J045-D-02",
+    "answer": {
+      "value": 2.5
+    },
+    "solution_steps": [
+      "M a pour coordonnées (2 ; 5) : OH = 2 (son abscisse) et HM = 5 (son ordonnée).",
+      "$\\frac{HM}{OH} = \\frac{5}{2} = 2{,}5$. Calculer $\\frac{OH}{HM} = 0{,}4$ renverserait le quotient.",
+      "Avec N(4 ; 10) : $\\frac{KN}{OK} = \\frac{10}{4} = 2{,}5$, le même quotient. Thalès le garantit : $\\frac{OH}{OK} = \\frac{2}{4} = 0{,}5$ et $\\frac{HM}{KN} = \\frac{5}{10} = 0{,}5$.",
+      "Le quotient ordonnée ÷ abscisse est le même pour tous les points de d : c'est le coefficient de proportionnalité, **2,5**. La droite d représente la fonction linéaire $x \\mapsto 2{,}5x$."
+    ],
+    "hint": "HM est la hauteur du point M au-dessus de l'axe des abscisses, OH la distance de O à H.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Relier la représentation graphique d'une situation de proportionnalité avec le théorème de Thalès. »"
+  },
+  {
+    "id": "EX-J045-E-01",
+    "skill_id": "J045",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Le point N de la droite d, hors du dessin, a pour abscisse 12 ; on note K(12 ; 0).\n\nAvec le théorème de Thalès dans les triangles OHM et OKN, calcule l'ordonnée de N.",
+    "image": "figures/EX-J045-E-01",
+    "answer": {
+      "value": 4.8
+    },
+    "solution_steps": [
+      "On lit M(5 ; 2) et H(5 ; 0) : OH = 5 et HM = 2. Pour N : OK = 12, et KN est l'ordonnée cherchée.",
+      "(HM) et (KN) sont parallèles, toutes deux perpendiculaires à l'axe des abscisses ; O, H, K sont alignés, ainsi que O, M, N. Le théorème de Thalès donne $\\frac{OH}{OK} = \\frac{HM}{KN}$.",
+      "$\\frac{5}{12} = \\frac{2}{KN}$, donc $KN = 2 \\times 12 \\div 5 = 24 \\div 5 = 4{,}8$.",
+      "L'ordonnée de N est **4,8**. Contrôle : $\\frac{4{,}8}{12} = 0{,}4$ et $\\frac{2}{5} = 0{,}4$, le même quotient que pour M. Écrire $KN = 12 \\times 5 \\div 2 = 30$ apparierait des longueurs qui ne se correspondent pas."
+    ],
+    "hint": "Écris l'égalité des quotients avec OH, OK, HM et KN, puis remplace les longueurs que tu connais.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Relier la représentation graphique d'une situation de proportionnalité avec le théorème de Thalès. »"
+  },
+  {
+    "id": "EX-J045-E-02",
+    "skill_id": "J045",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Les points H et K sont sur l'axe des abscisses, à la verticale de A et de B.\n\nAffirmation : les points O, A et B sont alignés.",
+    "image": "figures/EX-J045-E-02",
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "On lit A(4 ; 3,5) et B(10 ; 6) : OH = 4, HA = 3,5, OK = 10 et KB = 6.",
+      "Si O, A et B étaient alignés, le théorème de Thalès dans les triangles OHA et OKB, avec (HA) et (KB) parallèles, donnerait $\\frac{OH}{OK} = \\frac{HA}{KB}$, c'est-à-dire le même quotient ordonnée ÷ abscisse pour A et pour B.",
+      "$\\frac{HA}{OH} = \\frac{3{,}5}{4} = 0{,}875$ et $\\frac{KB}{OK} = \\frac{6}{10} = 0{,}6$ : les quotients sont différents.",
+      "Donc O, A et B ne sont pas alignés : l'affirmation est **fausse**. Le dessin le confirme : la droite (OA) passe, à l'abscisse 10, par le point d'ordonnée $10 \\times 0{,}875 = 8{,}75$, bien au-dessus de B."
+    ],
+    "hint": "Compare, pour A puis pour B, le quotient de l'ordonnée par l'abscisse.",
+    "estimated_duration_s": 80,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Relier la représentation graphique d'une situation de proportionnalité avec le théorème de Thalès. »"
+  },
+  {
+    "id": "EX-J045-M-01",
+    "skill_id": "J045",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "La droite d, qui passe par l'origine, donne la distance parcourue par un cycliste en fonction de la durée.\n\nEn combien de minutes parcourt-il 27 km ?",
+    "image": "figures/EX-J045-M-01",
+    "answer": {
+      "value": 90,
+      "unit": "min"
+    },
+    "solution_steps": [
+      "On lit M(20 ; 6) : en 20 minutes, le cycliste parcourt 6 km. H(20 ; 0) est le point de l'axe des abscisses à la verticale de M.",
+      "Soit N le point de d d'ordonnée 27, hors du dessin, et K le point de l'axe des abscisses à sa verticale. (HM) et (KN) sont parallèles ; O, H, K sont alignés, ainsi que O, M, N.",
+      "Le théorème de Thalès donne $\\frac{OH}{OK} = \\frac{HM}{KN}$, soit $\\frac{20}{OK} = \\frac{6}{27}$, donc $OK = 20 \\times 27 \\div 6 = 540 \\div 6 = 90$.",
+      "Il parcourt 27 km en **90 minutes** : l'énoncé demande des minutes, on répond 90 et non 1 h 30. Contrôle : la distance est proportionnelle à la durée, de coefficient $6 \\div 20 = 0{,}3$ km par minute, et $90 \\times 0{,}3 = 27$. Le calcul $27 \\times 6 \\div 20 = 8{,}1$ apparierait les longueurs à l'envers."
+    ],
+    "hint": "Lis les coordonnées du point M, puis écris l'égalité des quotients avec l'abscisse cherchée.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Relier la représentation graphique d'une situation de proportionnalité avec le théorème de Thalès. »"
+  },
+  {
+    "id": "EX-J045-M-02",
+    "skill_id": "J045",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "M et N sont sur la droite d, H et K sur l'axe des abscisses.\n\nL'ordonnée des points de d est-elle proportionnelle à leur abscisse ? Quelle phrase est juste ?",
+    "image": "figures/EX-J045-M-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "Oui : M et N sont alignés sur une droite, donc il y a proportionnalité.",
+        "misconception": "Des points alignés ne traduisent une proportionnalité que si leur droite passe par l'origine ; d coupe l'axe des ordonnées en 2, pas en O."
+      },
+      {
+        "key": "b",
+        "text": "Oui : (HM) et (KN) sont parallèles, donc le théorème de Thalès donne $\\frac{OH}{OK} = \\frac{HM}{KN}$.",
+        "misconception": "Le théorème de Thalès demande que O, M et N soient alignés ; O n'est pas sur d, donc OHM et OKN ne sont pas des triangles emboîtés."
+      },
+      {
+        "key": "c",
+        "text": "Non : $\\frac{HM}{OH} = 2$ et $\\frac{KN}{OK} = \\frac{4}{3}$ ne sont pas égaux.",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "Non : (HM) et (KN) ne sont pas parallèles.",
+        "misconception": "(HM) et (KN) sont toutes deux perpendiculaires à l'axe des abscisses, donc parallèles ; c'est l'alignement de O, M et N qui manque."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "On lit M(2 ; 4) et N(6 ; 8) : OH = 2, HM = 4, OK = 6 et KN = 8.",
+      "$\\frac{HM}{OH} = \\frac{4}{2} = 2$ et $\\frac{KN}{OK} = \\frac{8}{6} = \\frac{4}{3}$ : les quotients ordonnée ÷ abscisse sont différents.",
+      "Il n'y a donc pas proportionnalité : la droite d ne passe pas par l'origine O, elle coupe l'axe des ordonnées au point (0 ; 2).",
+      "Le théorème de Thalès ne s'applique pas aux triangles OHM et OKN : O, M et N ne sont pas alignés. Bonne réponse : c."
+    ],
+    "hint": "Calcule le quotient de l'ordonnée par l'abscisse pour M, puis pour N.",
+    "estimated_duration_s": 100,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage : « Relier la représentation graphique d'une situation de proportionnalité avec le théorème de Thalès. »"
+  }
+]

@@ -1,0 +1,174 @@
+[
+  {
+    "id": "EX-J044-D-01",
+    "skill_id": "J044",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Les droites d et e représentent les fonctions affines f et g. Les pointillés partent du point commun à d et e.\n\nRésous graphiquement l'équation $f(x) = g(x)$.",
+    "image": "figures/EX-J044-D-01",
+    "answer": {
+      "value": -1
+    },
+    "solution_steps": [
+      "Résoudre $f(x) = g(x)$, c'est chercher les nombres $x$ qui ont la même image par f et par g. Sur le graphique, ce sont les abscisses des points communs aux droites d et e.",
+      "Les droites d et e se coupent en un seul point. Ses pointillés verticaux arrivent sur l'axe des abscisses en −1, ses pointillés horizontaux sur l'axe des ordonnées en 2 : ce point a pour coordonnées (−1 ; 2).",
+      "La solution est son abscisse : **−1**. Le nombre 2 est son ordonnée : c'est la valeur commune $f(-1) = g(-1) = 2$, pas la solution."
+    ],
+    "hint": "La solution se lit sur l'axe des abscisses, à la verticale du point où les deux droites se coupent.",
+    "estimated_duration_s": 50,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Résoudre graphiquement des équations et des inéquations linéaires. »"
+  },
+  {
+    "id": "EX-J044-D-02",
+    "skill_id": "J044",
+    "level": "decouverte",
+    "type": "texte",
+    "statement": "La droite d représente une fonction affine f. Les pointillés partent du point de d d'ordonnée 3.\n\nRésous graphiquement l'inéquation $f(x) \\geqslant 3$. Écris les solutions sous la forme d'une inégalité portant sur $x$.",
+    "image": "figures/EX-J044-D-02",
+    "answer": {
+      "value": "x ⩾ 4",
+      "forme": "inegalite"
+    },
+    "solution_steps": [
+      "$f(x) \\geqslant 3$ : on cherche les nombres $x$ dont l'image par f est supérieure ou égale à 3, c'est-à-dire les abscisses des points de d situés à la hauteur 3 ou plus haut.",
+      "Les pointillés montrent que d atteint la hauteur 3 au point d'abscisse 4 : $f(4) = 3$.",
+      "La droite d monte de gauche à droite : à droite de ce point, elle passe au-dessus de la hauteur 3 ; à gauche, elle passe en dessous.",
+      "Les solutions sont les nombres $x \\geqslant 4$. L'inégalité est large : 4 est solution, car $f(4) = 3$. Répondre $x \\leqslant 4$ inverserait le sens, et $x > 4$ oublierait le nombre 4."
+    ],
+    "hint": "Repère la partie de la droite d qui est à la hauteur 3 ou au-dessus, puis lis les abscisses de cette partie.",
+    "estimated_duration_s": 70,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Résoudre graphiquement des équations et des inéquations linéaires. »"
+  },
+  {
+    "id": "EX-J044-E-01",
+    "skill_id": "J044",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Les droites d et e représentent les fonctions affines f et g.\n\nQuelles sont les solutions de l'inéquation $f(x) < g(x)$ (inégalité stricte) ?",
+    "image": "figures/EX-J044-E-01",
+    "choices": [
+      {
+        "key": "a",
+        "text": "$x < 2$",
+        "misconception": "L'élève prend la partie où d est au-dessus de e : ce sont les solutions de $f(x) > g(x)$, le sens est inversé."
+      },
+      {
+        "key": "b",
+        "text": "$x > -1$",
+        "misconception": "L'élève lit l'ordonnée du point d'intersection (−1) au lieu de son abscisse (2)."
+      },
+      {
+        "key": "c",
+        "text": "$x \\geqslant 2$",
+        "misconception": "L'élève écrit une inégalité large : pour $x = 2$, $f(2) = g(2) = -1$, et −1 n'est pas strictement inférieur à −1, donc 2 n'est pas solution."
+      },
+      {
+        "key": "d",
+        "text": "$x > 2$",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "d"
+    },
+    "solution_steps": [
+      "Les droites d et e se coupent au point de coordonnées (2 ; −1) : pour $x = 2$, $f(2) = g(2) = -1$.",
+      "$f(x) < g(x)$ : on cherche les abscisses des points où la droite d est strictement en dessous de la droite e.",
+      "À droite du point d'intersection, d passe sous e ; à gauche, d est au-dessus de e.",
+      "Les solutions sont les nombres $x > 2$, sans 2, car l'inégalité est stricte. Bonne réponse : d."
+    ],
+    "hint": "Repère d'abord le point où d et e se coupent, puis de quel côté de ce point la droite d est sous la droite e.",
+    "estimated_duration_s": 80,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Résoudre graphiquement des équations et des inéquations linéaires. »"
+  },
+  {
+    "id": "EX-J044-E-02",
+    "skill_id": "J044",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Les droites d et e représentent les fonctions affines f et g.\n\nPour quel nombre $x$ les images par f et par g sont-elles égales ? Donne-le en écriture décimale.",
+    "image": "figures/EX-J044-E-02",
+    "answer": {
+      "value": 2.5
+    },
+    "solution_steps": [
+      "Les images par f et par g sont égales quand $f(x) = g(x)$ : on cherche l'abscisse du point commun aux droites d et e.",
+      "d et e se coupent entre les graduations 2 et 3 de l'axe des abscisses, exactement au milieu : l'abscisse est 2,5. L'ordonnée de ce point est 1.",
+      "Contrôle sur le quadrillage : d monte de 2 quand $x$ augmente de 1 et passe par (2 ; 0) ; e descend de 2 et passe par (2 ; 2). Une demi-graduation plus loin, d est montée de 1 et e est descendue de 1 : les deux sont à la hauteur 1.",
+      "Le nombre cherché est **2,5**. Le nombre 1 est la valeur commune des images, $f(2{,}5) = g(2{,}5) = 1$, pas la réponse."
+    ],
+    "hint": "Lis l'abscisse du point où les deux droites se coupent ; il tombe entre deux graduations.",
+    "estimated_duration_s": 70,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Résoudre graphiquement des équations et des inéquations linéaires. »"
+  },
+  {
+    "id": "EX-J044-M-01",
+    "skill_id": "J044",
+    "level": "maitrise",
+    "type": "texte",
+    "statement": "Le graphique donne le prix de location d'un kayak en fonction de la durée $x$, en heures, pour deux tarifs T1 et T2.\n\nPour quelles durées T2 est-il strictement moins cher que T1 ? Réponds par une inégalité portant sur $x$.",
+    "image": "figures/EX-J044-M-01",
+    "answer": {
+      "value": "x > 5",
+      "forme": "inegalite",
+      "unit": "h"
+    },
+    "solution_steps": [
+      "Le tarif T2 est strictement moins cher que T1 pour les durées où le point de la droite T2 est strictement en dessous du point de la droite T1 de même abscisse.",
+      "Les droites T1 et T2 se coupent au point d'abscisse 5 et d'ordonnée 30 : pour 5 heures, les deux tarifs coûtent 30 €.",
+      "Avant 5 heures, T2 est au-dessus de T1 (T2 part de 15 €, T1 de 0 €) ; après 5 heures, T2 est en dessous, car T1 monte plus vite.",
+      "Les durées cherchées sont $x > 5$, avec une inégalité stricte : pour 5 heures, les deux prix sont égaux. Répondre $x > 30$ donnerait le prix au lieu de la durée, et $x < 5$ les durées où T1 est le moins cher."
+    ],
+    "hint": "Cherche le point où les deux droites se coupent, puis de quel côté de ce point la droite T2 passe sous la droite T1.",
+    "estimated_duration_s": 100,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Résoudre graphiquement des équations et des inéquations linéaires. »"
+  },
+  {
+    "id": "EX-J044-M-02",
+    "skill_id": "J044",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Les droites d et e représentent les fonctions affines f et g.\n\nQue peut-on dire de l'équation $f(x) = g(x)$ ?",
+    "image": "figures/EX-J044-M-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "On ne peut pas conclure : d et e se coupent peut-être hors du dessin.",
+        "misconception": "L'élève croit que le dessin ne permet pas de conclure ; or d et e ont le même coefficient directeur, 2 : elles sont parallèles et ne se coupent nulle part."
+      },
+      {
+        "key": "b",
+        "text": "Elle a une infinité de solutions, car d et e sont parallèles.",
+        "misconception": "L'élève confond droites parallèles et droites confondues : d et e n'ont aucun point commun, puisque leurs ordonnées à l'origine, 1 et −2, sont différentes."
+      },
+      {
+        "key": "c",
+        "text": "Elle n'a aucune solution : d et e ont le même coefficient directeur et ne sont pas confondues.",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "Elle a pour solution 0, l'abscisse des points où d et e coupent l'axe des ordonnées.",
+        "misconception": "L'élève prend l'abscisse commune des deux points situés sur l'axe des ordonnées ; mais pour $x = 0$, $f(0) = 1$ et $g(0) = -2$ ne sont pas égaux."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Les solutions de $f(x) = g(x)$ sont les abscisses des points communs aux droites d et e.",
+      "d passe par (0 ; 1) et (1 ; 3) : elle monte de 2 quand $x$ augmente de 1. e passe par (0 ; −2) et (1 ; 0) : elle monte de 2, elle aussi. Les deux droites ont le même coefficient directeur, 2.",
+      "Deux droites de même coefficient directeur sont parallèles. Leurs ordonnées à l'origine, 1 et −2, sont différentes : elles ne sont pas confondues, donc elles n'ont aucun point commun, même hors du dessin.",
+      "L'équation $f(x) = g(x)$ n'a aucune solution. Par le calcul, $2x + 1 = 2x - 2$ donnerait $1 = -2$, ce qui est impossible. Bonne réponse : c."
+    ],
+    "hint": "Compare de combien montent d et e quand $x$ augmente de 1.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Résoudre graphiquement des équations et des inéquations linéaires. »"
+  }
+]

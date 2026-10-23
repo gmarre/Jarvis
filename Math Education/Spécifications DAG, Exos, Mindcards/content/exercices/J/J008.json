@@ -1,0 +1,168 @@
+[
+  {
+    "id": "EX-J008-D-01",
+    "skill_id": "J008",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "On considère la fonction carré $f : x \\mapsto x^{2}$. Quel nombre manque dans ce tableau de valeurs ?\n\n$\\begin{array}{|c|c|c|c|c|c|} \\hline x & -7 & -1 & 0 & 1{,}2 & 6 \\\\ \\hline f(x) & ? & 1 & 0 & 1{,}44 & 36 \\\\ \\hline \\end{array}$",
+    "image": null,
+    "answer": {
+      "value": 49
+    },
+    "solution_steps": [
+      "La case manquante est sous $-7$ : c'est $f(-7) = (-7)^{2}$.",
+      "$(-7)^{2} = (-7) \\times (-7)$. Le produit de deux nombres négatifs est positif : $(-7) \\times (-7) = 49$.",
+      "Le nombre manquant est **49**. Répondre $-49$ revient à calculer $-7^{2}$, l'opposé du carré de 7 ; répondre $-14$ confond le carré et le double.",
+      "Dans le tableau, l'image de $-1$ est 1, comme celle de 1 : un carré n'est jamais négatif."
+    ],
+    "hint": "$(-7)^{2}$ veut dire $(-7) \\times (-7)$ : quel est le signe de ce produit ?",
+    "estimated_duration_s": 40,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Représenter la fonction carré. »"
+  },
+  {
+    "id": "EX-J008-D-02",
+    "skill_id": "J008",
+    "level": "decouverte",
+    "type": "texte",
+    "statement": "𝒞 est la courbe représentative de la fonction carré f. Les pointillés partent des points de 𝒞 d'ordonnée 6,25.\n\nDonne tous les antécédents de 6,25 par f, séparés par un point-virgule.",
+    "image": "figures/EX-J008-D-02",
+    "answer": {
+      "value": "−2,5 ; 2,5",
+      "forme": "solutions"
+    },
+    "solution_steps": [
+      "Un antécédent de 6,25 est un nombre $x$ tel que $f(x) = 6{,}25$ : on part de 6,25 sur l'axe des ordonnées et on cherche tous les points de 𝒞 à cette hauteur.",
+      "Deux points de 𝒞 sont à cette hauteur : les pointillés verticaux tombent sur l'axe des abscisses en −2,5 et en 2,5, au milieu entre deux graduations.",
+      "Les antécédents de 6,25 sont **−2,5** et **2,5**. Vérification : $2{,}5^{2} = 6{,}25$ et $(-2{,}5)^{2} = 6{,}25$.",
+      "Ne donner que 2,5 oublie le point de gauche : la courbe de la fonction carré est symétrique par rapport à l'axe des ordonnées."
+    ],
+    "hint": "Suis les deux lignes de pointillés jusqu'à l'axe des abscisses.",
+    "estimated_duration_s": 50,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Représenter la fonction carré. »"
+  },
+  {
+    "id": "EX-J008-E-01",
+    "skill_id": "J008",
+    "level": "entrainement",
+    "type": "qcm",
+    "statement": "Laquelle de ces trois courbes représente la fonction carré $x \\mapsto x^{2}$ ?",
+    "image": "figures/EX-J008-E-01",
+    "choices": [
+      {
+        "key": "a",
+        "text": "𝒞1",
+        "misconception": "L'élève confond le carré et le double : 𝒞1 est une droite qui passe par (1 ; 2), alors que $1^{2} = 1$."
+      },
+      {
+        "key": "b",
+        "text": "𝒞2",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "𝒞3",
+        "misconception": "L'élève croit qu'un carré peut être négatif : 𝒞3 passe par (2 ; −4), alors que $2^{2} = 4$ ; la courbe de la fonction carré n'a aucun point sous l'axe des abscisses."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "On calcule quelques images : $0^{2} = 0$, $1^{2} = 1$, $2^{2} = 4$, $(-1)^{2} = 1$ et $(-2)^{2} = 4$.",
+      "La courbe cherchée passe donc par (0 ; 0), (1 ; 1), (2 ; 4), (−1 ; 1) et (−2 ; 4) : elle n'a aucun point sous l'axe des abscisses et elle est symétrique par rapport à l'axe des ordonnées.",
+      "𝒞1 est une droite qui passe par (1 ; 2) : elle représente le double, pas le carré. 𝒞3 passe par (1 ; −1) et (2 ; −4) : ses ordonnées sont négatives.",
+      "Seule 𝒞2 passe par tous ces points. Bonne réponse : b."
+    ],
+    "hint": "Calcule $2^{2}$ et $(-2)^{2}$, puis cherche la courbe qui passe par les deux points correspondants.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Représenter la fonction carré. »"
+  },
+  {
+    "id": "EX-J008-E-02",
+    "skill_id": "J008",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "On considère la fonction carré f.\n\nAffirmation : le point P(−0,4 ; 0,16) est sur la courbe représentative de f.",
+    "image": null,
+    "answer": {
+      "value": true
+    },
+    "solution_steps": [
+      "Un point est sur la courbe représentative de f quand son ordonnée est l'image de son abscisse : on compare $f(-0{,}4)$ à 0,16.",
+      "$f(-0{,}4) = (-0{,}4)^{2} = (-0{,}4) \\times (-0{,}4) = 0{,}16$ : le produit de deux nombres négatifs est positif, et $4 \\times 4 = 16$, avec deux chiffres après la virgule.",
+      "$f(-0{,}4) = 0{,}16$ : l'ordonnée de P est bien l'image de son abscisse. Le point P est sur la courbe, l'affirmation est **vraie**.",
+      "Deux pièges : $0{,}4 \\times 0{,}4$ ne fait pas 1,6, car le produit a deux chiffres après la virgule ; et $(-0{,}4)^{2}$ n'est pas négatif, un carré ne l'est jamais."
+    ],
+    "hint": "Calcule $(-0{,}4)^{2}$ en comptant les chiffres après la virgule.",
+    "estimated_duration_s": 50,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Représenter la fonction carré. »"
+  },
+  {
+    "id": "EX-J008-M-01",
+    "skill_id": "J008",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "𝒞 représente la fonction carré ; la droite horizontale d passe par le point (0 ; 12).\n\nEntre quels entiers consécutifs se trouve la solution négative de l'équation $x^{2} = 12$ ?",
+    "image": "figures/EX-J008-M-01",
+    "choices": [
+      {
+        "key": "a",
+        "text": "Entre 3 et 4",
+        "misconception": "L'élève donne l'encadrement de la solution positive : l'équation a deux solutions, une de chaque côté de l'axe des ordonnées."
+      },
+      {
+        "key": "b",
+        "text": "Entre −6 et −5",
+        "misconception": "L'élève divise 12 par 2 : or $(-6)^{2} = 36$ et $(-5)^{2} = 25$, bien plus que 12."
+      },
+      {
+        "key": "c",
+        "text": "Entre −12 et −11",
+        "misconception": "L'élève encadre 12 au lieu de sa racine carrée : $(-11)^{2} = 121$."
+      },
+      {
+        "key": "d",
+        "text": "Entre −4 et −3",
+        "misconception": null
+      }
+    ],
+    "answer": {
+      "value": "d"
+    },
+    "solution_steps": [
+      "Les solutions de $x^{2} = 12$ sont les abscisses des points communs à 𝒞 et à la droite d, formée des points d'ordonnée 12.",
+      "d coupe 𝒞 en deux points, symétriques par rapport à l'axe des ordonnées : l'un a une abscisse entre 3 et 4, l'autre entre −4 et −3. Ces abscisses ne tombent pas sur une graduation : on n'en lit qu'un encadrement.",
+      "Le calcul le confirme : $3^{2} = 9$ et $4^{2} = 16$, et 12 est entre 9 et 16, donc $3 < \\sqrt{12} < 4$. Les solutions sont $\\sqrt{12}$ et $-\\sqrt{12}$, et $-4 < -\\sqrt{12} < -3$.",
+      "La solution négative est entre −4 et −3 (environ −3,46). Bonne réponse : d."
+    ],
+    "hint": "Repère les deux points où d coupe 𝒞 ; la solution négative est à gauche de l'axe des ordonnées.",
+    "estimated_duration_s": 80,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Nombres et calculs, Racine carrée, Objectifs d'apprentissage : « Résoudre analytiquement et graphiquement des équations de la forme 𝑥2 = a. »"
+  },
+  {
+    "id": "EX-J008-M-02",
+    "skill_id": "J008",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "𝒞 représente la fonction carré. Une droite horizontale, non tracée, coupe 𝒞 en deux points A et B tels que AB = 7.\n\nQuelle est l'ordonnée de A ?",
+    "image": "figures/EX-J008-M-02",
+    "answer": {
+      "value": 12.25
+    },
+    "solution_steps": [
+      "𝒞 est symétrique par rapport à l'axe des ordonnées : A et B, à la même hauteur, ont des abscisses opposées.",
+      "AB = 7 est l'écart entre ces deux abscisses opposées : chacune est à $7 \\div 2 = 3{,}5$ de l'axe des ordonnées. Les abscisses de A et B sont −3,5 et 3,5.",
+      "L'ordonnée de A est le carré de son abscisse : $3{,}5^{2} = 3{,}5 \\times 3{,}5 = 12{,}25$, et $(-3{,}5)^{2} = 12{,}25$ de même.",
+      "L'ordonnée de A est **12,25**. Calculer $7^{2} = 49$ oublie de partager l'écart en deux ; répondre 3,5 donne l'abscisse, pas l'ordonnée."
+    ],
+    "hint": "La courbe est symétrique : où sont A et B par rapport à l'axe des ordonnées ?",
+    "estimated_duration_s": 100,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Représenter la fonction carré. »"
+  }
+]
