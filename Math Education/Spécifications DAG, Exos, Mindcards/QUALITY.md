@@ -19,3 +19,4 @@
 | `qualite/06s_super_exercices.md` | Super exercices : pilote, puis un par compétence |
 | `qualite/07_etape7_calcul_litteral.md` | Étapes 7 et 7 bis : calcul littéral, pensée algébrique du cycle 3 |
 | `qualite/08_etape8_geometrie_grandeurs.md` | Étape 8 : géométrie et grandeurs du cycle 4 |
+| `qualite/09_etape9_proportionnalite_fonctions.md` | Étape 9 : proportionnalité du cycle 4 et fonctions |

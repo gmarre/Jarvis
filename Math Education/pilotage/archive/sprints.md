@@ -2,6 +2,15 @@
 
 > Le plus récent en haut. Un résumé de 5 à 10 lignes par sprint, écrit par le skill `cloture-sprint`.
 
+## A2b. Étape 9, rédaction et publication (23 et 24 octobre 2026)
+
+- Livré : 144 exercices (lots Q1 à Q7), 7 cartes mentales (dont MM-E-04 reprise en entier), 138 cartes défi, 24 super exercices, tous relus par un agent indépendant et fusionnés ; publication du commit 0553e49 vérifiée en base.
+- `corriger` v18 et `rendre-super` v4 déployées, comparées au code local sur des comptes temporaires (3 545 saisies, 40 copies identiques).
+- Bilan `qualite/09_etape9_proportionnalite_fonctions.md` : 10 exercices bloquants sur 144 (6,9 %), surtout des couples repris (comparés simplifiés et dans les deux ordres) et des calculs hors chaîne.
+- DAG : E016 ← F012, J043 ← G016. Briefs recopiés en `modeles_agents/consigne_*_etape9.md` (étape 8 archivée), `_travail/` archivé.
+- Incident : un relecteur a arrêté tous les processus Python de la machine ; contenu intact, consigne d'interdiction ajoutée aux lancements.
+- Reporté : rien.
+
 ## A2a. Étape 9, outils et cartographe (23 octobre 2026)
 
 - Livré : `repere` étendu (droites, fonction carré, lignes brisées, lectures d'image et d'antécédents, titres d'axes, segments libres ; lectures et intersections hors de la demi-graduation refusées ; 587 figures identiques, 19 refus testés).

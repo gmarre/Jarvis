@@ -17,10 +17,10 @@ Application web d'apprentissage adaptatif des mathématiques, CP à Terminale à
 - **Calendrier :** le déploiement vient en dernier (bloc D), une fois le contenu jusqu'à la 3e et le backlog terminés ; la bêta fermée (5 à 10 élèves) suit et sera replanifiée à ce moment.
 - **Modèle économique visé :** abonnement élève 9,99 €/mois ; cours avec professeur 20 € les 1 h 30, 3 élèves maximum. **Rien n'est encaissé pendant la bêta** (`/abonnement` est informatif).
 
-## 2. État en bref (23 octobre 2026, détail dans `pilotage/ETAT.md`)
+## 2. État en bref (24 octobre 2026, détail dans `pilotage/ETAT.md`)
 
-- **Contenu :** 297 compétences (24 de l'étape 9 sans exercice), 1 654 exercices, 65 cartes mentales, 1 475 cartes défi, 270 super exercices, tous `relu_agent`, recette de Marius à venir. Étapes 1 à 8 publiées ; étape 9 : DAG fusionné, rédaction en cours.
-- **Application :** React, Supabase ; **tourne en local seulement, rien n'est déployé.** Progression écrite côté serveur (`corriger` v17, `rendre-super` v3).
+- **Contenu :** 297 compétences, 1 798 exercices, 71 cartes mentales, 1 613 cartes défi, 294 super exercices, tous `relu_agent`, recette de Marius à venir. Étapes 1 à 9 publiées (24 octobre 2026).
+- **Application :** React, Supabase ; **tourne en local seulement, rien n'est déployé.** Progression écrite côté serveur (`corriger` v18, `rendre-super` v4, 24 octobre 2026).
 - **En attente de Gauthier :** Cron `supabase/cron/rappels.sql` (`pg_cron` absent, secret `CRON_SECRET` à créer). Dernière migration appliquée : 0024 (23 octobre 2026, vérifiée en base).
 
 ## 3. Règles de travail (à respecter sans qu'on les redise)

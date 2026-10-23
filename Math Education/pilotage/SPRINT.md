@@ -1,23 +1,23 @@
-# Sprint en cours : A2b, étape 9 (domaines E et J), rédaction et publication
+# Sprint en cours : A3, étape 10 (domaines K et L), statistiques et probabilités
 
-> Ouvert le 23 octobre 2026. Bloc A (contenu). Plafond de ce fichier : 6 Ko ; à la clôture, le skill `cloture-sprint` le résume dans `pilotage/archive/sprints.md` et ouvre le suivant (A3, étape 10). Circuit : skill `etape-contenu`, sections 3 à 7.
+> Ouvert le 24 octobre 2026. Bloc A (contenu). Plafond de ce fichier : 6 Ko ; à la clôture, le skill `cloture-sprint` le résume dans `pilotage/archive/sprints.md` et ouvre le suivant (A4, étape 11). Circuit : skill `etape-contenu`, depuis les modèles `modeles_agents/consigne_*_etape9.md`.
 
-**But :** les 24 compétences de l'étape 9 rédigées (144 exercices), relues, avec leurs cartes mentales, cartes défi et super exercices, fusionnées et publiées.
+**But :** l'étape 10 (statistiques et probabilités, du cycle 3 au cycle 4) rédigée, relue, publiée, avec les nœuds de lecture de tableaux et de courbes du cycle 3 raccordés à J036 et J040.
 
 ## Reste à faire
 
-- [x] Exercices, lots Q1 à Q7 (144 exercices fusionnés, 10 bloquants à la relecture, tous corrigés) (`_travail/brief_etape9.md`) : rédaction, relecture indépendante (`brief_relecture_etape9.md`), corrections, fusion, `relu_agent`, un commit par lot.
-- [x] Cartes mentales (7 cartes fusionnées, MM-E-04 reprise en entier) : MM-E-05, MM-E-06, MM-J-01 à MM-J-04 ; E038 ajouté à MM-E-04 (arbitrage 7). Consigne depuis `modeles_agents/consigne_cartes_etape8.md`.
-- [ ] Cartes défi (fait : 138 cartes, lots D9a à D9c) et super exercices (S9a à S9c en cours) (au moins un par compétence), consignes depuis `consigne_defis_etape8.md` et `consigne_super_etape8.md`.
-- [ ] Correctifs de la correction relevés en relecture, puis **redéploiement de `corriger` et `rendre-super`** (skill `deployer-fonction`, contrôle 401) avec « f(x) = … » déjà commité ; versions dans `ETAT.md` et `CLAUDE.md` §2 ; saisies à vérifier en ligne dans `TESTS_MANUELS.md`.
-- [ ] Validateur vert, `build_review_sheet.py`, export, `npm test`, `npm run lint`, `npm run build`.
-- [ ] Commit, puis `publier.py --apply`.
-- [ ] Bilan `qualite/09_etape9_proportionnalite_fonctions.md` et sa ligne dans `QUALITY.md` ; briefs recopiés en `modeles_agents/consigne_*_etape9.md` ; `_travail/` archivé (garder `programmes/`).
+- [ ] Arbitrage d'ouverture avec Gauthier (questions ci-dessous).
+- [ ] Repérage : programme (`_travail/programmes/5eme.txt`, `6eme-cm1-cm2.txt`, `3eme-4eme.txt` si besoin), nœuds K et L du v1 (mémoire seulement).
+- [ ] Générateurs dans `scripts/figures.py` : diagrammes en barres, diagrammes circulaires, arbres de probabilités ; refus d'une figure qui donne ou fausse une lecture ; figures existantes identiques.
+- [ ] Brief et cartographe (`_travail/etape10_dag_KL.*`), arbitrage des découpages, fusion du DAG, vocabulaire au validateur.
+- [ ] Rédaction, relecture et fusion des exercices, cartes mentales, cartes défi, super exercices.
+- [ ] Correctifs de la correction s'il y en a, déploiement vérifié (comparaison au code local).
+- [ ] Publication, bilan `qualite/10_etape10_statistiques_probabilites.md`, briefs en modèles, `_travail/` archivé.
 
-## Arbitrages
+## Questions ouvertes pour Gauthier
 
-Délégation reconduite pour toute l'étape 9 (Gauthier, 23 octobre 2026). Arbitrages du cartographe tranchés : `DECISIONS.md`, « étape 9, arbitrages du cartographe ».
+1. Délégation reconduite pour l'étape 10, comme pour les étapes 7 à 9 ? Recommandation : oui.
 
 ## Blocages
 
-Aucun.
+Aucun (pas de migration : `[A-P]` couvre K et L).

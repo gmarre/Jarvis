@@ -4,7 +4,7 @@
 
 ## 1. Contenu
 
-**297 compétences (dont les 24 de l'étape 9, sans exercice, en rédaction), 1 654 exercices, 65 cartes mentales, 1 475 cartes défi, 270 super exercices**, tous en `relu_agent` (relus par agents), en attente de la recette de Marius. **En ligne** (publication du 23 octobre 2026, commit 9c359e4, vérifiée en base) : tout sauf le DAG de l'étape 9 (273 compétences).
+**297 compétences, 1 798 exercices, 71 cartes mentales, 1 613 cartes défi, 294 super exercices**, tous en `relu_agent` (relus par agents), en attente de la recette de Marius. **En ligne** (publication du 24 octobre 2026, commit 0553e49, vérifiée en base) : tout ce contenu.
 
 | Domaine | Compétences | Classes couvertes |
 |---|---|---|
@@ -12,13 +12,13 @@
 | B Calcul | 40 | CP à 3e (opérations sur les relatifs, priorités, puissances, programme de calcul, distributivité) |
 | C Fractions | 27 | CE1 à 4e (cycle 4 complet) |
 | D Décimaux | 20 | CE1 à 5e (division par un décimal) |
-| E Proportionnalité, pourcentages | 25 | CM1 à 3e (étape 9 : ratio, quatrième proportionnelle, coefficient multiplicateur, partage ; DAG seul) |
+| E Proportionnalité, pourcentages | 25 | CM1 à 3e (ratio, quatrième proportionnelle, coefficient multiplicateur, partage, évolutions) |
 | F Algèbre | 26 | CM1 à 3e (pensée algébrique du cycle 3, calcul littéral, équations, inéquations) |
-| J Fonctions | 16 | 5e à 3e (étape 9 : tableau de valeurs, graphique, image et antécédent, linéaires, affines, carré ; DAG seul) |
+| J Fonctions | 16 | 5e à 3e (tableau de valeurs, graphique, image et antécédent, linéaires, affines, carré) |
 | G Espace et géométrie | 65 | CP à 3e (étape 8 : Pythagore, Thalès, trigonométrie, transformations, vecteurs, solides) |
 | P Grandeurs et mesures | 38 | CP à 3e (étape 8 : aires, volumes, grandeurs quotients) |
 
-**Étapes faites** (bilans dans `Spécifications DAG, Exos, Mindcards/qualite/`) : tranche pilote A et C (complétée à 6 exercices par compétence) ; 1 calcul ; 2 décimaux ; 3 proportionnalité ; 4a grandeurs et mesures ; figures ; 4b géométrie ; 5 relatifs et arithmétique ; 6 fractions du cycle 4, puissances, racine carrée, notation scientifique ; 7 et 7 bis calcul littéral et pensée algébrique du cycle 3 ; 8 géométrie et grandeurs du cycle 4. **En cours** : étape 9 (DAG fusionné le 23 octobre 2026, rédaction au sprint A2b). **Restent** : étapes 10, 11 et les restes de contenu (`FEUILLE_DE_ROUTE.md`, bloc A).
+**Étapes faites** (bilans dans `Spécifications DAG, Exos, Mindcards/qualite/`) : tranche pilote A et C (complétée à 6 exercices par compétence) ; 1 calcul ; 2 décimaux ; 3 proportionnalité ; 4a grandeurs et mesures ; figures ; 4b géométrie ; 5 relatifs et arithmétique ; 6 fractions du cycle 4, puissances, racine carrée, notation scientifique ; 7 et 7 bis calcul littéral et pensée algébrique du cycle 3 ; 8 géométrie et grandeurs du cycle 4 ; 9 proportionnalité du cycle 4 et fonctions. **Restent** : étapes 10, 11 et les restes de contenu (`FEUILLE_DE_ROUTE.md`, bloc A).
 
 Évaluation partielle : C035 ; G050, G051, G052, G071, G076 ; F062, F065.
 
@@ -57,15 +57,14 @@ React 18, Vite, TypeScript, Tailwind ; Supabase (Postgres, Auth Google et email,
 
 **Migrations :** 0001 à 0024 appliquées (0023 recollée et 0024 le 23 octobre 2026, vérifiées en base).
 - **Professeurs :** Jean-Marc vérifié (23 octobre 2026) ; le compte de test `+prof1` de Gauthier ne l'est pas, ses créneaux restent cachés des élèves. Requête : `update teachers set verifie_le = now() where id = (select id from profiles where email = '...');`
-- **À déployer** (`corriger`, `rendre-super`) : `correction.ts` lit « f(x) = … » et « x ↦ … » depuis le 23 octobre 2026 (commit suivant 1915762) ; déploiement groupé avant la publication de l'étape 9.
 - **Cron :** `supabase/cron/rappels.sql` pas appliqué (`pg_cron` absent ; secret `CRON_SECRET` à créer, mode d'emploi en tête du fichier).
 
 **Edge Functions déployées :**
 
 | Fonction | Version | JWT | Rôle |
 |---|---|---|---|
-| `corriger` | v17 | oui | correction (modes « exercice » et « positionnement »), écrit tentative et progression |
-| `rendre-super` | v3 | oui | corrige la copie d'un super exercice, écrit `super_attempts` et la progression |
+| `corriger` | v18 | oui | correction (modes « exercice » et « positionnement »), écrit tentative et progression |
+| `rendre-super` | v4 | oui | corrige la copie d'un super exercice, écrit `super_attempts` et la progression |
 | `accord-parental` | déployée | non | consentement et modifications de profil d'un mineur |
 | `rapport-hebdo` | v1 | non | résumé du dimanche au parent (`CRON_SECRET`) |
 | `rappel-revision` | v1 | non | rappels de travail par email (`RESEND_*`, `APP_URL`, `CRON_SECRET`) |

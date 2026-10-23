@@ -121,5 +121,15 @@
   13. L'étape 10 crée les nœuds de lecture de tableaux et de courbes du cycle 3 et les raccorde à J036 et J040.
   14. Cartes courtes MM-J-02 (2 compétences) et MM-E-06 (3) acceptées.
   15. Vocabulaire de l'étape ajouté au validateur avant la rédaction.
+- 23 et 24/10/2026, étape 9, rédaction (délégation). CP :
+  1. L'unité demandée par l'énoncé est imposée : une valeur juste dans une autre unité est refusée.
+  2. Couples de données : comparés simplifiés, dans les deux ordres, contre les valeurs dérivées d'un test lu en entier ; un couple formé seulement de 0 et 1 ne compte pas ; pour un super exercice, la règle porte sur les compétences mobilisées.
+  3. Une lettre qui nomme un nombre quelconque sans calcul (1/n, a : b) est permise ; une règle de calcul sur une lettre exige le calcul littéral dans la chaîne.
+  4. Une carte défi ne tranche pas un exercice ni un test (règle 3 bis) : les règles centrales qui le feraient restent aux cartes mentales.
+  5. Une échelle juste écrite autrement (9/4500 pour 1/500) est acceptée ; « 1:500 » et « 500 » sont refusés.
+  6. Texte alternatif neutre quand un QCM porte sur la forme d'un tracé.
+  7. MM-E-04 reprise en entier (couples d'exercices hérités d'avant les règles actuelles).
+  8. Liens DAG E016 ← F012 et J043 ← G016.
+  9. Déploiement de `corriger` et `rendre-super` vérifié par comparaison au code local sur des comptes temporaires supprimés ensuite.
 
 Le détail des sprints 1 à 6 (ce qui a été codé, quand, et pourquoi) est dans `archive/CLAUDE_avant_decoupage_2026-10-23.md`, §6.

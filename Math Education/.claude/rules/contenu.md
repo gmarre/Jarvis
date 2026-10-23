@@ -26,7 +26,8 @@ paths:
 - une lettre citée dans une proposition n'est jamais la pastille d'une autre ;
 - les étapes d'un corrigé n'utilisent que des opérations couvertes par les prérequis ;
 - dans les cartes, aucun couple de données repris d'un exercice de la même carte ;
-- leçons de l'étape 8 (détail dans `modeles_agents/consigne_redacteurs_etape8.md`) : position d'un objet vérifiée sur les coordonnées, QCM à justification fausse, « Aucune » jamais juste, division de fraction C017, angle droit non donné.
+- leçons de l'étape 8 (détail dans `modeles_agents/archive/consigne_redacteurs_etape8.md`) : position d'un objet vérifiée sur les coordonnées, QCM à justification fausse, « Aucune » jamais juste, division de fraction C017, angle droit non donné.
+- leçons de l'étape 9 (détail dans `modeles_agents/consigne_redacteurs_etape9.md`) : couples comparés simplifiés, dans les deux ordres et contre les valeurs dérivées d'un test lu en entier ; règle de calcul sur une lettre seulement avec le calcul littéral dans la chaîne ; unité demandée imposée ; carte défi qui ne tranche pas un exercice ; environ 270 px utiles pour un tableau.
 
 ## Outils
 

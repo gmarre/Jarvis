@@ -1,6 +1,6 @@
 # Feuille de route, du sprint en cours jusqu'à la bêta
 
-> Mise à jour le 23 octobre 2026 (clôture de A1). Ordre validé par Gauthier : **bloc A (contenu), puis B (mobile), puis C (application), puis D (sprint final)**. Sprints courts numérotés A1, A2… ; un sprint dure environ 2 semaines à 4 h par semaine. Le sprint en cours est détaillé dans `SPRINT.md` ; ce fichier ne garde que ce qui reste à faire.
+> Mise à jour le 24 octobre 2026 (clôture de A2). Ordre validé par Gauthier : **bloc A (contenu), puis B (mobile), puis C (application), puis D (sprint final)**. Sprints courts numérotés A1, A2… ; un sprint dure environ 2 semaines à 4 h par semaine. Le sprint en cours est détaillé dans `SPRINT.md` ; ce fichier ne garde que ce qui reste à faire.
 
 ---
 
@@ -8,13 +8,7 @@
 
 Chaque étape suit le circuit du skill `etape-contenu`. Le DAG v1 (`skills_dag.json`, 414 compétences, niveaux souvent faux) ne sert que de mémoire : chaque étape repart du programme officiel (`_travail/programmes/5eme.txt`, `3eme-4eme.txt`), avec les mêmes lettres de domaine que le v1 quand elles correspondent.
 
-### A2. Étape 9 : proportionnalité du cycle 4 et fonctions (domaines E et J) (A2a fait, A2b en cours, voir `SPRINT.md`)
-
-- Contenu : proportionnalité du cycle 4 ; fonctions linéaires, affines, lecture graphique, tableaux de valeurs.
-- **Avant la rédaction :** générateur de **courbes dans un repère** dans `scripts/figures.py` (étendre `repere`) ; domaine J ajouté aux métadonnées du DAG à la fusion. Aucune migration : les contraintes `[A-P]` de la base, des schémas et de `corriger` couvrent déjà J (constat du 23 octobre 2026).
-- A2a (fait le 23 octobre 2026) : DAG de 24 compétences fusionné, générateur de courbes et de segments, vocabulaire au validateur, « f(x) = » lu par la correction, consignes écrites. A2b : rédaction des lots Q1 à Q7, cartes, défis, super exercices, publication.
-
-### A3. Étape 10 : statistiques et probabilités (domaines K et L)
+### A3. Étape 10 : statistiques et probabilités (domaines K et L) (en cours, voir `SPRINT.md`)
 
 - Contenu : moyenne, médiane, étendue, diagrammes ; probabilités.
 - Créer aussi les nœuds de lecture de tableaux et de courbes du cycle 3 (CM1, CM2), et les donner pour prérequis à J036 et J040 (arbitrage 13 de l'étape 9).
