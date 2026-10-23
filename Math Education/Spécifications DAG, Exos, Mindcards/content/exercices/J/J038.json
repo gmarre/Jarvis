@@ -1,0 +1,187 @@
+[
+  {
+    "id": "EX-J038-D-01",
+    "skill_id": "J038",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Une rose coûte 2 € : 6 roses coûtent $2 \\times 6 = 12$ €.\n\nQuelle formule donne le prix $p$, en euros, en fonction du nombre $n$ de roses ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$p = 2 + n$",
+        "misconception": "L'élève ajoute le prix d'une rose au nombre de roses au lieu de multiplier (modèle additif) : pour 6 roses, cette formule donne 2 + 6 = 8 €, et non 12 €."
+      },
+      {
+        "key": "b",
+        "text": "$p = 2 \\times 6$",
+        "misconception": "L'élève recopie le calcul d'un seul cas : cette écriture vaut toujours 12, quel que soit le nombre de roses. Une formule contient la lettre n."
+      },
+      {
+        "key": "c",
+        "text": "$p = 2 \\times n$",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "$p = n \\div 2$",
+        "misconception": "L'élève divise au lieu de multiplier, comme s'il cherchait le nombre de roses : pour 6 roses, cette formule donne 6 ÷ 2 = 3 €, et non 12 €."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "Pour 6 roses, on multiplie le prix d'une rose par 6 : $2 \\times 6 = 12$ €. Pour 10 roses, on ferait de même : $2 \\times 10 = 20$ €.",
+      "Le calcul est toujours le même : 2 × (nombre de roses). En écrivant la lettre $n$ à la place du nombre de roses, on obtient $p = 2 \\times n$.",
+      "Contrôle avec 6 roses : $2 \\times 6 = 12$ €, c'est bien le prix de l'énoncé. La bonne réponse est c.",
+      "$p = 2 \\times 6$ ne vaut que pour 6 roses ; pour 6 roses, $p = 2 + n$ donne 8 € et $p = n \\div 2$ donne 3 €."
+    ],
+    "hint": "Combien paie-t-on pour 10 roses ? Fais le même calcul avec la lettre $n$.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Produire une formule simple représentant la dépendance de deux grandeurs. »"
+  },
+  {
+    "id": "EX-J038-D-02",
+    "skill_id": "J038",
+    "level": "decouverte",
+    "type": "texte",
+    "statement": "Une bouteille contient 1,5 L d'eau.\n\nÉcris la formule qui donne le volume total $V$, en litres, en fonction du nombre $n$ de bouteilles.",
+    "image": null,
+    "answer": {
+      "value": "1,5n",
+      "forme": "expression",
+      "variables": [
+        "n"
+      ],
+      "unit": "L"
+    },
+    "solution_steps": [
+      "Pour 2 bouteilles : $1{,}5 \\times 2 = 3$ L. Pour 4 bouteilles : $1{,}5 \\times 4 = 6$ L. On multiplie toujours 1,5 par le nombre de bouteilles.",
+      "En écrivant la lettre $n$ à la place du nombre de bouteilles : $V = 1{,}5 \\times n$, qu'on écrit aussi $V = 1{,}5n$.",
+      "Le volume est proportionnel au nombre de bouteilles : la formule est un produit, sans nombre ajouté.",
+      "Erreurs à éviter : $1{,}5 + n$ ajoute au lieu de multiplier (pour 2 bouteilles, 3,5 L au lieu de 3 L) ; $1{,}5 \\times 4$ ne vaut que pour 4 bouteilles."
+    ],
+    "hint": "Quel volume d'eau y a-t-il dans 2 bouteilles ? dans 4 ? Fais le même calcul avec $n$.",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Produire une formule simple représentant la dépendance de deux grandeurs. »"
+  },
+  {
+    "id": "EX-J038-E-01",
+    "skill_id": "J038",
+    "level": "entrainement",
+    "type": "texte",
+    "statement": "Une salle d'escalade fait payer 8 € l'inscription, puis 5 € par séance.\n\nÉcris la formule qui donne le prix total $p$, en euros, en fonction du nombre $n$ de séances.",
+    "image": null,
+    "answer": {
+      "value": "8 + 5n",
+      "forme": "expression",
+      "variables": [
+        "n"
+      ],
+      "unit": "€"
+    },
+    "solution_steps": [
+      "Pour 3 séances, on paie l'inscription une seule fois, puis les 3 séances : $8 + 5 \\times 3 = 23$ €.",
+      "Pour $n$ séances, le même calcul s'écrit $p = 8 + 5 \\times n$, ou $p = 8 + 5n$.",
+      "Contrôle avec 10 séances : $8 + 5 \\times 10 = 58$ €.",
+      "Erreurs à éviter : $5n$ oublie l'inscription ; $13n$ fait payer l'inscription à chaque séance ; $8n + 5$ échange le prix de l'inscription et celui d'une séance."
+    ],
+    "hint": "Combien paie-t-on pour 3 séances ? Écris le même calcul avec $n$.",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Produire une formule simple représentant la dépendance de deux grandeurs. »"
+  },
+  {
+    "id": "EX-J038-E-02",
+    "skill_id": "J038",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Un photographe demande 12 € de déplacement, puis 2 € par photo : 32 € pour 10 photos.\n\nPour $n$ photos, Inès écrit le prix $p = 12 \\times n + 2$. A-t-elle raison ?",
+    "image": null,
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "On teste la formule d'Inès avec 10 photos : $12 \\times 10 + 2 = 122$. Elle donne 122 €, alors qu'on paie 32 €.",
+      "Inès a échangé les rôles des deux nombres : les 12 € de déplacement se paient une seule fois, et ce sont les 2 € qu'on paie pour chaque photo.",
+      "La bonne formule est $p = 12 + 2 \\times n$. Contrôle : $12 + 2 \\times 10 = 32$ €.",
+      "La formule d'Inès est fausse : la réponse est **faux**."
+    ],
+    "hint": "Remplace $n$ par 10 dans la formule d'Inès : trouves-tu 32 € ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Produire une formule simple représentant la dépendance de deux grandeurs. »"
+  },
+  {
+    "id": "EX-J038-M-01",
+    "skill_id": "J038",
+    "level": "maitrise",
+    "type": "texte",
+    "statement": "Le tableau donne le prix $p$, en euros, d'une commande de $n$ pizzas, livraison comprise.\n\n$$\\begin{array}{|l|c|c|c|c|} \\hline \\text{Pizzas (n)} & 1 & 2 & 3 & 4 \\\\ \\hline \\text{Prix (p)} & 12 & 21 & 30 & 39 \\\\ \\hline \\end{array}$$\n\nÉcris la formule qui donne $p$ en fonction de $n$.",
+    "image": null,
+    "answer": {
+      "value": "9n + 3",
+      "forme": "expression",
+      "variables": [
+        "n"
+      ],
+      "unit": "€"
+    },
+    "solution_steps": [
+      "D'une colonne à la suivante, on commande une pizza de plus et le prix augmente de 9 € (21 − 12 = 9 ; 30 − 21 = 9 ; 39 − 30 = 9) : une pizza coûte 9 €.",
+      "Pour 1 pizza, on paie 12 € : 9 € pour la pizza, donc 12 − 9 = 3 € pour la livraison.",
+      "Pour $n$ pizzas : $p = 9 \\times n + 3$, ou $p = 9n + 3$. Contrôle sur la dernière colonne : $9 \\times 4 + 3 = 39$ €, comme dans le tableau.",
+      "Erreurs à éviter : $12n$ suppose le prix proportionnel au nombre de pizzas (pour 2 pizzas, 24 € au lieu de 21 €) ; $9n$ oublie la livraison ; $3n + 9$ échange les deux nombres : elle donne bien 12 € pour 1 pizza, mais 15 € pour 2 pizzas au lieu de 21 €. Contrôle sur plusieurs colonnes."
+    ],
+    "hint": "De combien le prix augmente-t-il quand on commande une pizza de plus ?",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Produire une formule simple représentant la dépendance de deux grandeurs. »"
+  },
+  {
+    "id": "EX-J038-M-02",
+    "skill_id": "J038",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Un récupérateur contient 40 L d'eau. Robinet ouvert, il perd 3 L par minute.\n\nQuelle formule donne le volume restant $V$, en litres, en fonction de la durée $t$, en minutes ?",
+    "image": null,
+    "choices": [
+      {
+        "key": "a",
+        "text": "$V = 40 + 3 \\times t$",
+        "misconception": "L'élève ajoute les litres qui s'écoulent au lieu de les retirer : avec cette formule, le volume augmenterait (46 L au bout de 2 minutes)."
+      },
+      {
+        "key": "b",
+        "text": "$V = 40 - 3 \\times t$",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "$V = 37 \\times t$",
+        "misconception": "L'élève calcule 40 − 3 = 37, comme si l'on ne perdait 3 L qu'une seule fois : la formule convient pour 1 minute (37 L), mais donne 74 L au bout de 2 minutes au lieu de 34 L."
+      },
+      {
+        "key": "d",
+        "text": "$V = 3 \\times t - 40$",
+        "misconception": "L'élève écrit les nombres dans le mauvais ordre : avec cette formule, le volume augmenterait de 3 L chaque minute, et au départ (t = 0) elle ne donne pas les 40 L du récupérateur."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "Au bout de 1 minute, il reste $40 - 3 = 37$ L ; au bout de 2 minutes, $40 - 3 \\times 2 = 34$ L ; au bout de 5 minutes, $40 - 3 \\times 5 = 25$ L.",
+      "On retire 3 L pour chaque minute écoulée : le volume restant est $V = 40 - 3 \\times t$. La bonne réponse est b.",
+      "Contrôle : au bout de 12 minutes, $40 - 3 \\times 12 = 4$ L ; il reste encore un peu d'eau.",
+      "$V = 37 \\times t$ ne marche que pour 1 minute ; $V = 40 + 3 \\times t$ fait augmenter le volume ; $V = 3 \\times t - 40$ ne donne pas 40 L au départ et fait, elle aussi, augmenter le volume."
+    ],
+    "hint": "Calcule le volume restant au bout de 1 minute, puis au bout de 2 minutes.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Produire une formule simple représentant la dépendance de deux grandeurs. »"
+  }
+]

@@ -1,0 +1,173 @@
+[
+  {
+    "id": "EX-J040-D-01",
+    "skill_id": "J040",
+    "level": "decouverte",
+    "type": "numerique",
+    "statement": "Le graphique donne la hauteur d'eau dans une piscine gonflable en fonction du temps.\n\nQuelle est la hauteur d'eau au bout de 10 minutes ? Suis les pointillés.",
+    "image": "figures/EX-J040-D-01",
+    "answer": {
+      "value": 15,
+      "unit": "cm"
+    },
+    "solution_steps": [
+      "Le temps se lit sur l'axe horizontal : on part de 10 min et on monte jusqu'à la courbe en suivant les pointillés.",
+      "On suit ensuite les pointillés horizontaux jusqu'à l'axe vertical, où se lit la hauteur d'eau.",
+      "Sur l'axe vertical, deux graduations font 10 cm : une graduation vaut 5 cm. Les pointillés arrivent une graduation au-dessus de 10 : la hauteur d'eau est 10 + 5 = **15 cm**.",
+      "Erreurs à éviter : répondre 10 (c'est le temps, lu sur l'autre axe) ou 3 (le nombre de graduations) ; 30 cm est la hauteur la plus grande, atteinte à 20 min."
+    ],
+    "hint": "Suis les pointillés : la hauteur d'eau se lit sur l'axe vertical.",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Lire et interpréter un graphique cartésien donné par une courbe ou un nuage de points. »"
+  },
+  {
+    "id": "EX-J040-D-02",
+    "skill_id": "J040",
+    "level": "decouverte",
+    "type": "qcm",
+    "statement": "Le graphique donne, pour cinq élèves, la durée de leur trajet jusqu'au collège en fonction de la distance de leur maison au collège.\n\nQuel élève habite le plus loin ?",
+    "image": "figures/EX-J040-D-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "L'élève A",
+        "misconception": "L'élève lit l'ordonnée au lieu de l'abscisse : A est le point le plus haut, c'est le trajet le plus long en durée (35 min), mais A habite à 1,5 km."
+      },
+      {
+        "key": "b",
+        "text": "L'élève B",
+        "misconception": null
+      },
+      {
+        "key": "c",
+        "text": "L'élève C",
+        "misconception": "L'élève choisit le point le plus éloigné de l'origine sur le dessin : C a un long trajet en durée, mais il habite à 2,5 km, moins loin que B (3 km)."
+      }
+    ],
+    "answer": {
+      "value": "b"
+    },
+    "solution_steps": [
+      "La distance entre la maison et le collège se lit sur l'axe horizontal. Celui qui habite le plus loin est donc le point le plus à droite.",
+      "B est le point le plus à droite : il habite à 3 km du collège. C habite à 2,5 km, E à 2 km, A à 1,5 km et D à 1 km.",
+      "L'élève qui habite le plus loin est **B**. La bonne réponse est b.",
+      "A est le point le plus haut : c'est son trajet qui dure le plus longtemps (35 min), mais il habite à 1,5 km seulement. Un trajet long en durée n'est pas forcément long en distance (à pied, à vélo, en bus)."
+    ],
+    "hint": "La distance se lit sur quel axe ?",
+    "estimated_duration_s": 60,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Lire et interpréter un graphique cartésien donné par une courbe ou un nuage de points. »"
+  },
+  {
+    "id": "EX-J040-E-01",
+    "skill_id": "J040",
+    "level": "entrainement",
+    "type": "numerique",
+    "statement": "Le graphique donne le volume de pluie recueilli dans une cuve en fonction de la durée de l'averse.\n\nAu bout de combien de minutes la cuve contient-elle 30 L ?",
+    "image": "figures/EX-J040-E-01",
+    "answer": {
+      "value": 150,
+      "unit": "min"
+    },
+    "solution_steps": [
+      "Le volume se lit sur l'axe vertical : 30 L est sur l'étiquette 30. On cherche le point de la courbe à cette hauteur : c'est un sommet marqué.",
+      "On descend de ce sommet jusqu'à l'axe horizontal. Deux graduations font 1 h : une graduation vaut 0,5 h. Le sommet est une graduation après 2 h : 2 h + 0,5 h = 2,5 h.",
+      "2,5 h, c'est 2 h et une demi-heure : 2 h 30 min, soit 60 + 60 + 30 = **150 minutes**.",
+      "Erreurs à éviter : 2,5 h n'est pas 2 h 50 min (170 min) ni 250 min ; répondre 5 compte les graduations sans lire leur valeur."
+    ],
+    "hint": "Cherche d'abord 30 L sur l'axe vertical. Combien de minutes y a-t-il dans une demi-heure ?",
+    "estimated_duration_s": 90,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Lire et interpréter un graphique cartésien donné par une courbe ou un nuage de points. »"
+  },
+  {
+    "id": "EX-J040-E-02",
+    "skill_id": "J040",
+    "level": "entrainement",
+    "type": "vrai_faux",
+    "statement": "Le graphique donne la distance parcourue par Louise à vélo en fonction du temps.\n\nTom affirme : « Louise ne s'est jamais arrêtée pendant sa balade. » A-t-il raison ?",
+    "image": "figures/EX-J040-E-02",
+    "answer": {
+      "value": false
+    },
+    "solution_steps": [
+      "Entre 1 h et 2 h, la courbe est horizontale : la distance parcourue reste égale à 6 km.",
+      "Pendant cette heure, Louise n'avance pas : elle est arrêtée. Elle repart à 2 h et atteint 14 km à 3 h.",
+      "Attention, la courbe n'est pas un dessin de la route : un morceau horizontal ne veut pas dire « route plate », il veut dire que la distance ne change pas.",
+      "Tom a tort : la réponse est **faux**."
+    ],
+    "hint": "Que devient la distance parcourue quand la courbe est horizontale ?",
+    "estimated_duration_s": 75,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Lire et interpréter un graphique cartésien donné par une courbe ou un nuage de points. »"
+  },
+  {
+    "id": "EX-J040-M-01",
+    "skill_id": "J040",
+    "level": "maitrise",
+    "type": "numerique",
+    "statement": "Le graphique donne l'étage d'un ascenseur en fonction du temps ; il part du rez-de-chaussée (étage 0).\n\nEn tout, de combien d'étages s'est-il déplacé, en montant et en descendant ?",
+    "image": "figures/EX-J040-M-01",
+    "answer": {
+      "value": 13,
+      "accepted": [
+        "13 étages",
+        "13 étage"
+      ]
+    },
+    "solution_steps": [
+      "Les morceaux horizontaux sont des arrêts : l'étage ne change pas. On regarde chaque déplacement entre deux arrêts.",
+      "De 0 s à 15 s, il monte de l'étage 0 à l'étage 6 : 6 étages. De 25 s à 35 s, il descend de l'étage 6 à l'étage 2 : 4 étages.",
+      "De 45 s à 55 s, il monte de l'étage 2 à l'étage 5 : 3 étages. En tout : 6 + 4 + 3 = **13 étages**.",
+      "Erreurs à éviter : 5 est l'étage d'arrivée, pas le trajet ; 6 est l'étage le plus haut ; 9 oublie la descente (6 + 3)."
+    ],
+    "hint": "Repère les moments où l'ascenseur monte ou descend, et compte les étages à chaque fois.",
+    "estimated_duration_s": 150,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Lire et interpréter un graphique cartésien donné par une courbe ou un nuage de points. »"
+  },
+  {
+    "id": "EX-J040-M-02",
+    "skill_id": "J040",
+    "level": "maitrise",
+    "type": "qcm",
+    "statement": "Le graphique donne la température d'une ville en fonction de l'heure, sur une journée.\n\nÀ quelle heure ou à quelles heures faisait-il 6 °C ?",
+    "image": "figures/EX-J040-M-02",
+    "choices": [
+      {
+        "key": "a",
+        "text": "À 10 h seulement",
+        "misconception": "L'élève s'arrête au premier point trouvé : la température repasse par 6 °C l'après-midi, en redescendant, à 16 h."
+      },
+      {
+        "key": "b",
+        "text": "À 6 h",
+        "misconception": "L'élève lit 6 sur l'axe horizontal au lieu de l'axe vertical : à 6 h, la température est de 2 °C."
+      },
+      {
+        "key": "c",
+        "text": "À 10 h et à 16 h",
+        "misconception": null
+      },
+      {
+        "key": "d",
+        "text": "À 5 h et à 8 h",
+        "misconception": "L'élève compte les graduations sans tenir compte du pas : les deux points sont à 5 et à 8 graduations de l'axe vertical, mais une graduation vaut 2 h."
+      }
+    ],
+    "answer": {
+      "value": "c"
+    },
+    "solution_steps": [
+      "La température se lit sur l'axe vertical : deux graduations font 4 °C, une graduation vaut 2 °C. 6 °C est 3 graduations au-dessus de l'axe horizontal.",
+      "À cette hauteur, la courbe passe par deux sommets : le matin, quand la température monte, et l'après-midi, quand elle redescend.",
+      "Sur l'axe horizontal, une graduation vaut 2 h : le premier sommet est à 5 graduations (10 h), le second à 8 graduations (16 h). La température était de 6 °C **à 10 h et à 16 h** : la bonne réponse est c.",
+      "Erreurs à éviter : s'arrêter au premier point trouvé ; lire 6 sur l'axe des heures (à 6 h, il fait 2 °C) ; compter 5 et 8 graduations sans tenir compte du pas de 2 h."
+    ],
+    "hint": "Cherche 6 °C sur l'axe vertical, puis suis cette hauteur sur toute la courbe.",
+    "estimated_duration_s": 120,
+    "review_status": "relu_agent",
+    "programme_ref": "Cycle 4, classe de 5e, Proportionnalité, fonctions, Fonctions, Objectifs d'apprentissage : « Lire et interpréter un graphique cartésien donné par une courbe ou un nuage de points. »"
+  }
+]
