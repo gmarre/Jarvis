@@ -43,7 +43,7 @@ paths:
 
 **Le contenu :** Git est la source, la base ne fait que le servir. Seule écriture : `publier_contenu`, appelée par `scripts/publier.py`.
 
-**Nouvelle lettre de domaine :** migration qui élargit les contraintes `A-P`, et mise à jour de `ID_EXERCICE` dans `corriger/index.ts`.
+**Nouvelle lettre de domaine au-delà de P :** migration qui élargit les contraintes `A-P`, et mise à jour de `ID_EXERCICE` dans `corriger/index.ts`. Les lettres A à P (dont J, K, L) sont déjà acceptées.
 
 ## Administration (SQL Editor ou tableau de bord, par Gauthier)
 

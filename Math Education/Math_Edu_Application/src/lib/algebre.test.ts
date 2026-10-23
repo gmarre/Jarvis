@@ -227,6 +227,20 @@ describe('nom de la grandeur devant une expression (releve du lot L1)', () => {
   })
 })
 
+describe('ecritures fonctionnelles devant une expression (etape 9, arbitrage 10)', () => {
+  const e = exo('2x + 3', 'expression', { variables: ['x'] })
+  it('f(x) = … et x ↦ … sont lus comme l’expression', () => {
+    tousJustes(e, ['f(x) = 2x + 3', 'f(x)=2x+3', 'g(x) = 3 + 2x', 'x ↦ 2x + 3', 'x→2x+3', 'x -> 2x+3', 'x |-> 2x + 3'])
+  })
+  it('une autre variable, une autre expression ou une equation restent refusees', () => {
+    tousFaux(e, ['f(t) = 2x + 3', 't ↦ 2x + 3', 'f(x) = 2x + 4', 'x ↦ 3x + 2'])
+    tousFaux(exo('x + 5 = 12', 'equation'), ['f(x) = x + 5'])
+  })
+  it('vaut aussi pour la forme reduite et une fonction lineaire', () => {
+    tousJustes(exo('0,4x', 'reduite', { variables: ['x'] }), ['f(x) = 0,4x', 'x ↦ 0.4x'])
+  })
+})
+
 describe('crochets, ensembles, inegalites au clavier (lots L5 et L6)', () => {
   it('les crochets se lisent comme des parentheses', () => {
     tousJustes(exo('(x − 2)(3x + 4)', 'factorisee'), ['(x-2)[3x+4]', '[x-2][3x+4]'])

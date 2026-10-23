@@ -56,6 +56,7 @@ React 18, Vite, TypeScript, Tailwind ; Supabase (Postgres, Auth Google et email,
 
 **Migrations :** 0001 à 0024 appliquées (0023 recollée et 0024 le 23 octobre 2026, vérifiées en base).
 - **Professeurs :** Jean-Marc vérifié (23 octobre 2026) ; le compte de test `+prof1` de Gauthier ne l'est pas, ses créneaux restent cachés des élèves. Requête : `update teachers set verifie_le = now() where id = (select id from profiles where email = '...');`
+- **À déployer** (`corriger`, `rendre-super`) : `correction.ts` lit « f(x) = … » et « x ↦ … » depuis le 23 octobre 2026 (commit suivant 1915762) ; déploiement groupé avant la publication de l'étape 9.
 - **Cron :** `supabase/cron/rappels.sql` pas appliqué (`pg_cron` absent ; secret `CRON_SECRET` à créer, mode d'emploi en tête du fichier).
 
 **Edge Functions déployées :**

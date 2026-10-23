@@ -14,7 +14,7 @@
 - [x] Arbitrage des découpages (chef de projet, par délégation), consigné dans `DECISIONS.md`.
 - [x] Fusion du DAG (domaine J ajouté aux métadonnées), validateur, export, `npm test`, `npm run lint`, `npm run build`, commit.
 - [x] Validateur : notations et vocabulaire de l'étape par classe (« fonction », « image », « antécédent », f(x), x ↦).
-- [ ] Correction : accepter « f(x) = … », « g(x) = … » et « x ↦ … » devant une expression (`correction.ts`, tests, redéploiement de `corriger`).
+- [x] Correction : « f(x) = … », « g(x) = … » et « x ↦ … » acceptés devant une expression (`correction.ts`, 3 tests). **Redéploiement de `corriger` et `rendre-super` groupé avec les correctifs de A2b, avant la publication de l'étape 9.**
 - [ ] Repère : segments libres (verticaux compris, pleins ou en pointillés), pour J045.
 - [ ] Briefs de rédaction et de relecture de l'étape 9 (depuis les modèles de l'étape 8), découpage en lots.
 

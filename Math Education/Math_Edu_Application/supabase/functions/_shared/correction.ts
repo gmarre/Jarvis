@@ -826,9 +826,18 @@ function lireSolutions(texte: string): number[] | null {
  * expression (releve en relecture de l'etape 7, lot L1). Pas pour une
  * equation ni une inegalite, et jamais quand le nom est une lettre de
  * l'expression : « x = 6x » reste refuse.
+ *
+ * Etape 9 (fonctions, 3e) : « f(x) = 2x + 3 » et « x ↦ 2x + 3 », ecritures
+ * du cours, sont lues comme « 2x + 3 », a condition que la lettre entre
+ * parentheses ou devant la fleche soit une variable de l'expression :
+ * « f(t) = 2x + 3 » reste refuse.
  */
 function sansNom(raw: string, forme: FormeAttendue, variables: string[]): string {
   if (forme === 'equation' || forme === 'inegalite' || forme === 'solutions') return raw
+  const fonction =
+    raw.match(/^\s*\p{L}\s*\(\s*(\p{L})\s*\)\s*=\s*([^=]+)$/u) ??
+    raw.match(/^\s*(\p{L})\s*(?:↦|→|\|->|->)\s*([^=]+)$/u)
+  if (fonction) return variables.includes(fonction[1].toLowerCase()) ? fonction[2] : raw
   const m = raw.match(/^\s*(\p{L}+)\s*=\s*([^=]+)$/u)
   if (!m || variables.includes(m[1].toLowerCase())) return raw
   return m[2]
