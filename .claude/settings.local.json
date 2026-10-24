@@ -22,7 +22,10 @@
       "Bash(rm -f verify.ts ../verify-out.cjs)",
       "Bash(curl -s -o /dev/null -w \"GET / -> %{http_code}\\\\n\" http://localhost:5173/)",
       "Bash(curl -s -o /dev/null -w \"GET /travail -> %{http_code}\\\\n\" http://localhost:5173/travail)",
-      "Bash(curl -s http://localhost:5173/src/main.tsx)"
+      "Bash(curl -s http://localhost:5173/src/main.tsx)",
+      "Bash(*scripts/merge_*.py*)",
+      "Bash(*scripts/publier.py*)"
+
     ]
   }
 }
