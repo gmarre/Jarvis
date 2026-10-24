@@ -3407,7 +3407,7 @@ def _diagramme_barres(p: dict) -> tuple[str, str]:
     """Diagramme en barres (ou en batons) d'une serie : une barre par modalite.
 
     params :
-      barres        2 a 10 : {"nom": "Lundi", "valeur": 12, "cherche": false,
+      barres        2 a 10 (12 en batons) : {"nom": "Lundi", "valeur": 12, "cherche": false,
                     "masquee": false} ; valeur positive ou nulle, multiple de la
                     demi-graduation ; "cherche" : valeur demandee, jamais ecrite
                     sur la figure ; "masquee" : barre absente, un « ? » a sa
@@ -3422,14 +3422,18 @@ def _diagramme_barres(p: dict) -> tuple[str, str]:
       batons        true : barres fines (diagramme en batons d'une serie de
                     nombres)
       nom_x, nom_y  titres des axes (« jour », « nombre d'élèves »)
+      trompeur      {"depart": 180} : l'axe vertical part de cette valeur
+                    (multiple du pas, au plus la plus petite barre), pour un
+                    exercice de presentation trompeuse (K043) seulement
 
-    L'axe vertical part toujours de 0 : un axe tronque fausse la comparaison des
-    hauteurs. Refus : valeur hors de la demi-graduation (elle ne se lirait
+    Sans "trompeur", l'axe vertical part de 0 : un axe tronque fausse la
+    comparaison des hauteurs. Refus : valeur hors de la demi-graduation (elle ne se lirait
     qu'a peu pres) ; nom plus large que la place de sa barre.
     """
     barres = p.get("barres")
-    if not isinstance(barres, list) or not 2 <= len(barres) <= 10:
-        raise FigureInvalide("barres : liste de 2 a 10 barres")
+    plafond = 12 if p.get("batons") else 10
+    if not isinstance(barres, list) or not 2 <= len(barres) <= plafond:
+        raise FigureInvalide(f"barres : liste de 2 a {plafond} barres")
     pas = _nombre(p.get("pas", 1), "pas")
     if pas <= 0:
         raise FigureInvalide("pas : strictement positif")
@@ -3448,13 +3452,21 @@ def _diagramme_barres(p: dict) -> tuple[str, str]:
                                  f"(pas {_texte_nombre(pas)}) ; la lecture serait approchee")
         lues.append((nom.strip(), v, bool(b.get("cherche")), bool(b.get("masquee"))))
     plus_haute = max(v for _, v, _, _ in lues)
+    depart = Fraction(0)
+    if "trompeur" in p:
+        t = p["trompeur"]
+        if not isinstance(t, dict) or "depart" not in t:
+            raise FigureInvalide("trompeur : {\"depart\": valeur de bas de l'axe}")
+        depart = _nombre(t["depart"], "trompeur, depart")
+        if depart <= 0 or (depart / pas).denominator != 1 or depart > min(v for _, v, _, _ in lues):
+            raise FigureInvalide("trompeur : depart positif, multiple du pas, au plus la plus petite barre")
     if "max" in p:
         haut = _nombre(p["max"], "max")
         if (haut / pas).denominator != 1 or haut < plus_haute:
             raise FigureInvalide("max : multiple du pas, au moins la plus haute barre")
     else:
-        haut = max(pas, -(-plus_haute // pas) * pas)
-    k = int(haut / pas)
+        haut = max(depart + pas, -(-plus_haute // pas) * pas)
+    k = int((haut - depart) / pas)
     if k > 12:
         raise FigureInvalide(f"axe vertical : {k} graduations, 12 au plus ; augmenter le pas")
     etiq = p.get("etiquettes", "toutes")
@@ -3466,7 +3478,7 @@ def _diagramme_barres(p: dict) -> tuple[str, str]:
             raise FigureInvalide(f"{cle} : texte de 34 caracteres au plus")
 
     L, Hp, taille = 360.0, 200.0, 12
-    textes_y = [_texte_nombre(pas * j) for j in range(k + 1)]
+    textes_y = [_texte_nombre(depart + pas * j) for j in range(k + 1)]
     g = 14 + max(_largeur_texte(t, taille) for t in textes_y) + 6
     haut_marge = 34 if nom_y else 18
     Wp = L - g - 14
@@ -3475,11 +3487,11 @@ def _diagramme_barres(p: dict) -> tuple[str, str]:
     y0 = haut_marge + Hp
 
     def Y(v: Fraction) -> float:
-        return y0 - float(v / haut) * Hp
+        return y0 - float((v - depart) / (haut - depart)) * Hp
 
     corps: list[str] = []
     for j in range(k + 1):
-        y = Y(pas * j)
+        y = Y(depart + pas * j)
         corps.append(_ligne(g, y, g + Wp, y, couleur="#e2e8f0", epaisseur=1))
         if etiq == "toutes" or j % 2 == 0:
             corps.append(_ligne(g - 4, y, g, y))
@@ -3495,7 +3507,7 @@ def _diagramme_barres(p: dict) -> tuple[str, str]:
             corps.append(_texte(cx, y0 - 10, "?", 16, couleur=ACCENT, gras=True))
             continue
         yt = Y(v)
-        if v > 0:
+        if v > depart:
             corps.append(f'<rect x="{cx - largeur_barre / 2:.1f}" y="{yt:.1f}" width="{largeur_barre:.1f}" '
                          f'height="{y0 - yt:.1f}" fill="{REMPLI_FORT if not p.get("batons") else ACCENT}" '
                          f'stroke="{TRAIT}" stroke-width="{1.2 if not p.get("batons") else 0}"/>')
@@ -3787,8 +3799,128 @@ def _arbre(p: dict) -> tuple[str, str]:
         for d, t in enumerate(titres, start=1):
             demi = _largeur_texte(t, 12) / 2
             corps.append(_texte(min(max(x_racine + col * d, demi + 2), L - demi - 2), 16, t, 12, couleur=DOUX))
-    alt = f"Arbre de {D} épreuve{'s' if D > 1 else ''}, {len(feuilles)} issues"
+    # Le nombre d'issues n'est pas dit : c'est souvent la question (L016).
+    alt = f"Arbre de {D} épreuve{'s' if D > 1 else ''}"
     return _svg(L, H, corps, alt), alt
+
+
+CLES_BOITE = ("min", "q1", "mediane", "q3", "max")
+
+
+def _boite_moustaches(p: dict) -> tuple[str, str]:
+    """Une ou deux boites a moustaches sur un axe gradue horizontal (K013, 3e).
+
+    params :
+      debut, fin, pas  graduation de l'axe (au plus 16 graduations)
+      etiquettes       "toutes" (defaut) ou "une_sur_deux"
+      boites           1 ou 2 : {"nom": "Classe A", "min": 4, "q1": 8,
+                       "mediane": 11, "q3": 14, "max": 19, "cherche": ["q3"]} ;
+                       valeurs dans l'ordre, dans l'axe ; une valeur non ecrite
+                       (sans "valeurs", ou cherchee) est sur la demi-graduation ;
+                       "nom" obligatoire pour deux boites
+      valeurs          true : les cinq valeurs s'ecrivent sous chaque boite, sauf
+                       celles de "cherche"
+      unite            ecrite au bout de l'axe (« cm », « points »)
+
+    Refus : valeurs dans le desordre, hors de l'axe ; valeur a lire sur l'axe
+    hors de la demi-graduation (la lecture serait approchee) ; valeurs ecrites
+    qui se chevauchent.
+    """
+    debut = _nombre(p.get("debut", 0), "debut")
+    fin = _nombre(p.get("fin"), "fin")
+    pas = _nombre(p.get("pas", 1), "pas")
+    if pas <= 0 or fin <= debut or ((fin - debut) / pas).denominator != 1:
+        raise FigureInvalide("debut, fin, pas : fin apres debut, un nombre entier de pas entre les deux")
+    k = int((fin - debut) / pas)
+    if not 2 <= k <= 16:
+        raise FigureInvalide(f"axe : {k} graduations, entre 2 et 16")
+    etiq = p.get("etiquettes", "toutes")
+    if etiq not in ("toutes", "une_sur_deux"):
+        raise FigureInvalide("etiquettes : \"toutes\" ou \"une_sur_deux\"")
+    boites = p.get("boites")
+    if not isinstance(boites, list) or not 1 <= len(boites) <= 2:
+        raise FigureInvalide("boites : 1 ou 2 boites")
+    lues = []
+    for i, b in enumerate(boites):
+        if not isinstance(b, dict):
+            raise FigureInvalide(f"boite {i + 1} : objet attendu")
+        nom = b.get("nom")
+        if len(boites) == 2 and not (isinstance(nom, str) and nom.strip()):
+            raise FigureInvalide(f"boite {i + 1} : nom obligatoire quand il y a deux boites")
+        if nom is not None and (not isinstance(nom, str) or len(nom) > 24):
+            raise FigureInvalide(f"boite {i + 1} : nom de 24 caracteres au plus")
+        quoi = f"boite « {nom} »" if nom else f"boite {i + 1}"
+        cherche = b.get("cherche", [])
+        if not isinstance(cherche, list) or any(c not in CLES_BOITE for c in cherche):
+            raise FigureInvalide(f"{quoi} : cherche, liste parmi {', '.join(CLES_BOITE)}")
+        vals = []
+        for cle in CLES_BOITE:
+            v = _nombre(b.get(cle), f"{quoi}, {cle}")
+            if not debut <= v <= fin:
+                raise FigureInvalide(f"{quoi} : {cle} = {_texte_nombre(v)} hors de l'axe")
+            # Une valeur ecrite sous la boite ne se lit pas sur l'axe.
+            ecrite = p.get("valeurs") and cle not in cherche
+            if not ecrite and ((v - debut) / (pas / 2)).denominator != 1:
+                raise FigureInvalide(f"{quoi} : {cle} = {_texte_nombre(v)} n'est pas sur la demi-graduation ; "
+                                     f"la lecture serait approchee")
+            vals.append(v)
+        if vals != sorted(vals):
+            raise FigureInvalide(f"{quoi} : min, q1, mediane, q3, max doivent etre dans cet ordre")
+        lues.append((nom, vals, set(cherche)))
+    unite = p.get("unite")
+    if unite is not None and (not isinstance(unite, str) or len(unite) > 10):
+        raise FigureInvalide("unite : texte de 10 caracteres au plus")
+    valeurs = bool(p.get("valeurs"))
+
+    L, taille = 360.0, 12
+    g, d = 22.0, L - 22 - (_largeur_texte(unite, taille) + 6 if unite else 0)
+
+    def X(v: Fraction) -> float:
+        return g + float((v - debut) / (fin - debut)) * (d - g)
+
+    corps: list[str] = []
+    y = 8.0
+    for nom, vals, cherche in lues:
+        if nom:
+            corps.append(_texte(g, y + 12, nom, taille, ancre="start", gras=True))
+            y += 18
+        yc, h = y + 16, 28
+        mn, q1, me, q3, mx = (X(v) for v in vals)
+        corps.append(_ligne(mn, yc, q1, yc, epaisseur=1.6))
+        corps.append(_ligne(q3, yc, mx, yc, epaisseur=1.6))
+        corps.append(_ligne(mn, yc - 8, mn, yc + 8, epaisseur=1.6))
+        corps.append(_ligne(mx, yc - 8, mx, yc + 8, epaisseur=1.6))
+        corps.append(f'<rect x="{q1:.1f}" y="{yc - h / 2:.1f}" width="{q3 - q1:.1f}" height="{h}" '
+                     f'fill="{REMPLI}" stroke="{TRAIT}" stroke-width="1.6"/>')
+        corps.append(_ligne(me, yc - h / 2, me, yc + h / 2, couleur=ACCENT, epaisseur=2.6))
+        y = yc + h / 2 + 6
+        if valeurs:
+            boites_txt: list[tuple] = []
+            for cle, v, x in zip(CLES_BOITE, vals, (mn, q1, me, q3, mx)):
+                if cle in cherche:
+                    continue
+                t = _texte_nombre(v)
+                w = _largeur_texte(t, taille)
+                boite = (x - w / 2, y, x + w / 2, y + 14)
+                if any(_se_touchent(boite, autre) for autre in boites_txt):
+                    raise FigureInvalide(f"valeurs ecrites qui se chevauchent ({t}) ; agrandir l'axe ou ne pas les ecrire")
+                boites_txt.append(boite)
+                corps.append(_texte(x, y + 11, t, taille))
+            y += 18
+        y += 10
+    ya = y + 6
+    corps.append(_ligne(g, ya, d + 4, ya, epaisseur=1.6))
+    for j in range(k + 1):
+        x = X(debut + pas * j)
+        corps.append(_ligne(x, ya - 4, x, ya + 4))
+        if etiq == "toutes" or j % 2 == 0:
+            corps.append(_texte(x, ya + 18, _texte_nombre(debut + pas * j), taille))
+    if unite:
+        corps.append(_texte(d + 10, ya + 4, unite, taille, ancre="start"))
+    noms = [n for n, _, _ in lues if n]
+    alt = (f"{'Deux boîtes' if len(lues) == 2 else 'Boîte'} à moustaches sur un axe gradué"
+           + (f" ({', '.join(noms)})" if noms else ""))
+    return _svg(L, ya + 28, corps, alt), alt
 
 
 def _chemin_vers(noeuds: list, i: int) -> list[int]:
@@ -3817,6 +3949,7 @@ GENERATEURS = {
     "diagramme_barres": _diagramme_barres,
     "diagramme_circulaire": _diagramme_circulaire,
     "arbre": _arbre,
+    "boite_moustaches": _boite_moustaches,
 }
 
 
