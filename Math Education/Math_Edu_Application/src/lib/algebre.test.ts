@@ -145,6 +145,13 @@ describe('liste de solutions', () => {
   it('refuse une seule solution ou des solutions fausses', () => {
     tousFaux(e, ['2', '4 ; -2', '-4 ; 2 ; 3'])
   })
+  it('issues d\'un de, separees par des virgules suivies d\'une espace (etape 10)', () => {
+    const pairs = exo('2 ; 4 ; 6', 'solutions')
+    tousJustes(pairs, ['2, 4, 6', '6, 2, 4', '2 ; 4 ; 6', '2 et 4 et 6', '{2 ; 4 ; 6}', '2,  4,  6'])
+    tousFaux(pairs, ['2, 4', '2, 4, 6, 8', '2,4,6'])
+    // Sans espace, la virgule reste decimale : « 2,5 ; 3 » n'est pas « 2 ; 5 ; 3 ».
+    tousJustes(exo('2,5 ; 3', 'solutions'), ['3 ; 2,5', '2,5, 3'])
+  })
   it('fractions et decimaux : 3 ; −5/2', () => {
     tousJustes(exo('3 ; −5/2', 'solutions'), ['-5/2 ; 3', '3 et -5/2', 'x = 3 ou x = -5/2', '3 ; -2,5'])
   })

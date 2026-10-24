@@ -875,8 +875,12 @@ function algebreJuste(forme: FormeAttendue, attendu: string, raw: string, variab
   if (donne === '') return false
 
   if (forme === 'solutions') {
-    const a = lireSolutions(donne)
-    const b = lireSolutions(voulu)
+    // « 2, 4, 6 » : une virgule suivie d'une espace separe des issues (etape
+    // 10) ; sans espace, « 2,5 » reste un decimal. Lue avant texteAlgebrique,
+    // qui retire les espaces.
+    const enListe = (t: string) => texteAlgebrique(t.replace(/,\s+/g, ' ; '))
+    const a = lireSolutions(enListe(raw))
+    const b = lireSolutions(enListe(attendu))
     return a !== null && b !== null && a.length === b.length && a.every((v, k) => egaux(v, b[k], tolerance))
   }
 

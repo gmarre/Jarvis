@@ -9,9 +9,10 @@
 - [x] Arbitrage d'ouverture avec Gauthier : délégation reconduite (24/10).
 - [ ] Repérage : programme (`_travail/programmes/5eme.txt`, `6eme-cm1-cm2.txt`, `3eme-4eme.txt` si besoin), nœuds K et L du v1 (mémoire seulement).
 - [x] Générateurs dans `scripts/figures.py` : `diagramme_barres`, `diagramme_circulaire`, `arbre` ; 13 cas de refus vérifiés ; 643 figures existantes identiques (24/10).
-- [ ] Brief et cartographe (`_travail/etape10_dag_KL.*`), arbitrage des découpages, fusion du DAG, vocabulaire au validateur.
+- [x] Brief et cartographe (`_travail/etape10_dag_KL.*`, 34 compétences), arbitrages en délégation, fusion du DAG, vocabulaire au validateur (24/10).
+- [ ] Avant la rédaction de K013 et K043 : générateurs de boîte à moustaches et d'axe tronqué volontaire ; texte alternatif de l'arbre sans nombre d'issues ; 12 bâtons (arbitrage 10).
 - [ ] Rédaction, relecture et fusion des exercices, cartes mentales, cartes défi, super exercices.
-- [ ] Correctifs de la correction s'il y en a, déploiement vérifié (comparaison au code local).
+- [ ] Correctifs de la correction s'il y en a, déploiement vérifié (comparaison au code local). Déjà codé, **pas encore déployé** : « 2, 4, 6 » lu comme une liste dans la forme `solutions` ; `corriger` et `rendre-super` à redéployer avant la publication.
 - [ ] Publication, bilan `qualite/10_etape10_statistiques_probabilites.md`, briefs en modèles, `_travail/` archivé.
 
 ## Questions ouvertes pour Gauthier
