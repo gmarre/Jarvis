@@ -1,0 +1,619 @@
+[
+  {
+    "id": "K003",
+    "domain": "K",
+    "domain_name": "Statistiques",
+    "label": "Effectifs : organiser des données brutes dans un tableau d'effectifs",
+    "description": "Organiser des données : à partir d'une liste brute de valeurs (les pointures de 25 élèves, le nombre d'animaux par élève), compter l'effectif de chaque valeur, présenter le tableau d'effectifs, calculer l'effectif total et vérifier qu'il vaut le nombre de données ; retrouver un effectif manquant à partir de l'effectif total. Les mots série, valeur, effectif et effectif total sont employés. Exemple : dans la série 2 ; 0 ; 1 ; 1 ; 3 ; 2 ; 1 ; 0 ; 1 ; 2 (nombre d'animaux par élève), la valeur 1 a pour effectif 4 et l'effectif total est 10. L'erreur type est d'oublier une donnée ou d'en compter une deux fois (le total ne retombe pas sur le nombre de données), ou de confondre une valeur et son effectif. Le recueil des données se fait en classe, il n'est pas évalué ici. Réponse : nombre (un effectif à la fois), QCM. Figure : aucune (série écrite dans l'énoncé, tableau KaTeX).",
+    "prerequisites": [
+      "K042"
+    ],
+    "difficulty": 4,
+    "school_level": "5e",
+    "validation_test": "Voici les notes sur 5 de 12 élèves : 3 ; 5 ; 2 ; 3 ; 4 ; 3 ; 5 ; 1 ; 3 ; 4 ; 2 ; 3. Quel est l'effectif de la note 3 ? Dans une autre classe de 20 élèves, la note 1 a l'effectif 2, la note 2 l'effectif 5, la note 4 l'effectif 6, et toutes les autres notes sont des 3 : quel est l'effectif de la note 3 ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 5e, Organisation et gestion de données et probabilités, Statistiques, Objectifs d'apprentissage",
+        "quote": "Recueillir et organiser des données."
+      },
+      {
+        "source": "Cycle 4, classe de 5e, Organisation et gestion de données et probabilités, Statistiques, Objectifs d'apprentissage",
+        "quote": "Calculer des effectifs et des fréquences (exprimées sous forme décimale, fractionnaire ou de pourcentage)."
+      }
+    ]
+  },
+  {
+    "id": "K004",
+    "domain": "K",
+    "domain_name": "Statistiques",
+    "label": "Fréquences : écriture décimale, fractionnaire ou en pourcentage",
+    "description": "Calculer la fréquence d'une valeur, quotient de son effectif par l'effectif total, et l'écrire sous forme de fraction (6/24), de nombre décimal (0,25) ou de pourcentage (25 %) ; vérifier que la somme des fréquences vaut 1, soit 100 % ; comparer deux séries d'effectifs totaux différents par leurs fréquences. Exemple : 6 élèves sur 24 viennent à vélo, fréquence 6/24 = 0,25 = 25 % ; dans une autre classe, 7 sur 20, soit 0,35 = 35 % : la part des cyclistes y est plus grande, bien que l'effectif soit presque le même. La fraction n'a pas à être simplifiée (la simplification est de 4e) ; un arrondi au centième ou au pour cent près est demandé quand le quotient ne tombe pas juste (5 sur 12, environ 0,42 ou 42 %). L'erreur type est de diviser l'effectif total par l'effectif, ou de comparer des effectifs au lieu des fréquences. Réponse : nombre (fraction ou décimal, toute fraction égale acceptée par la correction) ; en pourcentage avec l'unité « % » quand l'énoncé le demande ; tolérance égale à la moitié de l'arrondi demandé. Figure : aucune.",
+    "prerequisites": [
+      "K003",
+      "E036",
+      "D026"
+    ],
+    "difficulty": 5,
+    "school_level": "5e",
+    "validation_test": "Dans un club de 40 adhérents, 14 pratiquent le tennis. Quelle est la fréquence des joueurs de tennis, en écriture décimale puis en pourcentage ? Dans un autre club, 9 adhérents sur 30 jouent au tennis : dans quel club la part des joueurs de tennis est-elle la plus grande ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 5e, Organisation et gestion de données et probabilités, Statistiques, Objectifs d'apprentissage",
+        "quote": "Calculer des effectifs et des fréquences (exprimées sous forme décimale, fractionnaire ou de pourcentage)."
+      }
+    ]
+  },
+  {
+    "id": "K005",
+    "domain": "K",
+    "domain_name": "Statistiques",
+    "label": "Moyenne simple d'une série : calculer, interpréter",
+    "description": "Calculer la moyenne d'une série de données brutes, somme des valeurs divisée par le nombre de valeurs, et l'interpréter : une moyenne n'est pas forcément une valeur de la série, elle est comprise entre la plus petite et la plus grande valeur, et elle permet de comparer deux séries. Exemple : notes 12 ; 15 ; 9 ; 14 : somme 50, moyenne 50 ÷ 4 = 12,5 ; températures 18 ; 21 ; 20 ; 23 ; 19 (en °C) : moyenne 101 ÷ 5 = 20,2 °C. Quand le quotient ne tombe pas juste, l'énoncé impose l'arrondi : 13 ; 11 ; 16 donnent 40 ÷ 3, environ 13,3 au dixième. L'erreur type est de diviser par un autre nombre que le nombre de valeurs (en oubliant une valeur nulle), ou de prendre la valeur située au milieu de la liste. Réponse : nombre avec unité ; valeur exacte si le quotient tombe juste, sinon arrondi imposé par l'énoncé et tolérance de la moitié de l'arrondi (0,05 au dixième), qui accepte aussi la fraction 40/3. Figure : aucune.",
+    "prerequisites": [
+      "K003",
+      "D026",
+      "D009",
+      "C032"
+    ],
+    "difficulty": 5,
+    "school_level": "5e",
+    "validation_test": "Les temps d'un nageur sur 50 m sont : 42 s ; 38 s ; 44 s ; 39 s ; 43 s ; 40 s. Quel est son temps moyen ? Un autre nageur a un temps moyen de 40,5 s : lequel est le plus rapide en moyenne ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 5e, Organisation et gestion de données et probabilités, Statistiques, Objectifs d'apprentissage",
+        "quote": "Calculer et interpréter la moyenne simple d'une série de données."
+      }
+    ]
+  },
+  {
+    "id": "K006",
+    "domain": "K",
+    "domain_name": "Statistiques",
+    "label": "Médiane d'une série de petit effectif en données brutes",
+    "description": "Déterminer une médiane d'une série de petit effectif donnée en données brutes : ranger les valeurs dans l'ordre croissant, puis prendre la valeur du milieu (effectif impair) ou, par convention, la moyenne des deux valeurs du milieu (effectif pair) ; l'interpréter : au moins la moitié des valeurs lui sont inférieures ou égales, au moins la moitié lui sont supérieures ou égales. Exemple : 7 ; 12 ; 9 ; 15 ; 10 rangées donnent 7 ; 9 ; 10 ; 12 ; 15, médiane 10 ; les températures −2 ; 5 ; 1 ; 3 (en °C) rangées donnent −2 ; 1 ; 3 ; 5, médiane (1 + 3) ÷ 2 = 2 °C. L'erreur type est de prendre la valeur du milieu sans ranger la série, ou de confondre la médiane avec la moyenne. Réponse : nombre avec unité, exact ; avec un effectif pair, la convention de la demi-somme est rappelée par l'énoncé, ou les deux valeurs du milieu sont égales. Figure : aucune.",
+    "prerequisites": [
+      "K005",
+      "A023"
+    ],
+    "difficulty": 5,
+    "school_level": "4e",
+    "validation_test": "Les tailles, en cm, de 7 joueurs sont : 182 ; 175 ; 190 ; 178 ; 186 ; 175 ; 181. Quelle est la taille médiane ? Un joueur de 184 cm rejoint l'équipe : quelle est la nouvelle médiane, en prenant la moyenne des deux tailles du milieu ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 4e, Organisation et gestion de données et probabilités, Statistiques, Objectifs d'apprentissage",
+        "quote": "Déterminer une médiane et l'interpréter dans le cas d'une série de petit effectif présentée sous forme de données brutes."
+      }
+    ]
+  },
+  {
+    "id": "K008",
+    "domain": "K",
+    "domain_name": "Statistiques",
+    "label": "Médiane et quartiles d'une série donnée par un tableau d'effectifs",
+    "description": "Donner la médiane et les quartiles Q1 et Q3 d'une série donnée par un tableau d'effectifs ou un diagramme en barres, à l'aide des effectifs cumulés : Q1 est la plus petite valeur telle qu'au moins le quart des données lui soient inférieures ou égales, Q3 la plus petite telle qu'au moins les trois quarts le soient. Exemple : notes 8 ; 10 ; 12 ; 15 d'effectifs 3 ; 7 ; 6 ; 4 (effectif total 20, effectifs cumulés 3 ; 10 ; 16 ; 20) : le quart de 20 est 5, donc Q1 est la 5e valeur, 10 ; les trois quarts font 15, Q3 est la 15e valeur, 12 ; la médiane est la moyenne des 10e et 11e valeurs, (10 + 12) ÷ 2 = 11. Pour un effectif de 30, le quart vaut 7,5 : Q1 est la 8e valeur. L'erreur type est de prendre le quart de l'effectif pour la valeur de Q1, ou de chercher le rang dans la liste des valeurs au lieu des effectifs cumulés. Réponse : nombre (une valeur à la fois). Figure utile : diagramme_barres (existant), au plus 10 valeurs, effectifs sur la demi-graduation.",
+    "prerequisites": [
+      "K047",
+      "K006",
+      "E010"
+    ],
+    "difficulty": 6,
+    "school_level": "3e",
+    "validation_test": "Un tableau donne le nombre de frères et sœurs des 28 élèves d'une classe : 0 pour 4 élèves, 1 pour 8 élèves, 2 pour 7 élèves, 3 pour 6 élèves, 4 pour 3 élèves. Détermine le premier quartile, la médiane et le troisième quartile.",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 3e, Organisation et gestion de données et probabilités, Statistiques, Objectifs d'apprentissage",
+        "quote": "Donner les quartiles et la médiane d'une série donnée sous forme de tableau d'effectifs ou de diagramme en barres."
+      },
+      {
+        "source": "Cycle 4, classe de 3e, Organisation et gestion de données et probabilités, Statistiques, Automatismes",
+        "quote": "Donner une médiane pour une série comportant un petit nombre de valeurs."
+      }
+    ]
+  },
+  {
+    "id": "K009",
+    "domain": "K",
+    "domain_name": "Statistiques",
+    "label": "Étendue d'une série : calculer, interpréter",
+    "description": "Calculer l'étendue d'une série, différence entre la plus grande et la plus petite valeur, que la série soit donnée en données brutes, par un tableau d'effectifs, un diagramme en barres ou un diagramme circulaire (les valeurs sont alors les modalités, pas les effectifs) ; l'interpréter comme une mesure de la dispersion. Exemple : températures −3 ; 4 ; 9 ; 12 ; 7 (en °C) : étendue 12 − (−3) = 15 °C ; un diagramme en barres du nombre d'enfants par famille, de 0 à 4 enfants : étendue 4 − 0 = 4, quelle que soit la hauteur des barres. L'erreur type est de calculer l'écart entre le plus grand et le plus petit effectif, ou d'oublier le signe d'une valeur négative. Réponse : nombre avec unité. Figure utile : diagramme_barres ou diagramme_circulaire (existants).",
+    "prerequisites": [
+      "K012",
+      "B045"
+    ],
+    "difficulty": 5,
+    "school_level": "4e",
+    "validation_test": "Un diagramme en barres donne les notes d'un contrôle : 6 pour 2 élèves, 9 pour 5 élèves, 11 pour 8 élèves, 14 pour 6 élèves, 17 pour 3 élèves. Quelle est l'étendue des notes ? Quelle serait-elle si les deux élèves qui ont 6 avaient eu 8 ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 4e, Organisation et gestion de données et probabilités, Statistiques, Objectifs d'apprentissage",
+        "quote": "Calculer et interpréter l'étendue d'une série présentée sous forme de données brutes, d'un tableau, d'un diagramme en barres, d'un diagramme circulaire."
+      }
+    ]
+  },
+  {
+    "id": "K012",
+    "domain": "K",
+    "domain_name": "Statistiques",
+    "label": "Représenter des données : diagramme en barres, diagramme circulaire",
+    "description": "Représenter une série par un diagramme en barres (hauteur proportionnelle à l'effectif, axe gradué depuis 0) ou par un diagramme circulaire (angle de chaque secteur proportionnel à l'effectif ou à la fréquence : pour un effectif total de 24, 360 ÷ 24 = 15° par élève, donc 9 élèves occupent un secteur de 135°) ; vérifier que les angles font 360° en tout ; reconnaître le diagramme qui représente un tableau d'effectifs ou de fréquences. Tracer sur papier ne se fait pas à l'écran : l'élève calcule l'angle d'un secteur ou la hauteur d'une barre, complète un tableau d'angles, choisit parmi plusieurs diagrammes celui qui représente la série, ou repère l'erreur d'un diagramme. L'erreur type est de prendre l'effectif pour la mesure de l'angle (un secteur de 9°), ou d'oublier que les angles font 360° en tout. Réponse : nombre avec l'unité « ° », QCM, vrai/faux. Figure nécessaire : diagramme_circulaire (existant), angles ou effectifs écrits, graduation du tour pour lire un angle ; diagramme_barres (existant), barre « masquee » à compléter.",
+    "prerequisites": [
+      "K004",
+      "E034",
+      "G025"
+    ],
+    "difficulty": 5,
+    "school_level": "5e",
+    "validation_test": "Une classe de 30 élèves a choisi sa sortie : musée 12 élèves, zoo 15 élèves, théâtre 3 élèves. Dans un diagramme circulaire de ces choix, quel angle mesure le secteur du zoo ? Et celui du théâtre ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 5e, Organisation et gestion de données et probabilités, Statistiques, Objectifs d'apprentissage",
+        "quote": "Représenter, sur papier ou à l'aide d'un tableur-grapheur, des données sous la forme d'un tableau, d'un diagramme (diagramme en barres, diagramme circulaire) ou d'un graphique cartésien."
+      },
+      {
+        "source": "Cycle 4, Organisation et gestion de données et probabilités, présentation commune aux trois classes",
+        "quote": "La compétence Représenter est très souvent mobilisée dans cette partie du programme. Il est important que les élèves réalisent des représentations sur leurs cahiers."
+      }
+    ]
+  },
+  {
+    "id": "K013",
+    "domain": "K",
+    "domain_name": "Statistiques",
+    "label": "Boîte à moustaches : construire, lire, comparer des séries",
+    "description": "Représenter les valeurs de position d'une série par une boîte à moustaches (minimum, Q1, médiane, Q3, maximum sur un axe gradué), la lire, et s'en servir pour comparer deux séries : position des médianes, étendues, écarts entre les quartiles, part des données au-delà d'une valeur (au moins un quart des données sont supérieures ou égales à Q3). Construire la boîte ne se fait pas à l'écran : l'élève choisit la boîte qui représente une série, retrouve un indicateur sur une boîte, ou décide entre deux boîtes. Exemple : minimum 4, Q1 = 7, médiane 9, Q3 = 12, maximum 18 : la boîte va de 7 à 12, les moustaches de 4 à 18, l'étendue vaut 14. L'erreur type est de croire que la moustache la plus longue contient le plus de données, ou de lire la médiane au milieu de la boîte. Réponse : nombre, QCM, vrai/faux. Figure nécessaire : boîte à moustaches sur un axe gradué, une ou deux boîtes, à créer (indispensable).",
+    "prerequisites": [
+      "K008",
+      "K009"
+    ],
+    "difficulty": 7,
+    "school_level": "3e",
+    "validation_test": "Deux boîtes à moustaches résument les temps, en minutes, mis par deux classes pour un cross. Classe A : minimum 12, Q1 = 15, médiane 17, Q3 = 20, maximum 26. Classe B : minimum 13, Q1 = 14, médiane 16, Q3 = 18, maximum 30. Quelle classe a la plus grande étendue ? Dans quelle classe au moins la moitié des élèves ont-ils mis 16 min ou moins ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 3e, Organisation et gestion de données et probabilités, Statistiques, Objectifs d'apprentissage",
+        "quote": "Construire et utiliser des boites à moustache pour représenter les valeurs de position d'une série statistique."
+      },
+      {
+        "source": "Cycle 4, classe de 3e, Organisation et gestion de données et probabilités, Statistiques, Objectifs d'apprentissage",
+        "quote": "Comprendre et interpréter des données statistiques."
+      }
+    ]
+  },
+  {
+    "id": "K036",
+    "domain": "K",
+    "domain_name": "Statistiques",
+    "label": "Lire un diagramme en barres gradué de un en un",
+    "description": "Lire sur un diagramme en barres le nombre associé à une modalité (combien d'élèves préfèrent la fraise), trouver la modalité la plus choisie et la moins choisie, comparer deux barres avec « plus que », « moins que », « autant que » et dire de combien elles diffèrent. L'axe vertical est gradué de un en un et chaque barre s'arrête sur une graduation : aucune valeur sur une demi-graduation au CE1. Exemple : orange 4, fraise 12, banane 8, kiwi 2 : la fraise est le fruit préféré, et elle a 4 élèves de plus que la banane (12 − 8 = 4). L'erreur type est de lire la graduation voisine du haut de la barre, ou de compter les barres au lieu de lire leur hauteur. Produire le diagramme (programme du CP et du CE1) ne se saisit pas : seule la lecture est évaluée ici. Réponse : nombre, QCM (le nom de la modalité, plus sûr qu'un mot tapé). Figure nécessaire : diagramme_barres (existant), pas 1, 2 à 6 barres, valeurs non écrites, barre cherchée sans valeur.",
+    "prerequisites": [
+      "A006",
+      "B003"
+    ],
+    "difficulty": 2,
+    "school_level": "CE1",
+    "validation_test": "Un diagramme en barres montre le sport préféré des élèves d'une classe : foot 9 élèves, danse 6, judo 3, natation 7. Quel sport a été le plus choisi ? Combien d'élèves de plus ont choisi la natation plutôt que le judo ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 2, Cours élémentaire première année, Organisation et gestion de données",
+        "quote": "Lire et interpréter les données d'un diagramme en barres."
+      },
+      {
+        "source": "Cycle 2, Cours élémentaire première année, Organisation et gestion de données",
+        "quote": "Un axe vertical fournit l'échelle pour les barres, il est gradué de un en un."
+      },
+      {
+        "source": "Cycle 2, Cours préparatoire, Organisation et gestion de données",
+        "quote": "l'élève sait interpréter, lire et communiquer sur les données disponibles"
+      }
+    ]
+  },
+  {
+    "id": "K037",
+    "domain": "K",
+    "domain_name": "Statistiques",
+    "label": "Lire un tableau à double entrée",
+    "description": "Trouver dans un tableau à double entrée le nombre situé à l'intersection d'une ligne et d'une colonne (combien de garçons viennent à l'école en vélo), retrouver la ligne et la colonne d'une case donnée, et lire une ligne ou une colonne de total. Exemple : lignes « à pied », « en vélo », « en bus », colonnes « filles », « garçons » : la case « en vélo » et « garçons » contient 18. L'erreur type est de croiser la mauvaise ligne ou la mauvaise colonne, ou de lire le total à la place d'une case. Le tableau s'écrit en KaTeX, au plus 5 colonnes. Réponse : nombre ou QCM. Figure : aucune (tableau KaTeX).",
+    "prerequisites": [
+      "A004"
+    ],
+    "difficulty": 2,
+    "school_level": "CE1",
+    "validation_test": "Un tableau donne les animaux d'une ferme : en ligne les poules, les lapins et les chèvres ; en colonne les mâles et les femelles. Poules : 4 mâles et 25 femelles. Lapins : 11 mâles et 16 femelles. Chèvres : 2 mâles et 9 femelles. Combien y a-t-il de lapins femelles ? Quel animal compte 9 femelles ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 2, Cours élémentaire première année, Organisation et gestion de données",
+        "quote": "Lire et interpréter les données d'un tableau à double entrée."
+      },
+      {
+        "source": "Cycle 2, Cours élémentaire première année, Organisation et gestion de données",
+        "quote": "L'élève sait répondre à des questions dont les réponses figurent dans un tableau à double entrée."
+      },
+      {
+        "source": "Cycle 2, Cours préparatoire, Organisation et gestion de données",
+        "quote": "Construire et compléter un tableau à double entrée."
+      },
+      {
+        "source": "Cycle 2, Cours préparatoire, Organisation et gestion de données",
+        "quote": "L'élève sait qu'une ligne et une colonne d'un tableau à double entrée permettent d'identifier le contenu de la case située à leur intersection."
+      }
+    ]
+  },
+  {
+    "id": "K038",
+    "domain": "K",
+    "domain_name": "Statistiques",
+    "label": "Tableau ou diagramme en barres : problèmes, cases et barres manquantes",
+    "description": "Résoudre un problème à partir d'un tableau à double entrée ou d'un diagramme en barres : calculer un total de ligne ou de colonne, retrouver une case manquante à partir du total (148 filles en tout, 77 + 29 + 24 = 130 à pied, en vélo et en voiture, donc 18 en bus), comparer deux nombres ; lire un diagramme dont l'axe vertical est gradué de 2 en 2, de 5 en 5 ou de 10 en 10 (une barre qui s'arrête à mi-chemin entre 20 et 30 vaut 25, sur la demi-graduation) et dire quelle hauteur doit avoir une barre manquante. Au CE2, chaque valeur est un nombre entier : avec un pas de 5, aucune barre ne s'arrête entre deux nombres entiers. L'erreur type est de compter une graduation pour une unité (une barre arrêtée à la troisième graduation d'un axe gradué de 5 en 5 vaut 15, pas 3), ou d'oublier une case dans un total. Réponse : nombre ou QCM. Figure nécessaire : diagramme_barres (existant), pas 2, 5 ou 10, valeurs sur la demi-graduation, barre « masquee » pour la barre manquante ; le tableau en KaTeX.",
+    "prerequisites": [
+      "K036",
+      "K037",
+      "B004",
+      "B006"
+    ],
+    "difficulty": 3,
+    "school_level": "CE2",
+    "validation_test": "Un diagramme en barres, gradué de 10 en 10, donne le nombre de livres prêtés par une bibliothèque : lundi 40, mardi 25, jeudi 60. En tout, 150 livres ont été prêtés ces quatre jours, vendredi compris. Combien de livres ont été prêtés vendredi ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 2, Cours élémentaire deuxième année, Organisation et gestion de données",
+        "quote": "Résoudre des problèmes en utilisant les données d'un tableau à double entrée ou d'un diagramme en barre."
+      },
+      {
+        "source": "Cycle 2, Cours élémentaire deuxième année, Organisation et gestion de données",
+        "quote": "Lire et interpréter les données d'un tableau à double entrée ou d'un diagramme en barres."
+      },
+      {
+        "source": "Cycle 2, Cours élémentaire deuxième année, Organisation et gestion de données",
+        "quote": "Pour l'axe vertical du diagramme en barres, l'élève utilise une échelle adaptée aux données."
+      },
+      {
+        "source": "Cycle 2, Cours élémentaire deuxième année, Organisation et gestion de données",
+        "quote": "L'élève sait compléter un tableau comme le suivant"
+      }
+    ]
+  },
+  {
+    "id": "K039",
+    "domain": "K",
+    "domain_name": "Statistiques",
+    "label": "Tableau et diagramme en barres : lire, problèmes en plusieurs étapes",
+    "description": "Prélever des données dans un tableau à simple ou double entrée ou dans un diagramme en barres, y compris des nombres décimaux (temps en secondes, masses en kilogrammes) et des caractères qualitatifs ou quantitatifs (moyen de transport, nombre de frères et sœurs), puis résoudre un problème en une ou plusieurs étapes : écart entre deux valeurs, total, plus grande valeur, valeurs qui dépassent un seuil. Exemple : un tableau donne les temps de quatre coureurs au 50 m : 8,4 s ; 9,1 s ; 7,9 s ; 8,75 s : le plus rapide a couru en 7,9 s et devance de 0,85 s le coureur de 8,75 s. L'erreur type est de croire que le plus grand nombre désigne le meilleur (le plus rapide a le plus petit temps), ou de comparer 8,4 et 8,75 en lisant 75 plus grand que 4. Réponse : nombre avec unité, QCM, texte court. Figure utile : diagramme_barres (existant) ; sinon tableau KaTeX.",
+    "prerequisites": [
+      "K038",
+      "D003",
+      "D004"
+    ],
+    "difficulty": 3,
+    "school_level": "CM1",
+    "validation_test": "Un tableau à double entrée donne le nombre de livres lus en un mois par deux classes : classe des Pins, 34 romans et 18 bandes dessinées ; classe des Chênes, 27 romans et 41 bandes dessinées. Quelle classe a lu le plus de livres, et combien de plus que l'autre ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 3, Cours moyen première année, Organisation et gestion de données",
+        "quote": "Lire et interpréter les données d'un tableau à simple ou double entrée, d'un diagramme en barres ou d'une courbe"
+      },
+      {
+        "source": "Cycle 3, Cours moyen première année, Organisation et gestion de données",
+        "quote": "Résoudre des problèmes en une ou plusieurs étapes en utilisant les données d'un tableau à simple ou double entrée, d'un diagramme en barres ou d'une courbe"
+      },
+      {
+        "source": "Cycle 3, Cours moyen première année, Organisation et gestion de données",
+        "quote": "Au CM1, les caractères statistiques étudiés peuvent être aussi bien qualitatifs comme un moyen de transport, une couleur ou un sport pratiqué, que quantitatifs comme le nombre de frères et sœurs"
+      }
+    ]
+  },
+  {
+    "id": "K040",
+    "domain": "K",
+    "domain_name": "Statistiques",
+    "label": "Lire et interpréter une courbe",
+    "description": "Lire une courbe qui montre une grandeur au cours du temps (la température d'une journée, la hauteur d'une plante semaine après semaine) : la valeur à un instant donné, l'instant où une valeur est atteinte, le maximum et le minimum, les périodes de hausse, de baisse ou de stabilité, et l'écart entre deux lectures. Les axes portent le nom et l'unité des grandeurs ; ils sont gradués de 1 en 1, de 2 en 2 ou de 5 en 5, et chaque valeur demandée tombe sur un sommet de la courbe, sur la graduation ou la demi-graduation. Exemple : la température vaut 12 °C à 8 h, monte jusqu'à 21 °C à 14 h puis redescend à 15 °C à 20 h : elle a gagné 9 °C entre 8 h et 14 h. L'erreur type est d'inverser les axes (donner une heure quand on demande une température) ou de lire la hauteur d'un point comme une durée. Réponse : nombre avec unité (lecture exacte, sans tolérance), vrai/faux, QCM. Figure nécessaire : repere (existant), premier quadrant, ligne brisée, titres d'axes (« heure (h) », « température (°C) »), pas différents sur les deux axes.",
+    "prerequisites": [
+      "K038",
+      "D019",
+      "P014"
+    ],
+    "difficulty": 3,
+    "school_level": "CM1",
+    "validation_test": "Une courbe donne la hauteur d'un tournesol semaine après semaine : 10 cm la semaine 1, 25 cm la semaine 3, 60 cm la semaine 6 et toujours 60 cm la semaine 8. De combien de centimètres le tournesol a-t-il grandi entre la semaine 3 et la semaine 6 ? À partir de quelle semaine ne grandit-il plus ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 3, Cours moyen première année, Organisation et gestion de données",
+        "quote": "Lire et interpréter les données d'un tableau à simple ou double entrée, d'un diagramme en barres ou d'une courbe"
+      },
+      {
+        "source": "Cycle 3, Cours moyen première année, Organisation et gestion de données",
+        "quote": "Les élèves résolvent des problèmes dont les données peuvent être prélevées dans des tableaux, dans des diagrammes en barres ou sur des courbes."
+      }
+    ]
+  },
+  {
+    "id": "K041",
+    "domain": "K",
+    "domain_name": "Statistiques",
+    "label": "Lire et interpréter un diagramme circulaire",
+    "description": "Lire un diagramme circulaire dont les secteurs sont des parts simples du disque (la moitié, le quart, le tiers, le huitième) ou portent leur nombre : dire quelle modalité est la plus représentée, comparer deux secteurs, calculer le nombre de personnes d'un secteur à partir du nombre total (le quart des 120 élèves, c'est 30 élèves ; les trois quarts, 90 élèves), et résoudre un problème en une ou deux étapes avec les données d'un texte, d'un tableau ou d'un diagramme. L'erreur type est de croire qu'un secteur deux fois plus grand qu'un autre compte deux personnes de plus, ou de confondre le quart avec le quatrième secteur. Réponse : nombre, QCM, vrai/faux. Figure nécessaire : diagramme_circulaire (existant), noms seuls quand la réponse est une part simple du disque, nombres écrits sinon ; le secteur cherché n'a jamais son nombre écrit.",
+    "prerequisites": [
+      "K039",
+      "C031"
+    ],
+    "difficulty": 4,
+    "school_level": "CM2",
+    "validation_test": "Un diagramme circulaire répartit 200 élèves selon leur façon de venir au collège : la moitié du disque pour le bus, le huitième pour le vélo, le reste pour la marche à pied. Combien d'élèves viennent à vélo ? Combien viennent à pied ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 3, Cours moyen deuxième année, Organisation et gestion de données",
+        "quote": "Lire et interpréter les données d'un tableau, d'un diagramme en barres, d'un diagramme circulaire ou d'une courbe"
+      },
+      {
+        "source": "Cycle 3, Cours moyen deuxième année, Organisation et gestion de données",
+        "quote": "Résoudre des problèmes en une ou deux étapes en utilisant les données d'un tableau, d'un diagramme en barres, d'un diagramme circulaire ou d'une courbe"
+      },
+      {
+        "source": "Cycle 3, Cours moyen deuxième année, Organisation et gestion de données",
+        "quote": "Les élèves résolvent des problèmes dont les données peuvent être prélevées dans un texte, dans des tableaux, dans des diagrammes en barres, dans des diagrammes circulaires ou sur des courbes."
+      }
+    ]
+  },
+  {
+    "id": "K042",
+    "domain": "K",
+    "domain_name": "Statistiques",
+    "label": "Construire un tableau simple ; filtrer les données d'un tableau selon un critère",
+    "description": "Compléter un tableau simple qui présente des données (observations, mesures, caractères), puis sélectionner dans un tableau les lignes qui vérifient un critère ou deux (les randonnées de moins de 12 km qui durent moins de 4 h), pour faire un choix argumenté ; lire immédiatement un tableau, un diagramme en barres, un diagramme circulaire ou une courbe (automatisme de 6e). Exemple : parmi cinq vélos décrits par leur prix et leur masse, ne garder que ceux qui coûtent moins de 400 € et pèsent moins de 12 kg, puis choisir le moins cher. L'erreur type est d'appliquer un seul des deux critères, ou de garder la valeur limite (un vélo de 12 kg ne pèse pas moins de 12 kg). Réponse : nombre, texte court (le nom de la ligne retenue), QCM ; un nombre par case à compléter. Figure : aucune (tableau KaTeX, au plus 5 colonnes).",
+    "prerequisites": [
+      "K041"
+    ],
+    "difficulty": 4,
+    "school_level": "6e",
+    "validation_test": "Un tableau décrit quatre randonnées : Lac, 9 km, 3 h ; Crête, 14 km, 5 h ; Forêt, 11 km, 4 h ; Cascade, 7 km, 2,5 h. Lesquelles font moins de 12 km et durent moins de 4 h ? Parmi elles, laquelle est la plus longue ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 3, classe de 6e, Organisation et gestion de données",
+        "quote": "Faire un choix en filtrant les données d'un tableau selon un critère"
+      },
+      {
+        "source": "Cycle 3, classe de 6e, Organisation et gestion de données",
+        "quote": "Construire un tableau simple pour présenter des données (observations, caractères)"
+      },
+      {
+        "source": "Cycle 3, classe de 6e, Organisation et gestion de données",
+        "quote": "L'élève sait lire un tableau, un diagramme en barres, un diagramme circulaire ou une courbe dans des cas adaptés à une lecture immédiate."
+      }
+    ]
+  },
+  {
+    "id": "K043",
+    "domain": "K",
+    "domain_name": "Statistiques",
+    "label": "Choisir une représentation adaptée ; repérer une présentation trompeuse",
+    "description": "Lire et croiser des informations données par un tableau, un diagramme ou un graphique cartésien, et choisir la représentation adaptée à ce qu'on veut montrer : diagramme circulaire pour les parts d'un tout, diagramme en barres pour comparer des effectifs, graphique cartésien pour une évolution dans le temps. Repérer une présentation trompeuse : axe vertical qui ne part pas de 0 et grossit un petit écart, dessins dont l'aire exagère une hausse, pourcentages donnés sans l'effectif, graduations irrégulières. Exemple : deux barres de 102 et 98 dessinées sur un axe qui commence à 95 ont des hauteurs dans le rapport de 7 à 3, alors que l'écart réel est de 4 sur 100 environ. L'erreur type est de comparer les hauteurs dessinées sans lire les graduations. Réponse : QCM, vrai/faux, nombre (l'écart réel). Figure nécessaire : diagramme_barres et repere (existants) pour la lecture ; diagramme en barres à axe volontairement tronqué, à créer (le générateur part toujours de 0).",
+    "prerequisites": [
+      "K012",
+      "J040"
+    ],
+    "difficulty": 5,
+    "school_level": "5e",
+    "validation_test": "Un diagramme en barres montre les ventes de deux magasins, 210 et 190 objets, mais son axe vertical commence à 180 : la première barre paraît trois fois plus haute que la seconde. Le premier magasin vend-il trois fois plus d'objets que le second ? Quel diagramme faut-il choisir pour montrer la part de chaque magasin dans le total des ventes ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 5e, Organisation et gestion de données et probabilités, Statistiques, Objectifs d'apprentissage",
+        "quote": "Choisir une représentation adaptée à ce qu'il convient de mettre en avant."
+      },
+      {
+        "source": "Cycle 4, classe de 5e, Organisation et gestion de données et probabilités, Statistiques, Objectifs d'apprentissage",
+        "quote": "Lire et interpréter des informations présentées sous forme de tableaux, de diagrammes et de graphiques."
+      },
+      {
+        "source": "Cycle 4, Organisation et gestion de données et probabilités, présentation commune aux trois classes",
+        "quote": "Ce travail permet de développer leur esprit critique, de les éclairer pour prendre des décisions et de les mettre en garde sur des manipulations par des présentations trompeuses."
+      }
+    ]
+  },
+  {
+    "id": "K044",
+    "domain": "K",
+    "domain_name": "Statistiques",
+    "label": "Moyenne pondérée : tableau d'effectifs, diagramme en barres, coefficients",
+    "description": "Calculer la moyenne d'une série donnée par un tableau d'effectifs, un diagramme en barres ou des valeurs affectées de coefficients : somme des produits valeur × effectif, divisée par l'effectif total. Exemple : notes 8 (2 élèves), 12 (5 élèves), 15 (3 élèves) : (8 × 2 + 12 × 5 + 15 × 3) ÷ 10 = 121 ÷ 10 = 12,1 ; une note de 14 coefficient 2 et une note de 11 coefficient 1 donnent (28 + 11) ÷ 3 = 13. Calculer une moyenne de très peu de valeurs reste un automatisme. L'erreur type est de faire la moyenne des seules valeurs sans tenir compte des effectifs (environ 11,7 ici), ou de diviser par le nombre de valeurs au lieu de l'effectif total. Réponse : nombre ; arrondi imposé par l'énoncé et tolérance de la moitié de l'arrondi quand le quotient ne tombe pas juste. Figure utile : diagramme_barres (existant), effectifs sur la demi-graduation.",
+    "prerequisites": [
+      "K005",
+      "D006"
+    ],
+    "difficulty": 5,
+    "school_level": "4e",
+    "validation_test": "Une enquête sur 25 familles donne le nombre de voitures par famille : 0 voiture pour 3 familles, 1 voiture pour 12 familles, 2 voitures pour 8 familles, 3 voitures pour 2 familles. Quel est le nombre moyen de voitures par famille ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 4e, Organisation et gestion de données et probabilités, Statistiques, Objectifs d'apprentissage",
+        "quote": "Calculer une moyenne pondérée dans le cas d'une série discrète de petits effectifs présentée sous forme de données brutes, d'un tableau ou d'un diagramme en barres."
+      },
+      {
+        "source": "Cycle 4, classe de 4e, Organisation et gestion de données et probabilités, Statistiques, Automatismes",
+        "quote": "Calculer une moyenne pour un très petit nombre de valeurs."
+      }
+    ]
+  },
+  {
+    "id": "K045",
+    "domain": "K",
+    "domain_name": "Statistiques",
+    "label": "Effet d'une valeur extrême sur la moyenne et la médiane",
+    "description": "Comprendre comment évoluent la moyenne et la médiane quand on ajoute à une série une valeur très grande ou très petite : la moyenne bouge beaucoup, la médiane peu ou pas ; choisir l'indicateur qui résume le mieux une série qui contient une valeur extrême. Exemple : salaires 1 800 ; 1 900 ; 2 000 ; 2 100 ; 2 200 € : moyenne et médiane 2 000 € ; on ajoute 14 000 € : moyenne 24 000 ÷ 6 = 4 000 €, médiane (2 000 + 2 100) ÷ 2 = 2 050 €. L'erreur type est de croire que la médiane change autant que la moyenne, ou de garder l'ancien nombre de valeurs pour la nouvelle moyenne. Réponse : nombre avec unité, QCM (l'indicateur le plus représentatif), vrai/faux. Figure : aucune.",
+    "prerequisites": [
+      "K044",
+      "K006"
+    ],
+    "difficulty": 6,
+    "school_level": "4e",
+    "validation_test": "Cinq joueurs ont marqué 12 ; 15 ; 14 ; 11 ; 13 points. Un sixième joueur marque 55 points. Calcule la moyenne et la médiane avant et après son arrivée. Quel indicateur a le plus changé ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 4e, Organisation et gestion de données et probabilités, Statistiques, Objectifs d'apprentissage",
+        "quote": "Comprendre l'évolution de la médiane et de la moyenne quand on ajoute une valeur extrême."
+      }
+    ]
+  },
+  {
+    "id": "K046",
+    "domain": "K",
+    "domain_name": "Statistiques",
+    "label": "Comparer des séries ; problèmes avec les indicateurs",
+    "description": "Résoudre des problèmes qui font intervenir moyenne, médiane, étendue et fréquences : comparer deux séries (deux classes, deux joueurs) en croisant un indicateur de position et l'étendue, retrouver une valeur manquante connaissant la moyenne (la note qu'il faut au quatrième contrôle pour avoir 12 de moyenne quand les trois premières font 35 : 12 × 4 = 48, 48 − 35 = 13), décider à partir des indicateurs. Exemple : deux archers ont la même moyenne de 8 points, mais des étendues de 2 et de 7 : le premier est plus régulier. L'erreur type est de conclure sur un seul indicateur, ou de diviser la moyenne visée par le nombre de contrôles. Réponse : nombre avec unité, QCM, vrai/faux. Figure utile : diagramme_barres (existant) ; deux séries côte à côte, à créer (confortable).",
+    "prerequisites": [
+      "K045",
+      "K009"
+    ],
+    "difficulty": 6,
+    "school_level": "4e",
+    "validation_test": "Léa a obtenu 11, 14 et 9 à trois contrôles. Quelle note doit-elle avoir au quatrième pour avoir exactement 12 de moyenne ? Tom a eu 12 ; 12 ; 11 ; 13 : avec cette quatrième note, qui de Léa ou de Tom a les notes les plus régulières ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 4e, Organisation et gestion de données et probabilités, Statistiques, Objectifs d'apprentissage",
+        "quote": "Résoudre des problèmes de comparaison de séries statistiques."
+      },
+      {
+        "source": "Cycle 4, classe de 4e, Organisation et gestion de données et probabilités, Statistiques, Objectifs d'apprentissage",
+        "quote": "Résoudre des problèmes faisant intervenir les différents indicateurs."
+      }
+    ]
+  },
+  {
+    "id": "K047",
+    "domain": "K",
+    "domain_name": "Statistiques",
+    "label": "Effectifs cumulés croissants",
+    "description": "Calculer les effectifs cumulés croissants d'une série donnée par un tableau d'effectifs ou un diagramme en barres : pour chaque valeur, le nombre de données inférieures ou égales à cette valeur ; le dernier effectif cumulé est l'effectif total ; s'en servir pour répondre à « combien de données valent au plus ... ». Exemple : notes 8 ; 10 ; 12 ; 15 d'effectifs 3 ; 7 ; 6 ; 4 : effectifs cumulés croissants 3 ; 10 ; 16 ; 20. L'erreur type est d'additionner les valeurs au lieu des effectifs, ou de cumuler à partir de la plus grande valeur. Réponse : nombre (un effectif cumulé à la fois), QCM. Figure utile : diagramme_barres (existant).",
+    "prerequisites": [
+      "K003"
+    ],
+    "difficulty": 6,
+    "school_level": "3e",
+    "validation_test": "Une équipe a joué 23 matchs : 0 but marqué lors de 4 matchs, 1 but lors de 9 matchs, 2 buts lors de 6 matchs, 3 buts lors de 3 matchs, 5 buts lors d'un match. Quel est l'effectif cumulé croissant de la valeur 2 ? Lors de combien de matchs l'équipe a-t-elle marqué au plus 3 buts ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 3e, Organisation et gestion de données et probabilités, Statistiques, Objectifs d'apprentissage",
+        "quote": "Calculer des effectifs cumulés croissants."
+      }
+    ]
+  }
+]

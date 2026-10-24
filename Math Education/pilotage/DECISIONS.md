@@ -137,5 +137,22 @@
   2. Barres : axe vertical toujours depuis 0, valeurs sur la demi-graduation, au plus 12 graduations ; une barre « cherche » n'a jamais sa valeur écrite.
   3. Circulaire : secteurs d'au moins 10° ; noms écrits au bord (pas de légende par couleur) ; sans nombre écrit, un secteur cherché est une part simple (1/2, 1/3, 1/4, 1/6, 1/8) ou se lit sur une graduation, et deux valeurs différentes sont à 5° au moins l'une de l'autre.
   4. Arbre : probabilités sœurs qui font 1, au plus 12 issues (au-delà, un tableau).
+- 24/10/2026, étape 10, arbitrages du cartographe (`_travail/etape10_dag_KL.md`, §12). CP :
+  1. Domaines K « Statistiques » et L « Probabilités » créés ; la lecture de données des cycles 2 et 3 est rangée en K.
+  2. Numérotation du v1 gardée (17 identifiants repris), nouveaux K036 à K047 et L036 à L040 ; pas de renumérotation, comme à l'étape 9.
+  3. Liens J036 ← K039 et J040 ← K040 adoptés (arbitrage 13 de l'étape 9), aucun retrait.
+  4. Trois nœuds de cycle 2 en lecture seule (K036, K037, K038) ; la production d'un tableau ou d'un diagramme n'est pas évaluée.
+  5. Médiane d'un effectif pair : demi-somme des deux valeurs du milieu, rappelée par l'énoncé, ou valeurs du milieu égales.
+  6. Pas de règle du produit sur un arbre (absente du cycle 4) ; L039 dénombre des issues équiprobables.
+  7. Évaluations partielles : K012, K013, L040, L024.
+  8. La forme « solutions » lira « 2, 4, 6 » (virgule suivie d'une espace) comme une liste, codé avant la rédaction ; issues en mots : nombre d'issues ou QCM ; « 25 % » pour une probabilité par `answer.accepted`.
+  9. Tableur : pas de nœud.
+  10. Boîte à moustaches (K013) et axe tronqué volontaire (K043) codés avant la rédaction de ces deux nœuds ; en plus, le texte alternatif de l'arbre ne donne plus le nombre d'issues (point 12) et le diagramme en bâtons accepte 12 valeurs (notes de 0 à 10).
+  11. Tableau 7 × 7 des deux dés : confortable, non codé (dés à quatre faces, pièce et dé).
+  12. P(A) réservé à L004 et à ses descendants (4e).
+  13. Histogramme : ni nœud ni figure (absent du programme de 2025).
+  14. Lien hors étape G061 ← G053 ajouté à la fusion (médiane issue de l'angle droit dans MM-G-11).
+  15. Vocabulaire de la §6 ajouté au validateur avant la rédaction ; « médiane » permise dans les descendants de K006 ou de G053.
+  16. Cartes MM-K-01 à MM-K-04 et MM-L-01 à MM-L-03 acceptées (MM-K-04 à 7 compétences, sections titrées par classe).
 
 Le détail des sprints 1 à 6 (ce qui a été codé, quand, et pourquoi) est dans `archive/CLAUDE_avant_decoupage_2026-10-23.md`, §6.

@@ -1,0 +1,476 @@
+[
+  {
+    "id": "L001",
+    "domain": "L",
+    "domain_name": "Probabilités",
+    "label": "Expérience aléatoire : la reconnaître, recenser ses issues, équiprobables ou non",
+    "description": "Reconnaître une expérience aléatoire (lancer une pièce ou un dé, tirer une boule dans une urne, tourner une roue), dont on ne peut pas prévoir le résultat, la distinguer d'une expérience dont le résultat est connu d'avance, et recenser toutes ses issues possibles. Dire si les issues ont toutes la même chance de se réaliser (dé ou pièce équilibrés : situation d'équiprobabilité) ou non (une urne de 3 boules rouges et 1 boule bleue a deux issues, rouge et bleu, qui n'ont pas la même chance ; une roue aux secteurs inégaux). Exemple : un dé à six faces a six issues, 1 ; 2 ; 3 ; 4 ; 5 ; 6, équiprobables s'il est équilibré. L'erreur type est d'oublier une issue, ou de croire que des issues peu nombreuses sont forcément équiprobables. Les mots expérience et issue sont employés par l'énoncé, sans être exigés de l'élève. Réponse : nombre d'issues, liste d'issues numériques (forme « solutions », séparées par des points-virgules), QCM, vrai/faux ; une liste d'issues écrites en mots ne se lit pas (besoin de correction). Figure utile : roue ou urne décrites en texte ; le diagramme_circulaire (existant, secteurs nommés) tient lieu de roue.",
+    "prerequisites": [
+      "A004"
+    ],
+    "difficulty": 3,
+    "school_level": "CM1",
+    "validation_test": "On tourne une roue partagée en 4 secteurs égaux : deux rouges, un vert, un jaune. Combien de couleurs différentes peut-on obtenir ? Ces couleurs ont-elles toutes la même chance de sortir ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 3, Cours moyen première année, Les probabilités",
+        "quote": "Identifier des expériences aléatoires"
+      },
+      {
+        "source": "Cycle 3, Cours moyen première année, Les probabilités",
+        "quote": "Identifier toutes les issues possibles lors d'une expérience aléatoire simple"
+      },
+      {
+        "source": "Cycle 3, Cours moyen première année, Les probabilités",
+        "quote": "Reconnaître des situations d'équiprobabilité"
+      },
+      {
+        "source": "Cycle 3, Cours moyen première année, Les probabilités",
+        "quote": "Ils découvrent ainsi en particulier que, selon les cas, toutes les issues peuvent avoir, ou non, la même chance de se réaliser."
+      }
+    ]
+  },
+  {
+    "id": "L002",
+    "domain": "L",
+    "domain_name": "Probabilités",
+    "label": "Vocabulaire : expérience aléatoire, issue, évènement",
+    "description": "Décrire une situation de hasard avec le vocabulaire des probabilités : l'expérience aléatoire, ses issues, un évènement (« obtenir un nombre pair ») et les issues qui le réalisent ; distinguer une issue d'un évènement, l'évènement certain de l'évènement impossible ; distinguer la situation réelle du modèle qui la décrit (on suppose le dé équilibré). Exemple : pour le lancer d'un dé à six faces, l'évènement « obtenir au moins 5 » est réalisé par les issues 5 et 6, et « obtenir 7 » est impossible. L'erreur type est de confondre l'issue et l'évènement, ou d'oublier une issue qui réalise l'évènement. Réponse : liste d'issues numériques (forme « solutions »), nombre d'issues, QCM, vrai/faux. Figure : aucune.",
+    "prerequisites": [
+      "L006"
+    ],
+    "difficulty": 4,
+    "school_level": "5e",
+    "validation_test": "On tire au hasard une boule dans une urne qui contient des boules numérotées de 1 à 12. Quelles issues réalisent l'évènement « obtenir un multiple de 4 » ? Combien d'issues réalisent l'évènement « obtenir un nombre à deux chiffres » ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 5e, Organisation et gestion de données et probabilités, Probabilités, Objectifs d'apprentissage",
+        "quote": "Utiliser le vocabulaire des probabilités dans des contextes concrets : expérience aléatoire, issue, évènement."
+      },
+      {
+        "source": "Cycle 4, classe de 5e, Organisation et gestion de données et probabilités, Probabilités, Objectifs d'apprentissage",
+        "quote": "Aborder les questions relatives au hasard à partir de problèmes simples."
+      },
+      {
+        "source": "Cycle 4, Organisation et gestion de données et probabilités, présentation commune aux trois classes",
+        "quote": "Dans tous les cas, on distingue la situation réelle du modèle probabiliste utilisé pour la décrire."
+      }
+    ]
+  },
+  {
+    "id": "L003",
+    "domain": "L",
+    "domain_name": "Probabilités",
+    "label": "Probabilité d'un évènement et de l'évènement contraire",
+    "description": "Calculer la probabilité d'un évènement en équiprobabilité (nombre d'issues favorables divisé par le nombre total d'issues), savoir que la somme des probabilités de toutes les issues vaut 1 et que P(non A) = 1 − P(A) ; s'en servir quand le contraire est plus simple à compter, ou pour trouver une probabilité manquante quand les issues ne sont pas équiprobables. Exemple : P(obtenir 6) = 1/6, donc P(ne pas obtenir 6) = 1 − 1/6 = 5/6 ; une roue donne rouge avec la probabilité 0,35 et bleu avec la probabilité 0,4 : la troisième couleur a pour probabilité 1 − 0,35 − 0,4 = 0,25. L'erreur type est de calculer 1 − P(A) avec un faux contraire, ou d'obtenir une somme de probabilités supérieure à 1 sans s'en étonner. Réponse : nombre (fraction ou décimal, tenus pour égaux par la correction), pourcentage avec l'unité « % ». Figure : aucune.",
+    "prerequisites": [
+      "L004",
+      "C013"
+    ],
+    "difficulty": 5,
+    "school_level": "4e",
+    "validation_test": "Dans un sac de 30 jetons, 12 sont gagnants. On tire un jeton au hasard. Quelle est la probabilité de tirer un jeton perdant ? Une autre loterie annonce une probabilité de gagner de 0,15 : quelle est la probabilité de perdre ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 4e, Organisation et gestion de données et probabilités, Probabilités, Objectifs d'apprentissage",
+        "quote": "Calculer la probabilité d'un évènement et de l'évènement contraire."
+      }
+    ]
+  },
+  {
+    "id": "L004",
+    "domain": "L",
+    "domain_name": "Probabilités",
+    "label": "Évènements et ensembles : contraire, réunion, intersection",
+    "description": "Décrire une expérience aléatoire par l'ensemble de ses issues et un évènement par l'ensemble des issues qui le réalisent ; définir l'évènement contraire de A (noté non A ou Ā, les issues qui ne réalisent pas A), la réunion « A ou B » (A ∪ B), l'intersection « A et B » (A ∩ B) et l'évènement impossible (ensemble vide, ∅) ; reconnaître deux évènements incompatibles. Exemple : dé à six faces, A « obtenir un nombre pair » = {2 ; 4 ; 6} et B « obtenir au moins 4 » = {4 ; 5 ; 6} : A ∩ B = {4 ; 6}, A ∪ B = {2 ; 4 ; 5 ; 6}, non A = {1 ; 3 ; 5}. L'erreur type est de compter deux fois les issues communes dans la réunion, ou de prendre pour contraire de « au moins 4 » l'évènement « au plus 4 ». Réponse : liste d'issues numériques (forme « solutions » : « 4 ; 6 » et « {4 ; 6} » sont lus), nombre d'issues, QCM, vrai/faux. Figure utile : diagramme de Venn, à créer (confortable) ; tableau des issues en KaTeX sinon.",
+    "prerequisites": [
+      "L038"
+    ],
+    "difficulty": 5,
+    "school_level": "4e",
+    "validation_test": "On tire au hasard une carte numérotée de 1 à 10. A est l'évènement « obtenir un multiple de 3 », B l'évènement « obtenir un nombre impair ». Quelles issues réalisent A et B ? Quelles issues réalisent A ou B ? Combien d'issues réalisent le contraire de B ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 4e, Organisation et gestion de données et probabilités, Probabilités, Objectifs d'apprentissage",
+        "quote": "Utiliser le vocabulaire et les notations ensemblistes pour décrire une expérience aléatoire dans des cas simples et définir la notion d'évènement."
+      },
+      {
+        "source": "Cycle 4, classe de 4e, Organisation et gestion de données et probabilités, Probabilités, Objectifs d'apprentissage",
+        "quote": "Définir : complémentaire, réunion, intersection, ensemble vide (évènement impossible)."
+      },
+      {
+        "source": "Cycle 4, Organisation et gestion de données et probabilités, présentation commune aux trois classes",
+        "quote": "Au cycle 4 on formalise la notion de probabilité dans le cas fini en s'appuyant sur le langage des ensembles et on précise les premiers éléments de calcul des probabilités."
+      },
+      {
+        "source": "Cycle 4, Proportionnalité, fonctions, présentation commune aux trois classes",
+        "quote": "Les notations fonctionnelles de type 𝑃(𝐴), 𝑝(𝑡) ainsi que la flèche → sont utilisées progressivement dans tous les chapitres du programme."
+      }
+    ]
+  },
+  {
+    "id": "L006",
+    "domain": "L",
+    "domain_name": "Probabilités",
+    "label": "Probabilité d'un évènement : un nombre entre 0 et 1",
+    "description": "Passer de « a chances sur b » au nombre a/b, et savoir qu'une probabilité est un nombre compris entre 0 et 1 (0 pour un évènement impossible, 1 pour un évènement certain) qui s'écrit sous forme de fraction, de nombre décimal ou de pourcentage ; calculer la probabilité d'un évènement dans une situation simple d'équiprobabilité. Exemple : une urne contient 3 boules rouges et 2 boules vertes ; la probabilité de tirer une rouge est 3/5, soit 0,6 ou 60 %. L'erreur type est d'écrire 3/2 (issues favorables sur issues défavorables), ou une probabilité plus grande que 1. Les mots expérience, issue et évènement sont employés par l'énoncé, sans être exigés de l'élève. Réponse : nombre ; fraction et décimal acceptés et tenus pour égaux par la correction (3/5, 6/10, 0,6) ; le pourcentage seulement quand l'énoncé le demande (unité « % ») ou par answer.accepted. Figure : aucune.",
+    "prerequisites": [
+      "L010",
+      "C032",
+      "E033"
+    ],
+    "difficulty": 4,
+    "school_level": "6e",
+    "validation_test": "Un sac contient 4 billes bleues, 5 billes jaunes et 1 bille blanche. On tire une bille au hasard. Quelle est la probabilité de tirer une bille jaune ? une bille blanche ? une bille rouge ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 3, classe de 6e, Les probabilités",
+        "quote": "Savoir que la probabilité d'un évènement est un nombre compris entre 0 et 1"
+      },
+      {
+        "source": "Cycle 3, classe de 6e, Les probabilités",
+        "quote": "Calculer des probabilités dans des situations simples d'équiprobabilité"
+      },
+      {
+        "source": "Cycle 3, classe de 6e, Les probabilités",
+        "quote": "En classe de 6e, un objectif majeur est de passer de la traduction d'une probabilité en termes de chances (a chances sur b) à son expression par le nombre égal au quotient"
+      },
+      {
+        "source": "Cycle 3, classe de 6e, Les probabilités",
+        "quote": "Il n'est pas attendu que l'élève utilise le vocabulaire spécifique aux probabilités (expérience, issue, univers, évènement) de manière autonome, mais le professeur peut l'employer."
+      }
+    ]
+  },
+  {
+    "id": "L008",
+    "domain": "L",
+    "domain_name": "Probabilités",
+    "label": "Relation entre les probabilités de A ou B et de A et B",
+    "description": "Connaître et appliquer la relation P(A ∪ B) + P(A ∩ B) = P(A) + P(B) pour calculer l'une des quatre probabilités connaissant les trois autres ; cas des évènements incompatibles (A ∩ B impossible, donc P(A ∪ B) = P(A) + P(B)). Exemple : dé à six faces, A « nombre pair », B « au moins 4 » : P(A) = 3/6, P(B) = 3/6, P(A ∩ B) = 2/6, donc P(A ∪ B) = 3/6 + 3/6 − 2/6 = 4/6, ce que confirme le comptage de {2 ; 4 ; 5 ; 6} ; avec P(A) = 0,6, P(B) = 0,5 et P(A ∪ B) = 0,8, on trouve P(A ∩ B) = 0,6 + 0,5 − 0,8 = 0,3. L'erreur type est d'additionner P(A) et P(B) quand les évènements ne sont pas incompatibles. Réponse : nombre (fraction ou décimal). Figure : aucune.",
+    "prerequisites": [
+      "L003"
+    ],
+    "difficulty": 6,
+    "school_level": "3e",
+    "validation_test": "On choisit au hasard un adhérent d'un club. La probabilité qu'il fasse du tennis est 0,45, qu'il fasse de la natation 0,3, et qu'il pratique les deux 0,1. Quelle est la probabilité qu'il fasse du tennis ou de la natation ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 3e, Organisation et gestion de données et probabilités, Probabilités, Objectifs d'apprentissage",
+        "quote": "Connaitre et savoir appliquer la relation 𝑃(𝐴 ∪ 𝐵) + 𝑃(𝐴 ∩ 𝐵) = 𝑃(𝐴) + 𝑃(𝐵)."
+      }
+    ]
+  },
+  {
+    "id": "L010",
+    "domain": "L",
+    "domain_name": "Probabilités",
+    "label": "Probabilité sous la forme « a chances sur b »",
+    "description": "Dans une situation d'équiprobabilité, dénombrer les issues qui réalisent un évènement et exprimer sa probabilité sous la forme « a chances sur b », où a est le nombre d'issues favorables et b le nombre total d'issues ; comparer deux probabilités dans des cas simples (même nombre total d'issues, ou comparaison à une chance sur deux). Exemple : avec un dé équilibré à six faces, obtenir un multiple de 3 se réalise avec les issues 3 et 6 : 2 chances sur 6 ; obtenir un nombre pair : 3 chances sur 6, c'est une chance sur deux. L'erreur type est de compter les issues défavorables à la place des favorables, ou de prendre pour b le nombre d'issues favorables. Réponse : un nombre, a, le total b étant donné par l'énoncé (« il y a ... chances sur 6 ») ; QCM ; « 2 chances sur 6 » tapé en entier ne se lit pas. Figure : aucune.",
+    "prerequisites": [
+      "L036",
+      "A012"
+    ],
+    "difficulty": 4,
+    "school_level": "CM2",
+    "validation_test": "On tire au hasard une carte parmi 10 cartes numérotées de 1 à 10. Combien y a-t-il de chances sur 10 de tirer un nombre impair ? Et de tirer un nombre plus grand que 7 ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 3, Cours moyen deuxième année, Les probabilités",
+        "quote": "Dans une situation d'équiprobabilité, lors d'une expérience aléatoire simple, exprimer la probabilité d'un évènement sous la forme « a chances sur b »"
+      },
+      {
+        "source": "Cycle 3, Cours moyen deuxième année, Les probabilités",
+        "quote": "Identifier toutes les issues réalisant un évènement dans une expérience aléatoire simple"
+      },
+      {
+        "source": "Cycle 3, Cours moyen deuxième année, Les probabilités",
+        "quote": "Comparer des probabilités dans des cas simples"
+      },
+      {
+        "source": "Cycle 3, Cours moyen deuxième année, Les probabilités",
+        "quote": "Identifier toutes les issues possibles lors d'une expérience aléatoire simple"
+      }
+    ]
+  },
+  {
+    "id": "L016",
+    "domain": "L",
+    "domain_name": "Probabilités",
+    "label": "Expérience en deux étapes : recenser les issues dans un tableau ou un arbre",
+    "description": "Recenser toutes les issues d'une expérience aléatoire en deux étapes (lancer deux fois une pièce, une pièce puis un dé, deux tirages avec remise) dans un tableau à double entrée ou dans un arbre, compter celles qui réalisent un évènement et donner sa probabilité sous la forme « a chances sur b ». Comprendre que la pièce ou le dé « ne se souvient pas » du résultat précédent : après trois piles, la pièce a toujours une chance sur deux de tomber sur pile. Exemple : une pièce puis un dé à quatre faces donnent 2 × 4 = 8 issues (P1, P2, P3, P4, F1, F2, F3, F4) ; obtenir pile et un nombre pair se réalise avec P2 et P4 : 2 chances sur 8. L'erreur type est de mélanger l'ordre des étapes (compter une seule fois pile puis face et face puis pile) ou de croire qu'après plusieurs piles, face devient plus probable. Réponse : nombre (nombre d'issues, ou a, le total étant donné), QCM, vrai/faux. Figure nécessaire : arbre (existant), issues écrites, au plus 12 issues ; tableau à double entrée en KaTeX, au plus 5 colonnes.",
+    "prerequisites": [
+      "L010",
+      "K037"
+    ],
+    "difficulty": 4,
+    "school_level": "CM2",
+    "validation_test": "On lance une pièce, puis on tire une boule dans un sac qui contient une boule rouge, une verte et une jaune. Combien y a-t-il d'issues en tout ? Combien de chances sur ce total a-t-on d'obtenir face et une boule rouge ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 3, Cours moyen deuxième année, Les probabilités",
+        "quote": "Dans des situations d'équiprobabilité, recenser toutes les issues possibles d'une expérience aléatoire en deux étapes dans un tableau ou dans un arbre afin de déterminer des probabilités"
+      },
+      {
+        "source": "Cycle 3, Cours moyen deuxième année, Les probabilités",
+        "quote": "Comprendre la notion d'indépendance lors de la répétition de la même expérience aléatoire"
+      },
+      {
+        "source": "Cycle 3, Cours moyen deuxième année, Les probabilités",
+        "quote": "les élèves apprennent à utiliser un tableau à double entrée ou un arbre pour recenser, d'une part, toutes les issues possibles et, d'autre part, celles qui réalisent l'évènement dont on recherche la probabilité."
+      }
+    ]
+  },
+  {
+    "id": "L024",
+    "domain": "L",
+    "domain_name": "Probabilités",
+    "label": "Stabilisation des fréquences : estimer une probabilité",
+    "description": "Observer que la fréquence d'une issue se stabilise autour de sa probabilité quand le nombre de répétitions augmente (loi des grands nombres), lire un graphique de la fréquence en fonction du nombre de répétitions, estimer une probabilité inconnue par une fréquence observée sur un grand nombre de répétitions (une punaise qui tombe sur la tête, le sexe d'un enfant à la naissance), et prévoir un ordre de grandeur d'effectif. Simuler des expériences indépendantes ne se fait pas à l'écran : l'élève interprète des simulations données. Exemple : sur 2 000 lancers d'une punaise, elle tombe 1 240 fois sur la tête, fréquence 0,62 : on estime la probabilité à environ 0,62, et sur 500 nouveaux lancers on attend environ 310 fois la tête. L'erreur type est de juger sur 20 lancers comme sur 2 000, ou de prendre la fréquence pour la probabilité exacte. Réponse : nombre (fréquence, estimation à la tolérance annoncée), QCM, vrai/faux. Figure nécessaire : repere (existant), ligne brisée de la fréquence en fonction du nombre de répétitions, titres d'axes ; sommets sur la demi-graduation, contrainte acceptable.",
+    "prerequisites": [
+      "L040",
+      "J040"
+    ],
+    "difficulty": 7,
+    "school_level": "3e",
+    "validation_test": "Une machine simule 10 000 naissances et obtient 5 120 filles. Quelle est la fréquence des filles ? Sur 300 naissances dans une maternité, combien de filles peut-on attendre environ ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 3e, Organisation et gestion de données et probabilités, Probabilités, Objectifs d'apprentissage",
+        "quote": "Observer la stabilisation des fréquences lorsqu'on augmente le nombre de répétitions de l'expérience aléatoire, faire le lien entre fréquence et probabilité selon le nombre de répétitions."
+      },
+      {
+        "source": "Cycle 4, classe de 3e, Organisation et gestion de données et probabilités, Probabilités, Objectifs d'apprentissage",
+        "quote": "Simuler des expériences aléatoires indépendantes."
+      },
+      {
+        "source": "Cycle 4, Organisation et gestion de données et probabilités, présentation commune aux trois classes",
+        "quote": "Dans d'autres cas, un modèle probabiliste peut être construit à partir de fréquences observées (par exemple : sexe d'un enfant à la naissance) en s'appuyant sur l'idée de stabilisation des fréquences (loi des grands nombres)."
+      }
+    ]
+  },
+  {
+    "id": "L036",
+    "domain": "L",
+    "domain_name": "Probabilités",
+    "label": "Comparer des chances : de « impossible » à « certain »",
+    "description": "Employer les mots « impossible », « possible », « certain », « probable », « peu probable », « une chance sur deux » pour qualifier un évènement, le situer sur une échelle qui va de « impossible » à « certain », et comparer deux évènements selon leur chance de se réaliser. Savoir qu'un évènement a une chance sur deux quand il a autant de chances de se réaliser que de ne pas se réaliser (pile avec une pièce, un nombre pair avec un dé), et que deux issues possibles ne donnent pas toujours une chance sur deux (gagner ou perdre au loto). Exemple : dans une urne de 2 boules rouges et 6 boules bleues, tirer une bleue est probable, tirer une rouge est peu probable, tirer une verte est impossible. L'erreur type est de dire « une chance sur deux » dès qu'il y a deux issues. Réponse : QCM (un mot de l'échelle), vrai/faux, texte court. Figure utile : échelle de probabilité en mots, à créer (confortable) ; QCM sinon.",
+    "prerequisites": [
+      "L001",
+      "A006"
+    ],
+    "difficulty": 3,
+    "school_level": "CM1",
+    "validation_test": "Dans un sac, il y a 7 jetons verts et 1 jeton rouge. On tire un jeton au hasard. Tirer un jeton vert est-il impossible, peu probable, probable ou certain ? Et tirer un jeton bleu ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 3, Cours moyen première année, Les probabilités",
+        "quote": "Comprendre et utiliser le vocabulaire approprié : « impossible », « possible », « certain », « probable », « peu probable », « une chance sur deux »"
+      },
+      {
+        "source": "Cycle 3, Cours moyen première année, Les probabilités",
+        "quote": "Comparer des issues d'expériences aléatoires ou des évènements selon leur probabilité de réalisation"
+      },
+      {
+        "source": "Cycle 3, Cours moyen première année, Les probabilités",
+        "quote": "Comprendre que ce n'est pas parce qu'il y a deux issues possibles que chacune a une chance sur deux de se réaliser"
+      },
+      {
+        "source": "Cycle 3, Cours moyen première année, Les probabilités",
+        "quote": "Les élèves apprennent à estimer les probabilités d'évènements sur une échelle allant de « impossible » à « certain »"
+      }
+    ]
+  },
+  {
+    "id": "L037",
+    "domain": "L",
+    "domain_name": "Probabilités",
+    "label": "Fréquence observée et probabilité calculée",
+    "description": "Comparer les résultats d'une expérience aléatoire répétée à la probabilité calculée : calculer la proportion des répétitions où une issue est sortie (sa fréquence, en fraction, en décimal ou en pourcentage), la confronter à la probabilité, et savoir qu'elles sont en général proches sans être égales. Exemple : sur 50 lancers d'une pièce, pile est sorti 27 fois, soit 27/50 = 0,54 = 54 %, proche de la probabilité 0,5 ; ce n'est pas une preuve que la pièce est truquée. L'erreur type est de croire que la fréquence doit être exactement égale à la probabilité, ou qu'après une série de piles, face va forcément sortir. Les résultats sont donnés par l'énoncé (un tableau) : l'expérience elle-même se fait en classe. Réponse : nombre (fréquence), QCM, vrai/faux. Figure : aucune (tableau KaTeX).",
+    "prerequisites": [
+      "L006",
+      "D009"
+    ],
+    "difficulty": 4,
+    "school_level": "6e",
+    "validation_test": "On a lancé 40 fois un dé équilibré à six faces ; le 6 est sorti 9 fois. Quelle est la fréquence de sortie du 6, en pourcentage ? La probabilité d'obtenir 6 est-elle plus grande ou plus petite que cette fréquence ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 3, classe de 6e, Les probabilités",
+        "quote": "Comparer des résultats d'une expérience aléatoire répétée à une probabilité calculée"
+      },
+      {
+        "source": "Cycle 3, classe de 6e, Les probabilités",
+        "quote": "L'approche fréquentiste des probabilités est également introduite."
+      }
+    ]
+  },
+  {
+    "id": "L038",
+    "domain": "L",
+    "domain_name": "Probabilités",
+    "label": "Probabilité sous diverses formes ; échelle de probabilité",
+    "description": "Attribuer une probabilité dans un cas simple d'équiprobabilité et l'écrire sous forme de fraction, de nombre décimal et de pourcentage ; lier « une chance sur quatre » et la probabilité 1/4 ; positionner des évènements sur une échelle de probabilité de 0 à 1 : impossible (0), certain (1), obtenir pile (0,5), obtenir une valeur donnée avec un dé (1/6, un peu moins de 0,17), tirer une couleur dans une urne, ne pas gagner au loto (presque 1), obtenir dix fois de suite 1 avec un dé (presque 0). Exemple : une roue à 8 secteurs égaux dont 3 rouges : la probabilité d'obtenir rouge est 3/8 = 0,375 = 37,5 %. L'erreur type est de mal convertir (3/8 écrit 0,38 % ou 3,8) ou de placer 1/6 au milieu de l'échelle. Réponse : nombre (fraction ou décimal) ; pourcentage avec l'unité « % » ; QCM ou lettre d'un point pour l'échelle. Figure utile : demi_droite (existant) graduée de 0 à 1, points lettrés ; un segment gradué sans flèche serait plus juste (confortable).",
+    "prerequisites": [
+      "L002",
+      "E036"
+    ],
+    "difficulty": 5,
+    "school_level": "5e",
+    "validation_test": "On tire une carte au hasard dans un jeu de 20 cartes dont 5 sont des as. Donne la probabilité de tirer un as sous forme de fraction, de nombre décimal et de pourcentage. Sur une échelle de probabilité de 0 à 1, cet évènement est-il plus proche de 0 ou de 1 ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 5e, Organisation et gestion de données et probabilités, Probabilités, Automatismes",
+        "quote": "Donner la probabilité sous diverses formes (fraction, décimale, pourcentage) pour les cinq premiers évènements ci-dessus."
+      },
+      {
+        "source": "Cycle 4, classe de 5e, Organisation et gestion de données et probabilités, Probabilités, Automatismes",
+        "quote": "Positionner sur une échelle de probabilité les évènements du type"
+      },
+      {
+        "source": "Cycle 4, classe de 5e, Organisation et gestion de données et probabilités, Probabilités, Automatismes",
+        "quote": "Lier l'expression « une chance sur quatre » (par exemple) et la probabilité"
+      },
+      {
+        "source": "Cycle 4, classe de 5e, Organisation et gestion de données et probabilités, Probabilités, Objectifs d'apprentissage",
+        "quote": "Attribuer des probabilités dans des cas simples (équiprobabilité)."
+      },
+      {
+        "source": "Cycle 4, Organisation et gestion de données et probabilités, présentation commune aux trois classes",
+        "quote": "L'équiprobabilité est une hypothèse qui ne se démontre pas, mais qui peut être jugée pertinente par un argument de symétrie."
+      }
+    ]
+  },
+  {
+    "id": "L039",
+    "domain": "L",
+    "domain_name": "Probabilités",
+    "label": "Expériences à deux épreuves : probabilités par un tableau ou un arbre",
+    "description": "Calculer la probabilité d'un évènement dans une expérience à deux épreuves (deux pièces, une pièce et un dé, deux dés, deux tirages avec ou sans remise) : représenter toutes les issues dans un tableau à double entrée ou un arbre, vérifier qu'elles sont équiprobables, compter celles qui réalisent l'évènement, passer au contraire si c'est plus simple. Exemple : deux dés à quatre faces donnent 4 × 4 = 16 issues équiprobables ; une somme égale à 5 est obtenue par (1 ; 4), (2 ; 3), (3 ; 2), (4 ; 1), probabilité 4/16 ; deux tirages sans remise parmi trois boules donnent 3 × 2 = 6 issues. L'erreur type est de compter (1 ; 4) et (4 ; 1) comme une seule issue, ou de prendre pour issues les sommes 2 à 8, qui ne sont pas équiprobables. Le produit des probabilités le long d'un chemin n'est pas exigé. Réponse : nombre (fraction ou décimal), QCM. Figure nécessaire : arbre (existant), au plus 12 issues, probabilités et issues écrites en option ; tableau KaTeX au plus 5 colonnes (deux dés à six faces : tableau 7 × 7, à créer).",
+    "prerequisites": [
+      "L016",
+      "L003"
+    ],
+    "difficulty": 6,
+    "school_level": "4e",
+    "validation_test": "On lance deux pièces équilibrées. Quelle est la probabilité d'obtenir deux fois face ? Et d'obtenir au moins une fois pile ? On tire ensuite successivement deux boules, sans remise, dans un sac qui contient une boule rouge, une verte et une bleue : combien y a-t-il d'issues ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 4e, Organisation et gestion de données et probabilités, Probabilités, Objectifs d'apprentissage",
+        "quote": "Exemples simples d'expériences aléatoires à deux épreuves (par exemple, lancer de deux pièces, d'une pièce et d'un dé, de deux dés, etc.)."
+      }
+    ]
+  },
+  {
+    "id": "L040",
+    "domain": "L",
+    "domain_name": "Probabilités",
+    "label": "Fluctuation des fréquences ; distributions des fréquences et des probabilités",
+    "description": "À partir des résultats d'une expérience aléatoire répétée, réalisée en classe ou simulée, calculer la fréquence de chaque issue, la comparer à sa probabilité par un tableau ou par deux diagrammes (distribution des fréquences, distribution des probabilités), et constater que pour un même nombre de répétitions les fréquences changent d'une série à l'autre (fluctuation). Répéter ou simuler l'expérience ne se fait pas à l'écran : l'élève interprète des résultats donnés (tableau d'effectifs de 60 lancers, deux séries de 100 lancers). Exemple : 60 lancers d'un dé donnent le 3 douze fois, soit une fréquence de 12/60 = 0,2, pour une probabilité de 1/6, environ 0,17 ; une autre série de 60 lancers donne le 3 sept fois. L'erreur type est de conclure qu'un dé est truqué sur une seule série, ou de croire que deux séries de même taille doivent donner les mêmes fréquences. Réponse : nombre, QCM, vrai/faux. Figure nécessaire : diagramme_barres (existant) pour la distribution des fréquences, probabilités dans un tableau ; diagramme à deux séries côte à côte, à créer (confortable).",
+    "prerequisites": [
+      "L037",
+      "K012",
+      "L038"
+    ],
+    "difficulty": 6,
+    "school_level": "4e",
+    "validation_test": "On a fait deux séries de 50 lancers d'une même pièce : la première donne 23 piles, la seconde 28 piles. Calcule la fréquence de pile dans chaque série. Ces résultats prouvent-ils que la pièce est truquée ?",
+    "mastery_threshold": {
+      "required": 3,
+      "out_of": 4
+    },
+    "exercise_ids": [],
+    "mindmap_id": null,
+    "programme_ref": [
+      {
+        "source": "Cycle 4, classe de 4e, Organisation et gestion de données et probabilités, Probabilités, Objectifs d'apprentissage",
+        "quote": "Observer la fluctuation des fréquences pour un nombre de répétitions fixé de l'expérience aléatoire."
+      },
+      {
+        "source": "Cycle 4, classe de 4e, Organisation et gestion de données et probabilités, Probabilités, Objectifs d'apprentissage",
+        "quote": "À partir de la répétition d'une expérience aléatoire, réalisée matériellement ou simulée, comparer des graphiques de distributions (fréquentielle et probabiliste)."
+      },
+      {
+        "source": "Cycle 4, classe de 5e, Organisation et gestion de données et probabilités, Probabilités, Objectifs d'apprentissage",
+        "quote": "Répéter matériellement une expérience aléatoire simple. Enregistrer les résultats observés dans un tableau d'effectifs et de fréquences."
+      }
+    ]
+  }
+]

@@ -9,7 +9,7 @@
       "Programme de mathématiques pour le cycle 3 (CM1, CM2, 6e)",
       "Annexe 2 - Programme de mathématiques pour le cycle 4 (5e, 4e, 3e)"
     ],
-    "total_skills": 297,
+    "total_skills": 331,
     "domains": [
       {
         "id": "A",
@@ -50,6 +50,16 @@
         "id": "J",
         "name": "Fonctions",
         "count": 16
+      },
+      {
+        "id": "K",
+        "name": "Statistiques",
+        "count": 20
+      },
+      {
+        "id": "L",
+        "name": "Probabilités",
+        "count": 14
       },
       {
         "id": "P",
@@ -8753,7 +8763,8 @@
       "prerequisites": [
         "G056",
         "G040",
-        "G060"
+        "G060",
+        "G053"
       ],
       "difficulty": 6,
       "school_level": "4e",
@@ -9503,7 +9514,8 @@
       "description": "Dire qu'une grandeur dépend d'une autre en employant l'expression « en fonction de » (la température en fonction de l'heure, le prix en fonction de la masse, le périmètre d'un carré en fonction de son côté), et lire un tableau de valeurs à deux lignes : trouver la valeur de la seconde grandeur pour une valeur de la première, et inversement ; repérer la plus grande et la plus petite valeur et le sens de variation (« quand la durée augmente, la distance augmente ») ; décider si la dépendance est une situation de proportionnalité ou non. Exemple : heures 8 ; 10 ; 12 ; 14 ; 16 et températures −1 ; 3 ; 7 ; 8 ; 5 (en °C) : il fait 7 °C à 12 h, le maximum est 8 °C à 14 h, la température monte puis descend, et elle n'est pas proportionnelle à l'heure (−1 °C à 8 h, mais pas −2 °C à 16 h). L'erreur type est de lire la mauvaise ligne (donner l'heure quand on demande la température) ou de croire qu'une grandeur qui augmente quand l'autre augmente lui est proportionnelle. Le tableau s'écrit en KaTeX, comme dans les exercices de E003. Réponse : un nombre avec unité, vrai/faux ou QCM. Figure : aucune.",
       "prerequisites": [
         "E030",
-        "A023"
+        "A023",
+        "K039"
       ],
       "difficulty": 5,
       "school_level": "5e",
@@ -9650,7 +9662,8 @@
       "description": "Lire sur un graphique cartésien (une courbe ou un nuage de points) la valeur d'une grandeur pour une valeur de l'autre, dans les deux sens, en tenant compte du pas de chaque axe (une graduation pour 0,5 h, pour 20 km), et interpréter : à quel moment la grandeur est la plus grande, sur quelle période elle ne change pas (un palier : le cycliste s'arrête), quand elle augmente ou diminue ; sur un nuage, comparer deux points ou repérer une valeur isolée. Exemple : un trajet de 0 h à 4 h avec un palier à 60 km de 1 h à 1,5 h, soit un arrêt de 0,5 h = 30 min, et 120 km atteints à 3 h. L'erreur type est de compter une graduation pour une unité, d'inverser abscisse et ordonnée, ou de prendre la courbe pour un dessin du trajet (un palier n'est pas une route plate). Les valeurs demandées tombent sur la demi-graduation : la réponse est exacte, sans tolérance. Réponse : un nombre avec unité, vrai/faux ou QCM. Figure nécessaire : repere (existant), ligne brisée (« ligne », sommets marqués ou non) ou nuage de points, titres d'axes, pas différents ; pointillés de lecture en découverte et au corrigé seulement.",
       "prerequisites": [
         "J039",
-        "P027"
+        "P027",
+        "K040"
       ],
       "difficulty": 5,
       "school_level": "5e",
@@ -9854,6 +9867,1097 @@
         {
           "source": "Cycle 4, classe de 3e, Proportionnalité, fonctions, Proportionnalité, Objectifs d'apprentissage",
           "quote": "Relier la représentation graphique d'une situation de proportionnalité avec le théorème de Thalès."
+        }
+      ]
+    },
+    {
+      "id": "K003",
+      "domain": "K",
+      "domain_name": "Statistiques",
+      "label": "Effectifs : organiser des données brutes dans un tableau d'effectifs",
+      "description": "Organiser des données : à partir d'une liste brute de valeurs (les pointures de 25 élèves, le nombre d'animaux par élève), compter l'effectif de chaque valeur, présenter le tableau d'effectifs, calculer l'effectif total et vérifier qu'il vaut le nombre de données ; retrouver un effectif manquant à partir de l'effectif total. Les mots série, valeur, effectif et effectif total sont employés. Exemple : dans la série 2 ; 0 ; 1 ; 1 ; 3 ; 2 ; 1 ; 0 ; 1 ; 2 (nombre d'animaux par élève), la valeur 1 a pour effectif 4 et l'effectif total est 10. L'erreur type est d'oublier une donnée ou d'en compter une deux fois (le total ne retombe pas sur le nombre de données), ou de confondre une valeur et son effectif. Le recueil des données se fait en classe, il n'est pas évalué ici. Réponse : nombre (un effectif à la fois), QCM. Figure : aucune (série écrite dans l'énoncé, tableau KaTeX).",
+      "prerequisites": [
+        "K042"
+      ],
+      "difficulty": 4,
+      "school_level": "5e",
+      "validation_test": "Voici les notes sur 5 de 12 élèves : 3 ; 5 ; 2 ; 3 ; 4 ; 3 ; 5 ; 1 ; 3 ; 4 ; 2 ; 3. Quel est l'effectif de la note 3 ? Dans une autre classe de 20 élèves, la note 1 a l'effectif 2, la note 2 l'effectif 5, la note 4 l'effectif 6, et toutes les autres notes sont des 3 : quel est l'effectif de la note 3 ?",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [],
+      "mindmap_id": null,
+      "programme_ref": [
+        {
+          "source": "Cycle 4, classe de 5e, Organisation et gestion de données et probabilités, Statistiques, Objectifs d'apprentissage",
+          "quote": "Recueillir et organiser des données."
+        },
+        {
+          "source": "Cycle 4, classe de 5e, Organisation et gestion de données et probabilités, Statistiques, Objectifs d'apprentissage",
+          "quote": "Calculer des effectifs et des fréquences (exprimées sous forme décimale, fractionnaire ou de pourcentage)."
+        }
+      ]
+    },
+    {
+      "id": "K004",
+      "domain": "K",
+      "domain_name": "Statistiques",
+      "label": "Fréquences : écriture décimale, fractionnaire ou en pourcentage",
+      "description": "Calculer la fréquence d'une valeur, quotient de son effectif par l'effectif total, et l'écrire sous forme de fraction (6/24), de nombre décimal (0,25) ou de pourcentage (25 %) ; vérifier que la somme des fréquences vaut 1, soit 100 % ; comparer deux séries d'effectifs totaux différents par leurs fréquences. Exemple : 6 élèves sur 24 viennent à vélo, fréquence 6/24 = 0,25 = 25 % ; dans une autre classe, 7 sur 20, soit 0,35 = 35 % : la part des cyclistes y est plus grande, bien que l'effectif soit presque le même. La fraction n'a pas à être simplifiée (la simplification est de 4e) ; un arrondi au centième ou au pour cent près est demandé quand le quotient ne tombe pas juste (5 sur 12, environ 0,42 ou 42 %). L'erreur type est de diviser l'effectif total par l'effectif, ou de comparer des effectifs au lieu des fréquences. Réponse : nombre (fraction ou décimal, toute fraction égale acceptée par la correction) ; en pourcentage avec l'unité « % » quand l'énoncé le demande ; tolérance égale à la moitié de l'arrondi demandé. Figure : aucune.",
+      "prerequisites": [
+        "K003",
+        "E036",
+        "D026"
+      ],
+      "difficulty": 5,
+      "school_level": "5e",
+      "validation_test": "Dans un club de 40 adhérents, 14 pratiquent le tennis. Quelle est la fréquence des joueurs de tennis, en écriture décimale puis en pourcentage ? Dans un autre club, 9 adhérents sur 30 jouent au tennis : dans quel club la part des joueurs de tennis est-elle la plus grande ?",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [],
+      "mindmap_id": null,
+      "programme_ref": [
+        {
+          "source": "Cycle 4, classe de 5e, Organisation et gestion de données et probabilités, Statistiques, Objectifs d'apprentissage",
+          "quote": "Calculer des effectifs et des fréquences (exprimées sous forme décimale, fractionnaire ou de pourcentage)."
+        }
+      ]
+    },
+    {
+      "id": "K005",
+      "domain": "K",
+      "domain_name": "Statistiques",
+      "label": "Moyenne simple d'une série : calculer, interpréter",
+      "description": "Calculer la moyenne d'une série de données brutes, somme des valeurs divisée par le nombre de valeurs, et l'interpréter : une moyenne n'est pas forcément une valeur de la série, elle est comprise entre la plus petite et la plus grande valeur, et elle permet de comparer deux séries. Exemple : notes 12 ; 15 ; 9 ; 14 : somme 50, moyenne 50 ÷ 4 = 12,5 ; températures 18 ; 21 ; 20 ; 23 ; 19 (en °C) : moyenne 101 ÷ 5 = 20,2 °C. Quand le quotient ne tombe pas juste, l'énoncé impose l'arrondi : 13 ; 11 ; 16 donnent 40 ÷ 3, environ 13,3 au dixième. L'erreur type est de diviser par un autre nombre que le nombre de valeurs (en oubliant une valeur nulle), ou de prendre la valeur située au milieu de la liste. Réponse : nombre avec unité ; valeur exacte si le quotient tombe juste, sinon arrondi imposé par l'énoncé et tolérance de la moitié de l'arrondi (0,05 au dixième), qui accepte aussi la fraction 40/3. Figure : aucune.",
+      "prerequisites": [
+        "K003",
+        "D026",
+        "D009",
+        "C032"
+      ],
+      "difficulty": 5,
+      "school_level": "5e",
+      "validation_test": "Les temps d'un nageur sur 50 m sont : 42 s ; 38 s ; 44 s ; 39 s ; 43 s ; 40 s. Quel est son temps moyen ? Un autre nageur a un temps moyen de 40,5 s : lequel est le plus rapide en moyenne ?",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [],
+      "mindmap_id": null,
+      "programme_ref": [
+        {
+          "source": "Cycle 4, classe de 5e, Organisation et gestion de données et probabilités, Statistiques, Objectifs d'apprentissage",
+          "quote": "Calculer et interpréter la moyenne simple d'une série de données."
+        }
+      ]
+    },
+    {
+      "id": "K006",
+      "domain": "K",
+      "domain_name": "Statistiques",
+      "label": "Médiane d'une série de petit effectif en données brutes",
+      "description": "Déterminer une médiane d'une série de petit effectif donnée en données brutes : ranger les valeurs dans l'ordre croissant, puis prendre la valeur du milieu (effectif impair) ou, par convention, la moyenne des deux valeurs du milieu (effectif pair) ; l'interpréter : au moins la moitié des valeurs lui sont inférieures ou égales, au moins la moitié lui sont supérieures ou égales. Exemple : 7 ; 12 ; 9 ; 15 ; 10 rangées donnent 7 ; 9 ; 10 ; 12 ; 15, médiane 10 ; les températures −2 ; 5 ; 1 ; 3 (en °C) rangées donnent −2 ; 1 ; 3 ; 5, médiane (1 + 3) ÷ 2 = 2 °C. L'erreur type est de prendre la valeur du milieu sans ranger la série, ou de confondre la médiane avec la moyenne. Réponse : nombre avec unité, exact ; avec un effectif pair, la convention de la demi-somme est rappelée par l'énoncé, ou les deux valeurs du milieu sont égales. Figure : aucune.",
+      "prerequisites": [
+        "K005",
+        "A023"
+      ],
+      "difficulty": 5,
+      "school_level": "4e",
+      "validation_test": "Les tailles, en cm, de 7 joueurs sont : 182 ; 175 ; 190 ; 178 ; 186 ; 175 ; 181. Quelle est la taille médiane ? Un joueur de 184 cm rejoint l'équipe : quelle est la nouvelle médiane, en prenant la moyenne des deux tailles du milieu ?",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [],
+      "mindmap_id": null,
+      "programme_ref": [
+        {
+          "source": "Cycle 4, classe de 4e, Organisation et gestion de données et probabilités, Statistiques, Objectifs d'apprentissage",
+          "quote": "Déterminer une médiane et l'interpréter dans le cas d'une série de petit effectif présentée sous forme de données brutes."
+        }
+      ]
+    },
+    {
+      "id": "K008",
+      "domain": "K",
+      "domain_name": "Statistiques",
+      "label": "Médiane et quartiles d'une série donnée par un tableau d'effectifs",
+      "description": "Donner la médiane et les quartiles Q1 et Q3 d'une série donnée par un tableau d'effectifs ou un diagramme en barres, à l'aide des effectifs cumulés : Q1 est la plus petite valeur telle qu'au moins le quart des données lui soient inférieures ou égales, Q3 la plus petite telle qu'au moins les trois quarts le soient. Exemple : notes 8 ; 10 ; 12 ; 15 d'effectifs 3 ; 7 ; 6 ; 4 (effectif total 20, effectifs cumulés 3 ; 10 ; 16 ; 20) : le quart de 20 est 5, donc Q1 est la 5e valeur, 10 ; les trois quarts font 15, Q3 est la 15e valeur, 12 ; la médiane est la moyenne des 10e et 11e valeurs, (10 + 12) ÷ 2 = 11. Pour un effectif de 30, le quart vaut 7,5 : Q1 est la 8e valeur. L'erreur type est de prendre le quart de l'effectif pour la valeur de Q1, ou de chercher le rang dans la liste des valeurs au lieu des effectifs cumulés. Réponse : nombre (une valeur à la fois). Figure utile : diagramme_barres (existant), au plus 10 valeurs, effectifs sur la demi-graduation.",
+      "prerequisites": [
+        "K047",
+        "K006",
+        "E010"
+      ],
+      "difficulty": 6,
+      "school_level": "3e",
+      "validation_test": "Un tableau donne le nombre de frères et sœurs des 28 élèves d'une classe : 0 pour 4 élèves, 1 pour 8 élèves, 2 pour 7 élèves, 3 pour 6 élèves, 4 pour 3 élèves. Détermine le premier quartile, la médiane et le troisième quartile.",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [],
+      "mindmap_id": null,
+      "programme_ref": [
+        {
+          "source": "Cycle 4, classe de 3e, Organisation et gestion de données et probabilités, Statistiques, Objectifs d'apprentissage",
+          "quote": "Donner les quartiles et la médiane d'une série donnée sous forme de tableau d'effectifs ou de diagramme en barres."
+        },
+        {
+          "source": "Cycle 4, classe de 3e, Organisation et gestion de données et probabilités, Statistiques, Automatismes",
+          "quote": "Donner une médiane pour une série comportant un petit nombre de valeurs."
+        }
+      ]
+    },
+    {
+      "id": "K009",
+      "domain": "K",
+      "domain_name": "Statistiques",
+      "label": "Étendue d'une série : calculer, interpréter",
+      "description": "Calculer l'étendue d'une série, différence entre la plus grande et la plus petite valeur, que la série soit donnée en données brutes, par un tableau d'effectifs, un diagramme en barres ou un diagramme circulaire (les valeurs sont alors les modalités, pas les effectifs) ; l'interpréter comme une mesure de la dispersion. Exemple : températures −3 ; 4 ; 9 ; 12 ; 7 (en °C) : étendue 12 − (−3) = 15 °C ; un diagramme en barres du nombre d'enfants par famille, de 0 à 4 enfants : étendue 4 − 0 = 4, quelle que soit la hauteur des barres. L'erreur type est de calculer l'écart entre le plus grand et le plus petit effectif, ou d'oublier le signe d'une valeur négative. Réponse : nombre avec unité. Figure utile : diagramme_barres ou diagramme_circulaire (existants).",
+      "prerequisites": [
+        "K012",
+        "B045"
+      ],
+      "difficulty": 5,
+      "school_level": "4e",
+      "validation_test": "Un diagramme en barres donne les notes d'un contrôle : 6 pour 2 élèves, 9 pour 5 élèves, 11 pour 8 élèves, 14 pour 6 élèves, 17 pour 3 élèves. Quelle est l'étendue des notes ? Quelle serait-elle si les deux élèves qui ont 6 avaient eu 8 ?",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [],
+      "mindmap_id": null,
+      "programme_ref": [
+        {
+          "source": "Cycle 4, classe de 4e, Organisation et gestion de données et probabilités, Statistiques, Objectifs d'apprentissage",
+          "quote": "Calculer et interpréter l'étendue d'une série présentée sous forme de données brutes, d'un tableau, d'un diagramme en barres, d'un diagramme circulaire."
+        }
+      ]
+    },
+    {
+      "id": "K012",
+      "domain": "K",
+      "domain_name": "Statistiques",
+      "label": "Représenter des données : diagramme en barres, diagramme circulaire",
+      "description": "Représenter une série par un diagramme en barres (hauteur proportionnelle à l'effectif, axe gradué depuis 0) ou par un diagramme circulaire (angle de chaque secteur proportionnel à l'effectif ou à la fréquence : pour un effectif total de 24, 360 ÷ 24 = 15° par élève, donc 9 élèves occupent un secteur de 135°) ; vérifier que les angles font 360° en tout ; reconnaître le diagramme qui représente un tableau d'effectifs ou de fréquences. Tracer sur papier ne se fait pas à l'écran : l'élève calcule l'angle d'un secteur ou la hauteur d'une barre, complète un tableau d'angles, choisit parmi plusieurs diagrammes celui qui représente la série, ou repère l'erreur d'un diagramme. L'erreur type est de prendre l'effectif pour la mesure de l'angle (un secteur de 9°), ou d'oublier que les angles font 360° en tout. Réponse : nombre avec l'unité « ° », QCM, vrai/faux. Figure nécessaire : diagramme_circulaire (existant), angles ou effectifs écrits, graduation du tour pour lire un angle ; diagramme_barres (existant), barre « masquee » à compléter.",
+      "prerequisites": [
+        "K004",
+        "E034",
+        "G025"
+      ],
+      "difficulty": 5,
+      "school_level": "5e",
+      "validation_test": "Une classe de 30 élèves a choisi sa sortie : musée 12 élèves, zoo 15 élèves, théâtre 3 élèves. Dans un diagramme circulaire de ces choix, quel angle mesure le secteur du zoo ? Et celui du théâtre ?",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [],
+      "mindmap_id": null,
+      "programme_ref": [
+        {
+          "source": "Cycle 4, classe de 5e, Organisation et gestion de données et probabilités, Statistiques, Objectifs d'apprentissage",
+          "quote": "Représenter, sur papier ou à l'aide d'un tableur-grapheur, des données sous la forme d'un tableau, d'un diagramme (diagramme en barres, diagramme circulaire) ou d'un graphique cartésien."
+        },
+        {
+          "source": "Cycle 4, Organisation et gestion de données et probabilités, présentation commune aux trois classes",
+          "quote": "La compétence Représenter est très souvent mobilisée dans cette partie du programme. Il est important que les élèves réalisent des représentations sur leurs cahiers."
+        }
+      ]
+    },
+    {
+      "id": "K013",
+      "domain": "K",
+      "domain_name": "Statistiques",
+      "label": "Boîte à moustaches : construire, lire, comparer des séries",
+      "description": "Représenter les valeurs de position d'une série par une boîte à moustaches (minimum, Q1, médiane, Q3, maximum sur un axe gradué), la lire, et s'en servir pour comparer deux séries : position des médianes, étendues, écarts entre les quartiles, part des données au-delà d'une valeur (au moins un quart des données sont supérieures ou égales à Q3). Construire la boîte ne se fait pas à l'écran : l'élève choisit la boîte qui représente une série, retrouve un indicateur sur une boîte, ou décide entre deux boîtes. Exemple : minimum 4, Q1 = 7, médiane 9, Q3 = 12, maximum 18 : la boîte va de 7 à 12, les moustaches de 4 à 18, l'étendue vaut 14. L'erreur type est de croire que la moustache la plus longue contient le plus de données, ou de lire la médiane au milieu de la boîte. Réponse : nombre, QCM, vrai/faux. Figure nécessaire : boîte à moustaches sur un axe gradué, une ou deux boîtes, à créer (indispensable).",
+      "prerequisites": [
+        "K008",
+        "K009"
+      ],
+      "difficulty": 7,
+      "school_level": "3e",
+      "validation_test": "Deux boîtes à moustaches résument les temps, en minutes, mis par deux classes pour un cross. Classe A : minimum 12, Q1 = 15, médiane 17, Q3 = 20, maximum 26. Classe B : minimum 13, Q1 = 14, médiane 16, Q3 = 18, maximum 30. Quelle classe a la plus grande étendue ? Dans quelle classe au moins la moitié des élèves ont-ils mis 16 min ou moins ?",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [],
+      "mindmap_id": null,
+      "programme_ref": [
+        {
+          "source": "Cycle 4, classe de 3e, Organisation et gestion de données et probabilités, Statistiques, Objectifs d'apprentissage",
+          "quote": "Construire et utiliser des boites à moustache pour représenter les valeurs de position d'une série statistique."
+        },
+        {
+          "source": "Cycle 4, classe de 3e, Organisation et gestion de données et probabilités, Statistiques, Objectifs d'apprentissage",
+          "quote": "Comprendre et interpréter des données statistiques."
+        }
+      ]
+    },
+    {
+      "id": "K036",
+      "domain": "K",
+      "domain_name": "Statistiques",
+      "label": "Lire un diagramme en barres gradué de un en un",
+      "description": "Lire sur un diagramme en barres le nombre associé à une modalité (combien d'élèves préfèrent la fraise), trouver la modalité la plus choisie et la moins choisie, comparer deux barres avec « plus que », « moins que », « autant que » et dire de combien elles diffèrent. L'axe vertical est gradué de un en un et chaque barre s'arrête sur une graduation : aucune valeur sur une demi-graduation au CE1. Exemple : orange 4, fraise 12, banane 8, kiwi 2 : la fraise est le fruit préféré, et elle a 4 élèves de plus que la banane (12 − 8 = 4). L'erreur type est de lire la graduation voisine du haut de la barre, ou de compter les barres au lieu de lire leur hauteur. Produire le diagramme (programme du CP et du CE1) ne se saisit pas : seule la lecture est évaluée ici. Réponse : nombre, QCM (le nom de la modalité, plus sûr qu'un mot tapé). Figure nécessaire : diagramme_barres (existant), pas 1, 2 à 6 barres, valeurs non écrites, barre cherchée sans valeur.",
+      "prerequisites": [
+        "A006",
+        "B003"
+      ],
+      "difficulty": 2,
+      "school_level": "CE1",
+      "validation_test": "Un diagramme en barres montre le sport préféré des élèves d'une classe : foot 9 élèves, danse 6, judo 3, natation 7. Quel sport a été le plus choisi ? Combien d'élèves de plus ont choisi la natation plutôt que le judo ?",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [],
+      "mindmap_id": null,
+      "programme_ref": [
+        {
+          "source": "Cycle 2, Cours élémentaire première année, Organisation et gestion de données",
+          "quote": "Lire et interpréter les données d'un diagramme en barres."
+        },
+        {
+          "source": "Cycle 2, Cours élémentaire première année, Organisation et gestion de données",
+          "quote": "Un axe vertical fournit l'échelle pour les barres, il est gradué de un en un."
+        },
+        {
+          "source": "Cycle 2, Cours préparatoire, Organisation et gestion de données",
+          "quote": "l'élève sait interpréter, lire et communiquer sur les données disponibles"
+        }
+      ]
+    },
+    {
+      "id": "K037",
+      "domain": "K",
+      "domain_name": "Statistiques",
+      "label": "Lire un tableau à double entrée",
+      "description": "Trouver dans un tableau à double entrée le nombre situé à l'intersection d'une ligne et d'une colonne (combien de garçons viennent à l'école en vélo), retrouver la ligne et la colonne d'une case donnée, et lire une ligne ou une colonne de total. Exemple : lignes « à pied », « en vélo », « en bus », colonnes « filles », « garçons » : la case « en vélo » et « garçons » contient 18. L'erreur type est de croiser la mauvaise ligne ou la mauvaise colonne, ou de lire le total à la place d'une case. Le tableau s'écrit en KaTeX, au plus 5 colonnes. Réponse : nombre ou QCM. Figure : aucune (tableau KaTeX).",
+      "prerequisites": [
+        "A004"
+      ],
+      "difficulty": 2,
+      "school_level": "CE1",
+      "validation_test": "Un tableau donne les animaux d'une ferme : en ligne les poules, les lapins et les chèvres ; en colonne les mâles et les femelles. Poules : 4 mâles et 25 femelles. Lapins : 11 mâles et 16 femelles. Chèvres : 2 mâles et 9 femelles. Combien y a-t-il de lapins femelles ? Quel animal compte 9 femelles ?",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [],
+      "mindmap_id": null,
+      "programme_ref": [
+        {
+          "source": "Cycle 2, Cours élémentaire première année, Organisation et gestion de données",
+          "quote": "Lire et interpréter les données d'un tableau à double entrée."
+        },
+        {
+          "source": "Cycle 2, Cours élémentaire première année, Organisation et gestion de données",
+          "quote": "L'élève sait répondre à des questions dont les réponses figurent dans un tableau à double entrée."
+        },
+        {
+          "source": "Cycle 2, Cours préparatoire, Organisation et gestion de données",
+          "quote": "Construire et compléter un tableau à double entrée."
+        },
+        {
+          "source": "Cycle 2, Cours préparatoire, Organisation et gestion de données",
+          "quote": "L'élève sait qu'une ligne et une colonne d'un tableau à double entrée permettent d'identifier le contenu de la case située à leur intersection."
+        }
+      ]
+    },
+    {
+      "id": "K038",
+      "domain": "K",
+      "domain_name": "Statistiques",
+      "label": "Tableau ou diagramme en barres : problèmes, cases et barres manquantes",
+      "description": "Résoudre un problème à partir d'un tableau à double entrée ou d'un diagramme en barres : calculer un total de ligne ou de colonne, retrouver une case manquante à partir du total (148 filles en tout, 77 + 29 + 24 = 130 à pied, en vélo et en voiture, donc 18 en bus), comparer deux nombres ; lire un diagramme dont l'axe vertical est gradué de 2 en 2, de 5 en 5 ou de 10 en 10 (une barre qui s'arrête à mi-chemin entre 20 et 30 vaut 25, sur la demi-graduation) et dire quelle hauteur doit avoir une barre manquante. Au CE2, chaque valeur est un nombre entier : avec un pas de 5, aucune barre ne s'arrête entre deux nombres entiers. L'erreur type est de compter une graduation pour une unité (une barre arrêtée à la troisième graduation d'un axe gradué de 5 en 5 vaut 15, pas 3), ou d'oublier une case dans un total. Réponse : nombre ou QCM. Figure nécessaire : diagramme_barres (existant), pas 2, 5 ou 10, valeurs sur la demi-graduation, barre « masquee » pour la barre manquante ; le tableau en KaTeX.",
+      "prerequisites": [
+        "K036",
+        "K037",
+        "B004",
+        "B006"
+      ],
+      "difficulty": 3,
+      "school_level": "CE2",
+      "validation_test": "Un diagramme en barres, gradué de 10 en 10, donne le nombre de livres prêtés par une bibliothèque : lundi 40, mardi 25, jeudi 60. En tout, 150 livres ont été prêtés ces quatre jours, vendredi compris. Combien de livres ont été prêtés vendredi ?",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [],
+      "mindmap_id": null,
+      "programme_ref": [
+        {
+          "source": "Cycle 2, Cours élémentaire deuxième année, Organisation et gestion de données",
+          "quote": "Résoudre des problèmes en utilisant les données d'un tableau à double entrée ou d'un diagramme en barre."
+        },
+        {
+          "source": "Cycle 2, Cours élémentaire deuxième année, Organisation et gestion de données",
+          "quote": "Lire et interpréter les données d'un tableau à double entrée ou d'un diagramme en barres."
+        },
+        {
+          "source": "Cycle 2, Cours élémentaire deuxième année, Organisation et gestion de données",
+          "quote": "Pour l'axe vertical du diagramme en barres, l'élève utilise une échelle adaptée aux données."
+        },
+        {
+          "source": "Cycle 2, Cours élémentaire deuxième année, Organisation et gestion de données",
+          "quote": "L'élève sait compléter un tableau comme le suivant"
+        }
+      ]
+    },
+    {
+      "id": "K039",
+      "domain": "K",
+      "domain_name": "Statistiques",
+      "label": "Tableau et diagramme en barres : lire, problèmes en plusieurs étapes",
+      "description": "Prélever des données dans un tableau à simple ou double entrée ou dans un diagramme en barres, y compris des nombres décimaux (temps en secondes, masses en kilogrammes) et des caractères qualitatifs ou quantitatifs (moyen de transport, nombre de frères et sœurs), puis résoudre un problème en une ou plusieurs étapes : écart entre deux valeurs, total, plus grande valeur, valeurs qui dépassent un seuil. Exemple : un tableau donne les temps de quatre coureurs au 50 m : 8,4 s ; 9,1 s ; 7,9 s ; 8,75 s : le plus rapide a couru en 7,9 s et devance de 0,85 s le coureur de 8,75 s. L'erreur type est de croire que le plus grand nombre désigne le meilleur (le plus rapide a le plus petit temps), ou de comparer 8,4 et 8,75 en lisant 75 plus grand que 4. Réponse : nombre avec unité, QCM, texte court. Figure utile : diagramme_barres (existant) ; sinon tableau KaTeX.",
+      "prerequisites": [
+        "K038",
+        "D003",
+        "D004"
+      ],
+      "difficulty": 3,
+      "school_level": "CM1",
+      "validation_test": "Un tableau à double entrée donne le nombre de livres lus en un mois par deux classes : classe des Pins, 34 romans et 18 bandes dessinées ; classe des Chênes, 27 romans et 41 bandes dessinées. Quelle classe a lu le plus de livres, et combien de plus que l'autre ?",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [],
+      "mindmap_id": null,
+      "programme_ref": [
+        {
+          "source": "Cycle 3, Cours moyen première année, Organisation et gestion de données",
+          "quote": "Lire et interpréter les données d'un tableau à simple ou double entrée, d'un diagramme en barres ou d'une courbe"
+        },
+        {
+          "source": "Cycle 3, Cours moyen première année, Organisation et gestion de données",
+          "quote": "Résoudre des problèmes en une ou plusieurs étapes en utilisant les données d'un tableau à simple ou double entrée, d'un diagramme en barres ou d'une courbe"
+        },
+        {
+          "source": "Cycle 3, Cours moyen première année, Organisation et gestion de données",
+          "quote": "Au CM1, les caractères statistiques étudiés peuvent être aussi bien qualitatifs comme un moyen de transport, une couleur ou un sport pratiqué, que quantitatifs comme le nombre de frères et sœurs"
+        }
+      ]
+    },
+    {
+      "id": "K040",
+      "domain": "K",
+      "domain_name": "Statistiques",
+      "label": "Lire et interpréter une courbe",
+      "description": "Lire une courbe qui montre une grandeur au cours du temps (la température d'une journée, la hauteur d'une plante semaine après semaine) : la valeur à un instant donné, l'instant où une valeur est atteinte, le maximum et le minimum, les périodes de hausse, de baisse ou de stabilité, et l'écart entre deux lectures. Les axes portent le nom et l'unité des grandeurs ; ils sont gradués de 1 en 1, de 2 en 2 ou de 5 en 5, et chaque valeur demandée tombe sur un sommet de la courbe, sur la graduation ou la demi-graduation. Exemple : la température vaut 12 °C à 8 h, monte jusqu'à 21 °C à 14 h puis redescend à 15 °C à 20 h : elle a gagné 9 °C entre 8 h et 14 h. L'erreur type est d'inverser les axes (donner une heure quand on demande une température) ou de lire la hauteur d'un point comme une durée. Réponse : nombre avec unité (lecture exacte, sans tolérance), vrai/faux, QCM. Figure nécessaire : repere (existant), premier quadrant, ligne brisée, titres d'axes (« heure (h) », « température (°C) »), pas différents sur les deux axes.",
+      "prerequisites": [
+        "K038",
+        "D019",
+        "P014"
+      ],
+      "difficulty": 3,
+      "school_level": "CM1",
+      "validation_test": "Une courbe donne la hauteur d'un tournesol semaine après semaine : 10 cm la semaine 1, 25 cm la semaine 3, 60 cm la semaine 6 et toujours 60 cm la semaine 8. De combien de centimètres le tournesol a-t-il grandi entre la semaine 3 et la semaine 6 ? À partir de quelle semaine ne grandit-il plus ?",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [],
+      "mindmap_id": null,
+      "programme_ref": [
+        {
+          "source": "Cycle 3, Cours moyen première année, Organisation et gestion de données",
+          "quote": "Lire et interpréter les données d'un tableau à simple ou double entrée, d'un diagramme en barres ou d'une courbe"
+        },
+        {
+          "source": "Cycle 3, Cours moyen première année, Organisation et gestion de données",
+          "quote": "Les élèves résolvent des problèmes dont les données peuvent être prélevées dans des tableaux, dans des diagrammes en barres ou sur des courbes."
+        }
+      ]
+    },
+    {
+      "id": "K041",
+      "domain": "K",
+      "domain_name": "Statistiques",
+      "label": "Lire et interpréter un diagramme circulaire",
+      "description": "Lire un diagramme circulaire dont les secteurs sont des parts simples du disque (la moitié, le quart, le tiers, le huitième) ou portent leur nombre : dire quelle modalité est la plus représentée, comparer deux secteurs, calculer le nombre de personnes d'un secteur à partir du nombre total (le quart des 120 élèves, c'est 30 élèves ; les trois quarts, 90 élèves), et résoudre un problème en une ou deux étapes avec les données d'un texte, d'un tableau ou d'un diagramme. L'erreur type est de croire qu'un secteur deux fois plus grand qu'un autre compte deux personnes de plus, ou de confondre le quart avec le quatrième secteur. Réponse : nombre, QCM, vrai/faux. Figure nécessaire : diagramme_circulaire (existant), noms seuls quand la réponse est une part simple du disque, nombres écrits sinon ; le secteur cherché n'a jamais son nombre écrit.",
+      "prerequisites": [
+        "K039",
+        "C031"
+      ],
+      "difficulty": 4,
+      "school_level": "CM2",
+      "validation_test": "Un diagramme circulaire répartit 200 élèves selon leur façon de venir au collège : la moitié du disque pour le bus, le huitième pour le vélo, le reste pour la marche à pied. Combien d'élèves viennent à vélo ? Combien viennent à pied ?",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [],
+      "mindmap_id": null,
+      "programme_ref": [
+        {
+          "source": "Cycle 3, Cours moyen deuxième année, Organisation et gestion de données",
+          "quote": "Lire et interpréter les données d'un tableau, d'un diagramme en barres, d'un diagramme circulaire ou d'une courbe"
+        },
+        {
+          "source": "Cycle 3, Cours moyen deuxième année, Organisation et gestion de données",
+          "quote": "Résoudre des problèmes en une ou deux étapes en utilisant les données d'un tableau, d'un diagramme en barres, d'un diagramme circulaire ou d'une courbe"
+        },
+        {
+          "source": "Cycle 3, Cours moyen deuxième année, Organisation et gestion de données",
+          "quote": "Les élèves résolvent des problèmes dont les données peuvent être prélevées dans un texte, dans des tableaux, dans des diagrammes en barres, dans des diagrammes circulaires ou sur des courbes."
+        }
+      ]
+    },
+    {
+      "id": "K042",
+      "domain": "K",
+      "domain_name": "Statistiques",
+      "label": "Construire un tableau simple ; filtrer les données d'un tableau selon un critère",
+      "description": "Compléter un tableau simple qui présente des données (observations, mesures, caractères), puis sélectionner dans un tableau les lignes qui vérifient un critère ou deux (les randonnées de moins de 12 km qui durent moins de 4 h), pour faire un choix argumenté ; lire immédiatement un tableau, un diagramme en barres, un diagramme circulaire ou une courbe (automatisme de 6e). Exemple : parmi cinq vélos décrits par leur prix et leur masse, ne garder que ceux qui coûtent moins de 400 € et pèsent moins de 12 kg, puis choisir le moins cher. L'erreur type est d'appliquer un seul des deux critères, ou de garder la valeur limite (un vélo de 12 kg ne pèse pas moins de 12 kg). Réponse : nombre, texte court (le nom de la ligne retenue), QCM ; un nombre par case à compléter. Figure : aucune (tableau KaTeX, au plus 5 colonnes).",
+      "prerequisites": [
+        "K041"
+      ],
+      "difficulty": 4,
+      "school_level": "6e",
+      "validation_test": "Un tableau décrit quatre randonnées : Lac, 9 km, 3 h ; Crête, 14 km, 5 h ; Forêt, 11 km, 4 h ; Cascade, 7 km, 2,5 h. Lesquelles font moins de 12 km et durent moins de 4 h ? Parmi elles, laquelle est la plus longue ?",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [],
+      "mindmap_id": null,
+      "programme_ref": [
+        {
+          "source": "Cycle 3, classe de 6e, Organisation et gestion de données",
+          "quote": "Faire un choix en filtrant les données d'un tableau selon un critère"
+        },
+        {
+          "source": "Cycle 3, classe de 6e, Organisation et gestion de données",
+          "quote": "Construire un tableau simple pour présenter des données (observations, caractères)"
+        },
+        {
+          "source": "Cycle 3, classe de 6e, Organisation et gestion de données",
+          "quote": "L'élève sait lire un tableau, un diagramme en barres, un diagramme circulaire ou une courbe dans des cas adaptés à une lecture immédiate."
+        }
+      ]
+    },
+    {
+      "id": "K043",
+      "domain": "K",
+      "domain_name": "Statistiques",
+      "label": "Choisir une représentation adaptée ; repérer une présentation trompeuse",
+      "description": "Lire et croiser des informations données par un tableau, un diagramme ou un graphique cartésien, et choisir la représentation adaptée à ce qu'on veut montrer : diagramme circulaire pour les parts d'un tout, diagramme en barres pour comparer des effectifs, graphique cartésien pour une évolution dans le temps. Repérer une présentation trompeuse : axe vertical qui ne part pas de 0 et grossit un petit écart, dessins dont l'aire exagère une hausse, pourcentages donnés sans l'effectif, graduations irrégulières. Exemple : deux barres de 102 et 98 dessinées sur un axe qui commence à 95 ont des hauteurs dans le rapport de 7 à 3, alors que l'écart réel est de 4 sur 100 environ. L'erreur type est de comparer les hauteurs dessinées sans lire les graduations. Réponse : QCM, vrai/faux, nombre (l'écart réel). Figure nécessaire : diagramme_barres et repere (existants) pour la lecture ; diagramme en barres à axe volontairement tronqué, à créer (le générateur part toujours de 0).",
+      "prerequisites": [
+        "K012",
+        "J040"
+      ],
+      "difficulty": 5,
+      "school_level": "5e",
+      "validation_test": "Un diagramme en barres montre les ventes de deux magasins, 210 et 190 objets, mais son axe vertical commence à 180 : la première barre paraît trois fois plus haute que la seconde. Le premier magasin vend-il trois fois plus d'objets que le second ? Quel diagramme faut-il choisir pour montrer la part de chaque magasin dans le total des ventes ?",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [],
+      "mindmap_id": null,
+      "programme_ref": [
+        {
+          "source": "Cycle 4, classe de 5e, Organisation et gestion de données et probabilités, Statistiques, Objectifs d'apprentissage",
+          "quote": "Choisir une représentation adaptée à ce qu'il convient de mettre en avant."
+        },
+        {
+          "source": "Cycle 4, classe de 5e, Organisation et gestion de données et probabilités, Statistiques, Objectifs d'apprentissage",
+          "quote": "Lire et interpréter des informations présentées sous forme de tableaux, de diagrammes et de graphiques."
+        },
+        {
+          "source": "Cycle 4, Organisation et gestion de données et probabilités, présentation commune aux trois classes",
+          "quote": "Ce travail permet de développer leur esprit critique, de les éclairer pour prendre des décisions et de les mettre en garde sur des manipulations par des présentations trompeuses."
+        }
+      ]
+    },
+    {
+      "id": "K044",
+      "domain": "K",
+      "domain_name": "Statistiques",
+      "label": "Moyenne pondérée : tableau d'effectifs, diagramme en barres, coefficients",
+      "description": "Calculer la moyenne d'une série donnée par un tableau d'effectifs, un diagramme en barres ou des valeurs affectées de coefficients : somme des produits valeur × effectif, divisée par l'effectif total. Exemple : notes 8 (2 élèves), 12 (5 élèves), 15 (3 élèves) : (8 × 2 + 12 × 5 + 15 × 3) ÷ 10 = 121 ÷ 10 = 12,1 ; une note de 14 coefficient 2 et une note de 11 coefficient 1 donnent (28 + 11) ÷ 3 = 13. Calculer une moyenne de très peu de valeurs reste un automatisme. L'erreur type est de faire la moyenne des seules valeurs sans tenir compte des effectifs (environ 11,7 ici), ou de diviser par le nombre de valeurs au lieu de l'effectif total. Réponse : nombre ; arrondi imposé par l'énoncé et tolérance de la moitié de l'arrondi quand le quotient ne tombe pas juste. Figure utile : diagramme_barres (existant), effectifs sur la demi-graduation.",
+      "prerequisites": [
+        "K005",
+        "D006"
+      ],
+      "difficulty": 5,
+      "school_level": "4e",
+      "validation_test": "Une enquête sur 25 familles donne le nombre de voitures par famille : 0 voiture pour 3 familles, 1 voiture pour 12 familles, 2 voitures pour 8 familles, 3 voitures pour 2 familles. Quel est le nombre moyen de voitures par famille ?",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [],
+      "mindmap_id": null,
+      "programme_ref": [
+        {
+          "source": "Cycle 4, classe de 4e, Organisation et gestion de données et probabilités, Statistiques, Objectifs d'apprentissage",
+          "quote": "Calculer une moyenne pondérée dans le cas d'une série discrète de petits effectifs présentée sous forme de données brutes, d'un tableau ou d'un diagramme en barres."
+        },
+        {
+          "source": "Cycle 4, classe de 4e, Organisation et gestion de données et probabilités, Statistiques, Automatismes",
+          "quote": "Calculer une moyenne pour un très petit nombre de valeurs."
+        }
+      ]
+    },
+    {
+      "id": "K045",
+      "domain": "K",
+      "domain_name": "Statistiques",
+      "label": "Effet d'une valeur extrême sur la moyenne et la médiane",
+      "description": "Comprendre comment évoluent la moyenne et la médiane quand on ajoute à une série une valeur très grande ou très petite : la moyenne bouge beaucoup, la médiane peu ou pas ; choisir l'indicateur qui résume le mieux une série qui contient une valeur extrême. Exemple : salaires 1 800 ; 1 900 ; 2 000 ; 2 100 ; 2 200 € : moyenne et médiane 2 000 € ; on ajoute 14 000 € : moyenne 24 000 ÷ 6 = 4 000 €, médiane (2 000 + 2 100) ÷ 2 = 2 050 €. L'erreur type est de croire que la médiane change autant que la moyenne, ou de garder l'ancien nombre de valeurs pour la nouvelle moyenne. Réponse : nombre avec unité, QCM (l'indicateur le plus représentatif), vrai/faux. Figure : aucune.",
+      "prerequisites": [
+        "K044",
+        "K006"
+      ],
+      "difficulty": 6,
+      "school_level": "4e",
+      "validation_test": "Cinq joueurs ont marqué 12 ; 15 ; 14 ; 11 ; 13 points. Un sixième joueur marque 55 points. Calcule la moyenne et la médiane avant et après son arrivée. Quel indicateur a le plus changé ?",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [],
+      "mindmap_id": null,
+      "programme_ref": [
+        {
+          "source": "Cycle 4, classe de 4e, Organisation et gestion de données et probabilités, Statistiques, Objectifs d'apprentissage",
+          "quote": "Comprendre l'évolution de la médiane et de la moyenne quand on ajoute une valeur extrême."
+        }
+      ]
+    },
+    {
+      "id": "K046",
+      "domain": "K",
+      "domain_name": "Statistiques",
+      "label": "Comparer des séries ; problèmes avec les indicateurs",
+      "description": "Résoudre des problèmes qui font intervenir moyenne, médiane, étendue et fréquences : comparer deux séries (deux classes, deux joueurs) en croisant un indicateur de position et l'étendue, retrouver une valeur manquante connaissant la moyenne (la note qu'il faut au quatrième contrôle pour avoir 12 de moyenne quand les trois premières font 35 : 12 × 4 = 48, 48 − 35 = 13), décider à partir des indicateurs. Exemple : deux archers ont la même moyenne de 8 points, mais des étendues de 2 et de 7 : le premier est plus régulier. L'erreur type est de conclure sur un seul indicateur, ou de diviser la moyenne visée par le nombre de contrôles. Réponse : nombre avec unité, QCM, vrai/faux. Figure utile : diagramme_barres (existant) ; deux séries côte à côte, à créer (confortable).",
+      "prerequisites": [
+        "K045",
+        "K009"
+      ],
+      "difficulty": 6,
+      "school_level": "4e",
+      "validation_test": "Léa a obtenu 11, 14 et 9 à trois contrôles. Quelle note doit-elle avoir au quatrième pour avoir exactement 12 de moyenne ? Tom a eu 12 ; 12 ; 11 ; 13 : avec cette quatrième note, qui de Léa ou de Tom a les notes les plus régulières ?",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [],
+      "mindmap_id": null,
+      "programme_ref": [
+        {
+          "source": "Cycle 4, classe de 4e, Organisation et gestion de données et probabilités, Statistiques, Objectifs d'apprentissage",
+          "quote": "Résoudre des problèmes de comparaison de séries statistiques."
+        },
+        {
+          "source": "Cycle 4, classe de 4e, Organisation et gestion de données et probabilités, Statistiques, Objectifs d'apprentissage",
+          "quote": "Résoudre des problèmes faisant intervenir les différents indicateurs."
+        }
+      ]
+    },
+    {
+      "id": "K047",
+      "domain": "K",
+      "domain_name": "Statistiques",
+      "label": "Effectifs cumulés croissants",
+      "description": "Calculer les effectifs cumulés croissants d'une série donnée par un tableau d'effectifs ou un diagramme en barres : pour chaque valeur, le nombre de données inférieures ou égales à cette valeur ; le dernier effectif cumulé est l'effectif total ; s'en servir pour répondre à « combien de données valent au plus ... ». Exemple : notes 8 ; 10 ; 12 ; 15 d'effectifs 3 ; 7 ; 6 ; 4 : effectifs cumulés croissants 3 ; 10 ; 16 ; 20. L'erreur type est d'additionner les valeurs au lieu des effectifs, ou de cumuler à partir de la plus grande valeur. Réponse : nombre (un effectif cumulé à la fois), QCM. Figure utile : diagramme_barres (existant).",
+      "prerequisites": [
+        "K003"
+      ],
+      "difficulty": 6,
+      "school_level": "3e",
+      "validation_test": "Une équipe a joué 23 matchs : 0 but marqué lors de 4 matchs, 1 but lors de 9 matchs, 2 buts lors de 6 matchs, 3 buts lors de 3 matchs, 5 buts lors d'un match. Quel est l'effectif cumulé croissant de la valeur 2 ? Lors de combien de matchs l'équipe a-t-elle marqué au plus 3 buts ?",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [],
+      "mindmap_id": null,
+      "programme_ref": [
+        {
+          "source": "Cycle 4, classe de 3e, Organisation et gestion de données et probabilités, Statistiques, Objectifs d'apprentissage",
+          "quote": "Calculer des effectifs cumulés croissants."
+        }
+      ]
+    },
+    {
+      "id": "L001",
+      "domain": "L",
+      "domain_name": "Probabilités",
+      "label": "Expérience aléatoire : la reconnaître, recenser ses issues, équiprobables ou non",
+      "description": "Reconnaître une expérience aléatoire (lancer une pièce ou un dé, tirer une boule dans une urne, tourner une roue), dont on ne peut pas prévoir le résultat, la distinguer d'une expérience dont le résultat est connu d'avance, et recenser toutes ses issues possibles. Dire si les issues ont toutes la même chance de se réaliser (dé ou pièce équilibrés : situation d'équiprobabilité) ou non (une urne de 3 boules rouges et 1 boule bleue a deux issues, rouge et bleu, qui n'ont pas la même chance ; une roue aux secteurs inégaux). Exemple : un dé à six faces a six issues, 1 ; 2 ; 3 ; 4 ; 5 ; 6, équiprobables s'il est équilibré. L'erreur type est d'oublier une issue, ou de croire que des issues peu nombreuses sont forcément équiprobables. Les mots expérience et issue sont employés par l'énoncé, sans être exigés de l'élève. Réponse : nombre d'issues, liste d'issues numériques (forme « solutions », séparées par des points-virgules), QCM, vrai/faux ; une liste d'issues écrites en mots ne se lit pas (besoin de correction). Figure utile : roue ou urne décrites en texte ; le diagramme_circulaire (existant, secteurs nommés) tient lieu de roue.",
+      "prerequisites": [
+        "A004"
+      ],
+      "difficulty": 3,
+      "school_level": "CM1",
+      "validation_test": "On tourne une roue partagée en 4 secteurs égaux : deux rouges, un vert, un jaune. Combien de couleurs différentes peut-on obtenir ? Ces couleurs ont-elles toutes la même chance de sortir ?",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [],
+      "mindmap_id": null,
+      "programme_ref": [
+        {
+          "source": "Cycle 3, Cours moyen première année, Les probabilités",
+          "quote": "Identifier des expériences aléatoires"
+        },
+        {
+          "source": "Cycle 3, Cours moyen première année, Les probabilités",
+          "quote": "Identifier toutes les issues possibles lors d'une expérience aléatoire simple"
+        },
+        {
+          "source": "Cycle 3, Cours moyen première année, Les probabilités",
+          "quote": "Reconnaître des situations d'équiprobabilité"
+        },
+        {
+          "source": "Cycle 3, Cours moyen première année, Les probabilités",
+          "quote": "Ils découvrent ainsi en particulier que, selon les cas, toutes les issues peuvent avoir, ou non, la même chance de se réaliser."
+        }
+      ]
+    },
+    {
+      "id": "L002",
+      "domain": "L",
+      "domain_name": "Probabilités",
+      "label": "Vocabulaire : expérience aléatoire, issue, évènement",
+      "description": "Décrire une situation de hasard avec le vocabulaire des probabilités : l'expérience aléatoire, ses issues, un évènement (« obtenir un nombre pair ») et les issues qui le réalisent ; distinguer une issue d'un évènement, l'évènement certain de l'évènement impossible ; distinguer la situation réelle du modèle qui la décrit (on suppose le dé équilibré). Exemple : pour le lancer d'un dé à six faces, l'évènement « obtenir au moins 5 » est réalisé par les issues 5 et 6, et « obtenir 7 » est impossible. L'erreur type est de confondre l'issue et l'évènement, ou d'oublier une issue qui réalise l'évènement. Réponse : liste d'issues numériques (forme « solutions »), nombre d'issues, QCM, vrai/faux. Figure : aucune.",
+      "prerequisites": [
+        "L006"
+      ],
+      "difficulty": 4,
+      "school_level": "5e",
+      "validation_test": "On tire au hasard une boule dans une urne qui contient des boules numérotées de 1 à 12. Quelles issues réalisent l'évènement « obtenir un multiple de 4 » ? Combien d'issues réalisent l'évènement « obtenir un nombre à deux chiffres » ?",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [],
+      "mindmap_id": null,
+      "programme_ref": [
+        {
+          "source": "Cycle 4, classe de 5e, Organisation et gestion de données et probabilités, Probabilités, Objectifs d'apprentissage",
+          "quote": "Utiliser le vocabulaire des probabilités dans des contextes concrets : expérience aléatoire, issue, évènement."
+        },
+        {
+          "source": "Cycle 4, classe de 5e, Organisation et gestion de données et probabilités, Probabilités, Objectifs d'apprentissage",
+          "quote": "Aborder les questions relatives au hasard à partir de problèmes simples."
+        },
+        {
+          "source": "Cycle 4, Organisation et gestion de données et probabilités, présentation commune aux trois classes",
+          "quote": "Dans tous les cas, on distingue la situation réelle du modèle probabiliste utilisé pour la décrire."
+        }
+      ]
+    },
+    {
+      "id": "L003",
+      "domain": "L",
+      "domain_name": "Probabilités",
+      "label": "Probabilité d'un évènement et de l'évènement contraire",
+      "description": "Calculer la probabilité d'un évènement en équiprobabilité (nombre d'issues favorables divisé par le nombre total d'issues), savoir que la somme des probabilités de toutes les issues vaut 1 et que P(non A) = 1 − P(A) ; s'en servir quand le contraire est plus simple à compter, ou pour trouver une probabilité manquante quand les issues ne sont pas équiprobables. Exemple : P(obtenir 6) = 1/6, donc P(ne pas obtenir 6) = 1 − 1/6 = 5/6 ; une roue donne rouge avec la probabilité 0,35 et bleu avec la probabilité 0,4 : la troisième couleur a pour probabilité 1 − 0,35 − 0,4 = 0,25. L'erreur type est de calculer 1 − P(A) avec un faux contraire, ou d'obtenir une somme de probabilités supérieure à 1 sans s'en étonner. Réponse : nombre (fraction ou décimal, tenus pour égaux par la correction), pourcentage avec l'unité « % ». Figure : aucune.",
+      "prerequisites": [
+        "L004",
+        "C013"
+      ],
+      "difficulty": 5,
+      "school_level": "4e",
+      "validation_test": "Dans un sac de 30 jetons, 12 sont gagnants. On tire un jeton au hasard. Quelle est la probabilité de tirer un jeton perdant ? Une autre loterie annonce une probabilité de gagner de 0,15 : quelle est la probabilité de perdre ?",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [],
+      "mindmap_id": null,
+      "programme_ref": [
+        {
+          "source": "Cycle 4, classe de 4e, Organisation et gestion de données et probabilités, Probabilités, Objectifs d'apprentissage",
+          "quote": "Calculer la probabilité d'un évènement et de l'évènement contraire."
+        }
+      ]
+    },
+    {
+      "id": "L004",
+      "domain": "L",
+      "domain_name": "Probabilités",
+      "label": "Évènements et ensembles : contraire, réunion, intersection",
+      "description": "Décrire une expérience aléatoire par l'ensemble de ses issues et un évènement par l'ensemble des issues qui le réalisent ; définir l'évènement contraire de A (noté non A ou Ā, les issues qui ne réalisent pas A), la réunion « A ou B » (A ∪ B), l'intersection « A et B » (A ∩ B) et l'évènement impossible (ensemble vide, ∅) ; reconnaître deux évènements incompatibles. Exemple : dé à six faces, A « obtenir un nombre pair » = {2 ; 4 ; 6} et B « obtenir au moins 4 » = {4 ; 5 ; 6} : A ∩ B = {4 ; 6}, A ∪ B = {2 ; 4 ; 5 ; 6}, non A = {1 ; 3 ; 5}. L'erreur type est de compter deux fois les issues communes dans la réunion, ou de prendre pour contraire de « au moins 4 » l'évènement « au plus 4 ». Réponse : liste d'issues numériques (forme « solutions » : « 4 ; 6 » et « {4 ; 6} » sont lus), nombre d'issues, QCM, vrai/faux. Figure utile : diagramme de Venn, à créer (confortable) ; tableau des issues en KaTeX sinon.",
+      "prerequisites": [
+        "L038"
+      ],
+      "difficulty": 5,
+      "school_level": "4e",
+      "validation_test": "On tire au hasard une carte numérotée de 1 à 10. A est l'évènement « obtenir un multiple de 3 », B l'évènement « obtenir un nombre impair ». Quelles issues réalisent A et B ? Quelles issues réalisent A ou B ? Combien d'issues réalisent le contraire de B ?",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [],
+      "mindmap_id": null,
+      "programme_ref": [
+        {
+          "source": "Cycle 4, classe de 4e, Organisation et gestion de données et probabilités, Probabilités, Objectifs d'apprentissage",
+          "quote": "Utiliser le vocabulaire et les notations ensemblistes pour décrire une expérience aléatoire dans des cas simples et définir la notion d'évènement."
+        },
+        {
+          "source": "Cycle 4, classe de 4e, Organisation et gestion de données et probabilités, Probabilités, Objectifs d'apprentissage",
+          "quote": "Définir : complémentaire, réunion, intersection, ensemble vide (évènement impossible)."
+        },
+        {
+          "source": "Cycle 4, Organisation et gestion de données et probabilités, présentation commune aux trois classes",
+          "quote": "Au cycle 4 on formalise la notion de probabilité dans le cas fini en s'appuyant sur le langage des ensembles et on précise les premiers éléments de calcul des probabilités."
+        },
+        {
+          "source": "Cycle 4, Proportionnalité, fonctions, présentation commune aux trois classes",
+          "quote": "Les notations fonctionnelles de type 𝑃(𝐴), 𝑝(𝑡) ainsi que la flèche → sont utilisées progressivement dans tous les chapitres du programme."
+        }
+      ]
+    },
+    {
+      "id": "L006",
+      "domain": "L",
+      "domain_name": "Probabilités",
+      "label": "Probabilité d'un évènement : un nombre entre 0 et 1",
+      "description": "Passer de « a chances sur b » au nombre a/b, et savoir qu'une probabilité est un nombre compris entre 0 et 1 (0 pour un évènement impossible, 1 pour un évènement certain) qui s'écrit sous forme de fraction, de nombre décimal ou de pourcentage ; calculer la probabilité d'un évènement dans une situation simple d'équiprobabilité. Exemple : une urne contient 3 boules rouges et 2 boules vertes ; la probabilité de tirer une rouge est 3/5, soit 0,6 ou 60 %. L'erreur type est d'écrire 3/2 (issues favorables sur issues défavorables), ou une probabilité plus grande que 1. Les mots expérience, issue et évènement sont employés par l'énoncé, sans être exigés de l'élève. Réponse : nombre ; fraction et décimal acceptés et tenus pour égaux par la correction (3/5, 6/10, 0,6) ; le pourcentage seulement quand l'énoncé le demande (unité « % ») ou par answer.accepted. Figure : aucune.",
+      "prerequisites": [
+        "L010",
+        "C032",
+        "E033"
+      ],
+      "difficulty": 4,
+      "school_level": "6e",
+      "validation_test": "Un sac contient 4 billes bleues, 5 billes jaunes et 1 bille blanche. On tire une bille au hasard. Quelle est la probabilité de tirer une bille jaune ? une bille blanche ? une bille rouge ?",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [],
+      "mindmap_id": null,
+      "programme_ref": [
+        {
+          "source": "Cycle 3, classe de 6e, Les probabilités",
+          "quote": "Savoir que la probabilité d'un évènement est un nombre compris entre 0 et 1"
+        },
+        {
+          "source": "Cycle 3, classe de 6e, Les probabilités",
+          "quote": "Calculer des probabilités dans des situations simples d'équiprobabilité"
+        },
+        {
+          "source": "Cycle 3, classe de 6e, Les probabilités",
+          "quote": "En classe de 6e, un objectif majeur est de passer de la traduction d'une probabilité en termes de chances (a chances sur b) à son expression par le nombre égal au quotient"
+        },
+        {
+          "source": "Cycle 3, classe de 6e, Les probabilités",
+          "quote": "Il n'est pas attendu que l'élève utilise le vocabulaire spécifique aux probabilités (expérience, issue, univers, évènement) de manière autonome, mais le professeur peut l'employer."
+        }
+      ]
+    },
+    {
+      "id": "L008",
+      "domain": "L",
+      "domain_name": "Probabilités",
+      "label": "Relation entre les probabilités de A ou B et de A et B",
+      "description": "Connaître et appliquer la relation P(A ∪ B) + P(A ∩ B) = P(A) + P(B) pour calculer l'une des quatre probabilités connaissant les trois autres ; cas des évènements incompatibles (A ∩ B impossible, donc P(A ∪ B) = P(A) + P(B)). Exemple : dé à six faces, A « nombre pair », B « au moins 4 » : P(A) = 3/6, P(B) = 3/6, P(A ∩ B) = 2/6, donc P(A ∪ B) = 3/6 + 3/6 − 2/6 = 4/6, ce que confirme le comptage de {2 ; 4 ; 5 ; 6} ; avec P(A) = 0,6, P(B) = 0,5 et P(A ∪ B) = 0,8, on trouve P(A ∩ B) = 0,6 + 0,5 − 0,8 = 0,3. L'erreur type est d'additionner P(A) et P(B) quand les évènements ne sont pas incompatibles. Réponse : nombre (fraction ou décimal). Figure : aucune.",
+      "prerequisites": [
+        "L003"
+      ],
+      "difficulty": 6,
+      "school_level": "3e",
+      "validation_test": "On choisit au hasard un adhérent d'un club. La probabilité qu'il fasse du tennis est 0,45, qu'il fasse de la natation 0,3, et qu'il pratique les deux 0,1. Quelle est la probabilité qu'il fasse du tennis ou de la natation ?",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [],
+      "mindmap_id": null,
+      "programme_ref": [
+        {
+          "source": "Cycle 4, classe de 3e, Organisation et gestion de données et probabilités, Probabilités, Objectifs d'apprentissage",
+          "quote": "Connaitre et savoir appliquer la relation 𝑃(𝐴 ∪ 𝐵) + 𝑃(𝐴 ∩ 𝐵) = 𝑃(𝐴) + 𝑃(𝐵)."
+        }
+      ]
+    },
+    {
+      "id": "L010",
+      "domain": "L",
+      "domain_name": "Probabilités",
+      "label": "Probabilité sous la forme « a chances sur b »",
+      "description": "Dans une situation d'équiprobabilité, dénombrer les issues qui réalisent un évènement et exprimer sa probabilité sous la forme « a chances sur b », où a est le nombre d'issues favorables et b le nombre total d'issues ; comparer deux probabilités dans des cas simples (même nombre total d'issues, ou comparaison à une chance sur deux). Exemple : avec un dé équilibré à six faces, obtenir un multiple de 3 se réalise avec les issues 3 et 6 : 2 chances sur 6 ; obtenir un nombre pair : 3 chances sur 6, c'est une chance sur deux. L'erreur type est de compter les issues défavorables à la place des favorables, ou de prendre pour b le nombre d'issues favorables. Réponse : un nombre, a, le total b étant donné par l'énoncé (« il y a ... chances sur 6 ») ; QCM ; « 2 chances sur 6 » tapé en entier ne se lit pas. Figure : aucune.",
+      "prerequisites": [
+        "L036",
+        "A012"
+      ],
+      "difficulty": 4,
+      "school_level": "CM2",
+      "validation_test": "On tire au hasard une carte parmi 10 cartes numérotées de 1 à 10. Combien y a-t-il de chances sur 10 de tirer un nombre impair ? Et de tirer un nombre plus grand que 7 ?",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [],
+      "mindmap_id": null,
+      "programme_ref": [
+        {
+          "source": "Cycle 3, Cours moyen deuxième année, Les probabilités",
+          "quote": "Dans une situation d'équiprobabilité, lors d'une expérience aléatoire simple, exprimer la probabilité d'un évènement sous la forme « a chances sur b »"
+        },
+        {
+          "source": "Cycle 3, Cours moyen deuxième année, Les probabilités",
+          "quote": "Identifier toutes les issues réalisant un évènement dans une expérience aléatoire simple"
+        },
+        {
+          "source": "Cycle 3, Cours moyen deuxième année, Les probabilités",
+          "quote": "Comparer des probabilités dans des cas simples"
+        },
+        {
+          "source": "Cycle 3, Cours moyen deuxième année, Les probabilités",
+          "quote": "Identifier toutes les issues possibles lors d'une expérience aléatoire simple"
+        }
+      ]
+    },
+    {
+      "id": "L016",
+      "domain": "L",
+      "domain_name": "Probabilités",
+      "label": "Expérience en deux étapes : recenser les issues dans un tableau ou un arbre",
+      "description": "Recenser toutes les issues d'une expérience aléatoire en deux étapes (lancer deux fois une pièce, une pièce puis un dé, deux tirages avec remise) dans un tableau à double entrée ou dans un arbre, compter celles qui réalisent un évènement et donner sa probabilité sous la forme « a chances sur b ». Comprendre que la pièce ou le dé « ne se souvient pas » du résultat précédent : après trois piles, la pièce a toujours une chance sur deux de tomber sur pile. Exemple : une pièce puis un dé à quatre faces donnent 2 × 4 = 8 issues (P1, P2, P3, P4, F1, F2, F3, F4) ; obtenir pile et un nombre pair se réalise avec P2 et P4 : 2 chances sur 8. L'erreur type est de mélanger l'ordre des étapes (compter une seule fois pile puis face et face puis pile) ou de croire qu'après plusieurs piles, face devient plus probable. Réponse : nombre (nombre d'issues, ou a, le total étant donné), QCM, vrai/faux. Figure nécessaire : arbre (existant), issues écrites, au plus 12 issues ; tableau à double entrée en KaTeX, au plus 5 colonnes.",
+      "prerequisites": [
+        "L010",
+        "K037"
+      ],
+      "difficulty": 4,
+      "school_level": "CM2",
+      "validation_test": "On lance une pièce, puis on tire une boule dans un sac qui contient une boule rouge, une verte et une jaune. Combien y a-t-il d'issues en tout ? Combien de chances sur ce total a-t-on d'obtenir face et une boule rouge ?",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [],
+      "mindmap_id": null,
+      "programme_ref": [
+        {
+          "source": "Cycle 3, Cours moyen deuxième année, Les probabilités",
+          "quote": "Dans des situations d'équiprobabilité, recenser toutes les issues possibles d'une expérience aléatoire en deux étapes dans un tableau ou dans un arbre afin de déterminer des probabilités"
+        },
+        {
+          "source": "Cycle 3, Cours moyen deuxième année, Les probabilités",
+          "quote": "Comprendre la notion d'indépendance lors de la répétition de la même expérience aléatoire"
+        },
+        {
+          "source": "Cycle 3, Cours moyen deuxième année, Les probabilités",
+          "quote": "les élèves apprennent à utiliser un tableau à double entrée ou un arbre pour recenser, d'une part, toutes les issues possibles et, d'autre part, celles qui réalisent l'évènement dont on recherche la probabilité."
+        }
+      ]
+    },
+    {
+      "id": "L024",
+      "domain": "L",
+      "domain_name": "Probabilités",
+      "label": "Stabilisation des fréquences : estimer une probabilité",
+      "description": "Observer que la fréquence d'une issue se stabilise autour de sa probabilité quand le nombre de répétitions augmente (loi des grands nombres), lire un graphique de la fréquence en fonction du nombre de répétitions, estimer une probabilité inconnue par une fréquence observée sur un grand nombre de répétitions (une punaise qui tombe sur la tête, le sexe d'un enfant à la naissance), et prévoir un ordre de grandeur d'effectif. Simuler des expériences indépendantes ne se fait pas à l'écran : l'élève interprète des simulations données. Exemple : sur 2 000 lancers d'une punaise, elle tombe 1 240 fois sur la tête, fréquence 0,62 : on estime la probabilité à environ 0,62, et sur 500 nouveaux lancers on attend environ 310 fois la tête. L'erreur type est de juger sur 20 lancers comme sur 2 000, ou de prendre la fréquence pour la probabilité exacte. Réponse : nombre (fréquence, estimation à la tolérance annoncée), QCM, vrai/faux. Figure nécessaire : repere (existant), ligne brisée de la fréquence en fonction du nombre de répétitions, titres d'axes ; sommets sur la demi-graduation, contrainte acceptable.",
+      "prerequisites": [
+        "L040",
+        "J040"
+      ],
+      "difficulty": 7,
+      "school_level": "3e",
+      "validation_test": "Une machine simule 10 000 naissances et obtient 5 120 filles. Quelle est la fréquence des filles ? Sur 300 naissances dans une maternité, combien de filles peut-on attendre environ ?",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [],
+      "mindmap_id": null,
+      "programme_ref": [
+        {
+          "source": "Cycle 4, classe de 3e, Organisation et gestion de données et probabilités, Probabilités, Objectifs d'apprentissage",
+          "quote": "Observer la stabilisation des fréquences lorsqu'on augmente le nombre de répétitions de l'expérience aléatoire, faire le lien entre fréquence et probabilité selon le nombre de répétitions."
+        },
+        {
+          "source": "Cycle 4, classe de 3e, Organisation et gestion de données et probabilités, Probabilités, Objectifs d'apprentissage",
+          "quote": "Simuler des expériences aléatoires indépendantes."
+        },
+        {
+          "source": "Cycle 4, Organisation et gestion de données et probabilités, présentation commune aux trois classes",
+          "quote": "Dans d'autres cas, un modèle probabiliste peut être construit à partir de fréquences observées (par exemple : sexe d'un enfant à la naissance) en s'appuyant sur l'idée de stabilisation des fréquences (loi des grands nombres)."
+        }
+      ]
+    },
+    {
+      "id": "L036",
+      "domain": "L",
+      "domain_name": "Probabilités",
+      "label": "Comparer des chances : de « impossible » à « certain »",
+      "description": "Employer les mots « impossible », « possible », « certain », « probable », « peu probable », « une chance sur deux » pour qualifier un évènement, le situer sur une échelle qui va de « impossible » à « certain », et comparer deux évènements selon leur chance de se réaliser. Savoir qu'un évènement a une chance sur deux quand il a autant de chances de se réaliser que de ne pas se réaliser (pile avec une pièce, un nombre pair avec un dé), et que deux issues possibles ne donnent pas toujours une chance sur deux (gagner ou perdre au loto). Exemple : dans une urne de 2 boules rouges et 6 boules bleues, tirer une bleue est probable, tirer une rouge est peu probable, tirer une verte est impossible. L'erreur type est de dire « une chance sur deux » dès qu'il y a deux issues. Réponse : QCM (un mot de l'échelle), vrai/faux, texte court. Figure utile : échelle de probabilité en mots, à créer (confortable) ; QCM sinon.",
+      "prerequisites": [
+        "L001",
+        "A006"
+      ],
+      "difficulty": 3,
+      "school_level": "CM1",
+      "validation_test": "Dans un sac, il y a 7 jetons verts et 1 jeton rouge. On tire un jeton au hasard. Tirer un jeton vert est-il impossible, peu probable, probable ou certain ? Et tirer un jeton bleu ?",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [],
+      "mindmap_id": null,
+      "programme_ref": [
+        {
+          "source": "Cycle 3, Cours moyen première année, Les probabilités",
+          "quote": "Comprendre et utiliser le vocabulaire approprié : « impossible », « possible », « certain », « probable », « peu probable », « une chance sur deux »"
+        },
+        {
+          "source": "Cycle 3, Cours moyen première année, Les probabilités",
+          "quote": "Comparer des issues d'expériences aléatoires ou des évènements selon leur probabilité de réalisation"
+        },
+        {
+          "source": "Cycle 3, Cours moyen première année, Les probabilités",
+          "quote": "Comprendre que ce n'est pas parce qu'il y a deux issues possibles que chacune a une chance sur deux de se réaliser"
+        },
+        {
+          "source": "Cycle 3, Cours moyen première année, Les probabilités",
+          "quote": "Les élèves apprennent à estimer les probabilités d'évènements sur une échelle allant de « impossible » à « certain »"
+        }
+      ]
+    },
+    {
+      "id": "L037",
+      "domain": "L",
+      "domain_name": "Probabilités",
+      "label": "Fréquence observée et probabilité calculée",
+      "description": "Comparer les résultats d'une expérience aléatoire répétée à la probabilité calculée : calculer la proportion des répétitions où une issue est sortie (sa fréquence, en fraction, en décimal ou en pourcentage), la confronter à la probabilité, et savoir qu'elles sont en général proches sans être égales. Exemple : sur 50 lancers d'une pièce, pile est sorti 27 fois, soit 27/50 = 0,54 = 54 %, proche de la probabilité 0,5 ; ce n'est pas une preuve que la pièce est truquée. L'erreur type est de croire que la fréquence doit être exactement égale à la probabilité, ou qu'après une série de piles, face va forcément sortir. Les résultats sont donnés par l'énoncé (un tableau) : l'expérience elle-même se fait en classe. Réponse : nombre (fréquence), QCM, vrai/faux. Figure : aucune (tableau KaTeX).",
+      "prerequisites": [
+        "L006",
+        "D009"
+      ],
+      "difficulty": 4,
+      "school_level": "6e",
+      "validation_test": "On a lancé 40 fois un dé équilibré à six faces ; le 6 est sorti 9 fois. Quelle est la fréquence de sortie du 6, en pourcentage ? La probabilité d'obtenir 6 est-elle plus grande ou plus petite que cette fréquence ?",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [],
+      "mindmap_id": null,
+      "programme_ref": [
+        {
+          "source": "Cycle 3, classe de 6e, Les probabilités",
+          "quote": "Comparer des résultats d'une expérience aléatoire répétée à une probabilité calculée"
+        },
+        {
+          "source": "Cycle 3, classe de 6e, Les probabilités",
+          "quote": "L'approche fréquentiste des probabilités est également introduite."
+        }
+      ]
+    },
+    {
+      "id": "L038",
+      "domain": "L",
+      "domain_name": "Probabilités",
+      "label": "Probabilité sous diverses formes ; échelle de probabilité",
+      "description": "Attribuer une probabilité dans un cas simple d'équiprobabilité et l'écrire sous forme de fraction, de nombre décimal et de pourcentage ; lier « une chance sur quatre » et la probabilité 1/4 ; positionner des évènements sur une échelle de probabilité de 0 à 1 : impossible (0), certain (1), obtenir pile (0,5), obtenir une valeur donnée avec un dé (1/6, un peu moins de 0,17), tirer une couleur dans une urne, ne pas gagner au loto (presque 1), obtenir dix fois de suite 1 avec un dé (presque 0). Exemple : une roue à 8 secteurs égaux dont 3 rouges : la probabilité d'obtenir rouge est 3/8 = 0,375 = 37,5 %. L'erreur type est de mal convertir (3/8 écrit 0,38 % ou 3,8) ou de placer 1/6 au milieu de l'échelle. Réponse : nombre (fraction ou décimal) ; pourcentage avec l'unité « % » ; QCM ou lettre d'un point pour l'échelle. Figure utile : demi_droite (existant) graduée de 0 à 1, points lettrés ; un segment gradué sans flèche serait plus juste (confortable).",
+      "prerequisites": [
+        "L002",
+        "E036"
+      ],
+      "difficulty": 5,
+      "school_level": "5e",
+      "validation_test": "On tire une carte au hasard dans un jeu de 20 cartes dont 5 sont des as. Donne la probabilité de tirer un as sous forme de fraction, de nombre décimal et de pourcentage. Sur une échelle de probabilité de 0 à 1, cet évènement est-il plus proche de 0 ou de 1 ?",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [],
+      "mindmap_id": null,
+      "programme_ref": [
+        {
+          "source": "Cycle 4, classe de 5e, Organisation et gestion de données et probabilités, Probabilités, Automatismes",
+          "quote": "Donner la probabilité sous diverses formes (fraction, décimale, pourcentage) pour les cinq premiers évènements ci-dessus."
+        },
+        {
+          "source": "Cycle 4, classe de 5e, Organisation et gestion de données et probabilités, Probabilités, Automatismes",
+          "quote": "Positionner sur une échelle de probabilité les évènements du type"
+        },
+        {
+          "source": "Cycle 4, classe de 5e, Organisation et gestion de données et probabilités, Probabilités, Automatismes",
+          "quote": "Lier l'expression « une chance sur quatre » (par exemple) et la probabilité"
+        },
+        {
+          "source": "Cycle 4, classe de 5e, Organisation et gestion de données et probabilités, Probabilités, Objectifs d'apprentissage",
+          "quote": "Attribuer des probabilités dans des cas simples (équiprobabilité)."
+        },
+        {
+          "source": "Cycle 4, Organisation et gestion de données et probabilités, présentation commune aux trois classes",
+          "quote": "L'équiprobabilité est une hypothèse qui ne se démontre pas, mais qui peut être jugée pertinente par un argument de symétrie."
+        }
+      ]
+    },
+    {
+      "id": "L039",
+      "domain": "L",
+      "domain_name": "Probabilités",
+      "label": "Expériences à deux épreuves : probabilités par un tableau ou un arbre",
+      "description": "Calculer la probabilité d'un évènement dans une expérience à deux épreuves (deux pièces, une pièce et un dé, deux dés, deux tirages avec ou sans remise) : représenter toutes les issues dans un tableau à double entrée ou un arbre, vérifier qu'elles sont équiprobables, compter celles qui réalisent l'évènement, passer au contraire si c'est plus simple. Exemple : deux dés à quatre faces donnent 4 × 4 = 16 issues équiprobables ; une somme égale à 5 est obtenue par (1 ; 4), (2 ; 3), (3 ; 2), (4 ; 1), probabilité 4/16 ; deux tirages sans remise parmi trois boules donnent 3 × 2 = 6 issues. L'erreur type est de compter (1 ; 4) et (4 ; 1) comme une seule issue, ou de prendre pour issues les sommes 2 à 8, qui ne sont pas équiprobables. Le produit des probabilités le long d'un chemin n'est pas exigé. Réponse : nombre (fraction ou décimal), QCM. Figure nécessaire : arbre (existant), au plus 12 issues, probabilités et issues écrites en option ; tableau KaTeX au plus 5 colonnes (deux dés à six faces : tableau 7 × 7, à créer).",
+      "prerequisites": [
+        "L016",
+        "L003"
+      ],
+      "difficulty": 6,
+      "school_level": "4e",
+      "validation_test": "On lance deux pièces équilibrées. Quelle est la probabilité d'obtenir deux fois face ? Et d'obtenir au moins une fois pile ? On tire ensuite successivement deux boules, sans remise, dans un sac qui contient une boule rouge, une verte et une bleue : combien y a-t-il d'issues ?",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [],
+      "mindmap_id": null,
+      "programme_ref": [
+        {
+          "source": "Cycle 4, classe de 4e, Organisation et gestion de données et probabilités, Probabilités, Objectifs d'apprentissage",
+          "quote": "Exemples simples d'expériences aléatoires à deux épreuves (par exemple, lancer de deux pièces, d'une pièce et d'un dé, de deux dés, etc.)."
+        }
+      ]
+    },
+    {
+      "id": "L040",
+      "domain": "L",
+      "domain_name": "Probabilités",
+      "label": "Fluctuation des fréquences ; distributions des fréquences et des probabilités",
+      "description": "À partir des résultats d'une expérience aléatoire répétée, réalisée en classe ou simulée, calculer la fréquence de chaque issue, la comparer à sa probabilité par un tableau ou par deux diagrammes (distribution des fréquences, distribution des probabilités), et constater que pour un même nombre de répétitions les fréquences changent d'une série à l'autre (fluctuation). Répéter ou simuler l'expérience ne se fait pas à l'écran : l'élève interprète des résultats donnés (tableau d'effectifs de 60 lancers, deux séries de 100 lancers). Exemple : 60 lancers d'un dé donnent le 3 douze fois, soit une fréquence de 12/60 = 0,2, pour une probabilité de 1/6, environ 0,17 ; une autre série de 60 lancers donne le 3 sept fois. L'erreur type est de conclure qu'un dé est truqué sur une seule série, ou de croire que deux séries de même taille doivent donner les mêmes fréquences. Réponse : nombre, QCM, vrai/faux. Figure nécessaire : diagramme_barres (existant) pour la distribution des fréquences, probabilités dans un tableau ; diagramme à deux séries côte à côte, à créer (confortable).",
+      "prerequisites": [
+        "L037",
+        "K012",
+        "L038"
+      ],
+      "difficulty": 6,
+      "school_level": "4e",
+      "validation_test": "On a fait deux séries de 50 lancers d'une même pièce : la première donne 23 piles, la seconde 28 piles. Calcule la fréquence de pile dans chaque série. Ces résultats prouvent-ils que la pièce est truquée ?",
+      "mastery_threshold": {
+        "required": 3,
+        "out_of": 4
+      },
+      "exercise_ids": [],
+      "mindmap_id": null,
+      "programme_ref": [
+        {
+          "source": "Cycle 4, classe de 4e, Organisation et gestion de données et probabilités, Probabilités, Objectifs d'apprentissage",
+          "quote": "Observer la fluctuation des fréquences pour un nombre de répétitions fixé de l'expérience aléatoire."
+        },
+        {
+          "source": "Cycle 4, classe de 4e, Organisation et gestion de données et probabilités, Probabilités, Objectifs d'apprentissage",
+          "quote": "À partir de la répétition d'une expérience aléatoire, réalisée matériellement ou simulée, comparer des graphiques de distributions (fréquentielle et probabiliste)."
+        },
+        {
+          "source": "Cycle 4, classe de 5e, Organisation et gestion de données et probabilités, Probabilités, Objectifs d'apprentissage",
+          "quote": "Répéter matériellement une expérience aléatoire simple. Enregistrer les résultats observés dans un tableau d'effectifs et de fréquences."
         }
       ]
     },
