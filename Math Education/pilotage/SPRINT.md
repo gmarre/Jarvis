@@ -6,9 +6,9 @@
 
 ## Reste à faire
 
-- [ ] Arbitrage d'ouverture avec Gauthier (questions ci-dessous).
+- [x] Arbitrage d'ouverture avec Gauthier : délégation reconduite (24/10).
 - [ ] Repérage : programme (`_travail/programmes/5eme.txt`, `6eme-cm1-cm2.txt`, `3eme-4eme.txt` si besoin), nœuds K et L du v1 (mémoire seulement).
-- [ ] Générateurs dans `scripts/figures.py` : diagrammes en barres, diagrammes circulaires, arbres de probabilités ; refus d'une figure qui donne ou fausse une lecture ; figures existantes identiques.
+- [x] Générateurs dans `scripts/figures.py` : `diagramme_barres`, `diagramme_circulaire`, `arbre` ; 13 cas de refus vérifiés ; 643 figures existantes identiques (24/10).
 - [ ] Brief et cartographe (`_travail/etape10_dag_KL.*`), arbitrage des découpages, fusion du DAG, vocabulaire au validateur.
 - [ ] Rédaction, relecture et fusion des exercices, cartes mentales, cartes défi, super exercices.
 - [ ] Correctifs de la correction s'il y en a, déploiement vérifié (comparaison au code local).
@@ -16,7 +16,7 @@
 
 ## Questions ouvertes pour Gauthier
 
-1. Délégation reconduite pour l'étape 10, comme pour les étapes 7 à 9 ? Recommandation : oui.
+Aucune (délégation).
 
 ## Blocages
 

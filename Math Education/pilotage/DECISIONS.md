@@ -131,5 +131,11 @@
   7. MM-E-04 reprise en entier (couples d'exercices hérités d'avant les règles actuelles).
   8. Liens DAG E016 ← F012 et J043 ← G016.
   9. Déploiement de `corriger` et `rendre-super` vérifié par comparaison au code local sur des comptes temporaires supprimés ensuite.
+- 24/10/2026 : étape 10, délégation reconduite pour tous les arbitrages (Gauthier).
+- 24/10/2026, étape 10, figures (délégation). CP :
+  1. Trois générateurs : `diagramme_barres` (barres ou bâtons), `diagramme_circulaire`, `arbre` (1 à 3 épreuves). Pas d'histogramme ni de diagramme à deux séries : le programme de cycle 4 suivi (`5eme.txt`) ne cite que barres et circulaire ; à ajouter si le cartographe en a besoin.
+  2. Barres : axe vertical toujours depuis 0, valeurs sur la demi-graduation, au plus 12 graduations ; une barre « cherche » n'a jamais sa valeur écrite.
+  3. Circulaire : secteurs d'au moins 10° ; noms écrits au bord (pas de légende par couleur) ; sans nombre écrit, un secteur cherché est une part simple (1/2, 1/3, 1/4, 1/6, 1/8) ou se lit sur une graduation, et deux valeurs différentes sont à 5° au moins l'une de l'autre.
+  4. Arbre : probabilités sœurs qui font 1, au plus 12 issues (au-delà, un tableau).
 
 Le détail des sprints 1 à 6 (ce qui a été codé, quand, et pourquoi) est dans `archive/CLAUDE_avant_decoupage_2026-10-23.md`, §6.

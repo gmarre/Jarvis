@@ -3390,6 +3390,416 @@ def _lectures_repere(p: dict, courbes: list[dict], bornes: dict, pas_x: Fraction
     return pts
 
 
+# ---------------------------------------------------------------------------
+#  Statistiques et probabilites (etape 10)
+# ---------------------------------------------------------------------------
+
+def _largeur_texte(t: str, taille: int) -> float:
+    """Largeur approchee d'un texte, la meme estimation que _placer."""
+    return 7.2 * len(t) * taille / 13
+
+
+def _se_touchent(a: tuple, b: tuple) -> bool:
+    return not (a[2] < b[0] or b[2] < a[0] or a[3] < b[1] or b[3] < a[1])
+
+
+def _diagramme_barres(p: dict) -> tuple[str, str]:
+    """Diagramme en barres (ou en batons) d'une serie : une barre par modalite.
+
+    params :
+      barres        2 a 10 : {"nom": "Lundi", "valeur": 12, "cherche": false,
+                    "masquee": false} ; valeur positive ou nulle, multiple de la
+                    demi-graduation ; "cherche" : valeur demandee, jamais ecrite
+                    sur la figure ; "masquee" : barre absente, un « ? » a sa
+                    place (diagramme a completer)
+      pas           valeur d'une graduation de l'axe vertical (defaut 1)
+      max           haut de l'axe, multiple du pas (defaut : le premier multiple
+                    du pas qui atteint la plus haute barre) ; au plus 12
+                    graduations
+      etiquettes    "toutes" (defaut) ou "une_sur_deux"
+      valeurs       true : la valeur est ecrite au-dessus de chaque barre non
+                    cherchee (quand la lecture n'est pas l'objet de l'exercice)
+      batons        true : barres fines (diagramme en batons d'une serie de
+                    nombres)
+      nom_x, nom_y  titres des axes (« jour », « nombre d'élèves »)
+
+    L'axe vertical part toujours de 0 : un axe tronque fausse la comparaison des
+    hauteurs. Refus : valeur hors de la demi-graduation (elle ne se lirait
+    qu'a peu pres) ; nom plus large que la place de sa barre.
+    """
+    barres = p.get("barres")
+    if not isinstance(barres, list) or not 2 <= len(barres) <= 10:
+        raise FigureInvalide("barres : liste de 2 a 10 barres")
+    pas = _nombre(p.get("pas", 1), "pas")
+    if pas <= 0:
+        raise FigureInvalide("pas : strictement positif")
+    lues = []
+    for i, b in enumerate(barres):
+        if not isinstance(b, dict):
+            raise FigureInvalide(f"barre {i + 1} : objet attendu")
+        nom = b.get("nom")
+        if not isinstance(nom, str) or not nom.strip():
+            raise FigureInvalide(f"barre {i + 1} : nom attendu")
+        v = _nombre(b.get("valeur"), f"barre « {nom} », valeur")
+        if v < 0:
+            raise FigureInvalide(f"barre « {nom} » : valeur positive ou nulle")
+        if (v / (pas / 2)).denominator != 1:
+            raise FigureInvalide(f"barre « {nom} » : {_texte_nombre(v)} n'est pas sur la demi-graduation "
+                                 f"(pas {_texte_nombre(pas)}) ; la lecture serait approchee")
+        lues.append((nom.strip(), v, bool(b.get("cherche")), bool(b.get("masquee"))))
+    plus_haute = max(v for _, v, _, _ in lues)
+    if "max" in p:
+        haut = _nombre(p["max"], "max")
+        if (haut / pas).denominator != 1 or haut < plus_haute:
+            raise FigureInvalide("max : multiple du pas, au moins la plus haute barre")
+    else:
+        haut = max(pas, -(-plus_haute // pas) * pas)
+    k = int(haut / pas)
+    if k > 12:
+        raise FigureInvalide(f"axe vertical : {k} graduations, 12 au plus ; augmenter le pas")
+    etiq = p.get("etiquettes", "toutes")
+    if etiq not in ("toutes", "une_sur_deux"):
+        raise FigureInvalide("etiquettes : \"toutes\" ou \"une_sur_deux\"")
+    nom_x, nom_y = p.get("nom_x"), p.get("nom_y")
+    for cle, t in (("nom_x", nom_x), ("nom_y", nom_y)):
+        if t is not None and (not isinstance(t, str) or not 0 < len(t) <= 34):
+            raise FigureInvalide(f"{cle} : texte de 34 caracteres au plus")
+
+    L, Hp, taille = 360.0, 200.0, 12
+    textes_y = [_texte_nombre(pas * j) for j in range(k + 1)]
+    g = 14 + max(_largeur_texte(t, taille) for t in textes_y) + 6
+    haut_marge = 34 if nom_y else 18
+    Wp = L - g - 14
+    fente = Wp / len(lues)
+    largeur_barre = 8.0 if p.get("batons") else min(0.6 * fente, 48)
+    y0 = haut_marge + Hp
+
+    def Y(v: Fraction) -> float:
+        return y0 - float(v / haut) * Hp
+
+    corps: list[str] = []
+    for j in range(k + 1):
+        y = Y(pas * j)
+        corps.append(_ligne(g, y, g + Wp, y, couleur="#e2e8f0", epaisseur=1))
+        if etiq == "toutes" or j % 2 == 0:
+            corps.append(_ligne(g - 4, y, g, y))
+            corps.append(_texte(g - 7, y + 4, textes_y[j], taille, ancre="end"))
+    valeurs = bool(p.get("valeurs"))
+    for i, (nom, v, cherche, masquee) in enumerate(lues):
+        cx = g + fente * (i + 0.5)
+        if _largeur_texte(nom, taille) > fente - 4:
+            raise FigureInvalide(f"barre « {nom} » : nom trop long pour la largeur de sa barre "
+                                 f"({len(nom)} caracteres) ; l'abreger")
+        corps.append(_texte(cx, y0 + 17, nom, taille))
+        if masquee:
+            corps.append(_texte(cx, y0 - 10, "?", 16, couleur=ACCENT, gras=True))
+            continue
+        yt = Y(v)
+        if v > 0:
+            corps.append(f'<rect x="{cx - largeur_barre / 2:.1f}" y="{yt:.1f}" width="{largeur_barre:.1f}" '
+                         f'height="{y0 - yt:.1f}" fill="{REMPLI_FORT if not p.get("batons") else ACCENT}" '
+                         f'stroke="{TRAIT}" stroke-width="{1.2 if not p.get("batons") else 0}"/>')
+        if valeurs and not cherche:
+            corps.append(_texte_detoure(cx, yt - 5, _texte_nombre(v), taille))
+    corps.append(_ligne(g, haut_marge - 6, g, y0, epaisseur=1.6))
+    corps.append(_ligne(g, y0, g + Wp, y0, epaisseur=1.6))
+    H = y0 + 26
+    if nom_y:
+        corps.append(_texte(g - 4, 14, nom_y, taille, ancre="start", gras=True))
+    if nom_x:
+        corps.append(_texte(g + Wp, H + 8, nom_x, taille, ancre="end", gras=True))
+        H += 14
+    alt = (f"Diagramme en {'bâtons' if p.get('batons') else 'barres'}"
+           + (f" : {nom_y}" if nom_y else "") + (f" selon {nom_x}" if nom_x else "")
+           + f" ({', '.join(n for n, _, _, _ in lues)})")
+    return _svg(L, H + 6, corps, alt), alt
+
+
+PARTS_SIMPLES = (2, 3, 4, 6, 8)
+
+
+def _diagramme_circulaire(p: dict) -> tuple[str, str]:
+    """Diagramme circulaire : un disque partage en secteurs proportionnels aux valeurs.
+
+    params :
+      secteurs     2 a 8 : {"nom": "Bus", "valeur": 12, "cherche": false} ;
+                   valeur strictement positive (effectif, pourcentage ou angle :
+                   seule la proportion compte) ; les secteurs partent de midi et
+                   tournent dans le sens des aiguilles d'une montre
+      ecrire       "noms" (defaut), "effectifs", "pourcentages" ou "angles" : ce
+                   qui s'ecrit sous le nom de chaque secteur non cherche
+      graduation   0 (defaut) ou nombre de graduations du tour (4 a 72, diviseur
+                   de 360) : des traits sur le cercle pour lire un angle
+
+    Refus : secteur de moins de 10 degres ; pourcentage ou angle ecrit qui ne
+    tombe pas juste au dixieme ; avec une graduation, un bord de secteur hors
+    d'un trait. Quand seuls les noms s'ecrivent (tout se lit a l'oeil) : un
+    secteur cherche est une part simple du disque (1/2, 1/3, 1/4, 1/6, 1/8 et
+    leurs multiples) ou se lit sur la graduation, et deux valeurs differentes
+    ont des angles distants d'au moins 5 degres (sinon l'oeil les croirait
+    egales). Noms qui se chevauchent : secteurs trop etroits, l'auteur regroupe.
+    """
+    secteurs = p.get("secteurs")
+    if not isinstance(secteurs, list) or not 2 <= len(secteurs) <= 8:
+        raise FigureInvalide("secteurs : liste de 2 a 8 secteurs")
+    ecrire = p.get("ecrire", "noms")
+    if ecrire not in ("noms", "effectifs", "pourcentages", "angles"):
+        raise FigureInvalide("ecrire : \"noms\", \"effectifs\", \"pourcentages\" ou \"angles\"")
+    grad = p.get("graduation", 0)
+    if grad != 0 and (not isinstance(grad, int) or isinstance(grad, bool)
+                      or not 4 <= grad <= 72 or 360 % grad):
+        raise FigureInvalide("graduation : 0, ou diviseur de 360 entre 4 et 72")
+    lus = []
+    for i, s in enumerate(secteurs):
+        if not isinstance(s, dict):
+            raise FigureInvalide(f"secteur {i + 1} : objet attendu")
+        nom = s.get("nom")
+        if not isinstance(nom, str) or not nom.strip():
+            raise FigureInvalide(f"secteur {i + 1} : nom attendu")
+        v = _nombre(s.get("valeur"), f"secteur « {nom} », valeur")
+        if v <= 0:
+            raise FigureInvalide(f"secteur « {nom} » : valeur strictement positive")
+        lus.append((nom.strip(), v, bool(s.get("cherche"))))
+    total = sum(v for _, v, _ in lus)
+    parts = [v / total for _, v, _ in lus]
+    for (nom, v, cherche), part in zip(lus, parts):
+        if part * 360 < 10:
+            raise FigureInvalide(f"secteur « {nom} » : moins de 10 degres, illisible ; regrouper")
+        if ecrire == "noms" and cherche and not grad and not any((part * d).denominator == 1 for d in PARTS_SIMPLES):
+            raise FigureInvalide(f"secteur « {nom} » : cherche sans nombre ecrit, il doit etre une part simple "
+                                 f"du disque (1/2, 1/3, 1/4, 1/6, 1/8...) ou se lire sur une graduation")
+    if grad:
+        cumul = Fraction(0)
+        for (nom, _, _), part in zip(lus, parts):
+            cumul += part
+            if (cumul * grad).denominator != 1:
+                raise FigureInvalide(f"secteur « {nom} » : son bord ne tombe pas sur la graduation ({grad} traits)")
+    if ecrire == "noms":
+        for i in range(len(lus)):
+            for j in range(i + 1, len(lus)):
+                if lus[i][1] != lus[j][1] and abs(parts[i] - parts[j]) * 360 < 5:
+                    raise FigureInvalide(f"secteurs « {lus[i][0]} » et « {lus[j][0]} » : valeurs differentes, "
+                                         f"angles a moins de 5 degres, l'oeil les croirait egales")
+
+    def nombre_ecrit(v: Fraction, part: Fraction) -> str:
+        if ecrire == "effectifs":
+            return _texte_nombre(v)
+        x = part * (100 if ecrire == "pourcentages" else 360)
+        if (x * 10).denominator != 1:
+            raise FigureInvalide(f"{'pourcentage' if ecrire == 'pourcentages' else 'angle'} "
+                                 f"{_coord(x)} : ne tombe pas juste au dixieme")
+        return _texte_nombre(x) + (ESPACE_MILLIERS + "%" if ecrire == "pourcentages" else "°")
+
+    L, r, taille = 360.0, 80.0, 12
+    cx, cy = L / 2, r + 46
+    H = 2 * cy
+    remplis = [REMPLI_FORT, "#ffffff", REMPLI, "#e2e8f0"]
+    corps: list[str] = []
+    boites: list[tuple] = []
+    debut = Fraction(0)
+    n = len(lus)
+    for i, ((nom, v, cherche), part) in enumerate(zip(lus, parts)):
+        a1, a2 = 2 * math.pi * float(debut), 2 * math.pi * float(debut + part)
+        debut += part
+        couleur = remplis[2] if (i == n - 1 and n > 1 and i % 4 == 0) else remplis[i % 4]
+        if part == 1:
+            corps.append(f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="{couleur}" stroke="{TRAIT}" stroke-width="1.6"/>')
+        else:
+            x1, y1 = cx + r * math.sin(a1), cy - r * math.cos(a1)
+            x2, y2 = cx + r * math.sin(a2), cy - r * math.cos(a2)
+            grand = 1 if (a2 - a1) > math.pi else 0
+            corps.append(f'<path d="M{cx},{cy} L{x1:.2f},{y1:.2f} A{r},{r} 0 {grand} 1 {x2:.2f},{y2:.2f} Z" '
+                         f'fill="{couleur}" stroke="{TRAIT}" stroke-width="1.6" stroke-linejoin="round"/>')
+        am = (a1 + a2) / 2
+        sx, sy = math.sin(am), -math.cos(am)
+        corps.append(_ligne(cx + r * sx, cy + r * sy, cx + (r + 8) * sx, cy + (r + 8) * sy, couleur=DOUX, epaisseur=1))
+        lignes = [nom] + ([nombre_ecrit(v, part)] if ecrire != "noms" and not cherche else [])
+        w = max(_largeur_texte(t, taille + (1 if k == 0 else 0)) for k, t in enumerate(lignes))
+        h = 15 * len(lignes)
+        ax, ay = cx + (r + 12) * sx, cy + (r + 12) * sy
+        ancre = "start" if sx > 0.25 else "end" if sx < -0.25 else "middle"
+        x0 = ax if ancre == "start" else ax - w if ancre == "end" else ax - w / 2
+        # Le bloc de texte s'ecarte du cercle par le haut ou par le bas selon le cote.
+        ytop = ay - h / 2 if abs(sy) < 0.6 else (ay - h + 4 if sy < 0 else ay + 2)
+        boite = (x0, ytop, x0 + w, ytop + h)
+        if boite[0] < 2 or boite[2] > L - 2 or boite[1] < 2 or boite[3] > H - 2:
+            raise FigureInvalide(f"secteur « {nom} » : nom trop long, il sort du cadre ; l'abreger")
+        for autre_nom, autre in boites:
+            if _se_touchent(boite, autre):
+                raise FigureInvalide(f"secteurs « {autre_nom} » et « {nom} » : noms qui se chevauchent "
+                                     f"(secteurs trop etroits) ; regrouper ou abreger")
+        boites.append((nom, boite))
+        tx = x0 if ancre == "start" else x0 + w if ancre == "end" else x0 + w / 2
+        for k2, t in enumerate(lignes):
+            corps.append(_texte(tx, ytop + 12 + 15 * k2, t, taille + (1 if k2 == 0 else 0), ancre=ancre, gras=k2 == 0))
+    if grad:
+        for j in range(grad):
+            a = 2 * math.pi * j / grad
+            corps.append(_ligne(cx + (r - 5) * math.sin(a), cy - (r - 5) * math.cos(a),
+                                cx + r * math.sin(a), cy - r * math.cos(a), epaisseur=1.2))
+    alt = f"Diagramme circulaire en {n} secteurs ({', '.join(nom for nom, _, _ in lus)})"
+    return _svg(L, H, corps, alt), alt
+
+
+def _proba_branche(v, ou: str):
+    """Probabilite ecrite sur une branche : (valeur exacte ou None si « ? », texte)."""
+    if isinstance(v, str) and v.strip() == "?":
+        return None, "?"
+    texte = str(v).strip().replace(".", ",") if isinstance(v, str) else _texte_nombre(_nombre(v, ou))
+    if isinstance(v, str) and v.strip().endswith("%"):
+        x = _nombre(v.strip()[:-1].strip(), ou) / 100
+        texte = _texte_nombre(x * 100) + ESPACE_MILLIERS + "%"
+    else:
+        x = _nombre(v, ou)
+    if not 0 <= x <= 1:
+        raise FigureInvalide(f"{ou} : probabilite entre 0 et 1")
+    return x, texte
+
+
+def _arbre(p: dict) -> tuple[str, str]:
+    """Arbre d'une experience aleatoire en une, deux ou trois epreuves, couche a gauche.
+
+    params :
+      branches   2 a 6 branches issues de la racine : {"nom": "P", "proba": "1/2",
+                 "branches": [...], "chemin": false} ; sous une branche, 1 a 6
+                 branches (un tirage sans remise peut epuiser une couleur) ;
+                 "nom" de 6 caracteres au plus ; "proba" facultative : fraction
+                 « 3/5 », decimal « 0,6 », pourcentage « 60 % », ou « ? » (la
+                 probabilite demandee) ; "chemin" : branche en couleur, pour
+                 suivre une issue dans un corrige
+      issues     true : chaque feuille ecrit son issue, noms accoles (« PF »)
+      titres     ["1er tirage", "2e tirage"] : un titre par epreuve (facultatif)
+
+    Refus : plus de 3 epreuves ou de 12 feuilles (illisible a 360 px) ; branches
+    soeurs dont les probabilites, toutes donnees, ne font pas 1, ou dont les
+    probabilites connues depassent 1 ; probabilite hors de [0 ; 1] ; une feuille
+    a une profondeur differente des autres (les epreuves sont en colonnes).
+    """
+    racine = p.get("branches")
+    if not isinstance(racine, list) or not 2 <= len(racine) <= 6:
+        raise FigureInvalide("branches : 2 a 6 branches issues de la racine")
+    noeuds = []      # (profondeur, nom, texte de la proba, chemin, indice du parent)
+    feuilles = []    # indices des feuilles, de haut en bas
+
+    def lire(liste, prof: int, parent: int, chemin_noms: str) -> None:
+        if prof > 3:
+            raise FigureInvalide("arbre : 3 epreuves au plus")
+        connues, inconnues = Fraction(0), 0
+        for b in liste:
+            if not isinstance(b, dict):
+                raise FigureInvalide("branche : objet attendu")
+            nom = b.get("nom")
+            if not isinstance(nom, str) or not 0 < len(nom.strip()) <= 6:
+                raise FigureInvalide("branche : nom de 1 a 6 caracteres")
+            nom = nom.strip()
+            texte = None
+            if "proba" in b:
+                x, texte = _proba_branche(b["proba"], f"branche « {chemin_noms + nom} », proba")
+                if x is None:
+                    inconnues += 1
+                else:
+                    connues += x
+            else:
+                inconnues += 1
+            noeuds.append((prof, nom, texte, bool(b.get("chemin")), parent))
+            ici = len(noeuds) - 1
+            enfants = b.get("branches")
+            if enfants is None:
+                feuilles.append(ici)
+            else:
+                if not isinstance(enfants, list) or not 1 <= len(enfants) <= 6:
+                    raise FigureInvalide(f"branche « {chemin_noms + nom} » : 1 a 6 branches dessous")
+                lire(enfants, prof + 1, ici, chemin_noms + nom)
+        quoi = f"branches sous « {chemin_noms} »" if chemin_noms else "branches de la racine"
+        if connues > 1 or (inconnues == 0 and connues != 1 and any("proba" in b for b in liste)):
+            raise FigureInvalide(f"{quoi} : probabilites dont la somme fait {_coord(connues)}, pas 1")
+
+    lire(racine, 1, -1, "")
+    profondeurs = {noeuds[f][0] for f in feuilles}
+    if len(profondeurs) != 1:
+        raise FigureInvalide("arbre : toutes les feuilles a la meme epreuve (meme profondeur)")
+    D = profondeurs.pop()
+    if len(feuilles) > 12:
+        raise FigureInvalide(f"arbre : {len(feuilles)} issues, 12 au plus ; utiliser un tableau")
+    titres = p.get("titres")
+    if titres is not None and (not isinstance(titres, list) or len(titres) != D
+                               or not all(isinstance(t, str) and 0 < len(t) <= 16 for t in titres)):
+        raise FigureInvalide(f"titres : un texte de 16 caracteres au plus par epreuve ({D})")
+    issues = bool(p.get("issues"))
+
+    L, taille, pas_v = 360.0, 13, 30.0
+    haut = 30 if titres else 12
+    x_racine = 14.0
+    w_issues = 0.0
+    if issues:
+        w_issues = max(_largeur_texte("".join(noeuds[i][1] for i in _chemin_vers(noeuds, f)), 12)
+                       for f in feuilles) + 14
+    col = (L - x_racine - 18 - w_issues) / D
+    X = {}
+    Ypos = {}
+    for rang, f in enumerate(feuilles):
+        Ypos[f] = haut + pas_v * (rang + 0.5)
+    for i in sorted(range(len(noeuds)), key=lambda k: -noeuds[k][0]):
+        enfants = [k for k in range(len(noeuds)) if noeuds[k][4] == i]
+        if enfants:
+            Ypos[i] = sum(Ypos[k] for k in enfants) / len(enfants)
+    for i, (prof, *_r) in enumerate(noeuds):
+        X[i] = x_racine + col * prof
+    racine_enfants = [k for k in range(len(noeuds)) if noeuds[k][4] == -1]
+    y_racine = sum(Ypos[k] for k in racine_enfants) / len(racine_enfants)
+    H = haut + pas_v * len(feuilles) + 8
+
+    corps: list[str] = []
+    boites: list[tuple] = []
+    for i, (prof, nom, texte, chemin, parent) in enumerate(noeuds):
+        w = _largeur_texte(nom, taille)
+        boites.append((X[i] - w / 2 - 1, Ypos[i] - 10, X[i] + w / 2 + 1, Ypos[i] + 4))
+    corps.append(f'<circle cx="{x_racine}" cy="{y_racine:.1f}" r="3" fill="{TRAIT}"/>')
+    for i, (prof, nom, texte, chemin, parent) in enumerate(noeuds):
+        if parent == -1:
+            xa, ya = x_racine + 4, y_racine
+        else:
+            xa, ya = X[parent] + _largeur_texte(noeuds[parent][1], taille) / 2 + 5, Ypos[parent]
+        xb, yb = X[i] - _largeur_texte(nom, taille) / 2 - 5, Ypos[i]
+        corps.append(_ligne(xa, ya, xb, yb, couleur=ACCENT if chemin else TRAIT, epaisseur=2.6 if chemin else 1.4))
+        corps.append(_texte(X[i], Ypos[i] + 5, nom, taille, couleur=ACCENT if chemin else TRAIT, gras=True))
+        if texte:
+            # Au deux tiers de la branche, cote exterieur : loin des probabilites soeurs.
+            t = 0.62
+            mx, my = xa + t * (xb - xa), ya + t * (yb - ya)
+            dessus = yb <= ya
+            ty = my - 5 if dessus else my + 14
+            wt = _largeur_texte(texte, 12)
+            boite = (mx - wt / 2 - 1, ty - 10, mx + wt / 2 + 1, ty + 3)
+            for autre in boites:
+                if _se_touchent(boite, autre):
+                    raise FigureInvalide(f"probabilite « {texte} » : chevauche un autre texte ; "
+                                         f"noms ou probabilites trop longs")
+            boites.append(boite)
+            corps.append(_texte_detoure(mx, ty, texte, 12, couleur=ACCENT if texte == "?" else TRAIT,
+                                        gras=texte == "?"))
+    if issues:
+        xi = X[feuilles[0]] + max(_largeur_texte(noeuds[f][1], taille) for f in feuilles) / 2 + 14
+        for f in feuilles:
+            nom_issue = "".join(noeuds[k][1] for k in _chemin_vers(noeuds, f))
+            corps.append(_texte(xi, Ypos[f] + 5, nom_issue, 12, ancre="start", couleur=DOUX))
+    if titres:
+        for d, t in enumerate(titres, start=1):
+            demi = _largeur_texte(t, 12) / 2
+            corps.append(_texte(min(max(x_racine + col * d, demi + 2), L - demi - 2), 16, t, 12, couleur=DOUX))
+    alt = f"Arbre de {D} épreuve{'s' if D > 1 else ''}, {len(feuilles)} issues"
+    return _svg(L, H, corps, alt), alt
+
+
+def _chemin_vers(noeuds: list, i: int) -> list[int]:
+    """Indices des noeuds de la racine a i (exclue la racine elle-meme)."""
+    chemin = []
+    while i != -1:
+        chemin.insert(0, i)
+        i = noeuds[i][4]
+    return chemin
+
+
 GENERATEURS = {
     "demi_droite": _demi_droite,
     "droite_graduee": _droite_graduee,
@@ -3404,6 +3814,9 @@ GENERATEURS = {
     "rapporteur": _rapporteur,
     "solide": _solide,
     "cubes": _cubes,
+    "diagramme_barres": _diagramme_barres,
+    "diagramme_circulaire": _diagramme_circulaire,
+    "arbre": _arbre,
 }
 
 
