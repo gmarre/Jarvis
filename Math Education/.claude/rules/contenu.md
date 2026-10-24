@@ -19,7 +19,7 @@ paths:
 
 ## Règles tirées des relectures (au validateur ou dans les consignes)
 
-- notations contrôlées par classe : `<>`, ×, ÷, virgule, %, ², ³, °, π, cos, sin, tan, vecteur, AB², ⩽ ⩾ ;
+- notations contrôlées par classe : `<>`, ×, ÷, virgule, %, ², ³, °, π, cos, sin, tan, vecteur, AB², ⩽ ⩾, et le vocabulaire des statistiques et probabilités (étape 10 ; « médiane » permise après K006 ou G053) ;
 - vocabulaire interdit selon la classe : « produit en croix », « formule » et « tableau de conversion » avant la 6e, « rapporteur » avant la 6e, [AB] seul avant la 6e ;
 - figure indispensable, et « peut-on répondre en regardant la figure sans la lire ? » ; le générateur refuse une figure qui trompe l'œil (angle codé droit qui ne l'est pas, angle presque droit, points presque alignés, longueurs codées égales qui ne le sont pas) ; l'angle cherché est dessiné à sa vraie mesure ;
 - un « vérifier » porte sur la figure, sans « car » ni « donc » ;

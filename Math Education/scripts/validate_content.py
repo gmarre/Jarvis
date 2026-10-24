@@ -588,6 +588,33 @@ NOTATIONS = {
     "J008": (re.compile(r"fonction\s+carré", re.I), "« fonction carré »"),
     "J043": (re.compile(r"ordonnée\s+à\s+l.origine|coefficient\s+directeur", re.I),
              "« ordonnée à l'origine », « coefficient directeur »"),
+    # Etape 10 (statistiques et probabilites). Chaque mot arrive avec l'attendu
+    # qui le nomme (cartographe, §6). « Une chance sur deux » reste libre au
+    # CM1 ; une probabilite ecrite comme un nombre n'arrive qu'en 6e (« passer
+    # de la traduction d'une probabilite en termes de chances [...] a son
+    # expression par le nombre »). « Diagramme circulaire » est reserve par
+    # noeud et non par classe : une regle de classe toucherait les cartes qui
+    # commencent avant le CM2. Une cle a plusieurs sources (tuple) permet le
+    # mot dans les descendants de l'une ou l'autre : la mediane d'un triangle
+    # (G053, 5e) precede la mediane statistique (K006, 4e).
+    "L001": (re.compile(r"équiprobab", re.I), "« équiprobable »"),
+    "L010": (re.compile(r"\b(?:\d+|une?|deux|trois|quatre|cinq|six|sept|huit|neuf|dix)\s+chances?\s+sur\s+"
+                        r"(?!(?:deux|2)\b)", re.I), "« a chances sur b »"),
+    "K041": (re.compile(r"diagrammes?\s+circulaires?", re.I), "« diagramme circulaire »"),
+    "L006": (re.compile(r"probabilit[ée]s?\b[^.?!:]{0,80}?\b(?:est(?:\s+de)?|vaut|égale?(?:\s+à)?|=)\s*\$?(?:\\frac|\d)",
+                        re.I), "une probabilité écrite comme un nombre"),
+    "K047": (re.compile(r"effectifs?\s+cumulés?", re.I), "« effectifs cumulés »"),
+    ("K006", "G053"): (re.compile(r"\bmédianes?\b", re.I), "« médiane »"),
+    "K009": (re.compile(r"\bétendues?\b", re.I), "« étendue »"),
+    "K044": (re.compile(r"pondér", re.I), "« moyenne pondérée »"),
+    "K008": (re.compile(r"quartiles?|\bQ[13]\b", re.I), "« quartile », Q1, Q3"),
+    "K013": (re.compile(r"bo[iî]tes?\s+à\s+moustaches?", re.I), "« boîte à moustaches »"),
+    # Notations ensemblistes de 4e : « Definir : complementaire, reunion,
+    # intersection, ensemble vide ». P(2 ; 3), un point, ne compte pas.
+    "L004": (re.compile(r"[ée]v[éè]nements?\s+contraires?|\\overline\{[A-Z]\}|Ā|Ā|\bnon\s+[A-Z]\b"
+                        r"|∪|∩|∅|\\cup|\\cap|\\emptyset|\\varnothing"
+                        r"|(?<![A-Za-z\\])P\s?\(\s*(?:non\s|\\overline|Ā|[A-Z]\s*(?:\)|∪|∩|\\c[au]p))"),
+             "les notations des évènements (contraire, non A, ∪, ∩, ∅, P(A))"),
 }
 
 
@@ -634,6 +661,17 @@ VOCABULAIRE_PROPORTIONNALITE = [
     # college ne demande pas la notation |x| ; on dit « distance a zero ».
     (re.compile(r"\|\s*[-+" + chr(0x2212) + r"]?\s*\d[\d,.]*\s*\||\\[lr]?vert|\\left\|"),
      "la notation |x| de la valeur absolue", None),
+    # Statistiques et probabilites (etape 10) : « Comparer des issues
+    # d'experiences aleatoires [...] selon leur probabilite » (CM1) ;
+    # « L'approche frequentiste des probabilites est egalement introduite » (6e) ;
+    # « Calculer et interpreter la moyenne simple » et « tableau d'effectifs »
+    # (5e). « Effectif », « issue », « evenement » restent libres : le
+    # professeur peut les employer (programme de 6e) et ils ont d'autres sens.
+    (re.compile(r"probabilit|aléatoire", re.I), "« probabilité », « aléatoire »", "CM1"),
+    (re.compile(r"\bfréquences?\b", re.I), "« fréquence »", "6e"),
+    (re.compile(r"\bmoyennes?\b", re.I), "« moyenne »", "5e"),
+    (re.compile(r"tableaux?\s+d.effectifs", re.I), "« tableau d'effectifs »", "5e"),
+    (re.compile(r"Ω|\\Omega"), "Ω", None),
 ]
 
 CURSUS = ["CP", "CE1", "CE2", "CM1", "CM2", "6e", "5e", "4e", "3e", "2nde", "1ere", "Terminale"]
@@ -684,10 +722,12 @@ def check_notations(dag: dict, exercises: dict) -> None:
             if p in ids:
                 graph.add_edge(p, s["id"])
 
-    for source, (motif, libelle) in NOTATIONS.items():
-        if source not in graph:
+    for cle, (motif, libelle) in NOTATIONS.items():
+        sources = [s for s in (cle if isinstance(cle, tuple) else (cle,)) if s in graph]
+        if not sources:
             continue
-        autorisees = nx.descendants(graph, source) | {source}
+        source = " ou ".join(sources)
+        autorisees = set().union(*(nx.descendants(graph, s) | {s} for s in sources))
         for ex in exercises["exercises"]:
             if ex["skill_id"] in autorisees:
                 continue
